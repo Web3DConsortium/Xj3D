@@ -1,0 +1,157 @@
+ant -f C:\\x-nps-gitlab\\xj3d build.installers
+clean.installers:
+build.installers:
+versions:
+ant -version
+Apache Ant(TM) version 1.10.7 compiled on September 1 2019
+java -version
+openjdk version "14" 2020-03-17
+OpenJDK Runtime Environment (build 14+36-1461)
+OpenJDK 64-Bit Server VM (build 14+36-1461, mixed mode, sharing)
+ANT_HOME  =C:\apache-ant-1.10.7
+JAVA_HOME =C:\Program Files\Java\openjdk\jdk-14
+javac source/target      $java.source=${java.source}
+Java/JVM version    $ant.java.version=14
+Java/JVM detail version $java.version=14
+Ant version              $ant.version=Apache Ant(TM) version 1.10.7 compiled on September 1 2019
+Configuration settings:  https://savage.nps.edu/Savage/developers.html
+===========================================
+platformType:
+initializeAll:
+initializeWindows:
+os=win, win_runarguments=-Xmx1g -XX:-UseParallelGC -Dorg.web3d.vrml.renderer.common.nodes.shape.useTextureCache=true -Dswing.aatext=true -Dawt.useSystemAAFontSettings=gasp -Dsun.java2d.d3d=false -Dsun.java2d.opengl=true -Dsun.java2d.dpiaware=false -Djava.library.path='../../natives/Windows 10/amd64;../../../natives/Windows 10/amd64;../../../../natives/Windows 10/amd64'
+browser.dir=apps/browser
+initializeUnix:
+initializeMac:
+platformInitialize:
+init:
+timestamp:
+Copying 1 file to C:\x-nps-gitlab\xj3d
+DSTAMP = "20200412"
+TSTAMP = "1055"
+TODAY = "12 April 2020"
+Compiling 1 source file to C:\x-nps-gitlab\xj3d\classes
+Deleting: C:\x-nps-gitlab\xj3d\Version.java
+generate.parsers:
+compile.ogl:
+compile:
+compile.browser:
+compile.cadfilter:
+compile.replica:
+compile.apps:
+build.mac:
+build.unix:
+build.win:
+build:
+jar:
+Deleting directory C:\x-nps-gitlab\xj3d\jars
+Copying 1 file to C:\x-nps-gitlab\xj3d\classes\org\xj3d\ui\awt\browser\ogl\images
+Copying C:\x-nps-gitlab\xj3d\apps\replica\src\java\xj3d\replica\images\Xj3dRenderCaptureFailed.png to C:\x-nps-gitlab\xj3d\classes\org\xj3d\ui\awt\browser\ogl\images\Xj3dRenderCaptureFailed.png
+Building jar: C:\x-nps-gitlab\xj3d\jars\xj3d-2.2-nps.jar
+jar.apps:
+Copying 1 file to C:\x-nps-gitlab\xj3d\apps\replica\classes\xj3d\replica\images
+Copying C:\x-nps-gitlab\xj3d\apps\replica\src\java\xj3d\replica\images\Xj3dRenderCaptureFailed.png to C:\x-nps-gitlab\xj3d\apps\replica\classes\xj3d\replica\images\Xj3dRenderCaptureFailed.png
+Building jar: C:\x-nps-gitlab\xj3d\apps\replica\jars\xj3d.replica_2.2.0-nps.jar
+pack.3rd.party.jars:
+Created dir: C:\x-nps-gitlab\xj3d\lib\marshall
+Building jar: C:\x-nps-gitlab\xj3d\lib\marshall\temp.jar
+dist:
+build dist dependencies complete, starting dist tasks
+Copying 1 file to C:\x-nps-gitlab\xj3d\jars
+Copying C:\x-nps-gitlab\xj3d\apps\browser\jars\xj3d.browser_2.2.0-nps.jar to C:\x-nps-gitlab\xj3d\jars\xj3d.browser_2.2.0-nps.jar
+Copying 1 file to C:\x-nps-gitlab\xj3d\jars
+Copying C:\x-nps-gitlab\xj3d\apps\cadfilter\jars\xj3d.cadfilter_2.2.0-nps.jar to C:\x-nps-gitlab\xj3d\jars\xj3d.cadfilter_2.2.0-nps.jar
+Copying 1 file to C:\x-nps-gitlab\xj3d\jars
+Copying C:\x-nps-gitlab\xj3d\apps\replica\jars\xj3d.replica_2.2.0-nps.jar to C:\x-nps-gitlab\xj3d\jars\xj3d.replica_2.2.0-nps.jar
+Copying 1 file to C:\x-nps-gitlab\xj3d\jars
+Copying C:\x-nps-gitlab\xj3d\lib\jogamp-fat.jar to C:\x-nps-gitlab\xj3d\jars\jogamp-fat.jar
+Copying 1 file to C:\x-nps-gitlab\xj3d\jars
+Copying C:\x-nps-gitlab\xj3d\lib\jhall.jar to C:\x-nps-gitlab\xj3d\jars\jhall.jar
+Packaging all third party dependencies into a single JAR at jars/xj3d-2.2-3rdparty-nps.jar
+Building zip: C:\x-nps-gitlab\xj3d\jars\xj3d-2.2-3rdparty-nps.jar
+Deleting directory C:\x-nps-gitlab\xj3d\lib\marshall
+Building jar: C:\x-nps-gitlab\xj3d\jars\xj3d-2.2-nps-src.jar
+Building jar: C:\x-nps-gitlab\xj3d\jars\xj3d.browser_2.2.0-nps-src.jar
+Building jar: C:\x-nps-gitlab\xj3d\jars\xj3d.cadfilter_2.2.0-nps-src.jar
+Building jar: C:\x-nps-gitlab\xj3d\jars\xj3d.replica_2.2.0-nps-src.jar
+Running IzPack to build the installers...
+Prerequisite: apply .jar fix in installers/util/izpack-lang-fix in local $IZPACK_DIST .jar at
+   C:/languages/java/IzPack/lib/izpack-core-5.1.3.jar
+Windows Linux installer file: C:\x-nps-gitlab\xj3d/src/install/izpack/xj3d-win-linux-32-64-install.xml
+Logging initialized at level 'ALL'
+Pack compression method: default
+Setting the installer information
+Adding uninstaller
+Setting the installer information
+Setting the console preferences
+Setting the GUI preferences
+Adding langpack: usa
+Adding resource: flag.usa
+Adding resource: LicencePanel.licence
+Adding resource: Installer.image
+Adding resource: InfoPanel.info
+Adding resource: shortcutSpec.xml
+Adding resource: Unix_shortcutSpec.xml
+Adding panel: HelloPanel :: Classname : com.izforge.izpack.panels.hello.HelloPanel
+Adding panel: InfoPanel :: Classname : com.izforge.izpack.panels.info.InfoPanel
+Adding panel: LicencePanel :: Classname : com.izforge.izpack.panels.licence.LicencePanel
+Adding panel: TargetPanel :: Classname : com.izforge.izpack.panels.target.TargetPanel
+Adding panel: PacksPanel :: Classname : com.izforge.izpack.panels.packs.PacksPanel
+Adding panel: ShortcutPanel :: Classname : com.izforge.izpack.panels.shortcut.ShortcutPanel
+Adding panel: SummaryPanel :: Classname : com.izforge.izpack.panels.summary.SummaryPanel
+Adding panel: SummaryPanel :: Classname : com.izforge.izpack.panels.summary.SummaryPanel
+Adding panel: SimpleFinishPanel :: Classname : com.izforge.izpack.panels.simplefinish.SimpleFinishPanel
+Marked target file executable: {0}
+Marked target file executable: {0}
+Marked target file executable: {0}
+Marked target file executable: {0}
+Adding pack {0} containing {1} files
+Adding pack {0} containing {1} files
+[ Begin ]
+
+Copying the skeleton installer
+Copying 7 files into installer
+Writing 2 Packs into installer
+Writing Pack 0: Base
+Writing Pack 1: Documentation
+
+[ End ]
+macosx installer file: C:\x-nps-gitlab\xj3d/src/install/izpack/xj3d-mac-install.xml
+Logging initialized at level 'ALL'
+Pack compression method: default
+Setting the installer information
+Adding uninstaller
+Setting the installer information
+Setting the console preferences
+Setting the GUI preferences
+Adding langpack: usa
+Adding resource: flag.usa
+Adding resource: LicencePanel.licence
+Adding resource: Installer.image
+Adding panel: HelloPanel :: Classname : com.izforge.izpack.panels.hello.HelloPanel
+Adding panel: LicencePanel :: Classname : com.izforge.izpack.panels.licence.LicencePanel
+Adding panel: TargetPanel :: Classname : com.izforge.izpack.panels.target.TargetPanel
+Adding panel: PacksPanel :: Classname : com.izforge.izpack.panels.packs.PacksPanel
+Adding panel: ShortcutPane :: Classname : com.izforge.izpack.panels.shortcut.ShortcutPanel
+Adding panel: SummaryPanel :: Classname : com.izforge.izpack.panels.summary.SummaryPanel
+Adding panel: SummaryPanel :: Classname : com.izforge.izpack.panels.install.InstallPanel
+Adding panel: SimpleFinishPanel :: Classname : com.izforge.izpack.panels.simplefinish.SimpleFinishPanel
+Marked target file executable: {0}
+Marked target file executable: {0}
+Marked target file executable: {0}
+Adding pack {0} containing {1} files
+Adding pack {0} containing {1} files
+[ Begin ]
+
+Copying the skeleton installer
+Copying 4 files into installer
+Writing 2 Packs into installer
+Writing Pack 0: Base
+Writing Pack 1: Documentation
+
+[ End ]
+
+Installer file sizes: xj3d-2.2-nps-win-64-installer.jar=39568659 bytes, xj3d-2.2-nps-macosx-installer.jar=34688057 bytes
+
+IzPack installer builds complete
+BUILD SUCCESSFUL (total time: 23 seconds)

@@ -1,0 +1,36 @@
+NOTE: This file can be found in the doc directory of your installation path for
+later reference.
+
+IMPORTANT!
+
+If you encounter a popup that says, "To open "Xj3DBrowser" you need to install
+the legacy Java SE 6 runtime", click "OK" to close, then follow the advice for
+modifying your installed JDK/JRE info.plist from the following link.
+
+https://stackoverflow.com/questions/26847411/to-open-eclipse-you-need-to-install-the-legacy-java-se-6-runtime
+
+STEPS
+
+1) Edit the info.plist for the JDK after installing:
+
+$ sudo nano `/usr/libexec/java_home -V`/../info.plist
+
+2) Update the following section from:
+
+<key>JVMCapabilities</key>
+ <array>
+  <string>CommandLine</string>
+ </array> 
+  
+to
+
+<key>JVMCapabilities</key>
+ <array>
+  <string>JNI</string>
+  <string>BundledApp</string>
+  <string>WebStart</string>
+  <string>Applets</string>
+  <string>CommandLine</string>
+ </array>
+
+3) Be sure to reboot your system when completed.

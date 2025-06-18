@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="yes" ?>
+<izpack:shortcuts version="5.0"
+                  xmlns:izpack="http://izpack.org/schema/shortcuts"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://izpack.org/schema/shortcuts http://izpack.org/schema/5.0/izpack-shortcuts-5.0.xsd">
+
+    <skipIfNotSupported/>
+    <programGroup defaultName="Extensible 3D Graphics/Xj3D/Xj3D Browser"
+                  location="applications"/>
+    <shortcut
+        name="Xj3D Browser"
+        target="$INSTALL_PATH/browser.sh"
+        commandLine=""
+        workingDirectory="$INSTALL_PATH"
+        description="Xj3D Browser"
+        iconFile="$INSTALL_PATH/src/install/izpack/xj3d.ico"
+        iconIndex="0"
+        initialState="normal"
+        programGroup="yes"
+        desktop="yes"
+        applications="yes"
+        startMenu="no"
+        startup="no"
+        type="Application"
+        terminal="true">
+
+        <createForPack name="Base"/>
+    </shortcut>
+    
+    <shortcut
+	name="Xj3D Converter"
+	target="$INSTALL_PATH/converter.sh"
+	commandLine=""
+	workingDirectory="$INSTALL_PATH"
+	description="Xj3D Converter"
+	iconFile="$INSTALL_PATH/src/install/izpack/Xj3D-Convert.ico"
+	iconIndex="0"
+	initialState="normal"
+	programGroup="yes"
+	desktop="yes"
+	applications="yes"
+	startMenu="no"
+	startup="no"
+        type="Application"
+        terminal="true">
+
+	<createForPack name="Base"/>
+    </shortcut>
+    
+    <shortcut
+            terminal="false"
+            name="Xj3D Uninstaller"
+            programGroup="yes"
+            desktop="yes"
+            applications="no"
+            startMenu="no"
+            startup="no"
+            target="java"
+            commandLine="-jar &quot;$INSTALL_PATH/Uninstaller/uninstaller.jar&quot;"
+            initialState="noShow"
+            iconFile="$INSTALL_PATH/icons/izpack_uninstall_32.png"
+            workingDirectory=""
+            type="Application"
+            encoding="UTF-8"
+            KdeSubstUID="false"
+            createForAll="false"
+            categories="Application;Development;"
+            tryexec="java -jar &quot;$INSTALL_PATH/Uninstaller/uninstaller.jar&quot;"
+            description="This uninstalls Xj3D ${project.version}">
+
+        <createForPack name="Base"/>
+    </shortcut>
+
+</izpack:shortcuts>

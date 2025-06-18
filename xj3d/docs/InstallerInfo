@@ -1,0 +1,2 @@
+JDK or JRE 17+ is required to run Xj3D and associated converter toolsets and 
+assume that a JAVA_HOME environment variable is set and added to your PATH.

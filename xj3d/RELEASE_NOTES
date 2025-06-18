@@ -1,0 +1,280 @@
+Post release fixes / upgrades / issues:
+
+  ***** ISSUES:
+
+  With X3D 4.0 specification now available, many nodes need upgrade to handle
+  new fields. Started with implementing bboxDisplay in the Group render nodes
+  (incomplete in the SAI tree). Still need to implement fields visible and
+  html fields class, style and id.
+
+  Need to upgrade to latest GeoTools. Prior versions were not supporting JDK9+
+  https://sourceforge.net/projects/geotools/
+
+  Scene /www.web3d.org/x3d/content/examples/Basic/UniversalMediaMaterials/ArtDecoExamples.x3d
+  renders in monochrome.  Issue with displaying material nodes loaded from
+  ExternProtoDeclare ProtoInstance nodes.
+
+  When initially opening an *.x3d file that has inline urls pointing to *.wrl
+  files, Xj3D balks and gives warnings that it can't resolve URLs pointing to
+  *.wrl files even if on the same relative path as the parent *.x3d file.
+
+  When resolving the mime type of a *.js file loaded from a Script Node url
+  field of a VRML97 (.wrl) scene, it is resolved as an application/ecmascript
+  mime type and therefore no scriptloader will be instantiated since the only
+  accepted mime type for *.wrl is application/javascript.
+
+  Complex X3D scenes are not being exported correctly to VRML97 format.  Example
+  file is the ConformanceNist/Appearance/FontStyle/driver.x3d -> .wrl
+
+  When exporting Script node urls to classic VRML, relative paths are not being
+  honored.  Full paths are being written.
+
+  NavInfo for the center of rotation not right for ViewPoint node.  Scene jumps
+  to default of zero in the "Y" axis
+
+  ****** FIXES / UPGRADES:
+-------------------------
+
+Update: 2.3 (September 18, 2024)
+
+    Aviatrix3D performs a cleaner shutdown of JOAL resources
+
+-------------------------
+
+Update: 2.3 (June 11, 2024)
+
+    Update JogAMp (JOGL, JOAL, GlueGen) to v2.5.0 20230818
+
+-------------------------
+
+Update: 2.3 (December 29, 2023)
+
+    Upgraded opendis7-java jars to latest release.
+
+-------------------------
+
+Update: 2.3 (December 20, 2022)
+
+    Numerous small improvements continue to be applied, especially as part of X3D-Edit testing and deployment.
+
+    We have begun supporting X3D v4.0 functionality. Issue reports and contributions welcome.
+
+-------------------------
+
+Release: 2.3 (May 12, 2021)
+-------------------------
+Major changes since 2.2 (Feb 09, 2020):
+
+  Update JogAMp (JOGL, JOAL, GlueGen) to v2.5.0-rc-20230515
+    - Fixes NEWT crash
+    - Fixes 1/4 screen issue on Win
+
+  Fixed NPEs thrown from org.web3d.vrml.renderer.common.input.dis.DISProtocolHandler
+  when DR routines were being called from an active DIS scene
+
+  Fixed NPE thrown from aviatrix3d when an available directional light was null
+
+  Upgrade ODE to v0.11.1. Regenerated odejava-jni.jar.
+
+  Fixed a bug in org.web3d.vrml.util.URLChecker that wouldn't allow Windows
+  file system URLs to pass through, or http/https schemes.
+
+  The HTTPClient lib, a dependency in Justin Couch's URIlib, now supports
+  the https:// protocol :-)
+
+  Update to Justin Couch's latest URIlib which is now a maven project on GitHub
+  at: https://github.com/Virtual-Light-Company/urilib.git
+
+  Fixed a bug in org.web3d.vrml.util.URLChecker which did not allow a URL like
+  jar:file:/... to pass through.
+
+  Upgrade JogAmp (JOGL, JOAL, GlueGen) to v2.4.0-rc-20210111
+
+  In the DefaultRigidBodyPhysicsManager, ODE is initialized in a static
+  initializer. Must also close in a shutdown hook vice in instance method. The
+  later caused unit tests that initialize/destroy many Browser instances to
+  fail.
+
+  Fix EAIBrowser empty DEF map issue in the BrowserCore
+
+  Align w/ latest Xj3D 2.0 RC1 codebase with 3MF filter support developed by
+  Shapeways (Alan H.) continued work on the original codebase.
+
+  Align w/ latest Aviatrix3D as much as possible harnessing the efficient
+  refactors Justin Couch has implemented in v3.1.0 (GitHub) with the rendering
+  surfaces, rendering processors, the canvas descriptors and the various
+  threading managers. Some refactors that could not be used in Xj3D are the
+  retention of the vecmath lib, retention of float vs. double backing arrays and
+  the original DefaultPickingHandler. The screen resolution issue with some
+  screen sizes issue noted during upgrade to JOGL v2.4 was fixed this round.
+
+Release: 2.2 (Feb 09, 2020)
+-------------------------
+Major changes since 2.1 (May 22, 2014):
+
+  ${java.home}/lib/content-types.properties was removed in JDK9+. It is now
+  included internally in the binary java.base module. Workaround implemented in
+  org.web3d.net.protocol.FileResourceConnection
+
+  BaseRigidBodyCollection was improperly throwing an exception for a value of < 0
+  for the vfMaxCorrectionSpeed field. A value of -1 is the spec default value.
+
+  Upgrade to Jogamp v2.4. JVMs > v8 will throw a SIGABRT due to Apple enforcing
+  invalidating drag regions only on the main thread.
+
+  http://forum.jogamp.org/How-to-enable-Gluegen-Java3D-on-Java-9-td4038338.html
+
+  Dr. S. Kwon, visiting postdoc from S. Korea, fixed Extrusion handling (a long
+  time lingering issue).
+
+  Made threads in ContentLoader and FramerateThrottle daemon so as not to keep
+  the JVM alive when the browser window is closed, esp. when launched from
+  another application.
+
+  Upgrade JogAmp (JOGL, JOAL, GlueGen) to v2.3.2
+
+  Fixed issue with the SwingConsoleWindow where the caret would not auto scroll
+  to the bottom of the text field area.
+
+  Refactored Aviatrix3D to remove requirement for calling
+  GraphicsOutputDevice.initContext outside of Aviatrix3D. Renamed to
+  createGLContext which is called on the first draw, or setDrawableObjects is
+  called from the rendering loop. This restores how Aviatrix3D used to work
+  before JOGL 2+ was introduced. Also, now properly disposing of JOGL resources
+  during shutdown. Resource shutdown order is sensitive to prevent JVM crashes.
+
+  Fixed issue in org.web3d.vrml.renderer.common.nodes.text.BaseFontStyle where
+  the incorrect defaults were set. We now set "BEGIN" "FIRST" for the major and
+  minor justification values.
+
+  A negative MovieTexture speed is legal via the spec., therefore, don't throw
+  an InvalidFieldException, but just warn that reverse speed is not yet
+  implemented in org.web3d.vrml.renderer.common.nodes.texture.BaseMoveTexture
+
+  Added Alan Hudson's initial cut at a 3mf filter converter. Added a DeathTimer
+  to the ThumbnailImager as image capture hangs on corrupt scenes.
+
+  Fixed HAnimObject type array casting error in
+  org.web3d.vrml.renderer.common.nodes.hanim.BaseHAnimHumanoid line 663. Fix
+  AIOOB Exception in org.web3d.vrml.renderer.common.nodes.GeometryUtils in
+  rebuildFaceLists line 1216
+
+  Field 'axisRotation', an SFRotation type, now recognized for nodes
+  CylinderSensor and PlaneSensor, however, the value of the float array is
+  currently not being translated to the geometry's local coordinate system
+
+  Fixed potential AIOOB exception in
+  org.web3d.vrml.renderer.ogl.nodes.geom3d.OGLElevationGrid
+
+  Now using exclusive J3D's HashSet and IntHashMap. Fixed all generic compile
+  warnings and suppressing those that are known about. Removed some
+  org.web3d.util classes that were not used.
+
+  Upgrades to J3D and Aviatrix3D version 3.0.0. Merge complete as of 01 AUG 15
+  to the GitHub versions maintained by Justin Couch. Removed Xj3D ErrorReporter
+  and relying on J3D's version. Refactored to remove redundant casts, enforce
+  auto-boxing, @Override annotations and other JDK 1.7 source refactorings.
+  Fixed potential AIOOB Exceptions in
+  org.web3d.vrml.scripting.external.sai.SFImageWrapper Fix NPE in
+  org.web3d.vrml.scripting.browser.SceneUpdateTraverser when clearing a scene.
+  Fixed potential AIOOB Exceptions in org.web3d.vrml.nodes.proto.PrototypeDecl,
+  org.web3d.vrml.scripting.external.sai.MFImageWrapper and
+  org.web3d.util.SFImageUtils. Tests in parsetest/sai/external revealed these
+  errors.
+
+  Implemented missing MetadataBoolean node for the 3.3+ profile
+
+  Fixed issue: ImageTexture Material lighting model is overriding Material USE
+  elsewhere in a scene. This fix was made in
+  org.web3d.vrml.renderer.ogl.nodes.shape.OGLAppearance in the
+  setIgnoreDiffuse(NIOBufferImage image) method. Researching the Spec.
+  http://www.web3d.org/documents/specifications/19775-1/V3.2/Part01/components/texturing.html#ImageTexture
+  did not reveal a clear cut case for ignoring diffuse color when an image is
+  not considered grey-scale. Turns out that transparency, or the (1 - alpha)
+  value of the image, might be a indicator of ignoring a material node's
+  diffuse color component. Added a "hasTransparency" field to
+  org.web3d.image.NIOBufferImage which is set based on the type of image used
+  in an ImageTexture node. Be that as it may, reverting the boolean flip of
+  !image.isGrayScale() to set ignoreDiffuse so that DEF/USE can be honored for
+  a single image texture.
+
+  Remove fastinfoset_1.2.9.jar as the fastinfoset was internally adopted into
+  the JDK sometime ago.  Now using the internal version, but now need to set
+  the javac flag of -XDignore.symbol.file so that internal packages of the JDK
+  will be recognized at compile time.
+
+  Update JOAL, JOGL and GlueGen to v2.3.1.  Everything that used to be packaged
+  as javax.media.opengl is now -> com.jogamp.opengl
+
+  Partial fix to long standing issue with
+  org.j3d.renderer.aviatrix3d.geom.Text2D not handling Appearance FontStyle
+  justify for both horizontal (major) and vertical (minor) attributes. The
+  issue being that JUSTIFY_END for the major was not correct and JUSTIFY_BEGIN,
+  FIRST & MIDDLE for the minor was not correct (defaulted to END no matter the
+  setting). Horizontal TRUE works pretty close now, but with some hacks.
+  Horizontal FALSE is not quite so good, but better than it was.  Basically, the
+  bounding box for the character data was not being employed correctly to the
+  GLContext for character translation and still needs some tweaking to meet the
+  spec.
+
+  Finally, fix for ConformanceNist/Appearance/FontStyle/driver.x3d and driver.js
+  (createX3DFromString).  Quite a few things were missing for who knows how
+  long, but 2 items in particular:
+
+  1) SFBool field values from script nodes were resolving to lowercase causing
+     the X3DRelaxedParser to choke
+  2) ROUTES to transform nodes (in script land) were being sent with children
+     nodes that had valid, but old parents causing Aviatrix3D to throw and
+     AlreadyParentedException. This is now fixed to remove the old parent so
+     that the ROUTE to a DEFd Transform can reparent the children
+
+  Fixed NPE in org.j3d.aviatrix3d.TransformGroup line 339
+
+  Upgraded to JavaCC v6.0.1 and Rhino 1_7R4.  Ant target jjdoc now produces
+  BNF documentation for the VRML and X3D Parsers
+
+  Fixed issue where exporting to classic VRML did not literally retain escaped
+  double quotations in META values
+
+  Now reporting exporter information in exported classic VRML files
+
+  Improved dynamic headless screen capture by including viewpoint definitions in
+  the name of the screen capture image file.  Output better usage messages for
+  the Replica app.  Implemented the DeathTimer to counter the
+  BlockingWorldLoader in case a scene load function crashes the JVM before
+  screen capture occurs, or if there were an issue during screen capture.
+
+  Fixed two NPEs in Aviatrix3D.  Line 207 of org.j3d.aviatrix3d.BaseGroup and
+  line 187 of org.j3d.renderer.aviatrix3d.nodes.LODGroup.  Why these showed up
+  now is uncertain.  They were revealed by the X3D scene:
+  file:/www.web3d.org/x3d/content/examples/Savage/AuvWorkbench/OperatingAreas/MultipleUnmannedVehiclesOffMonterey.x3d
+
+  Aviatrix3D semi-resolution to thrown GLException: If we encounter a
+  GLException when attempting to make the GLContext current on the thread, then
+  just terminate and report one exception instead of reporting repeatedly
+
+  Fixed a NPE issue in OGLAppearance where threads were in competition for image
+  processing arrays
+
+  Fixed NPE issue in SwingLocationToolbar when hitting the reload button w/o a
+  valid file url in the location bar.  This occurs when a file is loaded via a
+  FileStream and the browser only has directory info on the loaded scenegraph.
+
+  Fixed issue with the GLJPanel (-swing-lightweight) not gaining the window
+  focus if launched from the Xj3DBrowser app.
+
+  Fixed Aviatrix3D NPEs occurring in the BaseSurface when reinitializing the
+  GLContext after an AA adjustment
+
+  Ran into a situation on Mac OS X running VMWare for Windows 7 and
+  a GLException was thrown for glBlendEquation not supported.  Had to fix this
+  in org.j3d.aviatrix3d.BlendAttributes in the render() method
+
+  Fixed a threading issue in Replica that prevent consistent screenshot captures
+  via headless rendering when run through a continuous loop against a directory
+  of X3D scenes to capture all coded viewpoints
+
+  Fixed NPE in org.j3d.aviatrix3d.Shape3D getCenter().  Field bounds
+  was sometimes not initialized.
+
+  Upgraded JOGL to v2.2.4

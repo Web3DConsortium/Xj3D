@@ -1,0 +1,9 @@
+# Filename:    access.properties.template
+
+# Description: to support upload access, save the template file as access.properties and modify values for your account.
+
+# Warning:     do not check in any username/password, directory or configuration values back into version control!
+
+    username.savage=CHANGEME
+   scpServer.savage=CHANGEME
+scpDirectory.savage=CHANGEME
