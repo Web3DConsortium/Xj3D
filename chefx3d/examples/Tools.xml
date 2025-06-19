@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tools>
+  <Section name='Locations' title='Locations'>
+    <Chapter name='Grid' title='Grid'>
+      <Page description='Grid' name='Grid' title='Grid'
+         url='Grid.x3dv'/>
+    </Chapter>
+  </Section>
+
+  <Section name='Primitives' title='Primitives'>
+    <Chapter name='Box' title='Box'>
+      <Page description='Box' name='Box' title='Box'
+         url='Box.x3d' smalUrl="Box.smal"/>
+    </Chapter>
+    <Chapter name='Cone' title='Cone'>
+      <Page description='Cone' name='Cone' title='Cone'
+         url='Cone.x3d' smalUrl="Cone.smal"/>
+    </Chapter>
+    <Chapter name='Cylinder' title='Cylinder'>
+      <Page description='Cylinder' name='Cylinder' title='Cylinder'
+         url='Cylinder.x3d' smalUrl="Cylinder.smal"/>
+    </Chapter>
+    <Chapter name='Sphere' title='Sphere'>
+      <Page description='Sphere' name='Sphere' title='Sphere'
+         url='Sphere.x3d' smalUrl="Sphere.smal"/>
+    </Chapter>
+  </Section>
+</Tools>
+

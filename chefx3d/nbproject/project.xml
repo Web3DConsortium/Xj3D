@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <name>ChefX3D</name>
+        </general-data>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/2">
+            <!-- Do not use Project Properties customizer when editing this file manually. -->
+            <name>ChefX3D</name>
+            <properties>
+                <property-file>nbproject/build.properties</property-file>
+            </properties>
+            <folders>
+                <source-folder>
+                    <label>${application.title}</label>
+                    <location>.</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>src\java</label>
+                    <type>java</type>
+                    <location>src/java</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>test\java</label>
+                    <type>java</type>
+                    <location>test/java</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>examples</label>
+                    <type>java</type>
+                    <location>examples</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="build">
+                    <target>build</target>
+                </action>
+                <action name="clean">
+                    <target>clean</target>
+                </action>
+                <action name="run">
+                    <target>quick.run</target>
+                </action>
+                <action name="rebuild">
+                    <target>clean</target>
+                    <target>build</target>
+                </action>
+                <action name="run.single">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>run-selected-file-in-java</target>
+                    <context>
+                        <property>run.class</property>
+                        <folder>test/java</folder>
+                        <pattern>\.java$</pattern>
+                        <format>java-name</format>
+                        <arity>
+                            <one-file-only/>
+                        </arity>
+                    </context>
+                </action>
+                <action name="debug.single">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>debug-selected-file-in-java</target>
+                    <context>
+                        <property>debug.class</property>
+                        <folder>test/java</folder>
+                        <pattern>\.java$</pattern>
+                        <format>java-name</format>
+                        <arity>
+                            <one-file-only/>
+                        </arity>
+                    </context>
+                </action>
+                <action name="run.single">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>run-selected-file-in-examples</target>
+                    <context>
+                        <property>run.class</property>
+                        <folder>examples</folder>
+                        <pattern>\.java$</pattern>
+                        <format>java-name</format>
+                        <arity>
+                            <one-file-only/>
+                        </arity>
+                    </context>
+                </action>
+                <action name="debug.single">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>debug-selected-file-in-examples</target>
+                    <context>
+                        <property>debug.class</property>
+                        <folder>examples</folder>
+                        <pattern>\.java$</pattern>
+                        <format>java-name</format>
+                        <arity>
+                            <one-file-only/>
+                        </arity>
+                    </context>
+                </action>
+                <action name="debug">
+                    <script>nbproject/ide-file-targets.xml</script>
+                    <target>debug-nb</target>
+                </action>
+            </ide-actions>
+            <export>
+                <type>folder</type>
+                <location>build</location>
+                <build-target>build</build-target>
+            </export>
+            <export>
+                <type>folder</type>
+                <location>build/examples</location>
+                <build-target>build</build-target>
+            </export>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>src\java</label>
+                        <location>src/java</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>test\java</label>
+                        <location>test/java</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>examples</label>
+                        <location>examples</location>
+                    </source-folder>
+                    <source-file>
+                        <location>build.xml</location>
+                    </source-file>
+                </items>
+                <context-menu>
+                    <ide-action name="build"/>
+                    <ide-action name="rebuild"/>
+                    <ide-action name="clean"/>
+                    <ide-action name="run"/>
+                    <ide-action name="debug"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/3">
+            <compilation-unit>
+                <package-root>src/java</package-root>
+                <classpath mode="compile">lib/it.geosolutions.utils.jar:lib/xercesImpl.jar:lib/elall.jar:lib/l2fprod-common-outlookbar.jar:lib/gt2-api-2.4.4.jar:lib/gt2-coverage-2.4.4.jar:lib/gt2-image-2.4.4.jar:lib/gt2-imagemosaic-2.4.4.jar:lib/gt2-imagepyramid-2.4.4.jar:lib/gt2-render-2.4.4.jar:lib/jts-1.8.jar:lib/xj3d/xj3d-2.1-3rdparty-nps.jar:lib/xj3d/xj3d-2.1-nps.jar</classpath>
+                <built-to>build</built-to>
+                <source-level>1.7</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>test/java</package-root>
+                <unit-tests/>
+                <classpath mode="compile">lib/support/junit-4.3.1.jar:build</classpath>
+                <source-level>1.7</source-level>
+            </compilation-unit>
+            <compilation-unit>
+                <package-root>examples</package-root>
+                <classpath mode="compile">build:lib/it.geosolutions.utils.jar:lib/xercesImpl.jar:lib/elall.jar:lib/l2fprod-common-outlookbar.jar:lib/jts-1.7.1.jar:lib/gt2-api-2.4.4.jar:lib/gt2-coverage-2.4.4.jar:lib/gt2-image-2.4.4.jar:lib/gt2-imagemosaic-2.4.4.jar:lib/gt2-imagepyramid-2.4.4.jar:lib/gt2-render-2.4.4.jar:lib/xj3d/xj3d-2.1-3rdparty-nps.jar:lib/xj3d/xj3d-2.1-nps.jar</classpath>
+                <built-to>build/examples</built-to>
+                <source-level>1.7</source-level>
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>

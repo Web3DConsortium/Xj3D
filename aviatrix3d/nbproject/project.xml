@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.java.j2seproject</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
+            <name>Aviatrix3D</name>
+            <source-roots>
+                <root id="src.java.dir"/>
+                <root id="src.background2.dir"/>
+                <root id="src.basic.dir"/>
+                <root id="src.clip2.dir"/>
+                <root id="src.effects2.dir"/>
+                <root id="src.geometry.dir"/>
+                <root id="src.layers2.dir"/>
+                <root id="src.loaders2.dir"/>
+                <root id="src.multipass2.dir"/>
+                <root id="src.npr2.dir"/>
+                <root id="src.picking2.dir"/>
+                <root id="src.shader2.dir"/>
+                <root id="src.texture2.dir"/>
+                <root id="src.transparent.dir"/>
+                <root id="src.volume2.dir"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.java.dir"/>
+            </test-roots>
+        </data>
+        <spellchecker-wordlist xmlns="http://www.netbeans.org/ns/spellchecker-wordlist/1">
+            <word>initialisation</word>
+            <word>initialise</word>
+        </spellchecker-wordlist>
+    </configuration>
+</project>

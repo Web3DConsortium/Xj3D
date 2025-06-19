@@ -1,0 +1,131 @@
+#X3D V3.2 utf8
+
+PROFILE Immersive
+COMPONENT Navigation:3
+COMPONENT PickingSensor:1
+
+
+Viewpoint {
+   description "Top Down"
+   position 0 19.5 0
+    orientation 1 0 0 -1.57075
+}
+
+
+# Screenshot viewpoint
+#/*
+OrthoViewpoint {
+   description "Ortho All"
+   fieldOfView -80 -80 80 80
+   position 0 10 0
+   orientation 1 0 0 -1.57075
+}
+
+OrthoViewpoint {
+   description "Ortho Quad 0"
+   fieldOfView -80 -80 0 0
+   position 0 10 0
+   orientation 1 0 0 -1.57075
+}
+OrthoViewpoint {
+   description "Ortho Quad 1"
+   fieldOfView 0 -80 80 0
+   position 0 10 0
+   orientation 1 0 0 -1.57075
+}
+OrthoViewpoint {
+   description "Ortho Quad 2"
+   fieldOfView -80 0 0 80
+   position 0 10 0
+   orientation 1 0 0 -1.57075
+}
+OrthoViewpoint {
+   description "Ortho Quad 3"
+   fieldOfView 0 0 80 80
+   position 0 10 0
+   orientation 1 0 0 -1.57075
+}
+*/#
+
+Transform {
+   translation -40 0 -40
+   children [
+      Shape {
+         appearance Appearance {
+            material Material {
+               diffuseColor 1 0 0
+            }
+         }
+         geometry Box {
+            size 10 10 10
+         }
+      }
+   ]
+}
+
+Transform {
+   translation -40 0 40
+   children [
+      Shape {
+         appearance Appearance {
+            material Material {
+               diffuseColor 0 1 0
+            }
+         }
+         geometry Cone {
+            bottomRadius 5
+            height 10
+         }
+      }
+   ]
+}
+
+Transform {
+   translation 40 0 40
+   children [
+      Shape {
+         appearance Appearance {
+            material Material {
+               diffuseColor 0 0 1
+            }
+         }
+         geometry Sphere {
+            radius 5
+         }
+      }
+   ]
+}
+
+Transform {
+   translation 40 0 -40
+   children [
+      Shape {
+         appearance Appearance {
+            material Material {
+               diffuseColor 1 0 1
+            }
+         }
+         geometry Sphere {
+            radius 5
+         }
+      }
+   ]
+}
+
+
+DEF SHAPES Group {
+}
+
+DEF SC Script {
+   outputOnly MFNode shapes
+   initializeOnly SFFloat majorSpacing 10
+   initializeOnly SFFloat minorSpacing 1
+   initializeOnly SFInt32 number 159
+   initializeOnly SFFloat size 160
+
+   url ["catalog.Locations.Grid.GridGenerator.class"]
+}
+
+ROUTE SC.shapes TO SHAPES.set_children
+
+

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="build" name="ChefX3D Examples">
+  <description>
+        Build file for ChefX3D Examples
+  </description>
+
+  <!-- set global properties for this build -->
+
+  <!-- External properties file.  This contains properties that vary from developer       -->
+  <!-- to developer.  Also, any properties in this file will override the properties set  -->
+  <!-- in this build.xml file, so, be careful.                                            -->
+  <property file="build.properties"/>
+  
+  <!-- access to local environment variables -->
+  <property environment="env"/>
+
+  <!-- project directories -->
+  <property name="src" location="."/>
+  
+  <!-- Temporary build directories -->
+  <property name="lib" location="../lib"/>
+  
+  <!-- build directories -->
+  <property name="build" location="../"/>
+  
+  <!-- compiler switches -->
+  <property name="javac.debug" value="on"/>
+  <property name="javac.verbose" value="no"/>
+  <property name="javac.source" value="1.4"/>
+  <property name="javac.target" value="1.4"/>
+
+  <!-- runtime values -->
+  <property name="entrypoint" value="SimpleExample"/>
+
+  <property name="runarg0" value="-Xmx500m"/>
+  <property name="runarg1" value="-Dsun.java2d.noddraw=true"/>
+  <property name="runarg2" value="-Djava.library.path=../bin"/>
+  <property name="runarg3" value="-Djavax.xml.transform.TransformerFactoryImpl=net.sf.saxon.TransformerFactoryImpl"/>
+  
+  <!-- targets -->
+
+  <target name="check.JAVA_HOME" unless="env.JAVA_HOME">
+    <echo message="warning:  JAVA_HOME not set!"/>
+  </target>
+
+  <target name="init" depends="check.JAVA_HOME">
+    <!-- Create the time stamp -->
+    <tstamp/>
+
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+
+  </target>
+
+  <!-- compile the code -->
+  <target name="compile" depends="init" description="compile the code">
+      <path id="classpath">
+        <pathelement path="${build}" />
+        <fileset dir="${lib}" includes="**/*.jar"/>
+      </path>
+  
+    <javac deprecation="true"
+      destdir="${build}"
+      srcdir="${src}"
+      fork="true"
+      source="1.4"
+      target="1.4"
+      debug="${javac.debug}"
+      verbose="${javac.verbose}"
+      memoryinitialsize="500M"
+      memorymaximumsize="1000M">
+      <classpath refid="classpath" />
+    </javac>
+  </target>
+
+  <!-- This builds a jar containing only a "main-class" indicator and a
+  "class-path" attribute which is a list of all the jars in our lib directory
+  Its purpose is to eliminate the problem of having >100 jars on the command line-->
+  <target name="launcherjar" depends="init,classpaths">
+    <!-- strip the path part from the classpath and delimit w/ spaces.  The
+    paths are all relative to where this jar sits. -->
+   <pathconvert pathsep=" " property="mf_classpath" refid="run.classpath">
+     <map from="${lib}/" to=""/>
+     <map from="${lib}\" to=""/>  <!-- cover both platforms -->
+     <map from="${build}" to="../build/"/>
+    </pathconvert>
+    <!-- build the launcher file including all our classes and put
+    into the lib directory.  It contains only the entry point name,
+    and the class path.  See the runscripts target for proper use -->
+    <jar destfile="${lib}/launchwb.jar" >
+      <manifest>
+        <attribute name="Built-By" value="AUV Workbench -- Ant build.xml"/>
+        <attribute name="Built-On" value="${TODAY} ${TSTAMP} hrs"/>
+        <attribute name="Main-Class" value="workbench.main.AMVWmain"/>
+        <!-- do the magic and slip our jar list into the manifest -->
+        <attribute name="Class-Path" value="${mf_classpath}"/>
+      </manifest>
+    </jar>
+  </target>
+  
+  <target name="build" depends="compile">
+  </target>
+
+  <target name="run" depends="build, classpaths" description="Run the program">
+    <java classname="${entrypoint}" fork="true">
+      <!-- I'd like to use ${localrunarguments} here -->
+      <jvmarg value="${runarg0}"/>
+      <jvmarg value="${runarg1}"/>
+      <jvmarg value="${runarg2}"/>
+      <classpath refid="run.classpath"/>
+    </java>
+  </target>
+  <target name="quick-run" depends="classpaths" description="Run the program">
+    <java classname="${entrypoint}" fork="true">
+      <!-- I'd like to use ${localrunarguments} here -->
+      <jvmarg value="${runarg0}"/>
+      <jvmarg value="${runarg1}"/>
+      <jvmarg value="${runarg2}"/>
+      <classpath refid="run.classpath"/>
+    </java>
+  </target>
+
+  <target name="classpaths" depends="init">
+    <path id="run.classpath">
+      <pathelement location="${build}"/>
+      <pathelement location="../classes"/>
+      <fileset dir="${lib}">
+        <include name="**/*.jar"/>
+      </fileset>
+    </path>
+    <pathconvert targetos="windows" property="windows_run_classpath" refid="run.classpath">
+      <map from="${lib}" to=".\lib"/>
+      <map from="${build}" to=".\build"/>
+    </pathconvert>
+    <pathconvert targetos="unix" property="unix_run_classpath" refid="run.classpath">
+      <map from="${lib}" to="./lib"/>
+      <map from="${build}" to="./build"/>
+    </pathconvert>        
+  </target>
+
+</project>

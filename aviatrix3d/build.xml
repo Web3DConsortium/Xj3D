@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- You may freely edit this file. See commented blocks below for -->
+<!-- some examples of how to customize the build. -->
+<!-- (If you delete it and reopen the project it will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="Aviatrix3D" default="jar" basedir="." xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3">
+    <description>Builds, tests, and runs the project Aviatrix3D.</description>
+
+    <import file="nbproject/build-impl.xml"/>
+
+    <taskdef resource="net/sf/antcontrib/antlib.xml"/>
+
+    <!--
+
+    There exist several targets which are by default empty and which can be
+    used for execution of your tasks. These targets are usually executed
+    before and after some main targets. They are:
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             called after javac compilation
+      -pre-compile-single:       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilation of JUnit tests
+      -pre-compile-test-single:  called before javac compilation of single JUnit test
+      -post-compile-test-single: called after javac compilation of single JUunit test
+      -pre-jar:                  called before JAR building
+      -post-jar:                 called after JAR building
+      -post-clean:               called after cleaning build products
+
+    (Targets beginning with '-' are not intended to be called on their own.)
+
+    Example of inserting an obfuscator after compilation could look like this:
+
+        <target name="-post-compile">
+            <obfuscate>
+                <fileset dir="${build.classes.dir}"/>
+            </obfuscate>
+        </target>
+
+    For list of available properties check the imported
+    nbproject/build-impl.xml file.
+
+
+    Another way to customize the build is by overriding existing main targets.
+    The targets of interest are:
+
+      -init-macrodef-javac:     defines macro for javac compilation
+      -init-macrodef-junit:     defines macro for junit execution
+      -init-macrodef-debug:     defines macro for class debugging
+      -init-macrodef-java:      defines macro for class execution
+      -do-jar:                  JAR building
+      run:                      execution of project
+      -javadoc-build:           Javadoc generation
+      test-report:              JUnit report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="Aviatrix_3D-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on
+    the compile target as the regular run target does. Again, for a list of available
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file.
+
+    -->
+
+    <!--
+    ============
+    INIT SECTION
+    ============
+    -->
+
+    <target name="platformInitialize" depends="platformType"/>
+    <target name="platformType">
+        <condition property="isWin" >
+            <os family="windows"/>
+        </condition>
+        <condition property="isMac" >
+            <os family="mac"/>
+        </condition>
+
+        <!-- Based on Apache Ant user-manual example -->
+        <condition property="isUnix">
+            <and>
+                <os family="unix"/>
+                <not>
+                    <equals arg1="${os.name}" arg2="Mac OS X"/>
+                </not>
+            </and>
+        </condition>
+    </target>
+    <target name="initWin" if="isWin">
+        <property name="run.args" value="${win.run.args}"/>
+    </target>
+    <target name="initUnix" if="isUnix">
+        <property name="run.args" value="${unix.run.args}"/>
+    </target>
+    <target name="initMac" if="isMac">
+        <property name="run.args" value="${mac.run.args}"/>
+    </target>
+    <target name="initializeAll" depends="platformInitialize,initWin,initUnix,initMac"/>
+
+    <target name="-post-init" depends="initializeAll">
+        <tstamp>
+            <format property="TODAY_US" pattern="EEE, d MMM yyyy HHmm Z" locale="en,US"/>
+        </tstamp>
+
+        <path id="app.classpath">
+            <path path="${run.classpath}"/>
+            <pathelement path="${src.volume.dir}:${src.loaders.dir}:${src.geometry.dir}:${src.transparent.dir}:${src.basic.dir}"/>
+        </path>
+    </target>
+
+    <target name="splash" depends="init">
+        <echo message=""/>
+        <echo message="${nps}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="${moves.institute}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="${savage.research.group}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="${application.title} v${product.Version} [${years}]"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="${ant.version} installed at ${ant.home}"/>
+        <echo message="Java&#x2122; Virtual Machine version ${java.version} installed at ${java.home}"/>
+        <echo message="Operating System: ${os.name} version ${os.version} running on ${os.arch} "/>
+        <echo message="Today is: ${TODAY}"/>
+        <echo message="Local Time: ${TSTAMP}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="JVM args: ${run.args}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message=""/>
+    </target>
+
+    <target name="-post-compile" depends="splash">
+
+        <copy todir="${build.dir}/config">
+            <fileset dir="${src.dir}/config"/>
+        </copy>
+        <copy todir="${build.dir}/glsl/standard">
+            <fileset dir="${src.dir}/glsl/standard">
+                <exclude name="**/README.*"/>
+            </fileset>
+        </copy>
+
+    </target>
+
+    <target name="-pre-jar">
+
+        <!-- Clean out unwanted generated junk -->
+        <delete dir="${build.dir}/depcache"/>
+        <delete dir="${build.dir}/empty"/>
+        <delete dir="${build.generated.sources.dir}"/>
+        <delete file="${build.dir}/built-jar.properties"/>
+
+        <!-- Example generated stuff -->
+        <delete includeemptydirs="true">
+            <fileset dir="${build.dir}">
+                <include name="*.class"/>
+                <include name="*.jpg"/>
+                <include name="*.txt"/>
+                <include name="test*/**"/>
+            </fileset>
+        </delete>
+        <delete dir="${build.dir}/demo_shaders"/>
+        <delete dir="${build.dir}/global_illum"/>
+        <delete dir="${build.dir}/orangebook"/>
+        <delete dir="${build.dir}/shaders"/>
+        <delete dir="${build.dir}/subsurf"/>
+        <delete dir="${build.dir}/textures"/>
+        <delete dir="${build.dir}/wavdata"/>
+    </target>
+
+    <!-- Strip out junk -->
+    <target name="-post-jar">
+        <jar destfile="${dist.dir}/temp.jar" filesetmanifest="merge">
+            <zipfileset src="${dist.jar}" excludes="null*"/>
+        </jar>
+        <move file="${dist.dir}/temp.jar" tofile="${dist.jar}"/>
+    </target>
+
+    <!-- Override to add extra args -->
+<!--    <target depends="compile,compile-single" name="run-single">
+        <fail unless="run.class">Must select one file in the IDE or set run.class</fail>
+        <j2seproject1:java classname="${run.class}">
+            <customize>
+                <jvmarg line="${run.args}"/>
+            </customize>
+        </j2seproject1:java>
+    </target>-->
+
+    <target depends="compile,compile-single" if="netbeans.home" name="-debug-start-debuggee-single">
+        <fail unless="debug.class">Must select one file in the IDE or set debug.class</fail>
+        <j2seproject3:debug classname="${debug.class}">
+            <customizeDebuggee>
+                <jvmarg line="${run.args}"/>
+            </customizeDebuggee>
+        </j2seproject3:debug>
+    </target>
+
+    <target name="compile.background"
+            depends="init">
+
+        <javac srcdir="${src.background.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.basic"
+            depends="init">
+
+        <javac srcdir="${src.basic.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               excludes="${examples.excludes}.java"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.clip"
+            depends="init">
+
+        <javac srcdir="${src.clip.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.effects"
+            depends="init">
+
+        <javac srcdir="${src.effects.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.geometry"
+            depends="init">
+
+        <javac srcdir="${src.geometry.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.layers"
+            depends="init">
+
+        <javac srcdir="${src.layers.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.loaders"
+            depends="init">
+
+        <javac srcdir="${src.loaders.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.multipass"
+            depends="init">
+
+        <javac srcdir="${src.multipass.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.npr"
+            depends="init">
+
+        <javac srcdir="${src.npr.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.picking"
+            depends="init">
+
+        <javac srcdir="${src.picking.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.shader" depends="init">
+        <javac srcdir="${src.shader.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.texture"
+            depends="init">
+
+        <javac srcdir="${src.texture.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.transparent"
+            depends="init">
+
+        <javac srcdir="${src.transparent.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.volume" depends="init">
+        <javac srcdir="${src.volume.dir}"
+               debug="on"
+               source="${javac.source}"
+               target="${javac.target}"
+               fork="true"
+               includeAntRuntime="no"
+               classpathref="app.classpath">
+            <compilerarg line="${javac.compilerargs}"/>
+        </javac>
+    </target>
+
+    <target name="compile.all.examples"
+            depends="compile,
+                     compile.background,
+                     compile.transparent,
+                     compile.basic,
+                     compile.clip,
+                     compile.volume,
+                     compile.effects,
+                     compile.geometry,
+                     compile.layers,
+                     compile.loaders,
+                     compile.multipass,
+                     compile.npr,
+                     compile.picking,
+                     compile.shader,
+                     compile.texture
+                     "/>
+
+    <target name="run.examples"
+            depends="compile,compile.all.examples"
+            description="Sequentially run all examples in ${application.title}">
+
+        <fileset id="exampleClasses" dir="${examples.specific.dir}" includes="${examples.includes}" excludes="${examples.excludes}"/>
+        <for param="class.name">
+            <path>
+                <fileset refid="exampleClasses"/>
+            </path>
+            <sequential>
+
+                <!-- This expression matches everything but .(file ext) -->
+                <propertyregex
+                        property="class.name"
+                        override="true"
+                        input="@{class.name}"
+                        regexp="([^\n]*)[\\/]([^\n][^.]*)"
+                        select="\2"/>
+
+                <echo></echo>
+                <echo>running ${class.name}</echo>
+                <echo></echo>
+
+                <java classname="${class.name}" dir="${build.dir}" fork="true">
+                    <classpath refid="app.classpath"/>
+                    <jvmarg line="${run.args}"/>
+                    <!--arg line="${args}"/-->
+                </java>
+
+            </sequential>
+        </for>
+
+        <echo></echo>
+        <echo>run examples complete.</echo>
+        <echo></echo>
+
+    </target>
+
+    <!-- clean up example resources -->
+    <target name="-post-clean">
+        <delete>
+            <fileset dir="." includes="*.zip"/>
+            <fileset dir="${examples.dir}" includes="**/*.class"/>
+        </delete>
+    </target>
+
+    <target name="debug-single-method">
+         <ant target="debug-test-method"/>
+    </target>
+
+    <!-- Hacks to get a custom jar manifest written -->
+
+    <target name="-do-custom-jar-manifest">
+        <manifest encoding="UTF-8" file="${tmp.manifest.file}" mode="update">
+            <attribute name="Specification-Title"
+                       value="${spec.title}"/>
+            <attribute name="Specification-Version"
+                       value="${product.version.major}.${product.version.minor}.${product.version.level}"/>
+            <attribute name="Specification-Vendor"
+                       value="${spec.vendor}"/>
+            <attribute name="Implementation-Title"
+                       value="${product.Name}"/>
+            <attribute name="Implementation-Version"
+                       value="${product.Version} built on ${TODAY_US}"/>
+            <attribute name="Implementation-Build"
+                       value="${product.Version}"/>
+            <attribute name="Implementation-Branch"
+                       value="${impl.branch}"/>
+            <attribute name="Implementation-Vendor"
+                       value="${impl.vendor}"/>
+            <attribute name="Implementation-URL"
+                       value="${av3d.repo.url}"/>
+            <attribute name="Extension-Name"
+                       value="${ext.name}"/>
+            <attribute name="Implementation-Vendor-Id"
+                       value="${impl.vendor-id}"/>
+            <attribute name="Codebase"
+                       value="${code.base}"/>
+            <attribute name="Built-By"
+                       value="${my.name} &lt;${my.email}&gt;"/>
+        </manifest>
+    </target>
+
+    <target name="-do-pre-jar-jar">
+        <j2seproject1:jar manifest="${tmp.manifest.file}">
+            <metainf file="${project.licensePath}"/>
+            <metainf file="${docs.dir}/LGPL.txt"/>
+        </j2seproject1:jar>
+    </target>
+
+    <target depends="init,compile,-pre-pre-jar,-pre-jar,-do-jar-create-manifest,-do-jar-copy-manifest,-do-jar-set-mainclass,-do-jar-set-profile,-do-jar-set-splashscreen,-do-custom-jar-manifest,-do-pre-jar-jar,-do-jar-jar,-do-jar-delete-manifest" name="-do-jar-without-libraries"/>
+
+</project>

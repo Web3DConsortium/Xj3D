@@ -1,0 +1,77 @@
+
+                           Aviatrix3D 3.1
+                 Compiling and Installation Guide
+
+Aviatrix3D is a pure retained-mode Java scene graph API over the top of Java
+OpenGL bindings (JSR 231) and OpenAL Java bindings (for spatialised audio
+support). It supports lightweight and heavyweight rendering in both AWT, Swing
+and Native Windowing Toolkit (NEWT) environments.
+
+External Downloads
+-------------------
+
+The following libraries are required:
+
+J2SE (Java development environment)
+
+What:
+Version: 1.8.0 or later
+
+JOGL (Java OpenGL Bindings)
+
+Where: Where: http://jogamp.org/
+Version: 2.4 (or better)
+
+JOAL (Java OpenAL Bindings)
+
+Where: http://jogamp.org/
+Version: 2.4 (same as JOGL)
+
+Vecmath
+
+Where: https://vecmath.dev.java.net/
+Version: 1.3.1
+
+Build Environment
+------------------
+
+The code is built around a standard Apache Ant environment.
+
+You can of course compile the codebase by CLI, or via an IDE that supports Ant.
+
+When installing the native code libraries required above, we recommend that you
+do not place them into your JRE lib/ext directory. Instead, place them
+somewhere common that all users can get to, but where different versions of
+the same toolkit can co-exist depending on your runtime needs.
+
+			   -----------------
+
+Environment Settings
+
+Win
+
+set ANT_OPTS=-Xmx1024m
+
+Unix/Mac
+
+export ANT_OPTS=-Xmx1024m
+
+			   -----------------
+
+Using the Build Environment
+
+With the environment variable set up, all you need to do is change to the
+directory that contains the SVN checkout and type
+
+  ant compile
+
+Other build options are available with
+
+  ant -p
+
+Terry Norbraten
+tdnorbra@nps.edu
+
+Original specification and implementation vendor:
+Justin Couch
+justin@vlc.com.au

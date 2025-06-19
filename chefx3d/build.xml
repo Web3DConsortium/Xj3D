@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project basedir="." default="run" name="ChefX3D">
+    <description>
+        Componetized Hierarchical Editor Framework for X3D (ChefX3D)
+    </description>
+
+    <!--
+Copyright (c) 2005-2007 held by the author(s).  All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions
+are met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer
+      in the documentation and/or other materials provided with the
+      distribution.
+    * Neither the names of the Naval Postgraduate School (NPS)
+      Modeling Virtual Environments and Simulation (MOVES) Institute
+      (http://www.nps.edu and http://www.MovesInstitute.org)
+      nor the names of its contributors may be used to endorse or
+      promote products derived from this software without specific
+      prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+"AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+-->
+
+    <import file="nbproject/ide-file-targets.xml"/>
+
+    <!-- set global properties for this build -->
+
+    <!-- External properties file.  This contains properties that vary from developer       -->
+    <!-- to developer.  Also, any properties in this file will override the properties set  -->
+    <!-- in this build.xml file, so, be careful.                                            -->
+    <property file="build.properties"/>
+    <property file="nbproject/private/private.properties"/>
+
+    <!-- access to local environment variables -->
+    <property environment="env"/>
+
+    <!-- project directories -->
+    <property name="src.dir" location="src"/>
+    <property name="examples" location="examples/"/>
+
+    <!-- Temporary build directories -->
+    <property name="lib.dir" location="lib"/>
+
+    <!-- build directories -->
+    <property name="build" location="build"/>
+
+    <!-- compiler switches -->
+    <property name="javac.debug" value="on"/>
+    <property name="javac.verbose" value="no"/>
+    <property name="javac.source" value="11"/>
+    <property name="javac.target" value="11"/>
+
+    <!-- runtime values -->
+    <property name="entrypoint" value="org.chefx3d.catalog.util.X3DSceneTiler"/>
+
+    <!-- targets -->
+
+    <!--
+    ============
+    INIT SECTION
+    ============
+    -->
+
+    <target name="platformInitialize" depends="platformType,initializeWindows,initializeUnix,initializeMac"/>
+    <target name="platformType">
+        <condition property="isWindows" >
+            <os family="windows"/>
+        </condition>
+        <condition property="isMac" >
+            <os family="mac"/>
+        </condition>
+        <!-- Based on Apache Ant user-manual example -->
+        <condition property="isUnixNotMac">
+            <and>
+                <os family="unix"/>
+
+                <not>
+                    <equals arg1="${os.name}" arg2="Mac OS X"/>
+                </not>
+
+            </and>
+        </condition>
+    </target>
+    <target name="initializeWindows" if="isWindows" depends="initializeAll">
+        <property name="run.args" value="${win_runarguments}"/>
+    </target>
+    <target name="initializeUnix" if="isUnixNotMac" depends="initializeAll">
+        <property name="run.args" value="${unix_runarguments}"/>
+    </target>
+    <target name="initializeMac" if="isMac" depends="initializeAll">
+        <property name="run.args" value="${mac_runarguments}"/>
+    </target>
+    <target name="initializeAll" >
+        <property name="win_runarguments"  value="${common.args} ${runarg4} ${runarg5}"/>
+        <property name="unix_runarguments" value="${common.args} ${runarg6} ${runarg7} "/>
+        <property name="mac_runarguments"  value="${common.args} ${runarg8} ${runarg9} ${runarg10} ${runarg11} ${runarg12}"/>
+    </target>
+
+    <target name="splash" depends="platformInitialize">
+        <tstamp/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="Now starting ${ant.project.name}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+        <echo message="${ant.version} installed at ${ant.home}"/>
+        <echo message="Java&#x2122; Virtual Machine version ${java.version} installed at ${java.home}"/>
+        <echo message="Operating System: ${os.name} version ${os.version} running on ${os.arch} "/>
+        <echo message="Today is: ${TODAY}"/>
+        <echo message="Local Time: ${TSTAMP}"/>
+        <echo message="-------------------------------------------------------------------------------------------------"/>
+    </target>
+
+    <target name="init" depends="splash">
+        <!-- Create the time stamp -->
+        <tstamp/>
+
+        <!-- Create the build directory structure used by compile -->
+        <mkdir dir="${build}"/>
+        <mkdir dir="${dist.lib.dir}"/>
+
+    </target>
+
+    <target name="classpath" depends="init">
+        <path id="runtime.classpath">
+            <pathelement location="${build}"/>
+            <pathelement location="${build}/test"/>
+            <fileset dir="${lib.dir}">
+                <include name="**/*.jar"/>
+            </fileset>
+        </path>
+        <!--echo>${toString:runtime.classpath}</echo-->
+    </target>
+
+    <!-- compile the code -->
+    <target name="compile" depends="init" description="compile the code">
+        <path id="classpath">
+            <fileset dir="${lib.dir}" includes="**/*.jar" excludes="support/*.jar"/>
+        </path>
+
+        <!-- org/chefx3d/view/awt/globe/** has future components, not ready yet -->
+        <javac deprecation="true"
+               destdir="${build}"
+               srcdir="${src.dir}/java"
+               fork="true"
+               source="${javac.source}"
+               target="${javac.target}"
+               debug="${javac.debug}"
+               encoding="${javac.encoding}"
+               verbose="${javac.verbose}"
+               excludes="${chefx3d.build.excludes}"
+               includeantruntime="false">
+            <classpath refid="classpath" />
+            <compilerarg value="${javac.unchecked}"/>
+            <compilerarg value="${javac.options}"/>
+        </javac>
+
+    </target>
+
+    <target name="compile.examples" depends="classpath" description="compile example code">
+        <mkdir dir="${build}/examples"/>
+        <javac deprecation="true"
+               destdir="${build}/examples"
+               srcdir="${examples}"
+               fork="true"
+               source="${javac.source}"
+               target="${javac.target}"
+               debug="${javac.debug}"
+               encoding="${javac.encoding}"
+               verbose="${javac.verbose}"
+               excludes="${chefx3d.build.excludes}"
+               includeantruntime="false">
+            <classpath refid="runtime.classpath" />
+            <compilerarg value="${javac.unchecked}"/>
+            <compilerarg value="${javac.options}"/>
+        </javac>
+    </target>
+
+    <!-- compile test code -->
+    <target name="compile.tests" depends="classpath" description="compile test code">
+        <mkdir dir="${build}/test"/>
+        <javac deprecation="true"
+               destdir="${build}/test"
+               srcdir="${test.src.dir}"
+               fork="true"
+               source="${javac.source}"
+               target="${javac.target}"
+               debug="${javac.debug}"
+               encoding="${javac.encoding}"
+               verbose="${javac.verbose}"
+               includeantruntime="false">
+            <classpath refid="runtime.classpath" />
+            <compilerarg value="${javac.unchecked}"/>
+            <compilerarg value="${javac.options}"/>
+        </javac>
+    </target>
+
+    <target name="jar" depends="build">
+        <jar destfile="${dist.jar}" basedir="${build}"
+             includes="org/chefx3d/**,images/2d/**,config/model/**" excludes="**/swt">
+            <manifest>
+                <attribute name="Built-By"
+                           value="${my.name} &lt;${my.email}&gt; of the ${savage.research.group} of the ${moves.institute} at the ${nps} "/>
+                <attribute name="Specification-Title"
+                           value="${product.Name}"/>
+                <attribute name="Specification-Version"
+                           value="${product.version.major}.${product.version.minor}"/>
+                <attribute name="Specification-Vendor"
+                           value="${spec.vendor}"/>
+                <attribute name="Implementation-Version"
+                           value="${product.Version} built on ${TODAY} at ${TSTAMP} hrs"/>
+                <attribute name="Implementation-Vendor"
+                           value="${vendor}"/>
+                <section name="org.chefx3d"/>
+                <attribute name="Main-Class" value="${entrypoint}"/>
+                <attribute name="Class-Path" value="${jar.class.path}"/>
+            </manifest>
+            <metainf file="${license}"/>
+        </jar>
+    </target>
+
+    <target name="build" depends="compile">
+        <copy todir="${build}/images">
+            <fileset dir="${src.dir}/images">
+                <exclude name="**/Makefile"/>
+            </fileset>
+        </copy>
+        <copy todir="${build}/config">
+            <fileset dir="${src.dir}/config">
+                <exclude name="**/Makefile"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="build.examples" depends="build,compile.examples">
+        <copy todir="${build}/examples/images">
+            <fileset dir="${examples}/images">
+                <exclude name="**/Makefile"/>
+            </fileset>
+        </copy>
+        <copy todir="${build}/examples/catalog">
+            <fileset dir="${examples}/catalog">
+                <exclude name="**/Makefile"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <!--Runs the program -->
+    <target name="run"
+            depends="build,classpath"
+            description="Run the program">
+
+        <java classname="${entrypoint}" fork="true">
+            <jvmarg line="${run.args}"/>
+            <arg value="${x3d.file}"/>
+            <classpath refid="runtime.classpath"/>
+        </java>
+    </target>
+    <!--Runs the program without a compile check -->
+    <target name="quick.run"
+            depends="classpath"
+            description="Run the program (no compile)">
+
+        <java classname="${entrypoint}" fork="true">
+            <jvmarg line="${run.args}"/>
+            <arg value="${x3d.file}"/>
+            <classpath refid="runtime.classpath"/>
+        </java>
+
+    </target>
+
+    <!-- Clean up directories and other things we create as part of the build process -->
+    <target name="clean" description="clean up">
+        <!-- Delete the ${build} and ${dist} directory trees -->
+        <delete dir="${build}"/>
+        <delete dir="${dist.dir}"/>
+        <delete dir="tiles"/>
+        <delete file="foo.x3d"/>
+        <delete>
+            <fileset dir=".">
+                <include name="*.zip"/>
+            </fileset>
+        </delete>
+    </target>
+
+    <!--
+    ===================
+    PROJECT ZIP SECTION
+    ===================
+    -->
+
+    <target name="zip.project"
+            depends="clean,init"
+            description="Zip up, name this project and place zip file here">
+
+        <!-- Normal Ant default excludes apply here -->
+        <zip destfile="${ant.project.name}.zip">
+            <zipfileset dir="."
+                        excludes="nbproject/private/**"/>
+        </zip>
+
+    </target>
+
+</project>

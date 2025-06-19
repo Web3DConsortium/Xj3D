@@ -1,0 +1,246 @@
+$Id: RELEASE_NOTES 12728 2024-09-19 02:48:28Z tnorbraten $
+
+NPS changes to AV3D codebase since v2.1.0 release.  Started:         23 JAN 2010
+
+18 JUN 2024: Implemented a cleaner shutdown of JOAL resources
+
+11 JUN 2024: Updated JogAmp (JOGL, JOAL, GlueGen) to v2.5.0 20230818
+
+26 MAY 2023: Upgrade JogAmp (JOGL, JOAL, GlueGen) to v2.5.0-rc-20230515
+               - Fixes NEWT crash
+               - Fixes 1/4 screen issue on Win
+
+05 OCT 2021: Fix NPE in org.j3d.aviatrix3d.output.graphics.StandardRenderingProcessor
+             if a directional light was not available, but null
+
+20 MAY 2021: No update to the GitHub repo: https://github.com/j3d/aviatrix3d
+             since e53b547 on Jul 6, 2016. Refactored each of the
+             org.j3d.aviatrix3d.output.graphics.*Surface classes to set
+             canvas.setAutoSwapBufferMode(true). Some Win10 machines are
+             throwing exceptions, or worse, crashing the JVM, when manually
+             swapping buffers. BTW, NEWT crashes the JVM (JOGAMP issue, no bug
+             report yet). Crafted an Aviatrix3dVersion class to read the
+             distribution jar manifest and printout version info to the caller.
+             Bump version to 3.1.1-nps.
+
+12 MAR 2021: Upgrade JogAmp (JOGL, JOAL, GlueGen) to v2.4.0-rc-20210111
+
+09 FEB 2020: Major refactor includes Justin's rework of OutPutDevice,
+             CanvasDescripters, RenderingProcessors and the various threading
+             managers included in the org.j3d GitHub repo v3.1. The main diff is
+             that we're retaining the float vs double rework Justin did in J3D,
+             we're retaining vecmath and still using JOGL GLCapabilities. The main
+             fix was in the resolution issue with certain screen resolutions using
+             JOGL v2.4. Also, the older DefaultPickingHandler was retained b/c the
+             newer, more efficient one does not work as advertised in the current
+             Xj3D.
+
+11 DEC 2019: Upgrade to Jogamp v2.4. Prior versions caused a JVM > v8 crash on
+             macOS > 10.14. Apple enforced invalidating drag regions only on the
+             main thread (Crash stacktrace: NSWindow drag regions should only be
+             invalidated on the Main Thread!).  Native code still crashing outside
+             of the JVM when calling the destroy() method on the canvasContext, or
+             canvas objects in org.j3d.aviatrix3d.output.graphics.BaseSurface.
+
+21 OCT 2015: Fix for JVM crash issue noted below and fix for proper *.wav audio
+             rendering in org.j3d.aviatrix3d.output.audio.OpenALAudioDevice.
+             alc.alcMakeContextCurrent(context), then
+             alc.alcMakeContextCurrent(null) was being called every iteration of
+             of the render loop causing the *.wav file to be played incorrectly.
+             This practice did not seem consistent IAW the JOAL demos at:
+             https://jogamp.org/joal-demos/www/devmaster/lesson1.html
+
+19 OCT 2015: Upgrade JogAmp to v2.3.2.  Fixes some potential crashes on OS X and
+             fixes some odd behavior when rendering w/ NEWT.  Oddity with JOAL
+             is that the old way of disposing the ALCcontext and ALCdevice
+             caused JVM crash.  Now mitigated with some minor changes in
+             OpenALAudioDevice.dispose by just clearing and nullifying the
+             context and device buffers.
+
+16 OCT 2015: Calling GLDrawable.dispose during sceneManager shutdown.  For NEWT,
+             JOGL, we explicitly call destroy in addition to GLDrawable.dispose.
+             JOGL resources were not being properly disposed of.
+
+15 OCT 2015: Fix the case where displayOnly would be called on a scene where
+             nothing had changed, but in the case of rendering lightweight, we
+             just needed one more render pass via the process chain in
+             org.j3d.aviatrix3d.management.SingleDisplayCollection.  Refactored
+             to remove requirement for calling GraphicsOutputDevice.initContext
+             outside of Aviatrix3D.  Renamed to createGLContext which is called
+             the first time draw, or setDrawableObjects is called from the
+             rendering loop.  This restores how Aviatrix3D used to work before
+             JOGL 2+ was introduced.
+
+02 SEP 2015: Fixed NPEs in org.j3d.aviatrix3d.BaseGroup and in
+             org.j3d.aviatrix3d.Group when computing children geometry bounds
+
+27 AUG 2015: Fix NPEs in org.j3d.aviatrix3d.pipeline.graphics.BaseStateSortStage
+             cleanupObjects() line 1298 and in
+             org.j3d.aviatrix3d.output.graphics.StandardRenderingProcessor line
+             366
+
+             Define missing property in src/config/i18n/av3dResources.properties:
+             org.j3d.renderer.aviatrix3d.nodes.BufferedGeometry.missingTextureSetMsg
+
+11 AUG 2015: Fix all generic type compile warnings, suppress all those that are
+known.  Refactor Renderable to be a Comparable<Renderable>.  Fix all
+compareTo(Object o) to compareTo(Renderable o).  Check for instanceof
+MultiParentNode in org.j3d.aviatrix3d.RenderPass for calling the correct setLive
+method.
+
+01 AUG 2015: Merged w/ GitHub master maintained by Justin Couch to raise version
+to 3.0.0.  One of the major reworks was Justin's optimization of the
+DefaultPickingHandler.  However, the line segment tests did not behave as in the
+previous implementation, therefore we have to stick with the older version.  The
+bounding box test would fail, even though clearly the segments would intersect.
+Refactored to remove redundant casts, enforce auto-boxing, @Override annotations
+and other JDK 1.7 source refactorings.  Update to J3D v3.0.0.
+
+23 JUL 2015: Found several missing break statements in
+org.j3d.aviatrix3d.management.DefaultPickingHandler for
+case PickTarget.LEAF_PICK_TYPE.  I hope they were omitted by mistake and not
+intentionally.
+
+25 JUN 2015: Fix potential NPE when performing a Scene Info call from Xj3D.  The
+textureUnits[] could be null when attempting to perform an Array Copy while
+traversing the scene graph.
+
+18 JUN 2015: Update JOAL, JOGL and GlueGen to version 2.3.1.  Everything that
+used to be packaged as javax.media.opengl is now -> com.jogamp.opengl
+
+06 JAN 2015: Partial fix to long standing issue with
+org.j3d.renderer.aviatrix3d.geom.Text2D not handling Appearance FontStyle
+justify for both horizontal (major) and vertical (minor) attributes.  The issue
+being that JUSTIFY_END for the major was not correct and JUSTIFY_BEGIN, FIRST &
+MIDDLE for the minor was not correct (defaulted to END no matter the setting).
+Horizontal TRUE works pretty close now, but with some hacks.  Horizontal FALSE is
+not quite so good, but better than it was.  Basically, the bounding box for the
+character data was not being employed correctly to the GLContext for character
+translation and still required some tweaking to meet the spec.
+
+19 DEC 2014: Fixed NPE in org.j3d.aviatrix3d.TransformGroup line 339.
+
+13 DEC 2014: Fixed two NPEs.  Line 207 of org.j3d.aviatrix3d.BaseGroup and line
+187 of org.j3d.renderer.aviatrix3d.nodes.LODGroup.  Why these showed up now is
+uncertain.
+
+12 DEC 2014: If we encounter a GLException when attempting to make the GLContext
+current on the thread, then just terminate and throw one error instead of
+reporting repeatedly
+
+23 OCT 2014: Fix NPEs occurring in the BaseSurface when reinitializing the
+GLContext after an AA adjustment
+
+22 OCT 2014: Ran into a situation on Mac OS X running VMWare for Windows 7 and
+a GLException was thrown for glBlendEquation not supported.  Had to fix this
+in org.j3d.aviatrix3d.BlendAttributes in the render() method
+
+20 OCT 2014: Fixed NPE in org.j3d.aviatrix3d.Shape3D getCenter().  Field bounds
+was sometimes not initialized.
+
+10 OCT 2014: Major update to Aviatrix3D in which we are now invoking JOGL's
+Native Windowing Tookkit (NEWT) to render which has the advantage of offering a
+way to decouple from the AWT/Swing EDT model which now paves the way towards
+better muti-threaded rendering.  Simple explanation here:
+https://sites.google.com/site/justinscsstuff/jogl-tutorial-2
+Jogamp has also implemented Automated Native Library Loading:
+http://jogamp.org/jogl/doc/userguide/#automatednativelibraryloading
+
+*** NOTE ***
+Would love to have used Aviatrix3D from GitHub as Justin Couch really put in
+some tremendous work in refactoring the codebase, however, he has moved away
+from javax.vecmath and has written his own j3d.maths packages.  Since Xj3D
+heavily relies on javax.vecmath, it would be too cumbersome at this point to
+refactor to the j3d.maths version.  Preliminary testing also shows that when
+coding transforms using j3d.maths, it differs too greatly from javax.vecmath.
+Therefore, NPS must stick with the older (legacy) versions of Aviatrix3D and J3D
+for now.
+
+2014 SEP 18: In upgrading to JOGL v2.2.1, GLPbuffer (which has been deprecated)
+was removed from this version.  Now using GLOffscreenAutoDrawable.  PBuffer
+classes were removed in aviatrix-git anyway.
+
+2014 SEP 18: In org.j3d.aviatrix3d.output.graphics.BaseRenderingProcessor,
+GL_MAX_COLOR_ATTACHMENTS is now defined in the GL2 API
+
+2014 SEP 16: In org.j3d.aviatrix3d.management.SingleThreadRenderManager run
+method, line 747, found a case where the another 118N manager was set, so, when
+AV3D wanted to report an error, the proper message resource could not be found.
+Now, just add another resource file courtesy of j3d-git as I18N manager was
+refactored to accept and cache many resource files.
+
+2014 MAY: Upgraded JOGL to v2.1.5.  Lot's of refactoring of GL -> GL2.  One
+major change was in the way the org.j3d.aviatrix3d.output.graphics.BaseSurface
+derived classes initialize a GLContext.  Unless we are initializing a light-
+weight GLContext, the prior way was to initialize the GLContext in the derived
+class private init() method, however the Swing/AWT frame won't be visible at
+that time.  So, had to implement an initContext() from the base class to call
+after a Swing/AWT setVisible(true) call.  It's the only way I could get JOGL v2+
+to work in AV3D.
+
+Back on 15 NOV 2009, a change was made in the way both
+org.j3d.aviatrix3d.SharedNode and org.j3d.aviatrix3d.SharedGroup work when
+calling setLive(boolean).  Many classes in Aviatrix3D still call this method
+that now throws an IllegalStateException.  An example is when an LOD node is
+used in a scene which will produce the following stack trace:
+
+Error: An exception was generated in user code during the processing of the
+boundsChanged() callback.
+
+Contained message:
+This method should never be called. Use setLive(Node, boolean)
+java.lang.IllegalStateException: This method should never be called. Use setLive(Node, boolean)
+	at org.j3d.aviatrix3d.SharedNode.setLive(SharedNode.java:361)
+	at org.j3d.aviatrix3d.BaseGroup.setLive(BaseGroup.java:354)
+	at org.j3d.aviatrix3d.Group.setLive(Group.java:430)
+	at org.j3d.aviatrix3d.SharedGroup.setLive(SharedGroup.java:125)
+	at org.j3d.aviatrix3d.Group.setLive(Group.java:428)
+	at org.j3d.aviatrix3d.SharedNode.setLive(SharedNode.java:179)
+	at org.j3d.aviatrix3d.Group.setChild(Group.java:711)
+	at org.j3d.aviatrix3d.SwitchGroup.setChild(SwitchGroup.java:79)
+	at org.web3d.vrml.renderer.ogl.nodes.group.OGLSwitch.updateNodeBoundsChanges(OGLSwitch.java:168)
+	at org.j3d.aviatrix3d.management.SingleThreadRenderManager.processChangeList(SingleThreadRenderManager.java:1128)
+	at org.j3d.aviatrix3d.management.SingleThreadRenderManager.run(SingleThreadRenderManager.java:780)
+	at java.lang.Thread.run(Thread.java:637)
+
+Determined that this error is caused by rendering an LOD node 14 SEP 2011
+Example file that throws the error:
+http://www.web3d.org/x3d/content/examples/Conformance/SpecialGroups/LOD/_pages/page10.html
+
+Corrected 20 DEC 2011 with the following correction in
+org.j3d.aviatrix3d.BaseGroup line 342:
+
+from: childList[i].setLive(state);
+
+to: if (childList[i] instanceof MultiParentNode) {
+        ((MultiParentNode) childList[i]).setLive(childList[i], state);
+    } else {
+        childList[i].setLive(state);
+    }
+
+Had to correct org.j3d.aviatrix3d.RenderPass as well for its
+setRenderedGeometry()
+
+Took out extra setting of al.alSourcef(source, AL.AL_PITCH, 1.0) in
+PointSound.render b/c al.alSourcef(source, AL.AL_PITCH, pitch) is set right
+after
+
+Bugfix 609: On Mac OS X 10.6.2 (Snow Leopard), org.j3d.aviatrix3d.ConeSound was
+indicating an error while setting the OpenAL parameter of AL_REFERENCE_DISTANCE
+in the render() method.  Upon inspection of the super class of ConeSound, which
+is PointSound, the protected field of refDistance was initialized to 0.0f.  This
+may have caused a native divide by zero issue.  Setting this value to 1.0f
+at initialization cleared the problem.
+
+Need to determine the source of why the error "Error setting OpenAL source
+params" is occurring on Mac OS X (Snow Leopard) 10.6.2 (see #4 below).  NOT SURE
+THIS IS FIXED b/c error message moved to I18N manager.
+
+org.j3d.aviatrix3d.management.SingleThreadRenderManager line 795, a constant
+Sysout was being called ("processing display" + i) that was annoying, so,
+commented out.
+
+Bugfix 610: org.j3d.aviatrix3d.BlendAttributes line 284 in render(): The
+resource config.i18n.av3dResources was not being initialized which caused an
+error on machines with video cards not capable of supporting the OpenGL Blending
+subset routines.

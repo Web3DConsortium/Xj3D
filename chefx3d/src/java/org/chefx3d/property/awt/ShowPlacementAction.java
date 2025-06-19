@@ -1,0 +1,85 @@
+/*****************************************************************************
+ *                        Copyright Yumetech, Inc (c) 2005 - 2007
+ *                               Java Source
+ *
+ * This source is licensed under the GNU LGPL v2.1
+ * Please read http://www.gnu.org/copyleft/lgpl.html for more information
+ *
+ * This software comes with the standard NO WARRANTY disclaimer for any
+ * purpose. Use it at your own risk. If there's a problem you get to fix it.
+ *
+ ****************************************************************************/
+
+package org.chefx3d.property.awt;
+
+// Standard library imports
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import javax.swing.*;
+
+// Application specific imports
+import org.chefx3d.util.ErrorReporter;
+import org.chefx3d.util.DefaultErrorReporter;
+
+/**
+ * An action that can be used to toggle the placement panel off/on
+ * <p>
+ * 
+ * @author Russell Dodds
+ * @version $Revision: 1.5 $
+ */
+public class ShowPlacementAction extends AbstractAction {
+
+    private TabMenuItems editorPanel;
+
+    /** The ErrorReporter for messages */
+    protected ErrorReporter errorReporter;
+
+    /**
+     * Create an instance of the action class.
+     * 
+     * @param editorPanel
+     */
+    public ShowPlacementAction(TabMenuItems editorPanel) {
+
+        super("Show Entity Placement", null);
+
+        errorReporter = DefaultErrorReporter.getDefaultReporter();
+        
+        KeyStroke acc_key = KeyStroke.getKeyStroke(KeyEvent.VK_P,
+                KeyEvent.ALT_MASK);
+
+        putValue(ACCELERATOR_KEY, acc_key);
+        putValue(MNEMONIC_KEY, KeyEvent.VK_P);
+
+        putValue(SHORT_DESCRIPTION, "Show Entity Placement Tab");
+
+        this.editorPanel = editorPanel;
+
+    }
+
+    // ----------------------------------------------------------
+    // Methods required by the ActionListener interface
+    // ----------------------------------------------------------
+
+    /**
+     * An action has been performed.
+     * 
+     * @param evt The event that caused this method to be called.
+     */
+    @Override
+    public void actionPerformed(ActionEvent evt) {
+
+        if (editorPanel.isTabVisible(TabMenuItems.TYPE_PLACEMENT)) {
+
+            editorPanel.hideTab(TabMenuItems.TYPE_PLACEMENT);
+
+        } else {
+
+            editorPanel.showTab(TabMenuItems.TYPE_PLACEMENT);
+
+        }
+
+    }
+
+}
