@@ -3,11 +3,11 @@
     <type>org.netbeans.modules.ant.freeform</type>
     <configuration>
         <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
-            <name>Xj3D - NPS GitLab</name>
+            <name>Xj3D</name>
         </general-data>
         <general-data xmlns="http://www.netbeans.org/ns/freeform-project/2">
             <!-- Do not use Project Properties customizer when editing this file manually. -->
-            <name>Xj3D - NPS GitLab</name>
+            <name>Xj3D</name>
             <properties>
                 <property-file>nbproject/private/project.properties</property-file>
                 <property-file>build.properties</property-file>
