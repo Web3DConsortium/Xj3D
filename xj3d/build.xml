@@ -90,7 +90,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
     <taskdef resource="net/sf/antcontrib/antlib.xml"/>
 
-    <target name="versions" if="isWin" description="show tool versions and environment values">
+    <target name="versions" if="isWin" depends="platformInitialize" description="show tool versions and environment values">
         <echo>ant -version</echo>
         <exec executable="ant"  dir="." vmlauncher="false">
             <arg value="-version"/>
