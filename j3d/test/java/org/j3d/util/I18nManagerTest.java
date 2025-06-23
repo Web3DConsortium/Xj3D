@@ -88,6 +88,7 @@ public class I18nManagerTest
         I18nManager classUnderTest = I18nManager.getManager();
         classUnderTest.changeLocale(TEST_LANGUAGE, TEST_COUNTRY, null);
 
+        // file:///C:/Program%20Files/Java/OpenJDK/jdk-24.0.1/docs/api/java.base/java/util/Locale.html#ObtainingLocale
         Locale expectedLocale = new Locale(TEST_LANGUAGE, TEST_COUNTRY);
 
         assertEquals(classUnderTest.getFoundLocale(), expectedLocale, "Wrong set locale");
