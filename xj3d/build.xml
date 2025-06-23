@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright (c) 1995-2024 held by the author(s).  All rights reserved.
+Copyright (c) 1995-2025 held by the author(s).  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
@@ -34,7 +34,7 @@ POSSIBILITY OF SUCH DAMAGE.
 <!-- Seems to render in Mozilla Firefox the best.  Broken in IE7 -->
 <?xml-stylesheet type="text/xsl" href="./ant2html.xsl"?>
 
-<project name="Xj3D NPS" default="all" basedir=".">
+<project name="Xj3D - Web3D GitHub" default="all" basedir=".">
     <description>Builds, tests, and runs the project NPS Xj3D 2.3</description>
 
     <property file="nbproject/private/private.properties"/>
