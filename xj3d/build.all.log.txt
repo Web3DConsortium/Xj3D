@@ -44,6 +44,7 @@ Created dir: C:\x3d-github\Xj3D\xj3d\apps\cadfilter\jars
 Created dir: C:\x3d-github\Xj3D\xj3d\apps\replica\classes
 Created dir: C:\x3d-github\Xj3D\xj3d\apps\replica\jars
 pack.3rd.party.jars:
+Created dir: C:\x3d-github\Xj3D\xj3d\lib\marshall
 Building jar: C:\x3d-github\Xj3D\xj3d\lib\marshall\temp.jar
 generate.parsers:
 Java Compiler Compiler Version 6.0_1 (Parser Generator)
@@ -107,7 +108,7 @@ Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-nps.jar
 timestamp:
 Copying 1 file to C:\x3d-github\Xj3D\xj3d
 DSTAMP = "20250623"
-TSTAMP = "0804"
+TSTAMP = "0833"
 TODAY = "June 23 2025"
 Compiling 1 source file to C:\x3d-github\Xj3D\xj3d\classes
 Deleting: C:\x3d-github\Xj3D\xj3d\Xj3dVersionInformation.java
@@ -134,6 +135,8 @@ Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d.browser_2.3.0-nps-src.jar
 Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d.cadfilter_2.3.0-nps-src.jar
 Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d.replica_2.3.0-nps-src.jar
 jjdoc:
+Deleting directory C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\vrml97\doc-files
+Deleting directory C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\doc-files
 Created dir: C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\vrml97\doc-files
 Created dir: C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\doc-files
 Java Compiler Compiler Version 6.0_1 (Documentation Generator Version 0.1.4)
@@ -153,6 +156,7 @@ Java Compiler Compiler Version 6.0_1 (Documentation Generator Version 0.1.4)
 Reading from file src/javacc/x3d/X3DRelaxedParser.jj . . .
 Grammar documentation generated successfully in src/java/org/web3d/parser/x3d/doc-files/X3DRelaxed.html
 javadoc:
+Deleting directory C:\x3d-github\Xj3D\xj3d\docs\javadoc
 Created dir: C:\x3d-github\Xj3D\xj3d\docs\javadoc
 Generating Javadoc
 Javadoc execution
@@ -8600,6 +8604,7 @@ Copying 1 file to C:\x3d-github\Xj3D\xj3d\jars
 Copying C:\x3d-github\Xj3D\xj3d\lib\jhall.jar to C:\x3d-github\Xj3D\xj3d\jars\jhall.jar
 Packaging all third party dependencies into a single JAR at jars/xj3d-2.3-3rdparty-nps.jar
 Building zip: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-3rdparty-nps.jar
+
 Deleting directory C:\x3d-github\Xj3D\xj3d\lib\marshall
 Production note: X3D Examples image capture links to jars via property name=xj3d.dir
 Production note: X3D-Edit update requires copying Xj3D jars to module www.web3d.org\x3d/tools/X3dEdit4.0/X3dEditModuleSuite/X3dSourceFilePalette/release/modules/ext
@@ -8633,7 +8638,7 @@ Apache Ant(TM) version 1.10.15 compiled on August 25 2024 installed at C:\apache
 Java? Virtual Machine version 24.0.1 installed at C:\Program Files\Java\OpenJDK\jdk-24.0.1
 Operating System: Windows 11 version 10.0 running on amd64 
 Today is: June 23 2025
-Local Time: 0804
+Local Time: 0833
 -------------------------------------------------------------------------------------------------
 
 check.run:
@@ -8648,7 +8653,7 @@ WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers i
 WARNING: Restricted methods will be blocked in a future release unless native access is enabled
 
 org.xj3d.core.loading.threads set to: 4
-Jun 23, 2025 8:06:17 AM org.odejava.Odejava <clinit>
+Jun 23, 2025 8:34:49 AM org.odejava.Odejava <clinit>
 INFO: ODE natives version 0.3.4 loaded.
 org.web3d.vrml.renderer.common.nodes.shape.useTextureCache set to: true
-BUILD SUCCESSFUL (total time: 13 minutes 17 seconds)
+BUILD SUCCESSFUL (total time: 1 minute 21 seconds)
