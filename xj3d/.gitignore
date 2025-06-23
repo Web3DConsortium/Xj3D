@@ -1,6 +1,5 @@
 *.class
 .DS_Store
-Xj3dVersionInformation.java
 classes
 converter.sh
 buildStamp.txt
