@@ -43,7 +43,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseMetadataObjectNode;
 
 /** A node that represents boolean metadata node.
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.common.nodes.core.BaseMetadataBoolean">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.common.nodes.core.BaseMetadataBoolean">Terry Norbraten, NPS MOVES</a>
  * @version $Id: BaseMetadataBoolean.java 12346 2015-09-04 01:03:17Z brutzman $
  */
 public class BaseMetadataBoolean extends BaseMetadataObjectNode {

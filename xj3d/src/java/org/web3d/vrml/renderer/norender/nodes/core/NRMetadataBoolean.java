@@ -41,7 +41,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /** Null renderer implementation of the MetadataBoolean node.
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.norender.nodes.core.NRMetadataBoolean">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.norender.nodes.core.NRMetadataBoolean">Terry Norbraten, NPS MOVES</a>
  * @version $Id: NRMetadataBoolean.java 12224 2015-07-28 17:40:41Z tnorbraten $
  */
 public class NRMetadataBoolean extends BaseMetadataBoolean implements NRVRMLNode {

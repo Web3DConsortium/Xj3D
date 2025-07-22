@@ -42,7 +42,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /** Implementation of the VRML MetadataBoolean node.
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.ogl.nodes.core.OGLMetadataBoolean">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.ogl.nodes.core.OGLMetadataBoolean">Terry Norbraten, NPS MOVES</a>
  * @version $Id: OGLMetadataBoolean.java 12224 2015-07-28 17:40:41Z tnorbraten $
  */
 public class OGLMetadataBoolean extends BaseMetadataBoolean

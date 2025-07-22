@@ -37,7 +37,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /** Null renderer implementation of an Arc2D Node
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.norender.nodes.geom2d.NRArc2D">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.norender.nodes.geom2d.NRArc2D">Terry Norbraten, NPS MOVES</a>
  * @version $Id: NRArc2D.java 11907 2014-06-29 21:19:52Z brutzman $
  */
 public class NRArc2D extends BaseArc2D implements NRVRMLNode {

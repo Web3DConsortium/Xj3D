@@ -42,7 +42,7 @@ import org.web3d.vrml.nodes.VRMLNetworkInterfaceNodeType;
 /**
  * Network connection handler for native DIS protocol
  * @version $Id: DISConnectionHandler.java,v 1.3 2009-09-16 00:30:37 tdnorbra Exp $
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.common.input.dis.DISConnectionHandler">Terry Norbraten</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.common.input.dis.DISConnectionHandler">Terry Norbraten</a>
  */
 public class DISConnectionHandler implements PduListener {
 

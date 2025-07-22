@@ -42,7 +42,7 @@ import org.j3d.util.ErrorReporter;
  * capabilities to the base Construct which is decoupled from the Swing/AWT EDT
  * model
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.xj3d.ui.newt.offscreen.browser.ogl.OffscreenOGLConstruct">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.xj3d.ui.newt.offscreen.browser.ogl.OffscreenOGLConstruct">Terry Norbraten, NPS MOVES</a>
  * @version $Id: OffscreenOGLConstruct.java 12586 2016-09-21 23:01:24Z tnorbraten $
  */
 public abstract class OffscreenOGLConstruct extends NEWTOGLConstruct {

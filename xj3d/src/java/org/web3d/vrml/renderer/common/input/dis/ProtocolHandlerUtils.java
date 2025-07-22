@@ -9,7 +9,7 @@ import edu.nps.moves.dis7.pdus.Vector3Float;
 
 /** Utility methods for handling dead reckoning calculations
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.common.input.dis.ProtocolHandlerUtils">Terry D. Norbraten</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.common.input.dis.ProtocolHandlerUtils">Terry D. Norbraten</a>
  */
 public class ProtocolHandlerUtils {
     

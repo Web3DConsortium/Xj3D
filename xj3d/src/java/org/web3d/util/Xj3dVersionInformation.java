@@ -37,7 +37,7 @@ import java.util.ResourceBundle;
 /**
  * Creates the version stamp information when built via regex updates from Ant
  * @version $Id: Xj3dVersionInformation.java 12564M 2019-12-13 20:12:38Z (local) $
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.util.Xj3dVersionInformation">Terry Norbraten</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.util.Xj3dVersionInformation">Terry Norbraten</a>
  */
 @SuppressWarnings("StaticNonFinalUsedInInitialization")
 public class Xj3dVersionInformation {

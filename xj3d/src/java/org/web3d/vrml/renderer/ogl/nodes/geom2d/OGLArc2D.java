@@ -41,7 +41,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLGeometryNodeType;
 
 /** OpenGL implementation of an Arc2D
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.ogl.nodes.geom2d.OGLArc2D">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.ogl.nodes.geom2d.OGLArc2D">Terry Norbraten, NPS MOVES</a>
  * @version $Id: OGLArc2D.java 12221 2015-07-27 19:15:15Z tnorbraten $
  */
 public class OGLArc2D extends BaseArc2D implements OGLGeometryNodeType {

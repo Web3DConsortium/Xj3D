@@ -48,7 +48,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /** An abstract implementation of the BaseArc2D
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.web3d.vrml.renderer.common.nodes.geom2d.BaseArc2D">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.web3d.vrml.renderer.common.nodes.geom2d.BaseArc2D">Terry Norbraten, NPS MOVES</a>
  * @version $Id: BaseArc2D.java 12346 2015-09-04 01:03:17Z brutzman $
  */
 public class BaseArc2D extends AbstractNode implements VRMLGeometryNodeType {

@@ -43,7 +43,7 @@ import org.xj3d.ui.construct.ogl.OGLConstruct;
  * An abstract sub-class of OGLConstruct that provides NEWT UI capabilities
  * to the base Construct.
  *
- * @author <a href="mailto:tdnorbra@nps.edu?subject=org.xj3d.ui.newt.offscreen.browser.ogl.NEWTOGLConstruct">Terry Norbraten, NPS MOVES</a>
+ * @author <a href="mailto:terry.norbraten@gmail.com?subject=org.xj3d.ui.newt.offscreen.browser.ogl.NEWTOGLConstruct">Terry Norbraten, NPS MOVES</a>
  * @version $Id: NEWTOGLConstruct.java 12256 2015-08-10 13:55:34Z tnorbraten $
  */
 public abstract class NEWTOGLConstruct extends OGLConstruct {
