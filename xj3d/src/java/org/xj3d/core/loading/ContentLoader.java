@@ -42,7 +42,7 @@ class ContentLoader implements Runnable
 
     private static final String XJ3D_ISSUE_LIST =
             "New Xj3D issue needed to improve the open source, please see\n" +
-            "  https://gitlab.nps.edu/Savage/xj3d/issues";
+            "  https://github.com/Web3DConsortium/X3D-Edit/issues";
 
     /** The threading running this loader */
     private Thread thread;

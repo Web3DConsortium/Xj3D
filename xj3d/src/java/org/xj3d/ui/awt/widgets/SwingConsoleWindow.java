@@ -472,7 +472,7 @@ public class SwingConsoleWindow extends JFrame
         }
         else if (src == issuesButton)
         {
-            String issuesUrl = "https://gitlab.nps.edu/Savage/xj3d/issues";
+            String issuesUrl = "https://github.com/Web3DConsortium/X3D-Edit/issues";
             // https://stackoverflow.com/questions/5226212/how-to-open-url-in-default-webbrowser-using-java
             if (Desktop.isDesktopSupported() && Desktop.getDesktop().isSupported(Desktop.Action.BROWSE))
             {

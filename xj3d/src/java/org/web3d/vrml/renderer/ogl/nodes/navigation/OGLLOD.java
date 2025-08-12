@@ -275,7 +275,7 @@ public class OGLLOD extends BaseLOD
             // TODO NPE C:/x3d-code/www.web3d.org/x3d/content/Savage/Tools/Animation/WaypointInterpolatorPrototype.x3d
             // TODO java.lang.IndexOutOfBoundsException: Index provided > last valid index
             // at org.j3d.renderer.aviatrix3d.nodes.LODGroup.setRange(LODGroup.java:632)
-            // Issue #6 LODGroup or OGLLOD index/range error https://gitlab.nps.edu/Savage/xj3d/issues/6
+            // Issue #6 LODGroup or OGLLOD index/range error https://github.com/Web3DConsortium/X3D-Edit/issues/6
             implLod.setRange(i, vfRange[i]);
         }
 

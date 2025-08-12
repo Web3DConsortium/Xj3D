@@ -725,7 +725,7 @@ public abstract class CRMainSceneBuilder
                 xj3dIssue += " see Xj3D issue https://gitlab.nps.edu/Savage/xj3d/issues/2";
                 criticalError = false;
             }
-            else xj3dIssue += "unknown field name, new Xj3D issue needed to improve the open source, see\n  https://gitlab.nps.edu/Savage/xj3d/issues";
+            else xj3dIssue += "unknown field name, new Xj3D issue needed to improve the open source, see\n  https://github.com/Web3DConsortium/X3D-Edit/issues";
             
             String errorMessage =   "[CRMainSceneBuilder] Unknown field name '" + 
                                     name +
