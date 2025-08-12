@@ -126,6 +126,12 @@ public class DOMUtils {
 
         try {
             builderFactory = DocumentBuilderFactory.newInstance();
+            // https://bugs.openjdk.org/browse/JDK-8343022
+            // https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#JAXP
+            builderFactory.setAttribute("jdk.xml.entityExpansionLimit", 120000);
+            builderFactory.setAttribute("jdk.xml.totalEntitySizeLimit", 50000000);
+            builderFactory.setAttribute("jdk.xml.maxGeneralEntitySizeLimit", 50000000);
+            
             builder = builderFactory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
@@ -157,6 +163,12 @@ public class DOMUtils {
 
         try {
             builderFactory = DocumentBuilderFactory.newInstance();
+            // https://bugs.openjdk.org/browse/JDK-8343022
+            // https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#JAXP
+            builderFactory.setAttribute("jdk.xml.entityExpansionLimit", 120000);
+            builderFactory.setAttribute("jdk.xml.totalEntitySizeLimit", 50000000);
+            builderFactory.setAttribute("jdk.xml.maxGeneralEntitySizeLimit", 50000000);
+            
             builder = builderFactory.newDocumentBuilder();
         } catch (ParserConfigurationException e) {
             e.printStackTrace();

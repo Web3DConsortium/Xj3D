@@ -116,6 +116,13 @@ public class X3DNodeComponentMapper {
             DocumentBuilderFactory fac = DocumentBuilderFactory.newInstance();
             fac.setValidating(false);
             fac.setNamespaceAware(false);
+            fac.setNamespaceAware(false);
+            // https://bugs.openjdk.org/browse/JDK-8343022
+            // https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#JAXP
+            fac.setAttribute("jdk.xml.entityExpansionLimit", 120000);
+            fac.setAttribute("jdk.xml.totalEntitySizeLimit", 50000000);
+            fac.setAttribute("jdk.xml.maxGeneralEntitySizeLimit", 50000000);
+            
             DocumentBuilder builder = fac.newDocumentBuilder();
             nodemap_doc = builder.parse(is);
         } catch(FactoryConfigurationError | ParserConfigurationException | SAXException | IOException e) {
