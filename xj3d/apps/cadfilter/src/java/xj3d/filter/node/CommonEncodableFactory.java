@@ -185,6 +185,7 @@ public class CommonEncodableFactory {
             new FieldInfo("center", FieldConstants.SFVEC3F),
             new FieldInfo("size", FieldConstants.SFVEC3F),
             new FieldInfo("enabled", FieldConstants.SFBOOL),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "ProximitySensor";
         nodeType = xim.getTypes(nodeName);
@@ -195,6 +196,7 @@ public class CommonEncodableFactory {
             new FieldInfo("enabled", FieldConstants.SFBOOL),
             new FieldInfo("center", FieldConstants.SFVEC3F),
             new FieldInfo("size", FieldConstants.SFVEC3F),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "VisibilitySensor";
         nodeType = xim.getTypes(nodeName);
@@ -505,6 +507,7 @@ public class CommonEncodableFactory {
         fieldMap = new FieldInfo[] {
             new FieldInfo("metadata", FieldConstants.SFNODE),
             new FieldInfo("enabled", FieldConstants.SFBOOL),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "KeySensor";
         nodeType = xim.getTypes(nodeName);
@@ -514,6 +517,7 @@ public class CommonEncodableFactory {
             new FieldInfo("metadata", FieldConstants.SFNODE),
             new FieldInfo("enabled", FieldConstants.SFBOOL),
             new FieldInfo("deletionAllowed", FieldConstants.SFBOOL),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "StringSensor";
         nodeType = xim.getTypes(nodeName);
@@ -659,6 +663,7 @@ public class CommonEncodableFactory {
             new FieldInfo("enabled", FieldConstants.SFBOOL),
             new FieldInfo("watchList", FieldConstants.MFNODE),
             new FieldInfo("timeOut", FieldConstants.SFTIME),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "LoadSensor";
         nodeType = xim.getTypes(nodeName);
@@ -673,6 +678,7 @@ public class CommonEncodableFactory {
             new FieldInfo("minAngle", FieldConstants.SFFLOAT),
             new FieldInfo("diskAngle", FieldConstants.SFFLOAT),
             new FieldInfo("offset", FieldConstants.SFFLOAT),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "CylinderSensor";
         nodeType = xim.getTypes(nodeName);
@@ -686,6 +692,7 @@ public class CommonEncodableFactory {
             new FieldInfo("maxPosition", FieldConstants.SFVEC2F),
             new FieldInfo("minPosition", FieldConstants.SFVEC2F),
             new FieldInfo("offset", FieldConstants.SFVEC3F),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "PlaneSensor";
         nodeType = xim.getTypes(nodeName);
@@ -697,6 +704,7 @@ public class CommonEncodableFactory {
             new FieldInfo("autoOffset", FieldConstants.SFBOOL),
             new FieldInfo("description", FieldConstants.SFSTRING),
             new FieldInfo("offset", FieldConstants.SFROTATION),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "SphereSensor";
         nodeType = xim.getTypes(nodeName);
@@ -1110,6 +1118,7 @@ public class CommonEncodableFactory {
             new FieldInfo("repeatS", FieldConstants.SFBOOL),
             new FieldInfo("repeatT", FieldConstants.SFBOOL),
             new FieldInfo("textureProperties", FieldConstants.SFNODE),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "MovieTexture";
         nodeType = xim.getTypes(nodeName);
@@ -1124,6 +1133,7 @@ public class CommonEncodableFactory {
             new FieldInfo("resumeTime", FieldConstants.SFTIME),
             new FieldInfo("cycleInterval", FieldConstants.SFTIME),
             new FieldInfo("enabled", FieldConstants.SFBOOL),
+            new FieldInfo("description", FieldConstants.SFSTRING), // X3D4
         };
         nodeName = "TimeSensor";
         nodeType = xim.getTypes(nodeName);
