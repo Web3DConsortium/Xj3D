@@ -931,7 +931,7 @@ public class DefaultNodeFactory
                     throw new UnsupportedSpecVersionException(UNKNOWN_SPEC_VERSION);
             }
         }
-
+        System.out.println("*** Xj3D checkForSpecConfig(version=" + version + ") opened " + file_loc); // debug
         return is;
     }
 
@@ -1038,7 +1038,7 @@ public class DefaultNodeFactory
     }
 
     /**
-     * Internal processing method to take an element describing a the renderer
+     * Internal processing method to take an element describing the renderer
      * config per profile.xml file and turn it into our internal data structures.
      *
      * @param configDef the XML definition of the component
@@ -1205,6 +1205,7 @@ public class DefaultNodeFactory
             invalidComponents.add(name);
             throw new UnsupportedComponentException(NO_COMP_FILE_MSG + name);
         }
+        System.out.println("*** Xj3D loadComponent(" + name + ") opened " + file_loc); // debug
 
         Document doc_root = null;
         try {
@@ -1293,9 +1294,11 @@ public class DefaultNodeFactory
         InputStream is = locateConfigFile(file_loc);
 
         if(is == null) {
+            System.err.println("*** Xj3D DefaultNodeFactory missing profile: " + name);
             invalidProfiles.add(name);
             throw new UnsupportedProfileException(NO_PROF_FILE_MSG + name);
         }
+        System.out.println("*** Xj3D loadProfile(" + name + ") opened " + file_loc); // debug
 
         Document doc_root = null;
         try {
@@ -1368,7 +1371,8 @@ public class DefaultNodeFactory
         InputStream is = AccessController.doPrivileged((PrivilegedAction<InputStream>) () -> ClassLoader.getSystemResourceAsStream(filename));
 
         // Fallback mechanism for WebStart
-        if(is == null) {
+        if (is == null) 
+        {
             ClassLoader cl = DefaultNodeFactory.class.getClassLoader();
             is = cl.getResourceAsStream(filename);
         }
