@@ -114,12 +114,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glBeginPerfMonitorAMD(int monitor)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glBeginPerfQueryINTEL(int queryHandle)
     {
         throw new UnsupportedOperationException();
@@ -1319,18 +1313,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glDeletePerfMonitorsAMD(int n, IntBuffer monitors)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glDeletePerfMonitorsAMD(int n, int[] monitors, int monitors_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glDeletePerfQueryINTEL(int queryHandle)
     {
         throw new UnsupportedOperationException();
@@ -1668,12 +1650,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glEndPerfMonitorAMD(int monitor)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glEndPerfQueryINTEL(int queryHandle)
     {
         throw new UnsupportedOperationException();
@@ -1962,13 +1938,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glFragmentCoverageColorNV(int color)
-    {
-        CallDetails details = getMethodDetails("glFragmentCoverageColorNV");
-        details.foundArguments.add(new Object[] { color });
-    }
-
-    @Override
     public void glFrameTerminatorGREMEDY()
     {
         CallDetails details = getMethodDetails("glFrameTerminatorGREMEDY");
@@ -2001,20 +1970,6 @@ public class MockGL2 extends MockGL implements GL2
     {
         CallDetails details = getMethodDetails("glFramebufferReadBufferEXT");
         details.foundArguments.add(new Object[] { framebuffer, mode });
-    }
-
-    @Override
-    public void glFramebufferSampleLocationsfvNV(int target, int start, int count, FloatBuffer v)
-    {
-        CallDetails details = getMethodDetails("glFramebufferSampleLocationsfvNV");
-        details.foundArguments.add(new Object[] { target, start, count, v });
-    }
-
-    @Override
-    public void glFramebufferSampleLocationsfvNV(int target, int start, int count, float[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glFramebufferSampleLocationsfvNV");
-        details.foundArguments.add(new Object[] { target, start, count, v, v_offset });
     }
 
     @Override
@@ -2078,18 +2033,6 @@ public class MockGL2 extends MockGL implements GL2
 
     @Override
     public void glGenOcclusionQueriesNV(int n, int[] ids, int ids_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGenPerfMonitorsAMD(int n, IntBuffer monitors)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGenPerfMonitorsAMD(int n, int[] monitors, int monitors_offset)
     {
         throw new UnsupportedOperationException();
     }
@@ -3242,72 +3185,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glGetPerfMonitorCounterDataAMD(int monitor, int pname, int dataSize, IntBuffer data, IntBuffer bytesWritten)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorCounterDataAMD(int monitor, int pname, int dataSize, int[] data, int data_offset, int[] bytesWritten, int bytesWritten_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorCounterInfoAMD(int group, int counter, int pname, Buffer data)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorCounterStringAMD(int group, int counter, int bufSize, IntBuffer length, ByteBuffer counterString)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorCounterStringAMD(int group, int counter, int bufSize, int[] length, int length_offset, byte[] counterString, int counterString_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorCountersAMD(int group, IntBuffer numCounters, IntBuffer maxActiveCounters, int counterSize, IntBuffer counters)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorCountersAMD(int group, int[] numCounters, int numCounters_offset, int[] maxActiveCounters, int maxActiveCounters_offset, int counterSize, int[] counters, int counters_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorGroupStringAMD(int group, int bufSize, IntBuffer length, ByteBuffer groupString)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorGroupStringAMD(int group, int bufSize, int[] length, int length_offset, byte[] groupString, int groupString_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorGroupsAMD(IntBuffer numGroups, int groupsSize, IntBuffer groups)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glGetPerfMonitorGroupsAMD(int[] numGroups, int numGroups_offset, int groupsSize, int[] groups, int groups_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glGetPerfQueryDataINTEL(int queryHandle, int flags, int dataSize, Buffer data, IntBuffer bytesWritten)
     {
         throw new UnsupportedOperationException();
@@ -3819,20 +3696,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glGetUniformi64vNV(int program, int location, LongBuffer params)
-    {
-        CallDetails details = getMethodDetails("glGetUniformi64vNV");
-        details.foundArguments.add(new Object[] { program, location, params });
-    }
-
-    @Override
-    public void glGetUniformi64vNV(int program, int location, long[] params, int params_offset)
-    {
-        CallDetails details = getMethodDetails("glGetUniformi64vNV");
-        details.foundArguments.add(new Object[] { program, location, params, params_offset });
-    }
-
-    @Override
     public void glGetUniformfvARB(long programObj, int location, FloatBuffer params)
     {
         CallDetails details = getMethodDetails("glGetUniformfvARB");
@@ -3973,20 +3836,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glGetVertexAttribIivEXT(int index, int pname, IntBuffer params)
-    {
-        CallDetails details = getMethodDetails("glGetVertexAttribIivEXT");
-        details.foundArguments.add(new Object[] { index, pname, params });
-    }
-
-    @Override
-    public void glGetVertexAttribIivEXT(int index, int pname, int[] params, int params_offset)
-    {
-        CallDetails details = getMethodDetails("glGetVertexAttribIivEXT");
-        details.foundArguments.add(new Object[] { index, pname, params, params_offset });
-    }
-
-    @Override
     public void glGetVertexAttribIuiv(int index, int pname, IntBuffer params)
     {
         CallDetails details = getMethodDetails("glGetVertexAttribIuiv");
@@ -4028,20 +3877,6 @@ public class MockGL2 extends MockGL implements GL2
     public boolean glIsTransformFeedback(int id)
     {
         return false;
-    }
-
-    @Override
-    public void glGetVertexAttribIuivEXT(int index, int pname, IntBuffer params)
-    {
-        CallDetails details = getMethodDetails("glGetVertexAttribIuivEXT");
-        details.foundArguments.add(new Object[] { index, pname, params });
-    }
-
-    @Override
-    public void glGetVertexAttribIuivEXT(int index, int pname, int[] params, int params_offset)
-    {
-        CallDetails details = getMethodDetails("glGetVertexAttribIuivEXT");
-        details.foundArguments.add(new Object[] { index, pname, params, params_offset });
     }
 
     @Override
@@ -6487,20 +6322,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glNamedFramebufferSampleLocationsfvNV(int framebuffer, int start, int count, FloatBuffer v)
-    {
-        CallDetails details = getMethodDetails("glNamedFramebufferSampleLocationsfvNV");
-        details.foundArguments.add(new Object[] { framebuffer, start, count, v });
-    }
-
-    @Override
-    public void glNamedFramebufferSampleLocationsfvNV(int framebuffer, int start, int count, float[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glNamedFramebufferSampleLocationsfvNV");
-        details.foundArguments.add(new Object[] { framebuffer, start, count, v, v_offset });
-    }
-
-    @Override
     public void glNamedFramebufferTexture1DEXT(int framebuffer, int attachment, int textarget, int texture, int level)
     {
         CallDetails details = getMethodDetails("glNamedFramebufferTexture1DEXT");
@@ -7371,42 +7192,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glProgramUniform1i64NV(int program, int location, long x)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform1i64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform1i64vNV(int program, int location, int count, long[] value, int value_offset)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform1ui64NV(int program, int location, long x)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform1ui64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform1ui64vNV(int program, int location, int count, long[] value, int value_offset)
-    {
-
-    }
-
-    @Override
     public void glProgramUniform2dEXT(int program, int location, double x, double y)
     {
 
@@ -7420,42 +7205,6 @@ public class MockGL2 extends MockGL implements GL2
 
     @Override
     public void glProgramUniform2dvEXT(int program, int location, int count, double[] value, int value_offset)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform2i64NV(int program, int location, long x, long y)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform2i64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform2i64vNV(int program, int location, int count, long[] value, int value_offset)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform2ui64NV(int program, int location, long x, long y)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform2ui64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform2ui64vNV(int program, int location, int count, long[] value, int value_offset)
     {
 
     }
@@ -7479,42 +7228,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glProgramUniform3i64NV(int program, int location, long x, long y, long z)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform3i64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform3i64vNV(int program, int location, int count, long[] value, int value_offset)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform3ui64NV(int program, int location, long x, long y, long z)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform3ui64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform3ui64vNV(int program, int location, int count, long[] value, int value_offset)
-    {
-
-    }
-
-    @Override
     public void glProgramUniform4dEXT(int program, int location, double x, double y, double z, double w)
     {
 
@@ -7528,42 +7241,6 @@ public class MockGL2 extends MockGL implements GL2
 
     @Override
     public void glProgramUniform4dvEXT(int program, int location, int count, double[] value, int value_offset)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform4i64NV(int program, int location, long x, long y, long z, long w)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform4i64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform4i64vNV(int program, int location, int count, long[] value, int value_offset)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform4ui64NV(int program, int location, long x, long y, long z, long w)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform4ui64vNV(int program, int location, int count, LongBuffer value)
-    {
-
-    }
-
-    @Override
-    public void glProgramUniform4ui64vNV(int program, int location, int count, long[] value, int value_offset)
     {
 
     }
@@ -8130,12 +7807,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glResolveDepthValuesNV()
-    {
-
-    }
-
-    @Override
     public void glResumeTransformFeedbackNV()
     {
         throw new UnsupportedOperationException();
@@ -8372,18 +8043,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glSelectPerfMonitorCountersAMD(int monitor, boolean enable, int group, int numCounters, IntBuffer counterList)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glSelectPerfMonitorCountersAMD(int monitor, boolean enable, int group, int numCounters, int[] counterList, int counterList_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glSeparableFilter2D(int target, int internalformat, int width, int height, int format, int type, Buffer row, Buffer column)
     {
         CallDetails details = getMethodDetails("glSeparableFilter2D");
@@ -8458,12 +8117,6 @@ public class MockGL2 extends MockGL implements GL2
     {
         CallDetails details = getMethodDetails("glStringMarkerGREMEDY");
         details.foundArguments.add(new Object[] { len, string });
-    }
-
-    @Override
-    public void glSubpixelPrecisionBiasNV(int xbits, int ybits)
-    {
-
     }
 
     @Override
@@ -9020,12 +8673,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glTextureBarrierNV()
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glTextureBufferEXT(int texture, int target, int internalformat, int buffer)
     {
         CallDetails details = getMethodDetails("glTextureBufferEXT");
@@ -9275,24 +8922,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glUniform1i64NV(int location, long x)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform1i64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform1i64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glUniform1iARB(int location, int v0)
     {
         CallDetails details = getMethodDetails("glUniform1iARB");
@@ -9311,24 +8940,6 @@ public class MockGL2 extends MockGL implements GL2
     {
         CallDetails details = getMethodDetails("glUniform1ivARB");
         details.foundArguments.add(new Object[] { location, count, value, value_offset });
-    }
-
-    @Override
-    public void glUniform1ui64NV(int location, long x)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform1ui64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform1ui64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -9374,24 +8985,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glUniform2i64NV(int location, long x, long y)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform2i64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform2i64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glUniform2iARB(int location, int v0, int v1)
     {
         CallDetails details = getMethodDetails("glUniform2iARB");
@@ -9410,24 +9003,6 @@ public class MockGL2 extends MockGL implements GL2
     {
         CallDetails details = getMethodDetails("glUniform2ivARB");
         details.foundArguments.add(new Object[] { location, count, value, value_offset });
-    }
-
-    @Override
-    public void glUniform2ui64NV(int location, long x, long y)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform2ui64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform2ui64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -9473,24 +9048,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glUniform3i64NV(int location, long x, long y, long z)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform3i64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform3i64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glUniform3iARB(int location, int v0, int v1, int v2)
     {
         CallDetails details = getMethodDetails("glUniform3iARB");
@@ -9509,24 +9066,6 @@ public class MockGL2 extends MockGL implements GL2
     {
         CallDetails details = getMethodDetails("glUniform3ivARB");
         details.foundArguments.add(new Object[] { location, count, value, value_offset });
-    }
-
-    @Override
-    public void glUniform3ui64NV(int location, long x, long y, long z)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform3ui64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform3ui64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -9572,24 +9111,6 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glUniform4i64NV(int location, long x, long y, long z, long w)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform4i64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform4i64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
     public void glUniform4iARB(int location, int v0, int v1, int v2, int v3)
     {
         CallDetails details = getMethodDetails("glUniform4iARB");
@@ -9608,24 +9129,6 @@ public class MockGL2 extends MockGL implements GL2
     {
         CallDetails details = getMethodDetails("glUniform4ivARB");
         details.foundArguments.add(new Object[] { location, count, value, value_offset });
-    }
-
-    @Override
-    public void glUniform4ui64NV(int location, long x, long y, long z, long w)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform4ui64vNV(int location, int count, LongBuffer value)
-    {
-        throw new UnsupportedOperationException();
-    }
-
-    @Override
-    public void glUniform4ui64vNV(int location, int count, long[] value, int value_offset)
-    {
-        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -10997,156 +10500,9 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glVertexAttribI1iEXT(int index, int x)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI1iEXT");
-        details.foundArguments.add(new Object[] { index, x });
-    }
-
-    @Override
-    public void glVertexAttribI1ivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI1ivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI1ivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI1ivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI1uiEXT(int index, int x)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI1uiEXT");
-        details.foundArguments.add(new Object[] { index, x });
-    }
-
-    @Override
-    public void glVertexAttribI1uivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI1uivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI1uivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI1uivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI2iEXT(int index, int x, int y)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI2iEXT");
-        details.foundArguments.add(new Object[] { index, x, y });
-    }
-
-    @Override
-    public void glVertexAttribI2ivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI2ivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI2ivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI2ivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI2uiEXT(int index, int x, int y)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI2uiEXT");
-        details.foundArguments.add(new Object[] { index, x, y });
-    }
-
-    @Override
-    public void glVertexAttribI2uivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI2uivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI2uivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI2uivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI3iEXT(int index, int x, int y, int z)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI3iEXT");
-        details.foundArguments.add(new Object[] { index, x, y, z });
-    }
-
-    @Override
-    public void glVertexAttribI3ivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI3ivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI3ivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI3ivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI3uiEXT(int index, int x, int y, int z)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI3uiEXT");
-        details.foundArguments.add(new Object[] { index, x, y, z });
-    }
-
-    @Override
-    public void glVertexAttribI3uivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI3uivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI3uivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI3uivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI4bvEXT(int index, ByteBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4bvEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI4bvEXT(int index, byte[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4bvEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
     public void glVertexAttribI4i(int index, int x, int y, int z, int w)
     {
         CallDetails details = getMethodDetails("glVertexAttribI4i");
-        details.foundArguments.add(new Object[] { index, x, y, z, w });
-    }
-
-    @Override
-    public void glVertexAttribI4iEXT(int index, int x, int y, int z, int w)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4iEXT");
         details.foundArguments.add(new Object[] { index, x, y, z, w });
     }
 
@@ -11165,58 +10521,9 @@ public class MockGL2 extends MockGL implements GL2
     }
 
     @Override
-    public void glVertexAttribI4ivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4ivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI4ivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4ivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI4svEXT(int index, ShortBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4svEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI4svEXT(int index, short[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4svEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI4ubvEXT(int index, ByteBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4ubvEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI4ubvEXT(int index, byte[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4ubvEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
     public void glVertexAttribI4ui(int index, int x, int y, int z, int w)
     {
         CallDetails details = getMethodDetails("glVertexAttribI4ui");
-        details.foundArguments.add(new Object[] { index, x, y, z, w });
-    }
-
-    @Override
-    public void glVertexAttribI4uiEXT(int index, int x, int y, int z, int w)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4uiEXT");
         details.foundArguments.add(new Object[] { index, x, y, z, w });
     }
 
@@ -11231,34 +10538,6 @@ public class MockGL2 extends MockGL implements GL2
     public void glVertexAttribI4uiv(int index, int[] v, int v_offset)
     {
         CallDetails details = getMethodDetails("glVertexAttribI4uiv");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI4uivEXT(int index, IntBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4uivEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI4uivEXT(int index, int[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4uivEXT");
-        details.foundArguments.add(new Object[] { index, v, v_offset });
-    }
-
-    @Override
-    public void glVertexAttribI4usvEXT(int index, ShortBuffer v)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4usvEXT");
-        details.foundArguments.add(new Object[] { index, v });
-    }
-
-    @Override
-    public void glVertexAttribI4usvEXT(int index, short[] v, int v_offset)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribI4usvEXT");
         details.foundArguments.add(new Object[] { index, v, v_offset });
     }
 
@@ -11286,13 +10565,6 @@ public class MockGL2 extends MockGL implements GL2
     public boolean isPBOUnpackBound()
     {
         return false;
-    }
-
-    @Override
-    public void glVertexAttribIPointerEXT(int index, int size, int type, int stride, Buffer pointer)
-    {
-        CallDetails details = getMethodDetails("glVertexAttribIPointerEXT");
-        details.foundArguments.add(new Object[] { index, size, type, stride, pointer });
     }
 
     @Override
@@ -15842,5 +15114,555 @@ public class MockGL2 extends MockGL implements GL2
         CallDetails details = getMethodDetails("glTexCoordPointer");
         details.foundArguments.add(new Object[] { size, type, stride, pointer_buffer_offset });
 
+    }
+
+    @Override
+    public void glFramebufferSamplePositionsfvAMD(int i, int i1, int i2, FloatBuffer fb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glFramebufferSamplePositionsfvAMD(int i, int i1, int i2, float[] floats, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glNamedFramebufferSamplePositionsfvAMD(int i, int i1, int i2, FloatBuffer fb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glNamedFramebufferSamplePositionsfvAMD(int i, int i1, int i2, float[] floats, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetFramebufferParameterfvAMD(int i, int i1, int i2, int i3, int i4, FloatBuffer fb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetFramebufferParameterfvAMD(int i, int i1, int i2, int i3, int i4, float[] floats, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetNamedFramebufferParameterfvAMD(int i, int i1, int i2, int i3, int i4, FloatBuffer fb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetNamedFramebufferParameterfvAMD(int i, int i1, int i2, int i3, int i4, float[] floats, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glBufferStorageExternalEXT(int i, long l, long l1, Buffer buffer, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glNamedBufferStorageExternalEXT(int i, long l, long l1, Buffer buffer, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glBlitFramebufferLayersEXT(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glBlitFramebufferLayerEXT(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean glAcquireKeyedMutexWin32EXT(int i, long l, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean glReleaseKeyedMutexWin32EXT(int i, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glUploadGpuMaskNVX(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastViewportArrayvNVX(int i, int i1, int i2, FloatBuffer fb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastViewportArrayvNVX(int i, int i1, int i2, float[] floats, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastViewportPositionWScaleNVX(int i, int i1, float f, float f1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastScissorArrayvNVX(int i, int i1, int i2, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastScissorArrayvNVX(int i, int i1, int i2, int[] ints, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glAsyncCopyBufferSubDataNVX(int i, IntBuffer ib, LongBuffer lb, int i1, int i2, int i3, int i4, long l, long l1, long l2, int i5, IntBuffer ib1, LongBuffer lb1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glAsyncCopyBufferSubDataNVX(int i, int[] ints, int i1, long[] longs, int i2, int i3, int i4, int i5, int i6, long l, long l1, long l2, int i7, int[] ints1, int i8, long[] longs1, int i9) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glAsyncCopyImageSubDataNVX(int i, IntBuffer ib, LongBuffer lb, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18, IntBuffer ib1, LongBuffer lb1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glAsyncCopyImageSubDataNVX(int i, int[] ints, int i1, long[] longs, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16, int i17, int i18, int i19, int i20, int[] ints1, int i21, long[] longs1, int i22) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glLGPUNamedBufferSubDataNVX(int i, int i1, long l, long l1, Buffer buffer) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glLGPUCopyImageSubDataNVX(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glLGPUInterlockNVX() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glCreateProgressFenceNVX() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glSignalSemaphoreui64NVX(int i, int i1, IntBuffer ib, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glSignalSemaphoreui64NVX(int i, int i1, int[] ints, int i2, long[] longs, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glWaitSemaphoreui64NVX(int i, int i1, IntBuffer ib, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glWaitSemaphoreui64NVX(int i, int i1, int[] ints, int i2, long[] longs, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glClientWaitSemaphoreui64NVX(int i, IntBuffer ib, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glClientWaitSemaphoreui64NVX(int i, int[] ints, int i1, long[] longs, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glAlphaToCoverageDitherControlNV(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glRenderGpuMaskNV(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastBufferSubDataNV(int i, int i1, long l, long l1, Buffer buffer) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastCopyBufferSubDataNV(int i, int i1, int i2, int i3, long l, long l1, long l2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastCopyImageSubDataNV(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11, int i12, int i13, int i14, int i15, int i16) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastBlitFramebufferNV(int i, int i1, int i2, int i3, int i4, int i5, int i6, int i7, int i8, int i9, int i10, int i11) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastFramebufferSampleLocationsfvNV(int i, int i1, int i2, int i3, FloatBuffer fb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastFramebufferSampleLocationsfvNV(int i, int i1, int i2, int i3, float[] floats, int i4) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastBarrierNV() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastWaitSyncNV(int i, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjectivNV(int i, int i1, int i2, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjectivNV(int i, int i1, int i2, int[] ints, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjectuivNV(int i, int i1, int i2, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjectuivNV(int i, int i1, int i2, int[] ints, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjecti64vNV(int i, int i1, int i2, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjecti64vNV(int i, int i1, int i2, long[] longs, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjectui64vNV(int i, int i1, int i2, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMulticastGetQueryObjectui64vNV(int i, int i1, int i2, long[] longs, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glQueryResourceNV(int i, int i1, int i2, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public int glQueryResourceNV(int i, int i1, int i2, int[] ints, int i3) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGenQueryResourceTagNV(int i, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGenQueryResourceTagNV(int i, int[] ints, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glDeleteQueryResourceTagNV(int i, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glDeleteQueryResourceTagNV(int i, int[] ints, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glQueryResourceTagNV(int i, ByteBuffer bb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glQueryResourceTagNV(int i, byte[] bytes, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public long glVDPAURegisterVideoSurfaceWithPictureStructureNV(Buffer buffer, int i, int i1, IntBuffer ib, boolean bln) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public long glVDPAURegisterVideoSurfaceWithPictureStructureNV(Buffer buffer, int i, int i1, int[] ints, int i2, boolean bln) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMaxShaderCompilerThreadsKHR(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glRenderbufferStorageMultisampleAdvancedAMD(int i, int i1, int i2, int i3, int i4, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glNamedRenderbufferStorageMultisampleAdvancedAMD(int i, int i1, int i2, int i3, int i4, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glFramebufferFetchBarrierEXT() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glWindowRectanglesEXT(int i, int i1, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glWindowRectanglesEXT(int i, int i1, int[] ints, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glNamedFramebufferTextureMultiviewOVR(int i, int i1, int i2, int i3, int i4, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetUnsignedBytevEXT(int i, ByteBuffer bb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetUnsignedBytevEXT(int i, byte[] bytes, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetUnsignedBytei_vEXT(int i, int i1, ByteBuffer bb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetUnsignedBytei_vEXT(int i, int i1, byte[] bytes, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glDeleteMemoryObjectsEXT(int i, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glDeleteMemoryObjectsEXT(int i, int[] ints, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean glIsMemoryObjectEXT(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glCreateMemoryObjectsEXT(int i, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glCreateMemoryObjectsEXT(int i, int[] ints, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMemoryObjectParameterivEXT(int i, int i1, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glMemoryObjectParameterivEXT(int i, int i1, int[] ints, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetMemoryObjectParameterivEXT(int i, int i1, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetMemoryObjectParameterivEXT(int i, int i1, int[] ints, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTexStorageMem2DEXT(int i, int i1, int i2, int i3, int i4, int i5, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTexStorageMem2DMultisampleEXT(int i, int i1, int i2, int i3, int i4, boolean bln, int i5, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTexStorageMem3DEXT(int i, int i1, int i2, int i3, int i4, int i5, int i6, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTexStorageMem3DMultisampleEXT(int i, int i1, int i2, int i3, int i4, int i5, boolean bln, int i6, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glBufferStorageMemEXT(int i, long l, int i1, long l1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTextureStorageMem2DEXT(int i, int i1, int i2, int i3, int i4, int i5, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTextureStorageMem2DMultisampleEXT(int i, int i1, int i2, int i3, int i4, boolean bln, int i5, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTextureStorageMem3DEXT(int i, int i1, int i2, int i3, int i4, int i5, int i6, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glTextureStorageMem3DMultisampleEXT(int i, int i1, int i2, int i3, int i4, int i5, boolean bln, int i6, long l) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glNamedBufferStorageMemEXT(int i, long l, int i1, long l1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glImportMemoryFdEXT(int i, long l, int i1, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGenSemaphoresEXT(int i, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGenSemaphoresEXT(int i, int[] ints, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glDeleteSemaphoresEXT(int i, IntBuffer ib) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glDeleteSemaphoresEXT(int i, int[] ints, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public boolean glIsSemaphoreEXT(int i) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glSemaphoreParameterui64vEXT(int i, int i1, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glSemaphoreParameterui64vEXT(int i, int i1, long[] longs, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetSemaphoreParameterui64vEXT(int i, int i1, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetSemaphoreParameterui64vEXT(int i, int i1, long[] longs, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glWaitSemaphoreEXT(int i, int i1, IntBuffer ib, int i2, IntBuffer ib1, IntBuffer ib2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glWaitSemaphoreEXT(int i, int i1, int[] ints, int i2, int i3, int[] ints1, int i4, int[] ints2, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glSignalSemaphoreEXT(int i, int i1, IntBuffer ib, int i2, IntBuffer ib1, IntBuffer ib2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glSignalSemaphoreEXT(int i, int i1, int[] ints, int i2, int i3, int[] ints1, int i4, int[] ints2, int i5) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glImportSemaphoreFdEXT(int i, int i1, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetInteger64v(int i, LongBuffer lb) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glGetInteger64v(int i, long[] longs, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void glConservativeRasterParameteriNV(int i, int i1) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
