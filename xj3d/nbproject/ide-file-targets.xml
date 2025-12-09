@@ -220,8 +220,8 @@
     </target>
 
     <!-- Use NB "Stop" to kill both java executions -->
-    <target depends="compile.examples.sai"
-            name="combined.simserver.demo"
+    <target name="combined.dis.simserver.demo"
+            depends="compile.examples.sai"
             description="Run and combined scene + DIS controller process">
         <parallel>
             <antcall target="run-selected-file-in-simserver">
@@ -252,8 +252,8 @@
     </target>
 
     <!-- Use NB "Stop" to kill both java executions -->
-    <target depends="compile.parsetest.dis"
-            name="combined.network.simulator.demo"
+    <target name="combined.dis.network.simulator.demo"
+            depends="compile.parsetest.dis"
             description="Run and combined scene + DIS controller process">
         <parallel>
             <antcall target="run">
@@ -269,8 +269,8 @@
     </target>
 
     <!-- Use NB "Stop" to kill both java executions -->
-    <target depends="compile.parsetest.dis"
-            name="combined.network.tester.demo"
+    <target name="combined.dis.network.tester.demo"
+            depends="compile.parsetest.dis"
             description="Run and combined scene + DIS controller process">
         <parallel>
             <antcall target="run">
