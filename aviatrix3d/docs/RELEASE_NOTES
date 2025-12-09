@@ -1,6 +1,7 @@
-$Id: RELEASE_NOTES 12728 2024-09-19 02:48:28Z tnorbraten $
-
 NPS changes to AV3D codebase since v2.1.0 release.  Started:         23 JAN 2010
+
+08 DEC 2025: Updated JogAmp (JOGL, JOAL, GlueGen) to v2.6.0 20250831
+               - Fixes JVM v25 crash
 
 18 JUN 2024: Implemented a cleaner shutdown of JOAL resources
 
