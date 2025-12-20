@@ -33,37 +33,23 @@ Post release fixes / upgrades / issues:
   to default of zero in the "Y" axis
 
   ****** FIXES / UPGRADES:
--------------------------
-
-Update: 2.3 (September 18, 2024)
-
-    Aviatrix3D performs a cleaner shutdown of JOAL resources
-
--------------------------
-
-Update: 2.3 (June 11, 2024)
-
-    Update JogAMp (JOGL, JOAL, GlueGen) to v2.5.0 20230818
-
--------------------------
-
-Update: 2.3 (December 29, 2023)
-
-    Upgraded opendis7-java jars to latest release.
-
--------------------------
-
-Update: 2.3 (December 20, 2022)
-
-    Numerous small improvements continue to be applied, especially as part of X3D-Edit testing and deployment.
-
-    We have begun supporting X3D v4.0 functionality. Issue reports and contributions welcome.
-
--------------------------
 
 Release: 2.3 (May 12, 2021)
 -------------------------
 Major changes since 2.2 (Feb 09, 2020):
+
+  Update JogAmp (JOGL, JOAL, GlueGen) to v2.6.0 20250831
+    - Fixes JVM v25 crash
+
+  Aviatrix3D performs a cleaner shutdown of JOAL resources
+
+  Update JogAmp (JOGL, JOAL, GlueGen) to v2.5.0 20230818
+
+  Upgraded opendis7-java jars to latest release
+
+  Numerous small improvements continue to be applied, especially as part of
+  X3D-Edit testing and deployment. We have begun supporting X3D v4.0
+  functionality. Issue reports and contributions welcome.
 
   Update JogAMp (JOGL, JOAL, GlueGen) to v2.5.0-rc-20230515
     - Fixes NEWT crash

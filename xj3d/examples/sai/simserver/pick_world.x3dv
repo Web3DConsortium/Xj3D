@@ -75,7 +75,7 @@ DEF AUV EspduTransform {
               geometry Box { size 0.5 0.5 5 }
             }
 
-            DEF PICKER LinePicker {
+            DEF PICKER LinePickSensor {
               pickingGeometry USE WHISKERS
               enabled TRUE
               pickTarget [
