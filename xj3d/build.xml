@@ -107,7 +107,7 @@ POSSIBILITY OF SUCH DAMAGE.
         <echo>Java/JVM version    $ant.java.version=${ant.java.version}</echo>
         <echo>Java/JVM detail version $java.version=${java.version}</echo>
         <echo>Ant version              $ant.version=${ant.version}</echo>
-        <echo>Configuration settings:  https://savage.nps.edu/Savage/developers.html</echo>
+        <echo>Configuration settings:  https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html</echo>
         <!-- TODO Netbeans version -->
         <!-- TODO Netbeans project version -->
         <!-- DEBUG: to show all environment and local properties, add
@@ -1146,7 +1146,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
 <p>
 Builds the
-<a href="https://savage.nps.edu/developers.html#Xj3D" target="_blank">NPS branch</a> of modifications to the <a href="http://www.xj3d.org" target="_blank">Xj3D viewer</a> for X3D graphics.  Local compilation and build details are available in the <a href="http://svn.xj3d.org/xj3d_code/branches/NPS/docs/NPS-build-procedures-for-Xj3D.txt" target="_blank">NPS-build-procedures-for-Xj3D.txt</a> README file.
+<a href="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#Xj3D" target="_blank">NPS branch</a> of modifications to the <a href="http://www.xj3d.org" target="_blank">Xj3D viewer</a> for X3D graphics.  Local compilation and build details are available in the <a href="http://svn.xj3d.org/xj3d_code/branches/NPS/docs/NPS-build-procedures-for-Xj3D.txt" target="_blank">NPS-build-procedures-for-Xj3D.txt</a> README file.
 </p>
 <p>
 Locally built project
@@ -1169,9 +1169,9 @@ are available externally.
 </p>
 
 <p>
-<a href="https://savage.nps.edu/Savage/developers.html#Xj3D">Xj3D viewer: NPS source branch</a>
+<a href="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#Xj3D">Xj3D viewer: NPS source branch</a>
 lists details and further links as part of the
-<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>.
+<a href="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html">Savage Developers Guide</a>.
 </p>
         -->
     </target>
@@ -1355,7 +1355,7 @@ lists details and further links as part of the
 
 <p>
 Builds the
-  <a href="https://savage.nps.edu/Savage/developers.html#Xj3D" target="_blank">NPS branch</a>
+  <a href="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#Xj3D" target="_blank">NPS branch</a>
   of modifications to the <a href="http://www.xj3d.org" target="_blank">Xj3D viewer</a>
   for X3D graphics.  Local compilation and build details are available in the
   <a href="http://svn.xj3d.org/xj3d_code/branches/NPS/docs/NPS-build-procedures-for-Xj3D.txt" target="_blank">NPS-build-procedures-for-Xj3D.txt</a>
@@ -1382,9 +1382,9 @@ are available externally.
 </p>
 
 <p>
-<a href="https://savage.nps.edu/Savage/developers.html#Xj3D">Xj3D viewer: NPS source branch</a>
+<a href="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#Xj3D">Xj3D viewer: NPS source branch</a>
 lists details and further links as part of the
-<a href="https://savage.nps.edu/Savage/developers.html">Savage Developers Guide</a>.
+<a href="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html">Savage Developers Guide</a>.
 </p>
 
 
@@ -1431,7 +1431,7 @@ Nearby:
     <!-- ======================================================================================== -->
 
     <target name="upload.binaries.Savage" description="upload NPS Xj3D installers to savage.nps.edu/Xj3d.nps">
-        <!-- TODO fix upload... https://savage.nps.edu/Xj3D.nps/izpackInstallers/ -->
+        <!-- TODO fix directory and upload... https://savage.nps.edu/Xj3D.nps/izpackInstallers/ -->
         <echo message="upload installers: scp ${username.savage}@${scpServer.savage}:${sftpDirectory.savage.Xj3D}"/>
    <!-- <echo message="keyfile.location.sourceforge=${keyfile.location.sourceforge}"/>  keyfile="${keyfile.location.sourceforge}"-->
         <scp sftp="true"
@@ -1462,8 +1462,8 @@ Nearby:
     <!-- ======================================================================================== -->
 
     <target name="view.xj3d.online" description="view NPS Xj3D site in web browser (Netbeans only)">
-        <echo message="https://savage.nps.edu/Savage/developers.html#Xj3D" />
-        <nbbrowse url="https://savage.nps.edu/Savage/developers.html#Xj3D" />
+        <echo message="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#Xj3D" />
+        <nbbrowse url="https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#Xj3D" />
         <!-- TODO implementation-independent approach if possible, but note that other Ant approaches usually have to be customized for each OS. -->
     </target>
 
