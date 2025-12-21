@@ -115,7 +115,8 @@ public class VRMLEncodedReader extends BaseReader {
             if(!header[0].equals("#X3D"))
                 throw new VRMLParseException(1, 1, "Invalid header. Not a X3D file");
 
-            if((header[1] == null) || !(header[1].equals("V3.0") || header[1].equals("V3.1") || header[1].equals("V3.2") || header[1].equals("V3.3") || header[1].equals("V4.0")))
+            if((header[1] == null) || !(header[1].equals("V3.0") || header[1].equals("V3.1") || header[1].equals("V3.2") || header[1].equals("V3.3") || 
+                                        header[1].equals("V4.0") || header[1].equals("V4.1")))
                 throw new VRMLParseException(1, 1, "Unsupported version " + header[1]);
 
             if((header[2] == null) || !header[2].equals("utf8"))

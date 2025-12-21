@@ -1254,6 +1254,17 @@ lists details and further links as part of the
                              dest="${X3dDtdsSchemas.dir}/x3d-4.0-Web3dExtensionsPublic.dtd"               verbose="true"/>
         <get src="${x3d.sourceforge.site}/specifications/x3d-4.0.dtd"
                              dest="${X3dDtdsSchemas.dir}/x3d-4.0.dtd"                                     verbose="true"/>
+
+        <get src="${x3d.sourceforge.site}/specifications/x3d-4.1-InputOutputFields.dtd"
+                             dest="${X3dDtdsSchemas.dir}/x3d-4.1-InputOutputFields.dtd"                   verbose="true"/>
+        <get src="${x3d.sourceforge.site}/specifications/x3d-4.1-Web3dExtensionsPrivate.dtd"
+                             dest="${X3dDtdsSchemas.dir}/x3d-4.1-Web3dExtensionsPrivate.dtd"              verbose="true"/>
+        <get src="${x3d.sourceforge.site}/specifications/x3d-4.1-Web3dExtensionsPublic.Specification.dtd"
+                             dest="${X3dDtdsSchemas.dir}/x3d-4.1-Web3dExtensionsPublic.Specification.dtd" verbose="true"/>
+        <get src="${x3d.sourceforge.site}/specifications/x3d-4.1-Web3dExtensionsPublic.dtd"
+                             dest="${X3dDtdsSchemas.dir}/x3d-4.1-Web3dExtensionsPublic.dtd"               verbose="true"/>
+        <get src="${x3d.sourceforge.site}/specifications/x3d-4.1.dtd"
+                             dest="${X3dDtdsSchemas.dir}/x3d-4.1.dtd"                                     verbose="true"/>
     </target>
 
     <!--

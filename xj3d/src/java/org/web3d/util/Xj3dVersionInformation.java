@@ -43,8 +43,8 @@ import java.util.ResourceBundle;
 public class Xj3dVersionInformation {
 
     /** These must be manually changed by the developer in build.properties */
-    public static final String BUILD_MAJOR_VERSION = getProjectProperties().getString("product.version.major");
-    public static final String BUILD_MINOR_VERSION = getProjectProperties().getString("product.version.level") + "-nps";
+    public static final String BUILD_MAJOR_VERSION = getProjectProperties().getString("product.version.major");          // TODO update
+    public static final String BUILD_MINOR_VERSION = getProjectProperties().getString("product.version.level") + "-nps"; // TODO -web3d
     public static final String JAVA_VERSION        = System.getProperty("java.version");
 
     /** These strings are set by the timestamp task in the build file

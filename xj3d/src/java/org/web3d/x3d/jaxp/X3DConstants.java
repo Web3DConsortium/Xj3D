@@ -160,6 +160,34 @@ public interface X3DConstants {
     String FULL_PUBLIC_ID_4_0 =
         "ISO//Web3D//DTD X3D 4.0 Full//EN";
 
+    /** The formal system identifier for the specification V4.1 */
+    String GENERAL_SYSTEM_ID_4_1 =
+        "https://www.web3d.org/specifications/x3d-4.1.dtd"; // note https preferred
+
+    /** The formal public Identifier for the specification V4.1 */
+    String GENERAL_PUBLIC_ID_4_1=
+        "ISO//Web3D//DTD X3D 4.1//EN";
+
+    /** The formal public Identifier for the Interchange profile */
+    String INTERCHANGE_PUBLIC_ID_4_1 =
+        "ISO//Web3D//DTD X3D 4.1 Interchange//EN";
+
+    /** The formal public Identifier for the Interactive profile */
+    String INTERACTIVE_PUBLIC_ID_4_1 =
+        "ISO//Web3D//DTD X3D 4.1 Interactive//EN";
+
+    /** The formal public Identifier for the Immersive profile */
+    String IMMERSIVE_PUBLIC_ID_4_1 =
+        "ISO//Web3D//DTD X3D 4.1 Immersive//EN";
+
+    /** The formal public Identifier for the Interchange profile */
+    String CAD_INTERCHANGE_PUBLIC_ID_4_1 =
+        "ISO//Web3D//DTD X3D 4.1 CADInterchange//EN";
+
+    /** The formal public Identifier for the Full profile */
+    String FULL_PUBLIC_ID_4_1 =
+        "ISO//Web3D//DTD X3D 4.1 Full//EN";
+
     /** The old, transitional public Identifier for the specification */
     String OLD_PUBLIC_ID =
          "http://www.web3D.org/TaskGroups/x3d/translation/x3d-compact.dtd";
@@ -195,6 +223,10 @@ public interface X3DConstants {
     /** Schema definition for X3D 4.0 */
     String SCHEMA_ID_4_0 =
         "https://www.web3d.org/specifications/x3d-4.0.xsd"; // note https preferred
+
+    /** Schema definition for X3D 4.1 */
+    String SCHEMA_ID_4_1 =
+        "https://www.web3d.org/specifications/x3d-4.1.xsd"; // note https preferred
 
     /**
      * The URI that is used for determining if a namespace definition is the

@@ -599,7 +599,8 @@ class FileParserReader extends BaseReader {
 
             if ((header[1] == null) ||
                     (vrml_97 && !header[1].equals("V2.0")) ||
-                    (!vrml_97 && !(header[1].equals("V3.0") || header[1].equals("V3.1") || header[1].equals("V3.2") || header[1].equals("V3.3") || header[1].equals("V4.0"))))
+                    (!vrml_97 && !(header[1].equals("V3.0") || header[1].equals("V3.1") || header[1].equals("V3.2") || header[1].equals("V3.3") || 
+                                   header[1].equals("V4.0") || header[1].equals("V4.0"))))
                 throw new VRMLParseException(1, 5, "Unsupported version " + header[1]);
             if ((header[2] == null) || (!header[2].equals("utf8") && !header[2].equals("binary")))
                 throw new VRMLParseException(1, 10, "Unsupported encoding " + header[2]);

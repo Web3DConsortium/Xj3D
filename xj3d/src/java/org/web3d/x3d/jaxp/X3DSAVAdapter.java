@@ -426,6 +426,28 @@ public class X3DSAVAdapter
         allowedSystemIDs.add(X3DConstants.GENERAL_SYSTEM_ID_4_0);
         allowedSystemIDs.add(X3DConstants.GENERAL_SYSTEM_ID_4_0.replaceAll("http:", "https:"));
 
+        // V4.0 definitions.
+        spec_ver = 4.1f;
+        specStringMap.put(spec_ver, "V4.1");
+
+        specVersionMap.put(X3DConstants.GENERAL_PUBLIC_ID_4_1, spec_ver);
+        specVersionMap.put(X3DConstants.INTERCHANGE_PUBLIC_ID_4_1, spec_ver);
+        specVersionMap.put(X3DConstants.CAD_INTERCHANGE_PUBLIC_ID_4_1, spec_ver);
+        specVersionMap.put(X3DConstants.INTERACTIVE_PUBLIC_ID_4_1, spec_ver);
+        specVersionMap.put(X3DConstants.IMMERSIVE_PUBLIC_ID_4_1, spec_ver);
+        specVersionMap.put(X3DConstants.FULL_PUBLIC_ID_4_1, spec_ver);
+
+        allowedPublicIDs.add(X3DConstants.GENERAL_PUBLIC_ID_4_1);
+        allowedPublicIDs.add(X3DConstants.INTERCHANGE_PUBLIC_ID_4_1);
+        allowedPublicIDs.add(X3DConstants.CAD_INTERCHANGE_PUBLIC_ID_4_1);
+        allowedPublicIDs.add(X3DConstants.INTERACTIVE_PUBLIC_ID_4_1);
+        allowedPublicIDs.add(X3DConstants.IMMERSIVE_PUBLIC_ID_4_1);
+        allowedPublicIDs.add(X3DConstants.FULL_PUBLIC_ID_4_1);
+
+        allowedSystemIDs.add(X3DConstants.GENERAL_SYSTEM_ID_4_1);
+        allowedSystemIDs.add(X3DConstants.GENERAL_SYSTEM_ID_4_1.replaceAll("http:", "https:"));
+
+        
         allowedPublicIDs.add(X3DConstants.OLD_PUBLIC_ID);
         allowedPublicIDs.add(X3DConstants.TRANS_PUBLIC_ID);
 
@@ -440,6 +462,8 @@ public class X3DSAVAdapter
         systemSchemaIDs.add(X3DConstants.SCHEMA_ID_3_3.replaceAll("http:", "https:"));
         systemSchemaIDs.add(X3DConstants.SCHEMA_ID_4_0);
         systemSchemaIDs.add(X3DConstants.SCHEMA_ID_4_0.replaceAll("http:", "https:"));
+        systemSchemaIDs.add(X3DConstants.SCHEMA_ID_4_1);
+        systemSchemaIDs.add(X3DConstants.SCHEMA_ID_4_1.replaceAll("http:", "https:"));
 
         fieldAccessMap = new HashMap<>();
         fieldAccessMap.put("inputOnly", FieldConstants.EVENTIN);
