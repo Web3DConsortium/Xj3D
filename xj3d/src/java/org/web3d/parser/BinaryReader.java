@@ -15,9 +15,6 @@ package org.web3d.parser;
 // External imports
 import java.io.*;
 
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
 
 // Local imports
 import org.web3d.vrml.sav.*;
@@ -76,13 +73,15 @@ class BinaryReader extends BaseReader {
         InputStream is = null;
 
         try {
-            is = AccessController.doPrivileged((PrivilegedExceptionAction<InputStream>) () -> input.getByteStream());
-        } catch(PrivilegedActionException pae) {
-
+//          is = AccessController.doPrivileged((PrivilegedExceptionAction<InputStream>) () -> input.getByteStream());
+            is = input.getByteStream();
+        } 
+//      catch(PrivilegedActionException pae) {
+        catch (IOException ioe) {
             String msg = "IO Error while attempting to access file: " +
                          input.getURL();
-
-            throw new IOException(msg, pae.getException());
+//          throw new IOException(msg, pae.getException());
+            throw new IOException(msg, ioe);
         }
 
         String conformance = (String)properties.get(CONFORMANCE_PROP);
