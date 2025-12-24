@@ -124,7 +124,7 @@ public class X3DEntityResolver implements EntityResolver {
         allowedPublicIDs.put(X3DConstants.IMMERSIVE_PUBLIC_ID_4_1,
                              "xml/DTD/x3d-4.1.dtd");
         allowedPublicIDs.put(X3DConstants.FULL_PUBLIC_ID_4_1,
-                             "xml/DTD/x3d-4.0.dtd");
+                             "xml/DTD/x3d-4.1.dtd");
 
         allowedPublicIDs.put(X3DConstants.OLD_PUBLIC_ID, "xml/DTD/x3d-3.0.dtd");
     }
