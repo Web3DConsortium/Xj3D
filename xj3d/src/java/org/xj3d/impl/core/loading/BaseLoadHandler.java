@@ -14,10 +14,12 @@ package org.xj3d.impl.core.loading;
 
 // External imports
 import java.io.FileNotFoundException;
+import java.io.IOException;
+import javax.net.ssl.SSLHandshakeException;
 
-import java.security.AccessController;
-import java.security.PrivilegedActionException;
-import java.security.PrivilegedExceptionAction;
+//import java.security.AccessController;
+//import java.security.PrivilegedActionException;
+//import java.security.PrivilegedExceptionAction;
 
 import org.ietf.uri.ResourceConnection;
 
@@ -116,15 +118,24 @@ abstract class BaseLoadHandler {
         boolean ret_val = true;
 
         try {
-            AccessController.doPrivileged((PrivilegedExceptionAction<Object>) () -> {
-                currentConnection.connect();
-                return null;
-            });
-        } catch(PrivilegedActionException pae) {
-            ret_val = false;
-            Exception e = pae.getException();
+//          AccessController.doPrivileged((PrivilegedExceptionAction<Object>) () -> {
 
-            if (e instanceof FileNotFoundException) {
+                currentConnection.connect();
+//              return null;
+                return ret_val;
+//          });
+//      } catch(PrivilegedActionException pae) {
+        } catch(IOException e) {
+            ret_val = false;
+//          Exception e = pae.getException();
+
+            if (e instanceof SSLHandshakeException) 
+            {
+                String msg = e.getMessage() + "\n  " + currentConnection.getURI();
+                reporter.warningReport(msg, null);
+            }
+            else if (e instanceof FileNotFoundException) 
+            {
                 // Corresponding "File found:" message in ContentLoadHandler.loadExternal()
                 String msg = "file not found, " + currentConnection.getURI();
                 reporter.warningReport(msg, null);
@@ -132,7 +143,8 @@ abstract class BaseLoadHandler {
                 String msg = "IO Error reading external file " +
                          currentConnection.getURI();
 
-                reporter.warningReport(msg, pae.getException());
+//              reporter.warningReport(msg, pae.getException());
+                reporter.warningReport(msg, e);
             }
         }
 

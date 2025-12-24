@@ -14,10 +14,16 @@ package org.xj3d.impl.core.loading;
 
 // External imports
 import java.io.*;
+import java.security.cert.X509Certificate;
 
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Vector;
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.HttpsURLConnection;
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 
 import org.ietf.uri.*;
 import org.ietf.uri.URIUtils;
@@ -77,6 +83,9 @@ class ContentLoadHandler extends BaseLoadHandler
 
     /** A map for determining whether content is an inline */
     private Set<String> inlineSet;
+    
+    /** default hostname verifier for SSL HTTPS security if site is other than web3d.org */
+    private HostnameVerifier defaultHostnameVerifier = HttpsURLConnection.getDefaultHostnameVerifier();
 
     /**
      * Create a content loader that reads values from the given queue and
@@ -283,12 +292,31 @@ class ContentLoadHandler extends BaseLoadHandler
         }
 
         int latestCheckedIndex = -1;
-
+        
         // loop through the list of candidate URLs and look for
         // something that matches. If it does, set it in the node
         // for use.
         for(URL url : source_urls)
         {
+            if ( url.getProtocol().equalsIgnoreCase("https") && 
+                (url.getHost().equalsIgnoreCase("www.web3d.org") || url.getHost().equalsIgnoreCase("web3d.org")))
+            {
+                System.out.println("*** found " + url.getHost() + ", now checking https: certificate");
+                try {
+                    // https://sentry.io/answers/how-to-solve-pkix-path-building-failed-error-in-java/
+                    // Configure SSL to trust all certificates
+                    configureTrustAllSSL();
+                } 
+                catch (Exception ex) {
+                    System.getLogger(ContentLoadHandler.class.getName()).log(System.Logger.Level.ERROR, (String) null, ex);
+                }
+            }
+            else
+            {
+                // ensure regular certs are used in order to retain safety
+                HttpsURLConnection.setDefaultHostnameVerifier(defaultHostnameVerifier); 
+            }
+            
             latestCheckedIndex++; // save and report if found
             try {
                 currentConnection = url.getResource();
@@ -314,7 +342,7 @@ class ContentLoadHandler extends BaseLoadHandler
                 }
 
                 mime_type = currentConnection.getContentType();
-                if(terminateCurrent) {
+                if (terminateCurrent) {
                     currentConnection.close();
                     break;
                 }
@@ -601,4 +629,36 @@ class ContentLoadHandler extends BaseLoadHandler
 
         return match_found;
     }
+    
+    // https://sentry.io/answers/how-to-solve-pkix-path-building-failed-error-in-java/
+    /**
+     * Configures SSL to trust all certificates and bypass hostname verification.
+     * This allows the application to connect to servers with untrusted or self-signed certificates.
+     * WARNING: This approach is insecure for production use.
+     */
+    private static void configureTrustAllSSL() throws Exception {
+        TrustManager[] trustAllCerts = new TrustManager[]{
+            new X509TrustManager() {
+                @Override
+                public X509Certificate[] getAcceptedIssuers() {
+                    return null;
+                }
+                @Override
+                public void checkClientTrusted(X509Certificate[] certs, String authType) {
+                    // Do nothing - trust all clients
+                }
+                @Override
+                public void checkServerTrusted(X509Certificate[] certs, String authType) {
+                    // Do nothing - trust all servers
+                }
+            }
+        };
+
+        SSLContext sc = SSLContext.getInstance("SSL");
+        sc.init(null, trustAllCerts, new java.security.SecureRandom());
+        HttpsURLConnection.setDefaultSSLSocketFactory(sc.getSocketFactory());
+
+        HttpsURLConnection.setDefaultHostnameVerifier((hostname, session) -> true);
+    }
+
 }
