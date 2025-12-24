@@ -51,8 +51,8 @@ public class Xj3dVersionInformation {
      * so need not be modified here
      */
     public static final String BUILD_DSTAMP = "20251223";
-    public static final String BUILD_TSTAMP = "2150";
-    public static final String BUILD_TODAY  = "December 23 2025";
+    public static final String BUILD_TSTAMP = "2300";
+    public static final String BUILD_TODAY  = "23 December 2025";
 
     public static final String SP = " ";
     public static final String PERIOD = ".";
