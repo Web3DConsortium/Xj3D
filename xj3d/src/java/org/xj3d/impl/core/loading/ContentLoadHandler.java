@@ -626,7 +626,6 @@ class ContentLoadHandler extends BaseLoadHandler
                 }
             }
         }
-
         return match_found;
     }
     
