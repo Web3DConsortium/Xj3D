@@ -18,11 +18,19 @@ Configuration settings:  https://www.web3d.org/x3d/content/examples/X3dDeveloper
 ===========================================
 clean.parsers:
 clean.ogl:
+Deleting directory C:\x3d-github\Xj3D\xj3d\classes
 clean.apps:
+Deleting directory C:\x3d-github\Xj3D\xj3d\apps\browser\classes
+Deleting directory C:\x3d-github\Xj3D\xj3d\apps\browser\jars
+Deleting directory C:\x3d-github\Xj3D\xj3d\apps\cadfilter\classes
+Deleting directory C:\x3d-github\Xj3D\xj3d\apps\cadfilter\jars
+Deleting directory C:\x3d-github\Xj3D\xj3d\apps\replica\classes
+Deleting directory C:\x3d-github\Xj3D\xj3d\apps\replica\jars
 clean.jars:
 clean.examples.and.parsetest:
 clean.installers:
 clean:
+Deleting: C:\x3d-github\Xj3D\xj3d\buildStamp.txt
 initWin:
 initUnix:
 initMac:
@@ -100,7 +108,7 @@ Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-nps.jar
 timestamp:
 Copying 1 file to C:\x3d-github\Xj3D\xj3d
 DSTAMP = "20251223"
-TSTAMP = "2145"
+TSTAMP = "2305"
 TODAY = "December 23 2025"
 Compiling 1 source file to C:\x3d-github\Xj3D\xj3d\classes
 Deleting: C:\x3d-github\Xj3D\xj3d\Xj3dVersionInformation.java
@@ -2842,243 +2850,231 @@ Loading source file C:\x3d-github\Xj3D\xj3d\apps\replica\src\java\xj3d\replica\T
 Loading source file C:\x3d-github\Xj3D\xj3d\apps\replica\src\java\xj3d\replica\ThumbnailImager.java...
 Loading source file C:\x3d-github\Xj3D\xj3d\apps\replica\src\java\xj3d\replica\ViewpointSnapshotImager.java...
 Constructing Javadoc information...
-error: Error fetching URL: https://docs.oracle.com/en/java/javase/23/docs/api/index.html/ (java.io.FileNotFoundException: https://docs.oracle.com/en/java/javase/23/docs/api/index.html/package-list)
+error: Error fetching URL: https://docs.oracle.com/en/java/javase/25/docs/api/index.html/ (java.io.FileNotFoundException: https://docs.oracle.com/en/java/javase/25/docs/api/index.html/package-list)
 Building index for all the packages and classes...
 Standard Doclet version 25.0.1+8-27
 Building tree for all the packages and classes...
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\parser\VRMLParserFactory.java:56: error: attribute not supported in HTML5: summary
- * <table summary="standard properties that may be required of all factories and readers">
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\StringContentHandler.java:24: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\ContentHandler.java:24: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\RouteHandler.java:24: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\ScriptHandler.java:24: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\BinaryContentHandler.java:24: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLGeometricPropertyNodeType.java:18: error: unexpected end tag: </p>
- * </p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLUrlListener.java:22: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLViewDependentNodeType.java:23: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLVisualMaterialNodeType.java:16: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\ViewpointListener.java:22: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\proto\ProtoROUTE.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\CRExternProtoBuilder.java:38: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\CRROUTE.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\browser\OverlayWrapper.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\input\dis\DISConnectionId.java:22: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\input\dis\DISId.java:22: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\input\dis\DISXMLProtocolHandler.java:45: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\AreaListener.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseBindableNode.java:33: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseComponentGeometryNode.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseDragSensorNode.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseSensorNode.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseIndexedTriangleGeometryNode.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseMetadataObjectNode.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BasePointSetGeometryNode.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseSequencerNode.java:35: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseTextureNode.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\BaseTriangleGeometryNode.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\VisibilityListener.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\cadgeometry\BaseCADAssembly.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\cadgeometry\BaseCADLayer.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\cadgeometry\BaseCADPart.java:31: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\cadgeometry\BaseIndexedQuadSet.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\cadgeometry\BaseQuadSet.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\core\BaseMetadataDouble.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\core\BaseMetadataFloat.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\core\BaseMetadataInteger.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\core\BaseMetadataSet.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\core\BaseMetadataString.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\core\BaseWorldInfo.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\enveffects\BaseBackground.java:33: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\enveffects\BaseFog.java:31: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\environment\BaseProximitySensor.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\environment\BaseVisibilitySensor.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\eventutils\BaseBooleanFilter.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\eventutils\BaseBooleanSequencer.java:33: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\eventutils\BaseBooleanToggle.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\eventutils\BaseBooleanTrigger.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\eventutils\BaseIntegerTrigger.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\eventutils\BaseTimeTrigger.java:32: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom3d\BaseBox.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom3d\BaseCone.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom3d\BaseCylinder.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom3d\BaseIndexedFaceSet.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoECParameters.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoLCCParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoLCE3DParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoLSR3DParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoLTSEParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoLocalTangentParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoLocation.java:38: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoMParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoMetadata.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoObliqueMercatorParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoPSParameters.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoReferenceSurfaceInfo.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoSRFInstance.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoSRFParametersInfo.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoSRFParametersInfoNode.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoSRFSet.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoSRFTemplate.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoTMParameters.java:25: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geospatial\BaseGeoTouchSensor.java:39: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\group\BaseGroup.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\group\BaseOrderedGroup.java:38: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\group\BaseSwitch.java:49: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\interpolator\BaseScalarInterpolator.java:33: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\layout\BaseGridLayout.java:39: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\layout\BaseGroupLayout.java:34: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\layout\BaseImage2D.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\layout\BaseXYLayout.java:35: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\lighting\BaseDirectionalLight.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\lighting\BasePointLight.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\lighting\BaseSpotLight.java:29: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\marker\BaseScreenMarker.java:31: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\navigation\BaseBillboard.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\navigation\BaseCollision.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\navigation\BaseNavigationInfo.java:34: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BaseEmitter.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BaseExplosionEmitter.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BaseGravityPhysicsModel.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BasePhysicsModel.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BasePointEmitter.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BasePolylineEmitter.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\particle\BaseWindPhysicsModel.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\picking\BasePickingNode.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\picking\BasePickableGroup.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\BaseIndexedLineSet.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\BaseLineSet.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\BasePointSet.java:27: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\BaseTriangleSet.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\text\BaseFontStyle.java:56: error: unexpected end tag: </p>
- * </p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\xj3d\ui\awt\browser\ogl\VRMLOGLBrowserFactoryImpl.java:57: error: attribute not supported in HTML5: summary
- * <table summary="the following parameters are supported">
-C:\x3d-github\Xj3D\xj3d\src\java\org\xj3d\ui\awt\browser\ogl\X3DOGLBrowserFactoryImpl.java:46: error: attribute not supported in HTML5: summary
- * <table summary="the following parameters are supported">
-C:\x3d-github\Xj3D\xj3d\src\java\vrml\eai\BrowserFactory.java:84: error: attribute not supported in HTML5: summary
- * <table summary="the following options are supported by Xj3D">
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\norender\nodes\shape\NRPointProperties.java:25: warning: no main description
+ * @author terry
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\ogl\nodes\nurbs\mesh\TrimmedNurbsMesh.java:32: warning: no main description
+ * @author Vincent Marchetti
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\ogl\nodes\render\OGLCoordinate.java:24: warning: no main description
+ * @author Rick Goldberg
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\ogl\nodes\render\OGLNormal.java:24: warning: no main description
+ * @author Rick Goldberg
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\filters\AbsScaleFilter.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\AbstractDynamicFieldNode.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\AbstractFilter.html...
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\AbstractFilter.java:101: warning: no comment
+    public void setParsingType(ParsingType type) {
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\xj3d\impl\core\loading\AbstractLoadManager.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\AbstractNode.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\browser\AbstractProfilingInfo.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\browser\AbstractProfilingInfo.java:27: warning: use of default constructor, which does not provide a comment
+public abstract class AbstractProfilingInfo implements ProfilingInfo {
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\nodes\proto\AbstractProto.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\lang\AbstractScene.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\scripting\ecmascript\builtin\AbstractScriptableObject.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\importer\AC3DFileParser.html...
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\importer\AC3DFileParser.java:624: warning: no description for @return
+     * @return
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\importer\AC3DFileParser.java:656: warning: no description for @return
+     * @return
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\importer\AC3DFileParser.java:875: warning: no description for @return
+     * @return
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\importer\AC3DFileParser.java:984: warning: no description for @return
+     * @return
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2482: warning: no @param for stream
+  public X3DRelaxedParser(java.io.InputStream stream) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2486: warning: no @param for stream
+  public X3DRelaxedParser(java.io.InputStream stream, String encoding) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2486: warning: no @param for encoding
+  public X3DRelaxedParser(java.io.InputStream stream, String encoding) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2512: warning: no @param for stream
+  public X3DRelaxedParser(java.io.Reader stream) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2534: warning: no @param for tm
+  public X3DRelaxedParser(X3DRelaxedParserTokenManager tm) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:365: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void Scene() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:405: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void Header() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:443: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ProfileDecl() throws ParseException {String prof_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:475: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ComponentDecl() throws ParseException {String comp_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:506: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void MetaDecl() throws ParseException {String key;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:544: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void Statement() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:587: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ProtoBodyStatement() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:630: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void NodeStatement() throws ParseException {String def_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:681: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void RootNodeStatement() throws ParseException {String def_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:709: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ProtoStatement() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:733: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void Proto() throws ParseException {String proto_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:780: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ProtoBody() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:831: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void RestrictedInterfaceDecl() throws ParseException {int access_type;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:910: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void InterfaceDecl() throws ParseException {int access_type;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:969: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ExternProto() throws ParseException {String proto_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1013: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ExternInterfaceDecl() throws ParseException {int access_type;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1039: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void RouteStatement() throws ParseException {String src_node;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1071: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ImportStatement() throws ParseException {String inline_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1114: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ExportStatement() throws ParseException {String node_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1149: warning: no @return
+  final public String[] URIList() throws ParseException {List<String> uri_list = new ArrayList<String>();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1149: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String[] URIList() throws ParseException {List<String> uri_list = new ArrayList<String>();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1199: warning: no @param for defName
+  final public void Node(String defName) throws ParseException {String node_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1199: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void Node(String defName) throws ParseException {String node_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1277: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void NodeBody() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1306: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void NodeBodyElement() throws ParseException {String field_name;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1398: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ScriptBody() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1433: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public void ScriptBodyElement() throws ParseException {int access_type;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1585: warning: no @return
+  final public String NodeNameId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1585: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String NodeNameId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1597: warning: no @return
+  final public String NodeTypeId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1597: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String NodeTypeId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1612: warning: no @return
+  final public String FieldNameId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1612: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String FieldNameId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1628: warning: no @return
+  final public int AccessType() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1628: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public int AccessType() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1666: warning: no @return
+  final public String FieldId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1666: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String FieldId() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1682: warning: no @param for fieldName
+  final public Object FieldValue(String fieldName) throws ParseException {Object id = null;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1682: warning: no @return
+  final public Object FieldValue(String fieldName) throws ParseException {Object id = null;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1682: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public Object FieldValue(String fieldName) throws ParseException {Object id = null;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1718: warning: no @return
+  final public String SingleFieldValue() throws ParseException {String id = null;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1718: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String SingleFieldValue() throws ParseException {String id = null;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1757: warning: no @param for fieldName
+  final public Object MultiFieldValue(String fieldName) throws ParseException {boolean is_nodes = false;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1757: warning: no @return
+  final public Object MultiFieldValue(String fieldName) throws ParseException {boolean is_nodes = false;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1757: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public Object MultiFieldValue(String fieldName) throws ParseException {boolean is_nodes = false;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1835: warning: no @return
+  final public String LiteralValue() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1835: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String LiteralValue() throws ParseException {String id;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1872: warning: no @return
+  final public String[] StringArray() throws ParseException {stringArray.clear();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1872: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String[] StringArray() throws ParseException {stringArray.clear();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1899: warning: no @return
+  final public String[] NumberArray() throws ParseException {stringArray.clear();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1899: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String[] NumberArray() throws ParseException {stringArray.clear();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1924: warning: no @return
+  final public String FixedNumberArray() throws ParseException {StringBuilder value = new StringBuilder();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1924: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String FixedNumberArray() throws ParseException {StringBuilder value = new StringBuilder();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1949: warning: no @return
+  final public String[] BooleanArray() throws ParseException {stringArray.clear();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1949: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String[] BooleanArray() throws ParseException {stringArray.clear();
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1994: warning: no @return
+  final public String Id() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:1994: warning: no @throws for org.web3d.parser.x3d.ParseException
+  final public String Id() throws ParseException {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2497: warning: no @param for stream
+  public void ReInit(java.io.InputStream stream) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2501: warning: no @param for stream
+  public void ReInit(java.io.InputStream stream, String encoding) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2501: warning: no @param for encoding
+  public void ReInit(java.io.InputStream stream, String encoding) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2523: warning: no @param for stream
+  public void ReInit(java.io.Reader stream) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2544: warning: no @param for tm
+  public void ReInit(X3DRelaxedParserTokenManager tm) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2603: warning: no @return
+  final public Token getNextToken() {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2612: warning: no @param for index
+  final public Token getToken(int index) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2612: warning: no @return
+  final public Token getToken(int index) {
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2660: warning: no @return
+  public ParseException generateParseException() {
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\util\spatial\AllRegion.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\networking\Anchor.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\x3d\sai\networking\Anchor.java:83: warning: no description for @return
+     * @return 
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\x3d\sai\networking\Anchor.java:89: warning: no description for @param
+     * @param newValue
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\browser\AntialiasingAction.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\shape\Appearance.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\node\Appearance.html...
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\Encodable.java:123: warning: no description for @return
+     * @return 
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\Encodable.java:125: warning: no @param for enc
+    boolean deepEquals(Encodable enc);
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:67: warning: no description for @param
+     * @param nodeName
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:76: warning: no description for @param
+     * @param defName
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:78: warning: no @param for nodeName
+    protected BaseEncodable(String nodeName, String defName) {
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:280: warning: no description for @return
+     * @return 
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\Appearance.java:304: warning: no description for @return
+     * @return 
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\AppearanceFilter.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\filters\AppearanceReplacerFilter.html...
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\NewAbstractFilter.java:1250: warning: no description for @return
+     * @return
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\ogl\browser\ApplicationFrameManager.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\image\AreaAveragingScaleFilter.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\AreaListener.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\node\ArrayData.html...
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:56: warning: no description for @param
+     * @param num
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:58: warning: no @param for data
+    public ArrayData(Object data, int num) {
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:80: warning: no description for @param
+     * @param num
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:82: warning: no @param for data
+    public ArrayData(Object data, int type, int num) {
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:82: warning: no @param for type
+    public ArrayData(Object data, int type, int num) {
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:36: warning: no comment
+    public static final int DOUBLE = 4;
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:35: warning: no comment
+    public static final int FLOAT = 3;
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:33: warning: no comment
+    public static final int INT = 1;
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:34: warning: no comment
+    public static final int LONG = 2;
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\util\ArrayUtils.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\sound\AudioClip.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\xj3d\ui\construct\ogl\AutoConfigureViewpoint.html...
@@ -8574,7 +8570,7 @@ Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\index-files\index-26.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\search.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\overview-summary.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\help-doc.html...
-7 errors
+1 error
 100 warnings
 Copying 2 files to C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\parser\vrml97\doc-files
 Copying 2 files to C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\parser\x3d\doc-files
@@ -8629,7 +8625,7 @@ Apache Ant(TM) version 1.10.15 compiled on August 25 2024 installed at C:\apache
 Java? Virtual Machine version 25.0.1 installed at C:\Program Files\Java\OpenJDK\jdk-25.0.1
 Operating System: Windows 11 version 10.0 running on amd64 
 Today is: December 23 2025
-Local Time: 2145
+Local Time: 2305
 -------------------------------------------------------------------------------------------------
 
 check.run:
@@ -8639,8 +8635,8 @@ Xj3D launching 'C:\x3d-github\Xj3D\xj3d/apps/browser/moving_box.x3dv'
      browser.dir=apps/browser
 app.browser.args=-anisotropicDegree 16 -antialias 8 -enableOriginManager -numLoaderThreads 4 -swing
 org.xj3d.core.loading.threads set to: 4
-Dec 23, 2025 9:47:18 PM org.odejava.Odejava <clinit>
+Dec 23, 2025 11:07:05 PM org.odejava.Odejava <clinit>
 INFO: ODE natives version 0.3.4 loaded.
 *** Xj3D checkForSpecConfig(version=3.2) opened config/3.2/profiles.xml
 org.web3d.vrml.renderer.common.nodes.shape.useTextureCache set to: true
-BUILD SUCCESSFUL (total time: 1 minute 32 seconds)
+BUILD SUCCESSFUL (total time: 1 minute 39 seconds)
