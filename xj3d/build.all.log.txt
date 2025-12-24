@@ -1,20 +1,20 @@
-ant -f C:\\x3d-github\\Xj3D\\xj3d -Djdk.xml.entityExpansionLimit=120000 -Djdk.xml.totalEntitySizeLimit=50000000 all
+ant -f C:\\x3d-github\\Xj3D\\xj3d -Djdk.xml.entityExpansionLimit=120000 -Djdk.xml.maxGeneralEntitySizeLimit=50000000 -Djdk.xml.totalEntitySizeLimit=50000000 all
 platformType:
 platformInitialize:
 versions:
 ant -version
 Apache Ant(TM) version 1.10.15 compiled on August 25 2024
 java -version
-openjdk version "24.0.1" 2025-04-15
-OpenJDK Runtime Environment (build 24.0.1+9-30)
-OpenJDK 64-Bit Server VM (build 24.0.1+9-30, mixed mode, sharing)
+openjdk version "25.0.1" 2025-10-21
+OpenJDK Runtime Environment (build 25.0.1+8-27)
+OpenJDK 64-Bit Server VM (build 25.0.1+8-27, mixed mode, sharing)
 ANT_HOME  =C:\apache-ant-1.10.15
-JAVA_HOME =${env.JAVA_HOME}
+JAVA_HOME =C:\Program Files\Java\OpenJDK\jdk-25.0.1
 javac source/target      $java.source=${java.source}
-Java/JVM version    $ant.java.version=24
-Java/JVM detail version $java.version=24.0.1
+Java/JVM version    $ant.java.version=25
+Java/JVM detail version $java.version=25.0.1
 Ant version              $ant.version=Apache Ant(TM) version 1.10.15 compiled on August 25 2024
-Configuration settings:  https://savage.nps.edu/Savage/developers.html
+Configuration settings:  https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html
 ===========================================
 clean.parsers:
 clean.ogl:
@@ -107,9 +107,9 @@ Copying C:\x3d-github\Xj3D\xj3d\apps\replica\src\java\xj3d\replica\images\Xj3dRe
 Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-nps.jar
 timestamp:
 Copying 1 file to C:\x3d-github\Xj3D\xj3d
-DSTAMP = "20250623"
-TSTAMP = "0833"
-TODAY = "June 23 2025"
+DSTAMP = "20251223"
+TSTAMP = "1620"
+TODAY = "December 23 2025"
 Compiling 1 source file to C:\x3d-github\Xj3D\xj3d\classes
 Deleting: C:\x3d-github\Xj3D\xj3d\Xj3dVersionInformation.java
 compile.browser:
@@ -2852,10 +2852,20 @@ Loading source file C:\x3d-github\Xj3D\xj3d\apps\replica\src\java\xj3d\replica\V
 Constructing Javadoc information...
 error: Error fetching URL: https://docs.oracle.com/en/java/javase/23/docs/api/index.html/ (java.io.FileNotFoundException: https://docs.oracle.com/en/java/javase/23/docs/api/index.html/package-list)
 Building index for all the packages and classes...
-Standard Doclet version 24.0.1+9-30
+Standard Doclet version 25.0.1+8-27
 Building tree for all the packages and classes...
 C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\parser\VRMLParserFactory.java:56: error: attribute not supported in HTML5: summary
  * <table summary="standard properties that may be required of all factories and readers">
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\StringContentHandler.java:24: warning: empty <p> tag
+ * <p>
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\ContentHandler.java:24: warning: empty <p> tag
+ * <p>
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\RouteHandler.java:24: warning: empty <p> tag
+ * <p>
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\ScriptHandler.java:24: warning: empty <p> tag
+ * <p>
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\sav\BinaryContentHandler.java:24: warning: empty <p> tag
+ * <p>
 C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLGeometricPropertyNodeType.java:18: error: unexpected end tag: </p>
  * </p>
 C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLUrlListener.java:22: warning: empty <p> tag
@@ -3047,16 +3057,6 @@ C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\Bas
 C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\BasePointSet.java:27: warning: empty <p> tag
  * <p>
 C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\render\BaseTriangleSet.java:28: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\rigidphysics\BaseBallJoint.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\rigidphysics\BaseJointNode.java:26: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\rigidphysics\BaseContact.java:33: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\rigidphysics\BaseDoubleAxisHingeJoint.java:30: warning: empty <p> tag
- * <p>
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\rigidphysics\BaseMotorJoint.java:31: warning: empty <p> tag
  * <p>
 C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\text\BaseFontStyle.java:56: error: unexpected end tag: </p>
  * </p>
@@ -8604,7 +8604,6 @@ Copying 1 file to C:\x3d-github\Xj3D\xj3d\jars
 Copying C:\x3d-github\Xj3D\xj3d\lib\jhall.jar to C:\x3d-github\Xj3D\xj3d\jars\jhall.jar
 Packaging all third party dependencies into a single JAR at jars/xj3d-2.3-3rdparty-nps.jar
 Building zip: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-3rdparty-nps.jar
-
 Deleting directory C:\x3d-github\Xj3D\xj3d\lib\marshall
 Production note: X3D Examples image capture links to jars via property name=xj3d.dir
 Production note: X3D-Edit update requires copying Xj3D jars to module www.web3d.org\x3d/tools/X3dEdit4.0/X3dEditModuleSuite/X3dSourceFilePalette/release/modules/ext
@@ -8632,13 +8631,13 @@ Modeling, Virtual Environments and Simulation (MOVES) Institute
 -------------------------------------------------------------------------------------------------
 Scenario Authoring and Visualization for Advanced Graphical Environments (SAVAGE) Research Group
 -------------------------------------------------------------------------------------------------
-Xj3D Graphics Browser v2.3-nps [1995-2024]
+Xj3D Graphics Browser v2.3-nps [1995-2025]
 -------------------------------------------------------------------------------------------------
 Apache Ant(TM) version 1.10.15 compiled on August 25 2024 installed at C:\apache-ant-1.10.15
-Java? Virtual Machine version 24.0.1 installed at C:\Program Files\Java\OpenJDK\jdk-24.0.1
+Java? Virtual Machine version 25.0.1 installed at C:\Program Files\Java\OpenJDK\jdk-25.0.1
 Operating System: Windows 11 version 10.0 running on amd64 
-Today is: June 23 2025
-Local Time: 0833
+Today is: December 23 2025
+Local Time: 1620
 -------------------------------------------------------------------------------------------------
 
 check.run:
@@ -8647,13 +8646,9 @@ Xj3D launching 'C:\x3d-github\Xj3D\xj3d/apps/browser/moving_box.x3dv'
       main.class=xj3d.browser.Xj3DBrowser
      browser.dir=apps/browser
 app.browser.args=-anisotropicDegree 16 -antialias 8 -enableOriginManager -numLoaderThreads 4 -swing
-WARNING: A restricted method in java.lang.System has been called
-WARNING: java.lang.System::load has been called by com.jogamp.common.jvm.JNILibLoaderBase in an unnamed module (file:/C:/x3d-github/Xj3D/xj3d/lib/jogamp-fat.jar)
-WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
-WARNING: Restricted methods will be blocked in a future release unless native access is enabled
-
 org.xj3d.core.loading.threads set to: 4
-Jun 23, 2025 8:34:49 AM org.odejava.Odejava <clinit>
+Dec 23, 2025 4:21:48 PM org.odejava.Odejava <clinit>
 INFO: ODE natives version 0.3.4 loaded.
+*** Xj3D checkForSpecConfig(version=3.2) opened config/3.2/profiles.xml
 org.web3d.vrml.renderer.common.nodes.shape.useTextureCache set to: true
-BUILD SUCCESSFUL (total time: 1 minute 21 seconds)
+BUILD SUCCESSFUL (total time: 1 minute 25 seconds)
