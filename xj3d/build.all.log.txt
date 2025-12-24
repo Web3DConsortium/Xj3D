@@ -18,19 +18,11 @@ Configuration settings:  https://www.web3d.org/x3d/content/examples/X3dDeveloper
 ===========================================
 clean.parsers:
 clean.ogl:
-Deleting directory C:\x3d-github\Xj3D\xj3d\classes
 clean.apps:
-Deleting directory C:\x3d-github\Xj3D\xj3d\apps\browser\classes
-Deleting directory C:\x3d-github\Xj3D\xj3d\apps\browser\jars
-Deleting directory C:\x3d-github\Xj3D\xj3d\apps\cadfilter\classes
-Deleting directory C:\x3d-github\Xj3D\xj3d\apps\cadfilter\jars
-Deleting directory C:\x3d-github\Xj3D\xj3d\apps\replica\classes
-Deleting directory C:\x3d-github\Xj3D\xj3d\apps\replica\jars
 clean.jars:
 clean.examples.and.parsetest:
 clean.installers:
 clean:
-Deleting: C:\x3d-github\Xj3D\xj3d\buildStamp.txt
 initWin:
 initUnix:
 initMac:
@@ -99,7 +91,7 @@ C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\scripting\ecmascript\JavascriptS
 compile:
 Copying 30 files to C:\x3d-github\Xj3D\xj3d\classes\images
 Copying 28 files to C:\x3d-github\Xj3D\xj3d\classes\xml
-Copying 98 files to C:\x3d-github\Xj3D\xj3d\classes\config
+Copying 118 files to C:\x3d-github\Xj3D\xj3d\classes\config
 Copying 1 file to C:\x3d-github\Xj3D\xj3d\classes\config
 jar:
 Copying 1 file to C:\x3d-github\Xj3D\xj3d\classes\org\xj3d\ui\awt\browser\ogl\images
@@ -108,7 +100,7 @@ Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-nps.jar
 timestamp:
 Copying 1 file to C:\x3d-github\Xj3D\xj3d
 DSTAMP = "20251223"
-TSTAMP = "1620"
+TSTAMP = "2145"
 TODAY = "December 23 2025"
 Compiling 1 source file to C:\x3d-github\Xj3D\xj3d\classes
 Deleting: C:\x3d-github\Xj3D\xj3d\Xj3dVersionInformation.java
@@ -8637,7 +8629,7 @@ Apache Ant(TM) version 1.10.15 compiled on August 25 2024 installed at C:\apache
 Java? Virtual Machine version 25.0.1 installed at C:\Program Files\Java\OpenJDK\jdk-25.0.1
 Operating System: Windows 11 version 10.0 running on amd64 
 Today is: December 23 2025
-Local Time: 1620
+Local Time: 2145
 -------------------------------------------------------------------------------------------------
 
 check.run:
@@ -8647,8 +8639,8 @@ Xj3D launching 'C:\x3d-github\Xj3D\xj3d/apps/browser/moving_box.x3dv'
      browser.dir=apps/browser
 app.browser.args=-anisotropicDegree 16 -antialias 8 -enableOriginManager -numLoaderThreads 4 -swing
 org.xj3d.core.loading.threads set to: 4
-Dec 23, 2025 4:21:48 PM org.odejava.Odejava <clinit>
+Dec 23, 2025 9:47:18 PM org.odejava.Odejava <clinit>
 INFO: ODE natives version 0.3.4 loaded.
 *** Xj3D checkForSpecConfig(version=3.2) opened config/3.2/profiles.xml
 org.web3d.vrml.renderer.common.nodes.shape.useTextureCache set to: true
-BUILD SUCCESSFUL (total time: 1 minute 25 seconds)
+BUILD SUCCESSFUL (total time: 1 minute 32 seconds)
