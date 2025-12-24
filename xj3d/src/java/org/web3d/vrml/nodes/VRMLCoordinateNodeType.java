@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -53,7 +53,7 @@ public interface VRMLCoordinateNodeType extends VRMLGeometricPropertyNodeType {
      * projections. This is a reference to the post-processed data that may be
      * directly used for rendering. In the case of CoordinateDouble, then the
      * array may be a set of down-cast values to floats.
-     * <p>
+    
      * Note that the array may well be longer than the actual number of valid
      * coordinates. Use {@link #getNumPoints()} to determine the number of
      * valid entries.

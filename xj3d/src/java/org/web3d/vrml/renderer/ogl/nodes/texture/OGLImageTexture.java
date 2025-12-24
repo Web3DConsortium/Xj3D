@@ -25,7 +25,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseImageTexture;
 
 /**
  * OGL implementation of a ImageTexture node.
- * <p>
+
  *
  * @author Alan Hudson, Justin Couch
  * @version $Revision: 2.5 $

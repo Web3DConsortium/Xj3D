@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseXYLayout;
 
 /**
  * Null-renderer implementation of a XYLayout node.
- * <p>
+
  *
  *
  * @author Alan Hudson

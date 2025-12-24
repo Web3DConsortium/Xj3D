@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * Base representation of a node that provides navigation hints in the scene.
- * <p>
+
  *
  * A viewpoint provides a place to examine the contents of the virtual world.
  * Depending on the world type, the way of specifying a viewpoint's location

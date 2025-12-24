@@ -29,11 +29,11 @@ import org.xj3d.core.eventmodel.NetworkProtocolHandler;
 
 /**
  * The manager of network interactions.
- * <p>
+
  *
  * Does not perform networking itself, but manages the different
  * protocol handlers.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $
@@ -128,7 +128,7 @@ public class DefaultNetworkManager implements NetworkManager {
      * component is assumed to be the lowest level supported (ie if the given
      * level fails, then levels above this cannot be supported, but those below
      * can still be).
-     * <p>
+    
      * Mostly this is used for when initialization fails and we wish to disable
      * support for loading of nodes in that component.
      *

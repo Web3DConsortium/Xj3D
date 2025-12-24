@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Common basic implementation of any node that uses grouping functionality.
- * <p>
+
  *
  * The basic (X3D) definition of X3DGroupingNode is:
  * <pre>

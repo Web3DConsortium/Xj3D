@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -41,7 +41,7 @@ import org.web3d.vrml.nodes.VRMLProtoInstance;
  * Implementation of the {@link org.web3d.vrml.lang.VRMLNodeFactory}
  * that produces implementations of the nodes and can be customized for a
  * specific renderer.
- * <p>
+
  *
  * This implementation serves two purposes - generalised node factory
  * implementation and the base of a renderer-specific implementation. The
@@ -49,17 +49,17 @@ import org.web3d.vrml.nodes.VRMLProtoInstance;
  * constructor is marked <code>protected</code> so that you can't create
  * an instance directly. However, you can use the static factory method to
  * fetch the singleton instance for that particular renderer type.
- * <p>
+
  *
  * <b>Property Files</b>
- * <p>
+
  *
  * Yes, there are a lot used by this class. Most of them we don't know until
  * runtime because the loading of one file is used to find the definition of
  * another file to load with further property information. There is a much
  * more in-depth tutorial on how to extend Xj3D on the website, so this is
  * just an overview.
- * <p>
+
  *
  * At the top of the pile is <code>xj3d.properties</code>. This file is used
  * at startup of the factory. In here, is located the list of profiles
@@ -69,7 +69,7 @@ import org.web3d.vrml.nodes.VRMLProtoInstance;
  * file name is all lower case, regardless of what the initial formal profile
  * name is. In the profile properties file is the title and the list of
  * each component and level that is required for that profile.
- * <p>
+
  *
  * After the profiles, there is a list of the components that may be supported.
  * This list just points to the property file that contains the definition
@@ -903,7 +903,7 @@ public class DefaultNodeFactory
     /**
      * Check to see if a spec definition file exists for the requested
      * version number.
-     * <p>
+    
      * Load the basic spec defined profiles and components for the given spec
      * version. This will look for config/spec_version/profiles.xml in the
      * classpath and return an input stream if it can find an appropriate match

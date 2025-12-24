@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import java.util.Map;
 
 /**
  * MetaData related to the scene.
- * <p>
+
  *
  * MetaData provides setup information that is useful when trying to blend
  * multiple scenes together. For example, it will tell you about what version

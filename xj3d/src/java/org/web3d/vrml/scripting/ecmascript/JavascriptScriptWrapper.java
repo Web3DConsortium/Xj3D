@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -34,7 +34,7 @@ import org.web3d.vrml.scripting.ScriptWrapper;
 /**
  * A wrapper class used to convert between the Xj3D implementation specific
  * details and the VRML97 spec requirements for a script.
- * <p>
+
  *
  * Note that as this class does not wrap X3D scripts, the class does not
  * need to take an instance of VRMLScriptNodeType as we cannot change the field

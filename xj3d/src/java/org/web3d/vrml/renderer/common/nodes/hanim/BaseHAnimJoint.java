@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseGroupingNode;
 
 /**
  * Common implementation for the field handling of the HAnimJoint node.
- * <p>
+
  *
  * The node is defined as follows:
  * <pre>

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * Representation of the top-level collection of RigidBody objects in Xj3D.
- * <p>
+
  *
  * A collection of rigid bodies is a collective of nodes that are evaluated as
  * a single set of conditions that need to be solved.

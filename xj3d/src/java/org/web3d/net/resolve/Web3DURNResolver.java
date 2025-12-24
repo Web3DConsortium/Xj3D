@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,10 +27,10 @@ import org.j3d.util.DefaultErrorReporter;
 import org.j3d.util.ErrorReporter;
 
 /**
- * <p>
+
  * A URN resolver to allow the integration of URNs that use the
  * <code>web3d</code> Namespace ID.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

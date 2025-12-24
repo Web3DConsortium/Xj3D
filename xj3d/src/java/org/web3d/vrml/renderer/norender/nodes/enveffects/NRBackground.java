@@ -22,12 +22,10 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * A node that can represents a VRML Background node.
- * <p>
  *
  * A background node in VRML is quite different to the Java3D background. It
  * is represented by a 6 sided box inside a sphere at a nominal infinite
  * distance. Each side of the box may have a different image on it.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $
@@ -44,7 +42,7 @@ public class NRBackground extends BaseBackground
     /**
      * Construct a new instance of this node based on the details from the
      * given node.
-     *  <p>
+    
      *
      * @param node The node to copy
      * @throws IllegalArgumentException The node is not the right type.

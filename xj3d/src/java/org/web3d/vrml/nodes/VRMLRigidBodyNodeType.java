@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * Representation of single RigidBody object in the rigid body physics model.
- * <p>
+
  *
  * See the specification definition at
  * http://www.xj3d.org/extensions/rigid_physics.html
@@ -81,7 +81,7 @@ public interface VRMLRigidBodyNodeType extends VRMLNodeType {
      * Set the collection of geometry nodes that this body should use to render
      * the main scene transformation. If passed a zero for numValid this method
      * will remove all current values.
-     * <p>
+    
      *
      * Geometry is allowed to be one of the grouping nodes or a shape node
      * type. However, if you provide something like a LOD or Switch, don't
@@ -105,7 +105,7 @@ public interface VRMLRigidBodyNodeType extends VRMLNodeType {
      * Set the node that should be used to represent the mass density model.
      * Setting a value of null will clear the current model in use and return
      * the system to a spherical model.
-     * <p>
+    
      *
      * The valid body nodes are Sphere, Box and Cone.
      *

@@ -21,7 +21,7 @@ import org.web3d.x3d.sai.X3DRoute;
 
 /**
  * Representation of a ROUTE structure in X3D.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

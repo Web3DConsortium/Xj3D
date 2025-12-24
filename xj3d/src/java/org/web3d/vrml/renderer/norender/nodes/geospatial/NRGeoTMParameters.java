@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * NoRender implementation of an GeoTMParameters
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

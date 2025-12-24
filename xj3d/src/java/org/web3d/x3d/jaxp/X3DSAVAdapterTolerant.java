@@ -30,7 +30,7 @@ import org.web3d.vrml.lang.InvalidFieldException;
 /**
  * Interface adapter between XML input from a SAX source to the SAV source
  * used by the other parsers.
- * <p>
+
  * The implementation is a simplistic way for quickly getting XML content into
  * the normal VRML input sources by adapting the SAX feeds to SAV feeds.
  *

@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.common.nodes.group.BaseTransform;
 
 /**
  * norender implementation of a transform node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

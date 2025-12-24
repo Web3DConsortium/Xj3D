@@ -25,7 +25,7 @@ import org.xj3d.sai.X3DFieldTypeMapper;
 
 /**
  * Implementation of a node's field definition.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

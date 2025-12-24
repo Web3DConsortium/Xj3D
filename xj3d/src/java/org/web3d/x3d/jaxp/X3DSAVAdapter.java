@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -48,7 +48,7 @@ import org.web3d.vrml.lang.InvalidFieldException;
 /**
  * Interface adapter between XML input from a Simple API for XML (SAX) source to
  * the Simple API for VRML Parsing (SAV) source used by the other parsers.
- * <p>
+
  * The implementation is a simplistic way for quickly getting XML content into
  * the normal VRML input sources by adapting the SAX feeds to SAV feeds.
  *

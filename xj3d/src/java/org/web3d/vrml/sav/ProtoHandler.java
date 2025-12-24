@@ -21,7 +21,7 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Receiver of notifications from the VRML document about proto declaration
  * information.
- * <p>
+
  * A proto handler deals with proto specific information. During the body of
  * the proto the normal content handler methods are called, except when a
  * field value uses IS.

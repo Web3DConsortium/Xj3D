@@ -39,7 +39,7 @@ import org.xj3d.core.eventmodel.OriginManager;
 /**
  * A listener and handler responsible for executing all navigation commands
  * from mice and keyboards to move a viewpoint around a scene.
- * <p>
+
  *
  * This class does not contain any direct event handling. Instead it assumes
  * that another class with either derive from it or delegate to it to do the
@@ -63,10 +63,10 @@ import org.xj3d.core.eventmodel.OriginManager;
  * pressed, all the other button presses are ignored. By default, all the
  * buttons start with no state set. The user will have to explicitly set
  * the state for each button to get them to work.
- * </p>
+
  *
  * <b>Terrain Following</b>
- * <p>
+
  *
  * When doing terrain following, the handler will project a ray from the
  * current viewpoint position to the ground position. It will then offset the
@@ -84,11 +84,11 @@ import org.xj3d.core.eventmodel.OriginManager;
  *
  * If you do not wish to have terrain following for all modes, then pass a
  * <code>null</code> value for the terrain parameter to setWorldInfo().
- * </p>
+
  *
  *
  * <b>Collision Detection</b>
- * <p>
+
  *
  * Collision detection is based on using a fixed point representation of the
  * avatar - we do not have a volumetric body for it. A ray is cast in the
@@ -98,20 +98,20 @@ import org.xj3d.core.eventmodel.OriginManager;
  *
  * If you do not wish to have collision detection for all modes, then pass a
  * <code>null</code> value for the collidables parameter to setWorldInfo().
- * </p>
+
  *
  * <b>Navigation Modes</b>
  *
  *
  * <i>NONE</i>
- * <p>
+
  *
  * All navigation is disabled. We ignore any requests from mouse or
  * keyboard to move the viewpoint.
- * </p>
+
  *
  * <i>EXAMINE</i>
- * <p>
+
  *
  * The viewpoint is moved around the center of rotation provided by
  * the user. There is no collision detection or terrain following in this mode.
@@ -122,10 +122,10 @@ import org.xj3d.core.eventmodel.OriginManager;
  * The scale represents the movement along the vector and then each component
  * defines the proportion used to move in that direction.
  * [0] is left/right, [1] is up/down, [2] is zoom in out where +Z is zoom out.
- * </p>
+
  *
  * <i>FLY</i>
- * <p>
+
  * The user moves through the scene that moves the eyepoint in forward,
  * reverse and side to side movements. There is collision detection, but no
  * terrain following.
@@ -134,10 +134,10 @@ import org.xj3d.core.eventmodel.OriginManager;
  * For movement input the direction controls the scale of the input to
  * translate and rotate about. [0] controls left/right rotation, [1]
  * controls pitch and [2] controls the amount of forward movement.
- * </p>
+
  *
  * <i>WALK</i>
- * <p>
+
  *
  * The user moves through the scene with left/right options and forward
  * reverse, but they are bound to the terrain and have collision detection.
@@ -147,10 +147,10 @@ import org.xj3d.core.eventmodel.OriginManager;
  * is used to constrain in the local Y axis. [0] is the amount of rotation
  * left/right to perform each frame and [2] controls the forward/reverse
  * movement.
- * </p>
+
  *
  * <i>PAN</i>
- * <p>
+
  *
  * The camera moves in a sliding fashion along the given axis - the local
  * X or Z axis. There is not collision detection or terrain following.
@@ -159,10 +159,10 @@ import org.xj3d.core.eventmodel.OriginManager;
  * Move the viewpoint left/right/up/down while maintaining the current
  * viewing direction. [0] is used for left/right and [1] is used for
  * up/down. [2] is not used.
- * </p>
+
  *
  * <i>TILT</i>
- * <p>
+
  *
  * The camera rotates around the local axis in an up/down, left/right
  * fashion. It stays anchored in the one place and does not have terrain
@@ -171,16 +171,16 @@ import org.xj3d.core.eventmodel.OriginManager;
  * Movement input controls how the tilt is performed and is an absolute
  * value that controls total tilt. [0] controls rotation of the camera
  * in the X-Z plane, [1] controls rotation in the Y-Z plane.
- * </p>
+
  *
  * <b>TODO</b>
- * <p>
+
  * The collision vector does not move according to the direction that we are
  * traveling rather than the direction we are facing. Allows us to walk
  * backwards through objects when we shouldn't.
  *
  * Implement Examine mode handling
- * </p>
+
  *
  * This code is a direct copy and modified version of the code in the j3d.org
  * library of the same name.
@@ -826,7 +826,7 @@ public class NavigationProcessor implements NodeUpdateListener, OGLTransformNode
      * two are treated separately for the different processes. The caller may
      * choose to make them the same reference, but the code internally treats
      * them separately.
-     * <p>
+    
      *
      * <b>Note</b> For picking purposes, the code currently assumes that both
      * groups do not have any parent transforms. That is, their world origin is

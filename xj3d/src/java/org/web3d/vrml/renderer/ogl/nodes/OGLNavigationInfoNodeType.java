@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLNavigationInfoNodeType;
 
 /**
  * Java3D specific representation of a navigation info node.
- * <p>
+
  *
  *
  * @author Justin Couch

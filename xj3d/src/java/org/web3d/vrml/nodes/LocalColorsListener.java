@@ -19,12 +19,12 @@ package org.web3d.vrml.nodes;
 // None
 
 /**
- * <p>
+
  * A listener for changes in local color state.
  * 
  * Local color states whether a geometry node has color per vertex/face information
  * that overrides the diffuse component of the Material node.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

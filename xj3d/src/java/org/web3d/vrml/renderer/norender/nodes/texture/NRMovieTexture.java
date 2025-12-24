@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseMovieTexture;
 
 /**
  * Null-renderer implementation of a MovieTexture node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

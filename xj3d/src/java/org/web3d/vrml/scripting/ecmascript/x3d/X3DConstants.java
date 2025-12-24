@@ -26,7 +26,7 @@ import org.web3d.vrml.scripting.ecmascript.builtin.AbstractScriptableObject;
 
 /**
  * X3DConstants miscellaneous object.
- *  <p>
+
  *
  * All properties are fixed, read-only.
  *

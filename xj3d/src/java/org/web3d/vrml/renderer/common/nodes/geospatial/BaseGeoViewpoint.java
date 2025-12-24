@@ -38,14 +38,14 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * Common implementation of a GeoViewpoint node.
- * <p>
+
  * This implementation implements both the viewpoint and navInfo interfaces
  * so that it can be internally detected by the system as being functional
  * for both parts of the scene graph. The primary type is defined to be the
  * viewpoint, and the secondaries are the bindable and nav info node types.
  * Hopefully this will allow system to work out what is going on here. Note
  * the following paragraph from the X3D spec:
- * </p>
+
  * <blockquote>
  * "The GeoViewpoint node may be implemented as if there is an embedded
  * NavigationInfo node that is bound and unbound with the GeoViewpoint
@@ -53,7 +53,7 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
  * avatarSize, and visibilityLimit fields to an appropriate value for
  * the viewpoint's elevation."
  * </blockquote>
- * <p>
+
  *
  * Viewpoints cannot be shared using DEF/USE. They may be named as such for
  * Anchor purposes, but attempting to reuse them will cause an error. This

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,14 +22,14 @@ package org.web3d.vrml.nodes;
  * A simplified version of the
  * {@link org.web3d.vrml.nodes.SceneGraphTraversalDetailObserver} that only provides
  * the basic parent-child information.
- * <p>
+
  *
  * The observer will report the top of a use hierarchy. If the traverser, in
  * its internal references, detects a reference re-use that is indicative of
  * a DEF/USE situation then the flag passed with each method call will be set
  * true. After reporting the USE, the traverser will not descend that part of
  * the scene graph any further.
- * <p>
+
  *
  * When reporting the parent node, if the root is the root node of the VRML
  * file or the body of a Proto, the parent reference will be null - regardless

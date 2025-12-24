@@ -47,7 +47,7 @@ import org.web3d.vrml.scripting.external.buffer.ExternalEventQueue;
  * EAIBrowser implements the {@link vrml.eai.Browser} interface, largely by
  * translating and interfacing between the wrapper classes and the
  * implementation class represented by {org.web3d.vrml.scripting.CommonBrowser}.
- *  <p>
+
  * To function correctly, EAIBrowser needs to be constructed using
  * CommonBrowser and BrowserCore instances.  The EAIBrowser then registers
  * as a listener so that BrowserCoreListener BrowserInitialized and
@@ -454,7 +454,7 @@ public class EAIBrowser implements Browser, BrowserCoreListener {
      * the event queue will be processed, the browser will shut down,
      * and any subsequent calls to browser methods (except getName() and
      * getVersion()) will result in InvalidBrowserException's being generated.
-     *  <p>
+    
      * Since this version does not support sharing between clients, shutdown
      * also initiates the termination of the Xj3D to EAI event adapter
      * system.

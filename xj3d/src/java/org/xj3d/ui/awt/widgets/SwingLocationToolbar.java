@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -42,7 +42,7 @@ import org.xj3d.impl.core.loading.FramerateThrottle;
 /**
  * A swing panel that implements the capabilities of the URL/Location
  * toolbar.
- * <p>
+
  *
  *
  * @author Justin Couch

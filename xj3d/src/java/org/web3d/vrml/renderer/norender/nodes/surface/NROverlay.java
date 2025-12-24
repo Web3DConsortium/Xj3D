@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseOverlay;
 
 /**
  * Null-renderer implementation of an Overlay node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

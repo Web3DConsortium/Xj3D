@@ -13,20 +13,20 @@
 package org.web3d.x3d.sai;
 
 /**
- * <p>
+
  * Representation of a node's field definition.
- * </p>
- * <p>
+
+
  * The field definition holds the static field information such as the field
  * access type, the data type and the name of the field.
- * </p>
- * <p>
+
+
  * The implementation of the toString() method of this class shall return the
  * full IDL declaration of the field as per the specification, not the UTF8 or
  * XML format. Implementation of <code>.equals()</code> shall return true if
  * the two field definitions share the same access type, data type and name. It
  * shall not include the underlying field's values at that point in time.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

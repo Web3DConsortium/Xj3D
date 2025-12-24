@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,14 +26,14 @@ import org.web3d.vrml.parser.VRMLParserUtils;
 /**
  * Implementation of an X3D reader that can be either strict or lenient in
  * the parsing and supports only VRML encoded files.
- * <p>
+
  * If the user needs support for XML-encoded files, they should use either
  * {@link X3DReader} for generalised X3D support, or
  * {@link org.web3d.x3d.jaxp.XMLReader} for XML-only support.
- * <p>
+
  * When requested to parse, the reader will open the stream and check to see
  * that we have the right sort of parser.
- * <p>
+
  * This parser supports the following properties:
  * <ul>
  * <li>"conformance": ["weak", "strict"]. String values. Defaults to weak</li>

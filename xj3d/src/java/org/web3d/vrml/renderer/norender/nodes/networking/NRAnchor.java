@@ -22,11 +22,11 @@ import org.web3d.vrml.renderer.common.nodes.networking.BaseAnchor;
 
 /**
  * norender implementation of an Anchor node.
- * <p>
+
  *
  * The anchor node represents a standard grouping node that also contains
  * URL information.
- * <p>
+
  *
  * For dealing with user input, the current implementation automatically
  * overwrites any immediate child sensors that have been registered. This
@@ -49,7 +49,7 @@ public class NRAnchor extends BaseAnchor implements NRVRMLNode {
      * Construct a new instance of this node based on the details from the
      * given node. If the node is not a group node, an exception will be
      * thrown. It does not copy the children nodes, just this node.
-     *  <p>
+    
      * Note that the world URL has not been set by this call and will need to
      * be called separately.
      *

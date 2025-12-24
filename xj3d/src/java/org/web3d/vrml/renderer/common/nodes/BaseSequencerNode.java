@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,12 +27,11 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Abstract implementation of a sequencer so that specific instances can
  * derive from it.
- * <p>
+
  *
  * Sequencer nodes are designed for discrete animation.
  * Sequencers are driven by an input and produce
  * corresponding impulse output functions.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.8 $

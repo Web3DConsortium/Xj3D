@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the BSD license.
@@ -20,7 +20,7 @@ package org.xj3d.sai;
 
 /**
  * Listener for basic status information from the browser internals.
- * <p>
+
  *
  * Status information is not the same as messages that are reported using
  * the error reporter interface. These are for simple single-line messages.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,13 +20,13 @@ import org.web3d.vrml.lang.VRMLExecutionSpace;
 
 /**
  * An abstract representation of the root node of a world.
- * <p>
+
  * We need a root node representation to act as a standard place to collate
  * all the nodes of a world. While the XML encoding provides a single root
  * node in the X3D element, the UTF8 encoding does not. This class acts as
  * that sort of collector. For the XML code or the UTF8 code, we would expect
  * more concrete implementations of this interface to be derived.
- * <p>
+
  * While this could be a {@link VRMLGroupingNodeType} we really don't want
  * to extend that interface. It implies that this node could then be inserted
  * anywhere into the scene graph. That we want to prevent. Instead, we just copy

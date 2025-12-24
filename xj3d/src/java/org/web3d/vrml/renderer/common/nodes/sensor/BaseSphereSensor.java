@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseDragSensorNode;
 
 /**
  * Java3D implementation of a SphereSensor node.
- * <p>
  *
  * @author Alan Hudson, Justin Couch
  * @version $Revision: 1.12 $

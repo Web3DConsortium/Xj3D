@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,12 +24,12 @@ import org.web3d.vrml.sav.DocumentLocator;
 
 /**
  * Denotes an ordinary prototype node declaration.
- * <p>
+
  *
  * The prototype declaration has no concrete representation in the scene graph.
  * It is used as a data creator for when someone declares an instance of the
  * proto within the current scene graph.
- * <p>
+
  *
  * The proto can act in either VRML97 mode or VRML3.0 mode. The primary
  * difference is the handling of IS values when mapping fields. To catch errors

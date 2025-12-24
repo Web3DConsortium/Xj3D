@@ -30,14 +30,14 @@ import org.xml.sax.InputSource;
 
 /**
  * An entity resolver for both DOM and SAX models of the X3D document.
- * <p>
+
  * The entity resolver only handles queries for the DTD. It will find
  * any URI that ends in *.dtd and return an {@link org.xml.sax.InputSource}.
- * <p>
+
  * As the X3D specification does not yet define what the system resource
  * ID is, we'll take a guess. The current resolution scheme only strips the
  * name of the DTD from the URI and attempts to find that in the classpath.
- * <p>
+
  * To determine the DTD name it will search from the end of the string until it
  * finds a '/' character. The resulting string is treated as a filename to
  * search for and has the directory DTD/ prepended to the name.
@@ -47,7 +47,7 @@ import org.xml.sax.InputSource;
  * System or PublicID returned are files or URLs, the standard parser
  * mechanisms will load them. The only more intelligent behaviour that we may
  * wish to add in the future will be to resolve a full URN if we are given it.
- * <p>
+
  * The current implementation ignores the publicId information.
  */
 public class X3DEntityResolver implements EntityResolver {

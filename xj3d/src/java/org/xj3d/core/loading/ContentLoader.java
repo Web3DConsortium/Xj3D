@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,11 +21,11 @@ import org.j3d.util.ErrorReporter;
 
 /**
  * A loader thread for a single piece of content at any given time.
- * <p>
+
  *
  * The content loader is used to wait on a queue of available content and
  * load the next available item in the queue.
- * <p>
+
  *
  * When loading, the content loader loads the complete file, it ignores any
  * reference part of the URI. This allows for better caching.

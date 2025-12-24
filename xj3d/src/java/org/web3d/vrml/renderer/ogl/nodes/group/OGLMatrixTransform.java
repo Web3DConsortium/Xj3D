@@ -34,7 +34,7 @@ import org.web3d.vrml.renderer.common.nodes.group.BaseMatrixTransform;
 
 /**
  * OpenGL implementation of a MatrixTransform node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.nodes;
 /**
  * Indicates that a node can be bound within the scene graph to make it the
  * active item.
- * <p>
+
  *
  * These nodes obey the binding stack properties of the VRML spec. The
  * interface does not allow for dynamic feedback of how the binding is

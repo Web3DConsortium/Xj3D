@@ -37,25 +37,25 @@ import org.w3c.dom.events.MutationEvent;
 /**
  * A complex implementation of the TreeModel that is used for dealing with DOM
  * tree in combination with the cell renderer and DOMTreeNode classes.
- * <p>
+
  * This implementation is for generic DOM representations. It does not have any
  * X3D specific handling. That is left to derived classes.
- * <p>
+
  * The model is specifically tailored to display DOM objects. The model is
  * configured so that it should always ask if it allows children as some
  * DOM nodes cannot have children. If the Document allows events then this
  * will automatically add listeners and build the correct tree as the
  * underlying DOM changes.
- * <p>
+
  * Each of the objects represented by this model will be the DOMTreeNode
  * class. Building of these objects is lazy for memory consumption purposes.
  * We do not build the child DOMTreeNode object until we have to.
- * <p>
+
  * The tree will also show attribute information as nodes in the tree. In order
  * to maintain consistency, we will need to make sure that the indexes are
  * always in the same order. To do this, we always put the attributes first
  * and follow with child nodes.
- * <p>
+
  * To keep itself consistent, we only register a listener at the root of the
  * document. This is for node add, remove and attribute modified. Because
  * events bubble for these types, there is no need to register an event

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,7 +25,7 @@ import org.xj3d.core.eventmodel.RouterFactory;
 
 /**
  * An empty implementation of the route manager that does nothing.
- * <p>
+
  *
  * Used be the static loader where geometry-only loading is being performed. It
  * does nothing with any of the requests.

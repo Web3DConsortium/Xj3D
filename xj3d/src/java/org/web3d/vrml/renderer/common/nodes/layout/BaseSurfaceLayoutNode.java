@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * Base implementation of any surface layout node.
- * <p>
+
  *
  * The implementation does not define the windowChanged method because it
  * assumes the derived class has all the specific information about the
@@ -161,7 +161,7 @@ public abstract class BaseSurfaceLayoutNode extends BaseSurfaceChildNode
      * is a child of another layout, the size set will be the allocated size
      * for the child window. The location is in standard 2D screen coordinates
      * of the top-left corner.
-     * <p>
+    
      *
      * After setting the screen bounds, this will call
      * {@link #updateManagedNodes()}.

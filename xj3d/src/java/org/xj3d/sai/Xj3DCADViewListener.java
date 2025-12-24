@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the BSD license.
@@ -20,7 +20,7 @@ import org.web3d.x3d.sai.X3DNode;
 
 /**
  * Listener for changes of structure related to CAD-specific content.
- * <p>
+
  *
  * These callback methods provide information for changes within an existing
  * scene. For bulk changes, such as the change of scene, please use the base

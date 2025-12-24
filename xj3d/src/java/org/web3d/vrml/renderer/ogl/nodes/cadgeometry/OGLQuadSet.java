@@ -28,17 +28,17 @@ import org.web3d.vrml.renderer.common.nodes.cadgeometry.BaseQuadSet;
 
 /**
  * OpenGL implementation of a QuadSet.
- * <p>
+
  *
  * The point set directly maps to Aviatrix3D's QuadArray class. When the
  * coordinates change to a different length than the current set, it will
  * notify the geometry listener to fetch the new information.
- * <p>
+
  * If the VRML file did not provide a Coordinate node, then this class will
  * not present any geometry from the {@link #getGeometry()} or
  * {@link #getSceneGraphObject()} calls. If the user later specifies the
  * renderety through an event, the listener(s) will be notified.
- * <p>
+
  * In this implementation, if the length of the color array is shorter that
  * the length of the coordinate array, colors will be ignored.
  *

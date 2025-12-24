@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -56,11 +56,11 @@ import org.xj3d.core.eventmodel.SensorManager;
 
 /**
  * OpenGL implementation of a layer manager.
- * <p>
+
  *
  * The layer manager is responsible for keeping track of all the top level
  * renderable structure within a scene.
- * <p>
+
  *
  * The Aviatrix Scenegraph for each layer is structured as follows:
  * <pre>

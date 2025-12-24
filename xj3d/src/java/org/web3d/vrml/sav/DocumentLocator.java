@@ -15,7 +15,7 @@ package org.web3d.vrml.sav;
 /**
  * Callback into the parser to ask for information about where we are in the
  * parsing process.
- * <p>
+
  * If a parser supports Locators, it must at least support line numbers. Column
  * numbers are optional.
  */

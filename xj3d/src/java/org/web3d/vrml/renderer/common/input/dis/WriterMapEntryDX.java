@@ -19,7 +19,7 @@ import org.web3d.vrml.nodes.*;
 
 /**
  * Structure for holding WriterMap entries.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

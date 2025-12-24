@@ -17,7 +17,7 @@ import org.web3d.vrml.scripting.external.buffer.*;
 
 /**
   * A factory interface for EAIEventAdapters.
-  *  <p>
+ 
   */
 interface EAIEventAdapterFactory {
 

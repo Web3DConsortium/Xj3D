@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -12,7 +12,7 @@
 package org.web3d.vrml.nodes;
 
 /**
- * <p>
+
  * Geometry specified by a parametric description
  *
  * @author Alan Hudson

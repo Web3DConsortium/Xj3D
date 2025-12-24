@@ -31,7 +31,7 @@ import org.xj3d.io.StreamContentContainer;
 
 /**
  * AudioClip node implementation for OpenGL.
- * <p>
+
  *
  *
  * @author Alan Hudson
@@ -123,7 +123,7 @@ public class OGLAudioClip extends BaseAudioClip
     /**
      * Provide the set of mappings that override anything that the loader
      * might set. Default implementation does nothing.
-     * <p>
+    
      *
      * If the key is set, but the value is null or zero length, then all
      * capabilities on that node will be disabled. If the key is set the
@@ -143,7 +143,7 @@ public class OGLAudioClip extends BaseAudioClip
      * make sure is set. The end output is that the capabilities are the union
      * of what the loader wants and what the user wants. Default implementation
      * does nothing.
-     * <p>
+    
      * If the map contains a key, but the value is  null or zero length, the
      * request is ignored.
      *

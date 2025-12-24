@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2007 - 2009
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2009
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -34,7 +34,7 @@ import org.web3d.vrml.renderer.common.nodes.geospatial.BaseGeoTransform;
 
 /**
  * OpenGL implementation of a GeoTransform node.
- * <p>
+
  *
  * @author Rex Melton
  * @version $Revision: 1.2 $

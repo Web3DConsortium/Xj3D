@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.nodes;
 /**
  * An listener for changes in a component node that makes up a larger
  * structure..
- * <p>
+
  *
  * The listener does simple notifications of the component node that has
  * changed and the field index. This listener is intended to be used by

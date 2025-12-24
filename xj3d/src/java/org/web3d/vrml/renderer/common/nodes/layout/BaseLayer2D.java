@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common implementation of an Layer2D node.
- * <p>
+
  *
  * The basic definition of Layer2D is:
  * <pre>
@@ -325,13 +325,13 @@ public abstract class BaseLayer2D extends AbstractNode
      * Get the type of viewport layout policy that the contained viewport node
      * represents. This is a shortcut to fetching the viewport instance
      * directly, walking the proto heirarchy and so forth.
-     * <p>
+    
      * This determines how the viewport is managed by the system during window
      * resizes etc. It is a fixed value that never changes for the node
      * implementation.
-     * <p>
+    
      * If no viewport node is defined, return VIEWPORT_FULLWINDOW.
-     * <p>
+    
      * If no viewport is yet referenced courtesy of an
      * externproto, this returns VIEWPORT_UNDEFINED until it is updated.
      *

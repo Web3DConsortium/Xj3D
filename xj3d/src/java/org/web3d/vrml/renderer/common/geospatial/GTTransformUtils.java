@@ -52,7 +52,7 @@ import org.opengis.referencing.crs.SingleCRS;
 /**
  * Utility class to create a GeoTools2 transformation class for a given
  * geoSystem field definition.
- * <p>
+
  *
  * This class runs as a singleton to allow for caching of internal fetched
  * transformation routines.
@@ -478,7 +478,7 @@ public class GTTransformUtils {
     /**
      * From the given system definition strings, generate a coordinate
      * transformation service.
-     * <p>
+    
      * Check whether we need to reverse the two primary coordinate systems. If
      * true, then the user needs to swap the coordinate values for X and Y.
      *

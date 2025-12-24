@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Aviatrix3D renderer implementation of an PointProperties node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

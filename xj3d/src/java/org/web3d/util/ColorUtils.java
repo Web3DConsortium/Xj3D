@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,16 +20,16 @@ package org.web3d.util;
 
 /**
  * An interpolator that works with color components.
- *  <p>
+
  *
  * The interpolation routine is just a simple linear interpolation between
  * each of the points. The interpolator may take arbitrarily spaced keyframes
  * and compute correct values.
- * <p>
+
  * Color interpolation can be done in the standard RGB space (LINEAR) or using
  * the additional type of HSV_LINEAR. This internally converts all color values
  * to HSV space and then interpolates over that instead.
- * <p>
+
  *
  * The RGB&lt;-&gt;HSV color space conversions have been taken from Foley &amp; van Dam
  * <i>Computer Graphics Principles and Practice, 2nd Edition</i>, Addison

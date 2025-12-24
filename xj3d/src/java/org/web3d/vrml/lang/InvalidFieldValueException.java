@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.lang;
 
 /**
  * Exception indicating that a field value is out of range.
- *  <p>
+
  *
  * This is generated when a node verifies the correctness of a setValue
  * May be generated during the parsing process or by the field during

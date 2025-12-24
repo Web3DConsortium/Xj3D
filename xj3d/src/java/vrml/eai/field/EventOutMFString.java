@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * VRML eventOut class for MFString.
- *  <p>
+
  * Strings are represented using standard java.lang.String representations.
  * The implementation of this class will provide any necessary conversions
  * to the UTF8 format required for VRML support.
@@ -58,7 +58,7 @@ public abstract class EventOutMFString extends EventOutMField
 
   /**
    * Get a particular string value in the given eventOut array.
-   *  <p>
+  
    * If the index is out of the bounds of the current array of data values an
    * ArrayIndexOutOfBoundsException will be generated. If the array reference
    * was null when set, an empty string will be returned to the caller.

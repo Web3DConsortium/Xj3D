@@ -25,7 +25,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseGeometricPropertyNode;
 
 /**
  * Common base implementation of a Coordinate node.
- * <p>
+
  *
  * This node is an custom extension to Xj3D node.
  *

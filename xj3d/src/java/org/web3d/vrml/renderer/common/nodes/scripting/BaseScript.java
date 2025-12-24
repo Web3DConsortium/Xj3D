@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2006
+ *                        Web3d.org Copyright (c) 2001 - 2026-2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -33,7 +33,7 @@ import org.web3d.vrml.util.URLChecker;
 
 /**
  * Scene graph representation of a script node.
- * <p>
+
  *
  * The script is different to all the other nodes. While it represents
  * a script, it doesn't have the normal content of a Java3D node. It is

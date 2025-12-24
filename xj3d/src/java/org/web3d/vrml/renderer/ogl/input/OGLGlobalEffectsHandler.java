@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLFogNodeType;
 /**
  * A generic interface for the control of global effects like background fog
  * and view management for the OpenGL renderer.
- * <p>
+
  *
  * The input system takes care of the basic per-frame management, but needs to
  * tell the collection of objects that represent the global structure about the

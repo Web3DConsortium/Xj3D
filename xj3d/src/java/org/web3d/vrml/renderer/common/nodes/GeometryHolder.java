@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import java.text.NumberFormat;
 /**
  * Data representation of geometry information that is created through the
  * various generator classes in this package.
- * <p>
+
  *
  * This class is similar to the j3d.org GeometryHolder class.  It includes
  * data like fogCoordinates and vertex attribs and the ability to store
@@ -30,7 +30,7 @@ import java.text.NumberFormat;
  * This data representation is used to hold information needed to generate
  * geometry from one of the generator classes in this package. In general,
  * data does not get filled in for items that are not requested.
- * <p>
+
  *
  * The type of data to be produced can be changed with each call. While it is
  * possible to ask for both 2D and 3D texture coordinates, the code will only

@@ -22,13 +22,13 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Null renderer implementation of a NavigationInfo node.
- * <p>
+
  *
  * The NavigationInfo node does not occupy a space in the Java 3D
  * scene graph. This is used as a VRML construct only. When VRML changes the
  * values here, we pass them back courtesy of the listeners to the children
  * nodes.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

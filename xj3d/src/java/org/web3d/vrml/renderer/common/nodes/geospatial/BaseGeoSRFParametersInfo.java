@@ -22,7 +22,6 @@ import org.web3d.vrml.lang.*;
 
 /**
  * Common implementation of an GeoSRFParametersInfo node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

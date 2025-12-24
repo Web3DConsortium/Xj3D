@@ -28,7 +28,7 @@ import org.mozilla.javascript.Scriptable;
 
 /**
  * Base representation of all field objects in ecmascript scripting.
- *  <p>
+
  *
  * All fields must extend this class. All implementations should make sure
  * to set the dataChanged field whenever their internal data state has been

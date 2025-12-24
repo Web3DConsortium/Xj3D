@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * Representation of a factory that can produce instances of VRMLNode
  * implementations.
- * <p>
+
  *
  * This interface is primarily provided to allow an independence of the
  * factory implementation from the factory functionality. Classes that need
@@ -31,21 +31,21 @@ import org.j3d.util.ErrorReporter;
  * example one factory might use it to write info to a serialised network
  * stream while another uses it as a layer over a rendering API such as Java3D
  * or OpenGL.
- * <p>
+
  * The factory has a form of filtering mechanism in built for profile support.
  * It acts as a form of filtering when requesting nodes. If the requested node
  * is not part of the set profile list then the create calls would return null.
- * <p>
+
  *
  * <b>Node Creation Behaviour</b>
- * <p>
+
  *
  * In order to create a node, the factory has to be told what profile and any
  * optional components the nodes are to come from. Then, the createVRMLNode()
  * calls work on this information to determine whether it is legal or not to
  * create the node. If it is not, then an {@link UnsupportedNodeException} is
  * generated naming the node that is in error.
- * <p>
+
  *
  * Because Xj3D is also permanently "in development", we have to also recognise
  * that not all components will be completely implemented. For these, the
@@ -226,7 +226,7 @@ public interface VRMLNodeFactory {
      * The copy shall be a shallow copy. All of the node's direct field data
      * has full copies of the values made, but any referenced child nodes are
      * not included in the copy.
-     * <p>
+    
      * The primary use of this method is in generating proto instances from
      * a set of template nodes. The parser of the proto will be responsible
      * for making sure the children scene graphs are correctly built by

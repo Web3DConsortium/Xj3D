@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,12 +21,12 @@ import org.j3d.util.HashSet;
 // None
 
 /**
- * <p>
+
  * A factory for producing resources specific to Web3D-only.
  *
  * The current factory supports handlers for the ecmascript and jar
  * protocol types.
- * </p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.4 $

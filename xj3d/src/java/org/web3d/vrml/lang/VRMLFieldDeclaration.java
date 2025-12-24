@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,10 +21,10 @@ import java.util.Map;
 
 /**
  * Representation of any field definition in the VRML system.
- * <p>
+
  * Each node contains a collection of fields. Each field has a fixed index for
  * all instances of this node.
- * <p>
+
  * This class represents the declaration of a field rather than the complete
  * field instance. For this reason it is immutable. You should not be allowed
  * to change items of a field declaration on the fly.

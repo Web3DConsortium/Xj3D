@@ -20,7 +20,7 @@ package org.web3d.vrml.sav;
 
 /**
  * An exception that represents a parsing error in a VRML stream.
- * <p>
+
  * This is usually due to some form or syntax error. If the parser supports
  * locators then this will also include line and column information. If they
  * are not supported this will have values of -1 for unknown values.

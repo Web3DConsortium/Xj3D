@@ -19,9 +19,9 @@ import java.util.EmptyStackException;
 // none
 
 /**
- * <p>
+
  * A stack that has a minimal implementation.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.10 $

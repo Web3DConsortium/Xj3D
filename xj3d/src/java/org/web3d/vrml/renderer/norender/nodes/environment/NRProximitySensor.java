@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * NoRender implementation of a ProximitySensor node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.5 $

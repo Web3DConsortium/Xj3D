@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -50,7 +50,7 @@ import org.xj3d.sai.BrowserConfig;
 /**
  * Swing JPanel implementation that wraps the functionality of a X3D browser
  * into a convenient, easy to use form for the SAI.
- * <p>
+
  *
  * @author Justin Couch, Brad Vender, Alan Hudson
  * @version $Revision: 1.10 $

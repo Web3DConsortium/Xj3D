@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,7 +23,7 @@ import org.xj3d.core.eventmodel.EventModelEvaluator;
 
 /**
  * The thread that looks after the update issues of every frame.
- * <p>
+
  *
  * Even as this is a thread, it is not automatically started. The user is
  * required to start it separately.

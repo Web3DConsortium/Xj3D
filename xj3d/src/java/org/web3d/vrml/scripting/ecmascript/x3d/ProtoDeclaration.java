@@ -35,7 +35,7 @@ import org.web3d.vrml.scripting.ecmascript.builtin.*;
 
 /**
  * ProtoDeclaration prototype object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

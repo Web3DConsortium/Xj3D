@@ -93,7 +93,7 @@ public class Browser {
      * belonged to the previous world are still valid but no longer form part of
      * the scene graph (unless it is these nodes passed to this method). The
      * URL of the world still represents the just unloaded world.
-     *  <p>
+    
      * Calling this method causes a SHUTDOWN event followed by an INITIALIZED
      * event to be generated.
      *
@@ -106,10 +106,10 @@ public class Browser {
      * Parse the given string and turn this into a list of VRML nodes. Method
      * is a blocking call that won't return until all of the top level nodes
      * defined in the string have been returned.
-     *  <p>
+    
      * At the point that this method returns, external files such as textures,
      * sounds and inlines may not have been loaded.
-     *  <p>
+    
      * The string may contain all legal VRML syntax. The VRML header line is not
      * required to be present in the string.
      *
@@ -174,7 +174,7 @@ public class Browser {
      * Load the URL as the new root of the scene. Replaces all the current
      * scene graph with the new world. A non-blocking call that will change the
      * contents at some time in the future.
-     *  <p>
+    
      * Generates an immediate SHUTDOWN event and then when the new contents are
      * ready to be loaded, sends an INITIALIZED event.
      *

@@ -25,7 +25,7 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 
 /**
  * Cell renderer for the viewpoint list.
- * <p>
+
  * Originally copied from J3D library.
  *
  * @author Originally written by Justin Couch, modifications by Brad Vender

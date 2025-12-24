@@ -21,7 +21,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * An adapter between the Rhino reporting system and the system reporting
  * mechanisms provided by this codebase.
- * <p>
+
  *
  * If no system reporter is registered, the adapter will write the message
  * to <code>System.out</code>. Currently the messages are giving line numbers

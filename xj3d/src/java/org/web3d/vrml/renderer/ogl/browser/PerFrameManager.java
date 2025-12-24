@@ -25,7 +25,7 @@ import org.xj3d.core.eventmodel.EventModelEvaluator;
 
 /**
  * The thread that looks after the update issues of every frame.
- * <p>
+
  *
  * Even as this is a thread, it is not automatically started. The user is
  * required to start it separately.

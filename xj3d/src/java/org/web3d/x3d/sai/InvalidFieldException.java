@@ -15,7 +15,7 @@ package org.web3d.x3d.sai;
 /**
  * The exception that is thrown when a reference to any field is not valid.
  * Generally used as a base class to more specific invalid field methods.
- * <p>
+
  * An field may be invalid for a number of reasons:
  * <UL>
  * <LI>The user may have typed in the wrong name through a typo.

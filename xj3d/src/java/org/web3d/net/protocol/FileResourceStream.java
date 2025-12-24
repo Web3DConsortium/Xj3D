@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,26 +24,26 @@ import org.ietf.uri.URIResourceStream;
 
 /**
  * A File protocol handler.
- *  <p>
+
  *
  * The basic connection handler for dealing with URLs of the
  * type <code>file:///</code> and URNs that resolve to items on the
  * local filesystem.
- *  <p>
+
  *
  * The path defines the object as needed from the root of the system.
  * It must be fully qualified - including either machine names for
  * UNC enunciated paths or drive letters where appropriate to the
  * operating system.
- *  <p>
+
  *
  * For details on URIs see the IETF working group:
  * <a href="http://www.ietf.org/html.charters/urn-charter.html">URN</a>
- *  <p>
+
  *
  * This software is released under the
  * <a href="http://www.gnu.org/copyleft/lgpl.html">GNU LGPL</a>
- *  <p>
+
  *
  * DISCLAIMER: <br>
  * This software is the under development, incomplete, and is
@@ -51,12 +51,12 @@ import org.ietf.uri.URIResourceStream;
  * review purposes only. Do not rely on this software for
  * production-quality applications or for mission-critical
  * applications.
- *  <p>
+
  *
  * Portions of the APIs for some new features have not
  * been finalized and APIs may change. Some features are
  * not fully implemented in this release. Use at your own risk.
- *  <p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.1 $

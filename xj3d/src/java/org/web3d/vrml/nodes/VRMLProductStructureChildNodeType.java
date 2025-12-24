@@ -12,9 +12,9 @@
 package org.web3d.vrml.nodes;
 
 /**
- * <p>
+
  * Nodes which can appear in an appearance field of an Appearance Node.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

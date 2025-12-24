@@ -24,7 +24,7 @@ import org.j3d.aviatrix3d.SceneGraphObject;
 
 /**
  * OpenGL implementation of a Midi Source.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $
@@ -69,7 +69,7 @@ public class OGLMidiSource extends BaseMidiSource implements OGLVRMLNode {
     /**
      * Provide the set of mappings that override anything that the loader
      * might set. Default implementation does nothing.
-     * <p>
+    
      *
      * If the key is set, but the value is null or zero length, then all
      * capabilities on that node will be disabled. If the key is set the
@@ -90,7 +90,7 @@ public class OGLMidiSource extends BaseMidiSource implements OGLVRMLNode {
      * make sure is set. The end output is that the capabilities are the union
      * of what the loader wants and what the user wants. Default implementation
      * does nothing.
-     * <p>
+    
      * If the map contains a key, but the value is  null or zero length, the
      * request is ignored.
      *

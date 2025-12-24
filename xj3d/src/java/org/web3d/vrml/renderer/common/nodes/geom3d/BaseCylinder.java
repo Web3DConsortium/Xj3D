@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,6 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common base implementation of a Cylinder.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.18 $

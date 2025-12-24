@@ -19,7 +19,7 @@ import vrml.eai.Node;
 
 /**
  * VRML eventIn class for SFNode.
- *  <p>
+
  * Get the value of a node. The java <code>null</code> reference is treated to
  * be equivalent to the VRML <code>NULL</code> field values. If the node field
  * contains a NULL reference then reading this eventOut will result in a
@@ -41,7 +41,7 @@ public abstract class EventOutSFNode extends EventOut
   /**
    * Get the node value in the given eventOut. If no node reference is set then
    * null is returned to the user.
-   *  <p>
+  
    * @return The new node reference set.
    */
   public abstract Node getValue();

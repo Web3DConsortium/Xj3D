@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.CRExternPrototypeDecl;
 
 /**
  * Null renderer-specific External Prototype Declaration.
- * <p>
+
  *
  * This node will be placed on the content loader.  Instances of this EP will
  * go into the scene graph as stubs.  When this EP is loaded it will finish

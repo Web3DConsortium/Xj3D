@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -32,17 +32,17 @@ import org.web3d.vrml.renderer.common.nodes.render.BaseIndexedLineSet;
 
 /**
  * OpenGL implementation of an IndexedLineSet.
- * <p>
+
  *
  * The point set directly maps to Aviatrix3D's LineArray class. When the
  * coordinates change to a different length than the current set, it will
  * notify the geometry listener to fetch the new information.
- * <p>
+
  * If the VRML file did not provide a Coordinate node, then this class will
  * not present any geometry from the {@link #getGeometry()} or
  * {@link #getSceneGraphObject()} calls. If the user later specifies the
  * renderety through an event, the listener(s) will be notified.
- * <p>
+
  * In this implementation, if the length of the color array is shorter than
  * the length of the coordinate array, colors will be ignored.
  *
@@ -260,7 +260,7 @@ public class OGLIndexedLineSet extends BaseIndexedLineSet
      * the geometry regardless of whether a Color component has been provided
      * or not. It is up to the implementation to decide when to pass these
      * values on to the underlying rendering structures or not.
-     * <p>
+    
      *
      * The default implementation returns false. Override if different
      * behaviour is needed.
@@ -276,7 +276,7 @@ public class OGLIndexedLineSet extends BaseIndexedLineSet
      * Set the local colour override for this geometry. Typically used to set
      * the emissiveColor from the Material node into the geometry for the line
      * and point-type geometries which are unlit in the X3D/VRML model.
-     * <p>
+    
      *
      * The default implementation does nothing. Override to do something useful.
      *

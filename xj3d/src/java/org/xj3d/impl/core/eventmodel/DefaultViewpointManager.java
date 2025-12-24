@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,12 +28,12 @@ import org.xj3d.core.eventmodel.ViewpointStatusListenerMulticaster;
 
 /**
  * Default implementation of a manager for Viewpoint nodes.
- * <p>
+
  *
  * Keeps track of all viewpoints, manages the viewpoint list based on the
  * sets of active viewpoints. Next and previous commands will work on the
  * currently active navigation layer.
- * <p>
+
  * Creating an instance of this class will automatically register it as
  * viewpoint and navigation state listeners with the browser core. The end user
  * is not required to do this.
@@ -416,11 +416,11 @@ public class DefaultViewpointManager
      * highlighting to indicate this. Viewpoints in other layers are still
      * allowed to be bound by the user interface. If there was a previously
      * active layer, ignore it.
-     * <p>
+    
      * The code will guarantee that if the active layer is removed, then this
      * method will be called first to set a different valid layer, before
      * removing that layer ID.
-     * <p>
+    
      *
      * If a value of -1 is provided, that means no layers are active and that
      * we currently have a completely clear browser with no world loaded. The

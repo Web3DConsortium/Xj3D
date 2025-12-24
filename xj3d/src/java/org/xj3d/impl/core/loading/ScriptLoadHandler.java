@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -39,13 +39,13 @@ import org.xj3d.core.loading.LoadRequestHandler;
 
 /**
  * A LoadRequestHandler implementation that process the script loading requests.
- * <p>
+
  *
  * The content loader is used to wait on a queue of available content and
  * load the next available item in the queue. When loading, the content loader
  * loads the complete file, it ignores any reference part of the URI as these
  * are meaningless for scripts.
- * <p>
+
  *
  * In the cache, if the referenced script is written in Java, the script is
  * held as a Class instance rather than the actual running script. This is

@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Implementation of a SFTime field.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

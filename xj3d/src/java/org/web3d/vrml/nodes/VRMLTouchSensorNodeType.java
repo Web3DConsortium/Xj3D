@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.vrml.nodes;
 // None
 
 /**
- * <p>
+
  * Nodes which can be activated by clicking with a pointing device sensor
  *
  * @author Alan Hudson

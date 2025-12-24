@@ -18,12 +18,12 @@ package org.xj3d.sai;
  * abstract spec (19775) that post date the java bindings spec. Presumably
  * these type constants will be relocated to org.web3d.x3d.sai.X3DNodeTypes
  * when 19777 is updated.
- * <p>
+
  * There has been no attempt to anticipate the constant assignment. For the
  * purposes of this class, the hashcode of the node type string have been used.
  * It is therefore, highly unlikely that these constants will match those of
  * a later binding spec.
- * <p>
+
  * As with the X3DNodeTypes, these type constants only represent the node
  * classification types (abstract types), not the individual node type.
  *

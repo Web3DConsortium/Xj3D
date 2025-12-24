@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -43,7 +43,7 @@ import org.xj3d.core.eventmodel.LayerRenderingManager;
 /**
  * Representation of a core of a browser implemented using the OpenGL
  * rendering APIs.
- * <p>
+
  * The universe is responsible for handling the management of the viewpoints
  * within a scene. VRML defines a single viewpoint model for multiple canvases.
  * If we want to set this environment up for stereo rendering or CAVE type
@@ -52,10 +52,10 @@ import org.xj3d.core.eventmodel.LayerRenderingManager;
  * editor environment, this universe is not suitable as it uses a single
  * View object and attaches all canvases to that view and hence the underlying
  * currently bound viewpoint.
- * <p>
+
  * The universe is not responsible for loading VRML/X3D content. To handle
  * anchors, it delegates to the supplied listener.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.36 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,7 +30,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseSequencerNode;
 /**
  * Abstract implementation of a boolean sequencer so that specific
  * renderer instances can derive from it.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.12 $
@@ -405,7 +404,7 @@ public abstract class BaseBooleanSequencer extends BaseSequencerNode {
      * and value information. This is an expensive method as you must clear
      * the entire interpolator and start from scratch. Obviously we don't
      * expect people to be changing their key values every other frame.
-     * <p>
+    
      * If the key and keyValue fields are not the same length then we take
      * the lesser of the two and only assign that many vertices to the
      * interpolator to handle.

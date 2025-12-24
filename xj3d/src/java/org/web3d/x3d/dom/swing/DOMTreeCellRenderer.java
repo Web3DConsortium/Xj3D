@@ -34,7 +34,7 @@ import org.xj3d.ui.awt.widgets.IconLoader;
 /**
  * An implementation of the TreeCellRenderer interface to provided a renderer
  * for DOM specific capabilities.
- * <p>
+
  *
  * This cell renderer is very simple - it just displays a label with the text
  * name of the node type and any relvant information about it. It knows nothing

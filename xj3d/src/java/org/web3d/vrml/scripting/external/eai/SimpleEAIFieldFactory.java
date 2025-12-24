@@ -23,7 +23,7 @@ import org.web3d.vrml.scripting.external.buffer.ExternalEventQueue;
 /**
  * SimpleEAIFieldFactory is an implementation of EAIFieldFactory which
  * performs no mapping to reduce duplicate object creation.
- *  <p>
+
  * setNodeFactory must be used after the constructor to properly
  * initialize this class.
  * @author Brad Vender

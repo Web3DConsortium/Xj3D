@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,22 +24,22 @@ import org.j3d.util.ErrorReporter;
 
 /**
  * A local singleton that manages all of the threads used to load content.
- * <p>
+
  *
  * The singleton loads a number of threads that must use a common map and
  * queue instance for all users. To organise and queue inputs to this class
  * we must first fetch the instance that is running and then query it for
  * the map and queue. Once you have access to these, you are free to use them
  * directly to add or remove items from the general pool.
- * <p>
+
  * The number of threads can be controlled at startup of the application by
  * setting a system property. If the property defines a value less than or
  * equal to zero it is ignored and the default number of threads are loaded
  * - 5.
- * <p>
+
  *
  * <b>Properties</b>
- * <p>
+
  * The following properties are used by this class
  * <ul>
  * <li><code>org.xj3d.core.loading.threads</code> The number of

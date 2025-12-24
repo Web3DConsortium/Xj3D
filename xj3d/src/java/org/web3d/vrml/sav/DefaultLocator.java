@@ -20,7 +20,7 @@ package org.web3d.vrml.sav;
 
 /**
  * A default locator implementation for when the parser does not provide one.
- * <p>
+
  * This implementation always returns -1.
  *
  * @author Justin Couch

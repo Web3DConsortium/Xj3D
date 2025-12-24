@@ -22,7 +22,7 @@ import org.j3d.util.HashSet;
 
 /**
  * MFInt field object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

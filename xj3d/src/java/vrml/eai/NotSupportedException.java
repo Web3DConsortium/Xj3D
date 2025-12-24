@@ -18,7 +18,7 @@ package vrml.eai;
 /**
  * The exception that is thrown when an operation is not supported by an
  * underlying implementation.
- *  <p>
+
  * Typically this class is used when one of the implementations are not
  * supported in BrowserFactory
  *

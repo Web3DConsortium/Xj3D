@@ -20,7 +20,7 @@ import vrml.ConstField;
 
 /**
  * VRML JSAI type class containing a fixed image field.
- * <p>
+
  *
  * Unlike th e other fields, this field always replaces the existing array
  * rather than copy values in. It assumes that pixel textures are not changed

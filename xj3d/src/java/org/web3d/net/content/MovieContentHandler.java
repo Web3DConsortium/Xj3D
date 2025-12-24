@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,10 +24,10 @@ import org.ietf.uri.ResourceConnection;
 /**
  * Content handler implementation for loading VRML Movie content from a URI
  * resource connection.
- *  <p>
+
  *
  * The returned object type for this loader is an InputStream
- *  <p>
+
  *
  * @author  Guy Carpenter
  * @version $Revision: 1.2 $

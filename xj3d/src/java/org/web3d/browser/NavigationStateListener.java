@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,10 +19,10 @@ package org.web3d.browser;
 // none
 
 /**
- * <p>
+
  * A listener interface used to communicate changes in the navigation state
  * from one handler to another.
- * </p>
+
  *
  * @author Justin Couch, Alan Hudson
  * @version $Revision: 1.3 $

@@ -20,11 +20,11 @@ import vrml.eai.InvalidNodeException;
 
 /**
  * VRML eventIn class for SFNode.
- *  <p>
+
  * Set the value of a node to the given value. The java <code>null</code>
  * reference is treated to be equivalent to the VRML <code>NULL</code> field
  * values.
- *  <p>
+
  * Calling the set method with a null node reference causes that field to
  * be cleared.
  *
@@ -43,7 +43,7 @@ public abstract class EventInSFNode extends EventIn
 
   /**
    * Set the node value in the given eventIn.
-   *  <p>
+  
    * If the node reference passed to this method has already had the dispose
    * method called then an InvalidNodeException will be generated.
    *

@@ -21,7 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.AreaListener;
 /**
  * The listener interface for receiving notice of the viewpoint on entry or
  * exit from an area.
- * <p>
+
  * Each method receives both the user's current position and orientation in
  * V-world coordinates but also the transform of the object that was picked
  * and representing this interface. The idea of this is to save internal calls

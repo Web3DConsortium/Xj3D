@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,7 +23,7 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Representation of an MFColorRGBA field.
- *  <p>
+
  * Colour values are represented as floating point numbers between [0 - 1]
  * as per the X3D IS specification Section 4.4.5 Standard units and
  * coordinate system
@@ -309,11 +309,11 @@ class SAIMFColorRGBA extends BaseMField implements MFColorRGBA {
      * Set a particular colour value in the given eventIn array. To the VRML
      * world this will generate a full MFColor event with the nominated index
      * value changed. Colour values are required to be in the range [0-1].
-     *  <p>
+    
      * The value array must contain at least three elements. If the array
      * contains more than 4 values only the first three values will be used and
      * the rest ignored.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values or
      * the array of values does not contain at least 3 elements an
      * ArrayIndexOutOfBoundsException will be generated. If the colour values are

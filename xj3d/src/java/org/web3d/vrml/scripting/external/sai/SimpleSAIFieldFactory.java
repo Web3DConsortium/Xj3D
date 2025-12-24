@@ -21,7 +21,7 @@ import org.web3d.x3d.sai.*;
 /**
  * SimpleSAIFieldFactory is an implementation of EAIFieldFactory which performs
  * no mapping to reduce duplicate object creation.
- *  <p>
+
  * setNodeFactory must be used after the constructor to properly initialize
  * this class.
  *

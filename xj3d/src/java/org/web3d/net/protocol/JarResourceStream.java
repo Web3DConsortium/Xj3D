@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,20 +27,20 @@ import org.ietf.uri.MalformedURNException;
 
 /**
  * A JAR protocol handler.
- *  <p>
+
  *
  * The basic connection handler for dealing with URLs of the
  * type <code>jar:&lt;url&gt;!/&lt;entry&gt;</code> and URNs that resolve to
  * an item in a jar file.
- *  <p>
+
  *
  * The path defines the name of JAR file and the entry in that file. If no
  * file is defined, then the whole JAR file is referred to.
- *  <p>
+
  *
  * For details on URIs see the IETF working group:
  * <a href="http://www.ietf.org/html.charters/urn-charter.html">URN</a>
- *  <p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.1 $

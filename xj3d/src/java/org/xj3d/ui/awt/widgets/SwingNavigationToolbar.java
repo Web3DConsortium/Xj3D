@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2003 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,15 +30,15 @@ import org.j3d.util.ErrorReporter;
 /**
  * A toolbar for all navigation commands that is usable across any UI that
  * uses Swing.
- * <p>
+
  *
  * Creating an instance of this class will automatically register it as a
  * navigation state listener with the browser core. The end user
  * is not required to do this.
- * <p>
+
  *
  * <b>External Resources</b>
- * <p>
+
  * This toolbar uses images for the button icons rather than text. These are
  * the images used. The path is found relative to the classpath.
  *

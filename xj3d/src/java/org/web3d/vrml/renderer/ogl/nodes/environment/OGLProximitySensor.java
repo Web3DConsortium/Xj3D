@@ -41,7 +41,7 @@ import org.web3d.vrml.renderer.common.nodes.environment.BaseProximitySensor;
 
 /**
  * OpenGL implementation of a ProximitySensor node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.7 $

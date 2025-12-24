@@ -17,10 +17,10 @@ package org.web3d.browser;
 import org.j3d.util.ErrorReporter;
 
 /**
- * <p>
+
  * Abstraction of a specific rendering component that can be placed on
  * screen regardless of renderer type.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

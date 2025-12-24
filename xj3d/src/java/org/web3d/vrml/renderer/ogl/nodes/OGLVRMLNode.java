@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Representation of the basic VRMLNodeType specific to the OpenGL render
  * rendering system.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

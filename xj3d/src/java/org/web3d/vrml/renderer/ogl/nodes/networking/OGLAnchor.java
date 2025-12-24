@@ -33,18 +33,18 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 import org.web3d.vrml.renderer.common.nodes.networking.BaseAnchor;
 
 /**
- * <p>
+
  * OpenGL implementation of an Anchor node.
- * </p>
+
  *
- * <p>
+
  * The anchor node represents a standard grouping node that also contains
  * URL information.
  * For dealing with user input, the current implementation automatically
  * overwrites any immediate child sensors that have been registered. This
  * is not correct behaviour, but our nodes do not handle multiple sensors
  * at the same level yet.
- * </p>
+
  *
  * This implementation doesn't do anything currently. It needs to implement
  * all the grouping node concepts in the OpenGL code.
@@ -87,7 +87,7 @@ public class OGLAnchor extends BaseAnchor
      * Construct a new instance of this node based on the details from the
      * given node. If the node is not a group node, an exception will be
      * thrown. It does not copy the children nodes, just this node.
-     *  <p>
+    
      * Note that the world URL has not been set by this call and will need to
      * be called separately.
      *

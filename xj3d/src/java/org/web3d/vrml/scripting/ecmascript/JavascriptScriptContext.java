@@ -33,7 +33,7 @@ import org.web3d.vrml.scripting.ecmascript.builtin.FieldScriptableObject;
 
 /**
  * JavascriptScript representation of a script as a top level scriptable object.
- *  <p>
+
  *
  * In order for the script adapters to work nicely, they need to implement
  * a scriptable object so that we can tell when a field has been changed.
@@ -42,7 +42,7 @@ import org.web3d.vrml.scripting.ecmascript.builtin.FieldScriptableObject;
  * that they can be accessed dynamically. The parent scope of this object will
  * normally be the output from Context.initSharedObjects() with a shared global
  * scope for all scripts.
- *  <p>
+
  *
  * The implementation never tracks the values of the fields for passing back
  * to the parent script. There's no need for them back there, so we just track

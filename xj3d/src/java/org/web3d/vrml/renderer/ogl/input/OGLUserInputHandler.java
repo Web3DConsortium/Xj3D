@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,14 +24,14 @@ import org.xj3d.core.eventmodel.UserInputHandler;
 
 /**
  * A complete handler for all user input information within a scene.
- * <p>
+
  *
  * The handler takes care of all the handling needed for sensors, anchors,
  * navigation and keyboard. However, it does not define a way of sourcing
  * those events as it assumes that a user will either delegate or extend this
  * class with more specific information such as an AWT listener or Java3D
  * behavior.
- * <p>
+
  *
  * The current key handling does not allow keyboard navigation of the world.
  * It passes all key events directly through to the current key sensor if one

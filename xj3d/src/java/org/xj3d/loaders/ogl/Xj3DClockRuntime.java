@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,7 +25,7 @@ import org.xj3d.core.eventmodel.EventModelEvaluator;
  * Implementation of the
  * {@link org.j3d.renderer.aviatrix3d.loader.AVRuntimeComponent} that
  * can be used to drive the X3D/VRML scene graph clock.
- * <p>
+
  *
  * This clock allows the end user to play with the definition of "time"
  * in the scene graph by speeding up or slowing down the standard system clock.

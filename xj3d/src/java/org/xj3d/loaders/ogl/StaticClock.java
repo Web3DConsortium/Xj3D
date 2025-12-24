@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.VRMLTimeListener;
 
 /**
  * Static representation of the System clock for time-zero loaders.
- * <p>
+
  *
  * The clock only updates the time when resetTimeZero() is called. Listeners
  * are ignored for this implementation as the timesensors will never get their

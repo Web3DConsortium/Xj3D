@@ -20,11 +20,11 @@ import vrml.eai.Node;
   * dependency loops in the EAI implementation--between EventIn*NodeWrapper
   * and SimpleWrappingNode and between SimpleWrappingNode and 
   * EventOut*Node Wrapper.  
-  *  <p>
+ 
   * Given a VRMLNodeType or vrml.eai.Node, this class can produce or locate
   * the corresponding instance.  Whether the instance returned is unique or
   * simply equivalent between subsequent calls is implementation dependent.
-  *  <p>
+ 
   * @author Brad Vender
   */
 

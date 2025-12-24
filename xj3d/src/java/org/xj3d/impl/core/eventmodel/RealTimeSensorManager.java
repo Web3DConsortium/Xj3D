@@ -25,7 +25,7 @@ import org.xj3d.core.eventmodel.TimeSensorManager;
 /**
  * Generalised manager for time sensor nodes that also represents the
  * VRMLClock.
- * <p>
+
  *
  * Another problem is dealing with Java time. On Win32 boxes the accuracy is
  * pretty fucked - 10ms at best on an NT/2K box. The result is that we get this
@@ -35,11 +35,11 @@ import org.xj3d.core.eventmodel.TimeSensorManager;
  * incrementing by a very small amount (say 1ms). This should give accuracy up
  * to about 100Hz frame rate. How we go when it runs faster than that, I have
  * no idea. Jump up and down and bitch to Sun about it.
- * <p>
+
  *
  * During each time click we first call the listeners for time information with
  * the current time.
- * <p>
+
  *
  * Time management exists on two levels. The timesensor can be enabled and
  * disabled like any other behavior. This allows the user to pause the play

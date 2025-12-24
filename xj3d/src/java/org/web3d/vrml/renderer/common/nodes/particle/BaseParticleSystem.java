@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common base renderer implementation of a particle system shape node.
- * <p>
+
  *
  * This implementation is renderer independent, but uses the common j3d.org
  * interfaces for dealing with the particle systems.

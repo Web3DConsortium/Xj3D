@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Implementation of a CoordinateInterpolator2D.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

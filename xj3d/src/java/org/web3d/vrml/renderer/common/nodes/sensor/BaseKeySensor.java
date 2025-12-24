@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,7 +31,7 @@ import org.web3d.vrml.util.Xj3DKeyEvent;
 
 /**
  * Base common implementation of a KeySensor node.
- * <p>
+
  *
  * UI toolkit specific key mappings are handled through
  * the Xj3DKeyEvent object. This object determines the

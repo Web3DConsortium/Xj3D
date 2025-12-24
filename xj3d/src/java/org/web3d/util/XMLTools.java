@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -35,7 +35,7 @@ import java.util.TreeMap;
 import org.j3d.util.IntHashMap;
 
 /**
- * <p>Provides XML entity utilities.</p>
+ * Provides XML entity utilities.
  *
  * This code has been copied from the jakarta commons project from an Apache license.
  * It has been modified to just support XML escaping.
@@ -62,7 +62,7 @@ public class XMLTools {
     };
 
     /**
-     * <p>The set of entities supported by standard XML.</p>
+     * The set of entities supported by standard XML.
      */
     public static final XMLTools XML;
 

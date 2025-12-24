@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the BSD license.
@@ -21,7 +21,7 @@ package org.xj3d.sai;
 /**
  * Listener for navigation user interface state change feedback from the
  * internals of the browser.
- * <p>
+
  *
  * These callback methods provide information for changes within an existing
  * scene. For bulk changes, such as the change of scene, please use the base
@@ -37,11 +37,11 @@ public interface Xj3DNavigationUIListener {
      * list can be given due to either a new world being loaded, or the active
      * navigation layer has been changed. This method is not called if a single
      * viewpoint is added or removed from the scene.
-     * <p>
+    
      *
      * If the scene contains no viewpoints at all (except the default bindable),
      * then this will be called with a null parameter.
-     * <p>
+    
      *
      * On scene or navigation layer change, it is guaranteed that this method
      * will be called before the notification of the actual bound viewpoint.
@@ -56,12 +56,12 @@ public interface Xj3DNavigationUIListener {
      * new instance. There are many different reasons this could happen -
      * new node bound, world changed or even active navigation layer has
      * changed and this is the default in that new layer.
-     * <p>
+    
      *
      * If the file contains no viewpoints or the default viewpoint is
      * bound (due to unbinding all real viewpoints on the stack) then this
      * will be called with a null parameter.
-     * <p>
+    
      *
      * It is guaranteed that this will always contain something from the
      * currently active viewpoint list. If all change, that callback will be

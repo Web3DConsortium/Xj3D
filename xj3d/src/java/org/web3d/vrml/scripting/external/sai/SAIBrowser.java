@@ -69,14 +69,14 @@ import org.xj3d.impl.core.eventmodel.DefaultNavigationManager;
  * SAIBrowser implements the {@link Browser} interface, largely by
  * translating and interfacing between the wrapper classes and the
  * implementation class represented by {org.web3d.vrml.scripting.CommonBrowser}.
- *  <p>
+
  * To function correctly, SAIBrowser needs to be constructed using
  * CommonBrowser and BrowserCore instances.  The SAIBrowser then registers
  * as a listener so that BrowserCoreListener BrowserInitialized and
  * browserShutdown messages.  The BrowserCore instance is necessary mainly
  * for the global namespace and VRMLExecutionSpace information.
  *
- *  <p>
+
  *
  * @author Brad Vender, Rex Melton, Justin Couch
  * @version $Revision: 1.64 $
@@ -549,7 +549,7 @@ public class SAIBrowser
      * process the clicks on Anchor nodes and replace or supplement the
      * existing behaviour. See documentation of the listener for more specific
      * details on usage patterns.
-     * <p>
+    
      * Only one interceptor instance can be registered. Setting a new item will
      * replace an existing registered instance. Setting a null value will clear
      * the current set instance.
@@ -596,7 +596,7 @@ public class SAIBrowser
     /**
      * Set the handler for processing screen captures. This can be used to
      * process images for saving to disc, processing or other task.
-     * <p>
+    
      * Only one listener instance can be registered. Setting a new item will
      * replace an existing registered instance. Setting a null value will clear
      * the current set instance.

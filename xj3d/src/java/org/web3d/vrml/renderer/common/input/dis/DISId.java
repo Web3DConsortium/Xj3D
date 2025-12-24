@@ -19,7 +19,6 @@ package org.web3d.vrml.renderer.common.input.dis;
  * DIS packets, SiteID, ApplicationID, and EntityID.
  *
  * Implements hashcode and equals.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.5 $

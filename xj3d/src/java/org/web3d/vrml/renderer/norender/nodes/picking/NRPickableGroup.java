@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.picking.BasePickableGroup;
 
 /**
  * Null-renderer implementation of a PickableGroup node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

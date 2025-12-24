@@ -36,7 +36,7 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * Common base implementation of a Coordinate node.
- * <p>
+
  * Points are held internally as a flat array of values. The point list
  * returned will always be flat. We do this because renderers like point values
  * as a single flat array.
@@ -336,7 +336,7 @@ public abstract class BaseGeoCoordinate extends BaseGeometricPropertyNode
      * projections. This is a reference to the post-processed data that may be
      * directly used for rendering. In the case of CoordinateDouble, then the
      * array may be a set of down-cast values to floats.
-     * <p>
+    
      * Note that the array may well be longer than the actual number of valid
      * coordinates. Use {@link #getNumPoints()} to determine the number of
      * valid entries.

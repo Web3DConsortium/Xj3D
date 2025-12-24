@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -34,16 +34,17 @@ import org.xj3d.ui.awt.offscreen.browser.ogl.X3DOffscreenSurface;
 /**
  * Factory implementation for X3D SAI which will produce components using
  * the OpenGL renderer.
- * <p>
+
  *
  * This implementation allows you to create a new component that is ready to
  * place content in. Parameters can be supplied in the Map as defined by
  * the SAI.
- * <p>
+
  *
  * When creating a new browser component, the following parameters are
  * supported:
- * <table summary="the following parameters are supported">
+ * <table>
+ * <caption>the following parameters are supported</caption>
  * <tr>
  *  <td><b>Parameter Name String</b></td>
  *  <td><b>Data Type</b></td>

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,12 +19,12 @@ package org.web3d.vrml.nodes;
 import org.j3d.util.IntHashMap;
 
 /**
- * <p>
+
  * A sensor for reporting nBody collisions back to the X3D scene graph.
  *
  * See the specification definition at
  * http://www.xj3d.org/extensions/rigid_physics.html
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

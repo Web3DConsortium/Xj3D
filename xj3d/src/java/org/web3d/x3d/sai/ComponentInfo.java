@@ -20,7 +20,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Description of a single component.
- * <p>
+
  *
  * A component description contains many useful pieces of information about
  * the requirements. At the basic level, it is just a name and a level. In

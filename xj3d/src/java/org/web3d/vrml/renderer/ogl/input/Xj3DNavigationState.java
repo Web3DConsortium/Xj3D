@@ -20,7 +20,7 @@ package org.web3d.vrml.renderer.ogl.input;
 
 /**
  * A collection of navigation state information constants.
- * <p>
+
  *
  * @author Rex Melton
  * @version $Revision: 1.2 $

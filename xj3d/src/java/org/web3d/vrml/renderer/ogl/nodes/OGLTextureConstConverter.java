@@ -21,7 +21,7 @@ import org.web3d.vrml.lang.TextureConstants;
 
 /**
  * OpenGL mapping from TextureConstants to renderer specific constants.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import java.awt.image.BufferedImage;
 
 /**
  * Notification of Screen captures from the internals of Xj3D
- * <p>
+
  *
  * This is the callback that is registered with the {@link Xj3DBrowser} for
  * capturing screenshots. This will be called in a blocking fashion from the

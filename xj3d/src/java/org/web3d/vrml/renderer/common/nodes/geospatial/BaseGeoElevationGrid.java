@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2009
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2009
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -33,7 +33,7 @@ import org.xj3d.core.eventmodel.OriginManager;
 
 /**
  * Common renderer-independent implementation of a GeoElevationGrid
- * <p>
+
  *
  * TODO:
  *    Needed Listeners: solid
@@ -679,7 +679,7 @@ public class BaseGeoElevationGrid extends AbstractNode
      * the geometry regardless of whether a Color component has been provided
      * or not. It is up to the implementation to decide when to pass these
      * values on to the underlying rendering structures or not.
-     * <p>
+    
      *
      * The default implementation returns false. Override if different
      * behaviour is needed.
@@ -695,7 +695,7 @@ public class BaseGeoElevationGrid extends AbstractNode
      * Set the local colour override for this geometry. Typically used to set
      * the emissiveColor from the Material node into the geometry for the line
      * and point-type geometries which are unlit in the X3D/VRML model.
-     * <p>
+    
      *
      * The default implementation does nothing. Override to do something useful.
      *
@@ -707,7 +707,7 @@ public class BaseGeoElevationGrid extends AbstractNode
 
     /**
      * Get the components that compose a geometry object.
-     * <p>
+    
      * If there are no components then a zero length array will be returned.
      * @return VRMLNodeType[] The components
      */

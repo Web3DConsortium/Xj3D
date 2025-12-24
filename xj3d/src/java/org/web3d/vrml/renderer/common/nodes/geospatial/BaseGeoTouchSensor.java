@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2009
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2009
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -36,7 +36,6 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * Common base implementation of a GeoTouchSensor node.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.13 $

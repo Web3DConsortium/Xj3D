@@ -24,11 +24,11 @@ import org.web3d.vrml.renderer.CRExternProtoBuilder;
 
 /**
  * A SAV interface for dealing with building a single extern proto.
- * <p>
+
  *
  * The builder is designed to create a single proto. However, that single proto
  * may well have nested protos as part of it, so we must deal with that too.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.11 $

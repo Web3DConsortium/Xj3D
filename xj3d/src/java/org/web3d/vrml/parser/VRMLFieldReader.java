@@ -22,15 +22,15 @@ import org.web3d.vrml.sav.DocumentLocator;
 /**
  * A parser interface for raw field values to turn them into Java primitive
  * types for use within the runtime application.
- * <p>
+
  * The parser assumes that we have a raw field value that does not contain any
  * surrounding values. For example, it expects MFField values to be stripped of
  * surrounding brackets before being passed to these methods.
- * <p>
+
  * There are two ways of using this class: parsing a know field type, and
  * parsing an unknown field type and getting the parser to return the
  * appropriate (closest guess) value to you.
- * <p>
+
  * The assumption of this parser is that each time you call the method it will
  * have a non-zero length, non-empty string. There should be at least one
  * non-whitespace character in the string. If not, a parse exception will be

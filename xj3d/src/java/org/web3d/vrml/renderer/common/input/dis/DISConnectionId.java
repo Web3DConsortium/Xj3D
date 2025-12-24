@@ -19,7 +19,6 @@ package org.web3d.vrml.renderer.common.input.dis;
  * DIS connections, address and port
  *
  * Implements hashcode and equals.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.4 $

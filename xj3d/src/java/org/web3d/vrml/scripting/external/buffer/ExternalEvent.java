@@ -15,7 +15,7 @@ package org.web3d.vrml.scripting.external.buffer;
 /**
  * A very simple event class for storage and queuing purposes. This class
  * doesn't impose any requirements beyond the doEvent method.
- * <p>
+
  * External events from both the EAI and SAI systems implement this interface to
  * get into the queuing system.
   *

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.j3d.util.IntHashMap;
 
 /**
  * Implementation of the CollidableSensor node.
- * <p>
+
  *
  *
  * The X3D definition of CollisionSensor is:

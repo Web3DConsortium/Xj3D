@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2009
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2009
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -32,7 +32,7 @@ import org.web3d.vrml.util.NodeArray;
 
 /**
  * Common implementation of the SensorManager interface for all renderers.
- * <p>
+
  *
  * This base class handles the basic management needs of the sensor manager,
  * such as sorting and processing the various sensor types. Renderer-specific
@@ -188,7 +188,7 @@ public class DefaultSensorManager implements SensorManager {
      * keyboard processing that would be used to send events to
      * Key/StringSensors and perform navigation and picking duties as well as
      * adjust items like billboards and LODs.
-     * <p>
+    
      * The base class version calls the individual layer sensor managers and
      * the picking manager and time sensor manager to set the appropriate
      * clock tick time.  If you need to override for

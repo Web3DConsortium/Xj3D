@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.VisibilityListener;
 
 /**
  * The listener interface for receiving notice on entry or exit from an area.
- * <p>
+
  *
  * Each method receives both the user's current position and orientation in
  * V-world coordinates but also the transform of the object that was picked

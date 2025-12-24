@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -53,7 +53,7 @@ import org.xj3d.sai.BrowserConfig;
 
 /**
  * A single canvas that can display a VRML scene graph.
- * <p>
+
  *
  * The aim of this canvas is to work in one of two modes - a single canvas
  * that displays the full VRML content, or part of a series of canvases that
@@ -62,13 +62,13 @@ import org.xj3d.sai.BrowserConfig;
  * latter represents an immersive environment like a CAVE or stereo
  * glasses. The setup of the constructor determines which of these two modes
  * you operate in.
- * <p>
+
  *
  * To operate in multicanvas mode, you first start with a single canvas.
  * This canvas is then used as the source of information for all the
  * other canvases. They feed from this central item of information and
  * work from there to build their extra scene information.
- * <p>
+
  *
  * Startup of the canvas is a two-phase process. In the first phase, you get
  * Just the canvas and a bit of view information set up. There is no live
@@ -79,7 +79,7 @@ import org.xj3d.sai.BrowserConfig;
  * so it allows the caller code to get a UI item on the screen as quickly as
  * possible and then call a separate thread to start the initialization
  * process in a separate thread.
- * <p>
+
  *
  * As part of the startup process, a lot of loading of extra items needs
  * to be performed. Instead of requiring the user to create their own, this
@@ -88,7 +88,7 @@ import org.xj3d.sai.BrowserConfig;
  * process are the scripting engines. The end user must create their own
  * scripting engine(s) and register those with the ScriptManager, which is
  * available from this class after initialize() has been called.
- * <p>
+
  *
  * The following system properties can be defined as part of this class:
  *

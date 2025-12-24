@@ -21,7 +21,6 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Receiver of notifications from the VRML document about script declaration
  * information.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.6 $
@@ -60,7 +59,7 @@ public interface ScriptHandler {
      * fields except <code>url</code>, <code>mustEvaluate</code> and
      * <code>directOutput</code> fields. These fields use the normal field
      * callbacks of {@link ContentHandler}.
-     * <p>
+    
      * If the current parsing is in a proto and the field "value" is defined
      * with an IS statement then the value returned here is null. There will
      * be a subsequent call to the ProtoHandlers <code>protoIsDecl()</code>

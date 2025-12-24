@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.lang.*;
 /**
  * Supplemental representation of any renderable node in the VRML system along
  * with the methods required to manage the rendering process.
- * <p>
+
  * Each node contains a collection of fields. Each field has a fixed index for
  * all instances of this node. Field values are set using the setValue() method
  * for the appropriate data type. The node implementation must make sure that

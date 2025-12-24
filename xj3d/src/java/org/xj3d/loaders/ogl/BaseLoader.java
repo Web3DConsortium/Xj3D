@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -64,13 +64,13 @@ import org.xj3d.impl.core.loading.MemCacheLoadManager;
 /**
  * Common base implementation Aviatrix3D file loader implementation for reading
  * loading files and building a Aviatrix3D scene graph with them.
- * <p>
+
  *
  * The loader considers sensor handling and routing to be behaviours. Some
  * asynchronous loading of files for textures is performed. Sound file loading
  * is performed if audio clips are asked for. For example, if behaviours are
  * not requested then Inlines will not have their content loaded.
- * <p>
+
  *
  * If the loader asks for no runtime, then we will still load nodes that
  * need a runtime system to work, but will disable their use. For example, a
@@ -78,7 +78,7 @@ import org.xj3d.impl.core.loading.MemCacheLoadManager;
  * activated because the LOD's internal behavior is disabled. Scripts are
  * considered to be behaviours, and they will not be loaded at all if runtime
  * loading is disabled.
- * <p>
+
  *
  * The implementation only makes use of two behaviours. One is a per-frame
  * behaviour for the event model evaluation. The other is a handler for
@@ -545,7 +545,7 @@ public abstract class BaseLoader implements AVLoader {
      * Set up any derived-class specific properties for the parser factory
      * instance. This will be called just before a new parser factory will
      * be instantiated.
-     * <p>
+    
      *
      * The default implementation of this method is to do nothing.
      *

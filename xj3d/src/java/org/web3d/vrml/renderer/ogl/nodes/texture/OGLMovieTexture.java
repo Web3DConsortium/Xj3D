@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLTextureNodeType;
 
 /**
  * OGL implementation of a MovieTexture node.
- * <p>
+
  *
  * The most optimal way for this to work would be creating ByteTextureComponent2D
  * and using updateSubImage updates.  For now this will just use the current

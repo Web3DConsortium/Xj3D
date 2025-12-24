@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2007 - 2009
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2009
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -45,7 +45,7 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * Common implementation of the GeoTransform node.
- * <p>
+
  *
  * This base class does not automatically update the underlying transform
  * with each set() call. These calls only update the local field values,

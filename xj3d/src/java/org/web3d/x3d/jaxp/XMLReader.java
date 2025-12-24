@@ -34,7 +34,7 @@ import org.web3d.vrml.parser.FactoryConfigurationError;
 /**
  * Common reader implementation that can be either strict or lenient in
  * the parsing.
- * <p>
+
  * This parser supports the following properties:
  * <ul>
  * <li>"conformance": ["weak", "strict"]. String values. Defaults to weak</li>

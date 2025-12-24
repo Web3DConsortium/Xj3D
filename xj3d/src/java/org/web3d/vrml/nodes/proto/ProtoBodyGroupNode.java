@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * A private group node implementation that represents the body of a proto
  * declaration.
- * <p>
+
  *
  * This, like a normal group has only one field named "children". We ignore
  * all bounds information and return default values. Values should never,

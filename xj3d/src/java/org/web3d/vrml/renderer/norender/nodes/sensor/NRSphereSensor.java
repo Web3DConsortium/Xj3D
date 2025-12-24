@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.sensor.BaseSphereSensor;
 
 /**
  * Null-renderer implementation of a SphereSensor node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

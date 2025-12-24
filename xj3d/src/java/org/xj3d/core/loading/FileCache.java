@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,12 +21,12 @@ package org.xj3d.core.loading;
 /**
  * Interface defining a file caching system without specifying an
  * implementation.
- * <p>
+
  *
  * The interface is designed to abstract various file caching implementations
  * so that we can use one content loading mechanism, but allow it to use
  * different caching schemes dependent on the need of the application.
- * <p>
+
  *
  * When using a cache, it is highly recommended that the URI passed in does
  * not include the reference part (any piece after the #) as this means that
@@ -35,7 +35,7 @@ package org.xj3d.core.loading;
  * want to store the entire file here so that any further protos in that same
  * file do not need to be reloaded. This relies on you, the caller to make
  * sure that the reference part is stripped from the URI string.
- * <p>
+
  *
  * The implementor of this interface is free to do whatever they want with
  * the requests - including completely ignoring it.

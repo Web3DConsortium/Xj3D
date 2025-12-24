@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,13 +23,11 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common implementation of a TimeTrigger Node.
- * <p>
  *
  * The implementation uses the standard VRML time clock to send and retrieve
  * time information. As an efficiency measure, if the time sensor is disabled
  * it will remove itself as a listener to the global clock. When it becomes
  * re-enabled that listener will be added back again.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.7 $

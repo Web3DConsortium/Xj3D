@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * VRML eventOut class for SFString.
- *  <p>
+
  * Strings are represented using standard java.lang.String representations.
  * The implementation of this class will provide any necessary conversions
  * to the UTF8 format required for VRML support.

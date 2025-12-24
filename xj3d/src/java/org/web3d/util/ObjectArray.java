@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.util;
 
 /**
  * Simple dynamic array structure that holds Object instances.
- * <p>
+
  *
  * Idea is to save implementation weight when we don't really want to use a
  * full java.util collections class, but don't want to have to re-implement

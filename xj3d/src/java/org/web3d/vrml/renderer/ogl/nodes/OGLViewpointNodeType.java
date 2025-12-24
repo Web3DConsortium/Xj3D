@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 
 /**
  * Shell representation of a viewpoint node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.8 $

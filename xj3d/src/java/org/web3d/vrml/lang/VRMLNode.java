@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.j3d.util.ErrorReporter;
 
 /**
  * Base representation of any node in the VRML system.
- * <p>
+
  * Each node contains a collection of fields. Each field has a fixed index for
  * all instances of this node. If a node is cloned in any way, the accompanying
  * user data is not cloned with the node.

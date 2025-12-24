@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Marker interface that shows a class can contain an underlying
  * {@link VRMLNodeType} instance.
- * <p>
+
  *
  * This is used to allow both the ordinary SFNode as well as the script
  * wrapper ("this") to be used in calls like addRoute().

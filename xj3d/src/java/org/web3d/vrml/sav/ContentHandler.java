@@ -21,7 +21,6 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Receiver of notifications from the VRML document about node declaration
  * information.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.14 $
@@ -45,7 +44,7 @@ public interface ContentHandler {
      * <code>#</code> start. The type string contains the representation of
      * the first few characters of the file after the #. This allows us to
      * work out if it is VRML97 or the later X3D spec.
-     * <p>
+    
      * Version numbers change from VRML97 to X3D and aren't logical. In the
      * first, it is <code>#VRML V2.0</code> and the second is
      * <code>#X3D V1.0</code> even though this second header represents a

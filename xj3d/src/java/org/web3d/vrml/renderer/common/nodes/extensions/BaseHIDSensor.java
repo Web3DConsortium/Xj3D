@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common base implementation of a GamepadSensor
- * <p>
+
  *
  * This node is an custom extension to Xj3D node.
  *

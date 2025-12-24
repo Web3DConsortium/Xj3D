@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -38,7 +38,7 @@ import org.web3d.vrml.sav.DocumentLocator;
 
 /**
  * A window that can act as console for error messages from the application.
- * <p>
+
  *
  * The window will print error messages for all the error levels and only
  * throw an exception for the fatalError.

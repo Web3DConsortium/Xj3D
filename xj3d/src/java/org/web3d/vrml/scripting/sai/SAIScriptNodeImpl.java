@@ -24,7 +24,7 @@ import org.web3d.x3d.sai.X3DScriptNode;
 
 /**
  * Shell representation of a script node.
- * <p>
+
  *
  * The script is different to all the other nodes. While it represents
  * a script, it doesn't have the normal content of a node. This will be an

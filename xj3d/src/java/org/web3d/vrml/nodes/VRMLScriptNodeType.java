@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,13 +21,13 @@ import org.web3d.vrml.lang.VRMLFieldDeclaration;
 
 /**
  * Shell representation of a script node.
- * <p>
+
  *
  * The script is different to all the other nodes. While it represents
  * a script, it doesn't have the normal content of a node. This will be an
  * interface to interact between the script and an external scripting engine.
  * Quite how we are going to do this remains an interesting thing to consider.
- * <p>
+
  *
  * When implementing this interface, the coder must be aware of how scripts
  * fit into the larger event model picture. A script cannot act just on the

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.util;
 
 /**
  * Utility class for doing array manipulation.
- * <p>
+
  *
  * The main use of this class is to provide a central location that
  * converts 2D arrays to flat structures and back again. All methods assume

@@ -32,7 +32,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 
 /**
  * OGL implementation of a collision node.
- * <p>
+
  *
  * NOTE:<br>
  * The implementation does not support the use of proxy geometry yet.

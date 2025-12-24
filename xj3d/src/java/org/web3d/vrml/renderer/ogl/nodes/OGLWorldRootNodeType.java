@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLWorldRootNodeType;
 
 /**
  * An abstract representation of the root node of a world in OpenGL.
- * <p>
+
  *
  * Extends the basic root node functionality with Java3D specific capabilities
  * - namely the ability to get the root node BranchGroup instance. This is the

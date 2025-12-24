@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import java.security.PrivilegedAction;
 
 /**
  * Representation of a parser factory for field content.
- * <p>
+
  *
  * This is the representation of a basic VRML parser. An parser implementation
  * would extend this instance to provide a specific parser. The implementation
@@ -35,7 +35,7 @@ import java.security.PrivilegedAction;
  * called it will read that property and create a new instance using
  * reflection. The implementation must have a public, zero argument constructor
  * in order to be loaded.
- * <p>
+
  *
  * Each time the <code>newVRMLParserFactory()</code> method is called, it will
  * re-read the property and create an instance of the class. This allows you

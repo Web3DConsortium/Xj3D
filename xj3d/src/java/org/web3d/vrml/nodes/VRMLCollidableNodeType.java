@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,13 +19,13 @@ package org.web3d.vrml.nodes;
 /**
  * A marker interface for describing a node that can handle collision
  * control and events.
- * <p>
+
  *
  * The purpose of this interface is to act as a common gateway between the
  * low-level detection routines and the VRML geometry. The methods here are to
  * be used for that purpose, not for external authoring APIs and scripting to
  * make state changes.
- * <p>
+
  *
  * At this stage the API is quite simple. However, for CollidableGeometry,
  * there will need to be a lot more low-level information provided. An example

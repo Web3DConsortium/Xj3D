@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.*;
 /**
  * The SceneFillTraverser is responsible for taking a raw collection of
  * nodes and filling in the remaining scene details.
- *  <p>
+
  * The method for accomplishing this is to be given a ReplaceWorldVRMLScene,
  * construct a SceneTraverser, and call the appropriate addX methods.
  *

@@ -48,7 +48,7 @@ public abstract class EventOutMFInt32 extends EventOutMField
 
   /**
    * Get a particular value from the eventOut array.
-   *  <p>
+  
    * If the index is out of the bounds of the current array of data values an
    * ArrayIndexOutOfBoundsException will be generated.
    *

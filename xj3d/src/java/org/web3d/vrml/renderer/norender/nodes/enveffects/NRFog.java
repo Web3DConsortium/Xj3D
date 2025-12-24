@@ -21,8 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.enveffects.BaseFog;
 import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
- * Non-renderable implementation of a fog node.
- * <p>
+ * Non-rendering implementation of a fog node.
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

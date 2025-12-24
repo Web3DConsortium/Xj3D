@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL implementation of a LoadSensor node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

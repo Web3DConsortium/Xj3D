@@ -24,7 +24,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * Adapter implementation of the SAX ErrorHandler interface that communicates
  * with our X3D ErrorReporter interface.
- * <p>
+
  * Provides marginally better error handling that prints to the nominated
  * output stream. If no stream is provided, it prints to stdout.
  *

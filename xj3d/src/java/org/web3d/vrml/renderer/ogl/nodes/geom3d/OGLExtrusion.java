@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,7 +30,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLGeometryNodeType;
 
 /**
  * OpenGL implGeomementation of an Extrusion
- * <p> The 1.16 version of OGLExtrusion generates
+ The 1.16 version of OGLExtrusion generates
  * end caps correctly for both convex and concave
  * crossSections.  More thorough testing is needed
  * to see if textures are handled properly, however.

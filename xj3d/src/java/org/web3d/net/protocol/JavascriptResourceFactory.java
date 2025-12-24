@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,17 +20,17 @@ import org.ietf.uri.URIResourceStreamFactory;
 import org.j3d.util.HashSet;
 
 /**
- *  <p>
+
  * A factory for producing resources specific to VRML97/X3D.
  *
  * The current factory supports handlers for the javascript and ecmascript
  * protocol types.
- * </p>
+
  *
- * <p>
+
  * This software is released under the
  * <a href="http://www.gnu.org/copyleft/lgpl.html">GNU LGPL</a>
- * </p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.3 $

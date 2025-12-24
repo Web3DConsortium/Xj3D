@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.xj3d.sai;
 /**
  * Generalised interface for reporting errors and messages of any kind that
  * happens in the browser.
- * <p>
+
  *
  * The error reporter does not get given the same messages as those from the
  * {@link Xj3DStatusListener} interface. That interface is for transient
@@ -29,7 +29,7 @@ package org.xj3d.sai;
  * interface is used for longer-lasting messages, such as those that would be
  * recorded in a logging interface. What is seen here is the same as the
  * error console messages if you were running the full browser.
- * <p>
+
  *
  * Where methods provide both a string and exception, either of the values may
  * be null, but not both at the same time. Exceptions presented will be

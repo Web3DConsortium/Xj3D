@@ -20,7 +20,7 @@ import edu.nps.moves.dis7.pdus.Pdu;
 
 /**
  * Common interface for all DIS nodes.
- * <p>
+
  *
  * Provides access to networking and identification params.
  *

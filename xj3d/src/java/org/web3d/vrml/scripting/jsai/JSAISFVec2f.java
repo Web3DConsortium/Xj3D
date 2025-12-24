@@ -27,11 +27,11 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Xj2D Specific implementation of the SFFloat field when extracted from part
  * of a node.
- * <p>
+
  *
  * The node assumes that the index and node have been checked before use by
  * this class.
- * <p>
+
  *
  * An interesting implementation question is dealing with the methods that
  * fetch an individual color component. The current implementation does not

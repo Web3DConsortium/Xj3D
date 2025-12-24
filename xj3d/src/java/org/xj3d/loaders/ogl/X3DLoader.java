@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,13 +23,13 @@ import org.web3d.vrml.parser.VRMLParserFactory;
 /**
  * A Java3D file loader implementation for reading X3D utf8 files only and
  * building a Java3D scene graph with them.
- * <p>
+
  *
  * The loader considers sensor handling and routing to be behaviours. Some
  * asynchronous loading of files for textures is performed. Sound file loading
  * is performed if audio clips are asked for. For example, if behaviours are
  * not requested then Inlines will not have their content loaded.
- * <p>
+
  *
  * If the loader asks for no behaviors, then we will still load nodes that
  * use behaviors, but will disable their use. For example, a LOD will still
@@ -39,7 +39,7 @@ import org.web3d.vrml.parser.VRMLParserFactory;
  * is disabled. However, we will take out other items. For example, we make
  * no attempt to load textures, scripts or anything else that may require
  * asynchronous loading of the content outside the single call to load().
- * <p>
+
  *
  * The default setup for runtime activities is
  * {@link org.xj3d.impl.core.eventmodel.ListsRouterFactory} and

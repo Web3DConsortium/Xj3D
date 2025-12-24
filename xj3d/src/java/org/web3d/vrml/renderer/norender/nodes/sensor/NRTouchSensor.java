@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.sensor.BaseTouchSensor;
 
 /**
  * Null-renderer implementation of a TouchSensor node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.6 $

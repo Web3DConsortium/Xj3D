@@ -19,7 +19,7 @@ import org.web3d.vrml.nodes.VRMLDISNodeType;
 
 /**
  * Structure for holding NodeMap entries.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -39,7 +39,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL-renderer implementation of a LOD node.
- * <p>
+
  *
  * Note that we always change right on the suggested LOD ranges, so the
  * forceTransitions field introduced in 3.1 is ignored for our implementation.

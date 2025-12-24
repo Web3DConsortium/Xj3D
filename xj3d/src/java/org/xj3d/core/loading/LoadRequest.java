@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,12 +20,12 @@ import java.util.Vector;
 
 /**
  * A data holder for items that are inserted into a load queue.
- * <p>
+
  *
  * Because we want to use this object to check in the various lists and maps
  * for the URL being existing, the equality and hashing values are based on
  * the value of the URL only. Anything else is ignored.
- * <p>
+
  *
  * The data holder contains a reference to the cache to use. This is because
  * we might have different caching regimes set up by using different load

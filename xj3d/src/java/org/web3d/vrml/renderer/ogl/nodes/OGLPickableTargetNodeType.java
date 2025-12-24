@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * An abstract representation of a node that can be used as a target for
  * picking within the Aviatrix3D system.
- * <p>
+
  *
  * Since picking requires an object to pick and something to pick against and
  * this interface provides the PickableObject instance to pick against as a

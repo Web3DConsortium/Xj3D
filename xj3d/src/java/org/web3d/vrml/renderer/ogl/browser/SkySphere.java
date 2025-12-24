@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.j3d.aviatrix3d.*;
 /**
  * Represents the geometry needed to create the sky portion of the skyColor
  * fields of the background.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.10 $
@@ -179,7 +179,7 @@ class SkySphere extends Shape3D
      * Update the background transparency to this new value. If the value is
      * 1.0, then disable all the background rendering. A value of 0 is
      * completely opaque and a value of 1 is clear.
-     * <p>
+    
      * Make sure to call this before updateSkyColors so that the array can
      * pick up this information too when regenerating the sphere.
      *

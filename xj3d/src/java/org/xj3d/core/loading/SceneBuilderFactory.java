@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.xj3d.core.loading;
 /**
  * Definition of a factory used to create new instances of the scene builder
  * on demand.
- * <p>
+
  *
  * The issue of VRML97 requirement is ignored as part of the interface, but
  * the constructor of the concrete implementation of this class should set it

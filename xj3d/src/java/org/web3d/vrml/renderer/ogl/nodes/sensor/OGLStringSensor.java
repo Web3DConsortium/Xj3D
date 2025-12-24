@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL implementation of a StringSensor node.
- * <p>
+
  *
  * The definitions of action keys between VRML and Java are a little
  * different. VRML defines the arrow keys as action keys where Java does

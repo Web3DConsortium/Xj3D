@@ -44,7 +44,7 @@ public class OGLFog extends BaseFog implements OGLVRMLNode {
     /**
      * Construct a new instance of this node based on the details from the
      * given node.
-     *  <p>
+    
      *
      * @param node The node to copy
      * @throws IllegalArgumentException The node is not the right type.

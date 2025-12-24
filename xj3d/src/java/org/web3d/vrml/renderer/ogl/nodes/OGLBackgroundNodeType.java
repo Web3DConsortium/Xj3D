@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLBackgroundNodeType;
 /**
  * An abstract representation of any background node for use in the OpenGL
  * renderer.
- * <p>
+
  *
  *
  * @author Justin Couch

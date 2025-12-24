@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2004 - 2008
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.web3d.browser;
 /**
  * A listener to notify that a sensor's status has changed in relation to
  * an input device.
- * <p>
+
  * Any VRML/X3D node that interacts with a tracker will issue these events.
  *
  * TODO: This interface does not allow you to separate events when the user

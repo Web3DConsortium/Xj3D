@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.DefaultNodeFactory;
 /**
  * Singleton implementation of the {@link org.web3d.vrml.lang.VRMLNodeFactory}
  * that produces OpenGL implementations of the nodes.
- * <p>
+
  * Changed from a singleton to support multi-threading.  See details
  * in DefaultNodeFactory.
  *

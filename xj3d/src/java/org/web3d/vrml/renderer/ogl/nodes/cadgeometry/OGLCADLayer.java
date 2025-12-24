@@ -40,7 +40,7 @@ import org.web3d.vrml.renderer.common.nodes.cadgeometry.BaseCADLayer;
 
 /**
  * OpenGL implementation of a CADLayer.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.7 $

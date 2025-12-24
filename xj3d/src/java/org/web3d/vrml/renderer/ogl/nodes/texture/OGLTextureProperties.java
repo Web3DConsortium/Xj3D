@@ -29,7 +29,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL implementation of a texture properties.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

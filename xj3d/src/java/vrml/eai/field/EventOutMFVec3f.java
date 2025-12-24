@@ -33,7 +33,7 @@ public abstract class EventOutMFVec3f extends EventOutMField
 
   /**
    * Get the value of the array of 2D vectors. Output is an array of floats
-   *  <p>
+  
    * @return The array of vec2f values where <br>
    *    value[i][0] = X <br>
    *    value[i][1] = Y <br>
@@ -66,7 +66,7 @@ public abstract class EventOutMFVec3f extends EventOutMField
 
   /**
    * Get a particular vector value in the given eventOut array.
-   *  <p>
+  
    * If the index is out of the bounds of the current array of data values an
    * ArrayIndexOutOfBoundsException will be generated.
    *

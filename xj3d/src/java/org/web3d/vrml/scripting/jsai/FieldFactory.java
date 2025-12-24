@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Factory abstract interface for generating fields from a given node.
- * <p>
+
  *
  * The idea of this factory is to break a circular compile dependency
  * between JSAINode and JSAISFNode/JSAIMFNode.

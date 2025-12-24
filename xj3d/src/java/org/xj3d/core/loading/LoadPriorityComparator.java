@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,12 +23,12 @@ import java.util.*;
 /**
  * Comparator implementation that takes items from the load queue and sorts
  * them according to their priority.
- * <p>
+
  *
  * The priority is based on the value of the system property
  * <code>org.xj3d.core.loading.sort.order</code>. The default load order is
  * set by {@link LoadConstants#DEFAULT_SORT_ORDER}.
- * <p>
+
  *
  * The priority order is read from the current system property. If the user
  * needs to change the load order, they can reset the property value and then

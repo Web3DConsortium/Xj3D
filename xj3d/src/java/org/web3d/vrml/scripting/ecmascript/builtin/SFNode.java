@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.web3d.vrml.scripting.ecmascript.x3d.X3DExecutionContext;
 
 /**
  * SFNode field object wrapper for ECMAScript.
- *  <p>
+
  *
  * The node implementation works by dynamically querying the underlying node
  * for fields. Once it finds a field, it will cache the details internally.

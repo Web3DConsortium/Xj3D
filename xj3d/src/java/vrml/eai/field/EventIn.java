@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * A VRML eventIn class. Represents the VRML write only access type.
- *  <p>
+
  * The user can associate data and also listen for events on this eventIn.
  * These events are notified to the listener at the time that they arrive at
  * the field. This allows the addition of extra features like monitoring a

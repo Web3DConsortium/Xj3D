@@ -37,7 +37,7 @@ import org.xj3d.core.loading.SceneBuilder;
 /**
  * A OpenGL file loader implementation for reading VRML and X3D files and
  * building a OpenGL scene graph with them.
- * <p>
+
  *
  * If the user asks for no behaviors, then we will still load nodes that use
  * behaviors, but will disable their use. For example, a LOD will still need to
@@ -238,7 +238,7 @@ public class OGLVRMLSceneBuilder implements SceneBuilder {
      * abnormally and left us in an odd state. Sometimes this can prevent us
      * from parsing again. This method should be called just before the
      * <code>VRMLReader.parse()</code> method is called.
-     * <p>
+    
      * The flags set about what to load are <i>not</i> reset by this method.
      */
     @Override
@@ -548,7 +548,7 @@ public class OGLVRMLSceneBuilder implements SceneBuilder {
      * value of the field. MFStrings will have to be parsed. This is a
      * terminating call for startField as well. The next call will either be
      * another <code>startField()</code> or <code>endNode()</code>.
-     * <p>
+    
      * If this field is an SFNode with a USE declaration you will have the
      * {@link #useDecl(String)} method called rather than this method.
      *

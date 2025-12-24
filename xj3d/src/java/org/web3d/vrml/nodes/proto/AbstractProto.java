@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * Base representation of the common functionality for the PROTO and
  * EXTERNPROTO node types.
- * <p>
+
  *
  * <b>Note</b>: This implementation does not handle IS values to pass field
  * information to body nodes.

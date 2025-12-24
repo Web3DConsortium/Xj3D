@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,14 +20,14 @@ package org.web3d.vrml.lang;
 /**
  * The representation of a contained, separable execution space that a node
  * contains.
- * <p>
+
  *
  * This class is used to mark a node that contains a separated execution space
  * from the parent node. The two nodes that will use this are proto instances
  * and inlines. The idea is to mark the node instance as being special so that
  * we can treat the contained routes and other items as being important as well
  * as separable from the parent space.
- * <p>
+
  *
  * When the class instance that implements this node is created, this node is
  * used as a marker and a way of creating a separate execution and name space

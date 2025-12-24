@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLTextureNodeType;
 
 /**
  * OpenGL implementation of a MultiTexture node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

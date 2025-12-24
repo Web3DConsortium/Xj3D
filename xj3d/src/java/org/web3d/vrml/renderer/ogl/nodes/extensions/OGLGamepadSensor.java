@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OGL renderer implementation of a GameSensor Node.
- * <p>
+
  *
  * This node is purely informational within the scene graph. It does not have
  * a renderable representation.

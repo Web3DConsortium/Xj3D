@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.shape.BaseLineProperties;
 
 /**
  * Null renderer implementation of an LineProperties node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

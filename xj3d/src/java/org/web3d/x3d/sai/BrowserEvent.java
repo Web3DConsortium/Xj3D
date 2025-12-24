@@ -20,7 +20,7 @@ import java.util.EventObject;
 
  /**
   * Class representing events that happen to the VRML browser.
-  * <p>
+ 
   * This event notifies listener classes about changes to the browser that
   * may be of interest to the client. VRML events cannot be consumed in the
   * way that java AWT events can be.

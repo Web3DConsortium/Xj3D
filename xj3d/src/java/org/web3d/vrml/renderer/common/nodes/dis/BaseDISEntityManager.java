@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common implementation of a EntityManager node functionality.
- * <p>
+
  * Notifies content when an entity arrives or leaves.  Nodes which are
  * locally controlled by the simulation are ignored(ie any node which
  * matches the entityID,siteID,appID and has a networkWriter mode).

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.j3d.aviatrix3d.Viewport;
 /**
  * Internal data holder used by viewport resize manager for proportional size
  * viewports.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

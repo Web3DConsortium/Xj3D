@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,11 +29,11 @@ import org.web3d.util.PropertyTools;
 
 /**
  * Common base implementation of an Appearance node.
- * <p>
+
  *
  *
  * <b>Properties</b>
- * <p>
+
  * The properties for this file are loaded once on startup so they cannot be
  * initialized per run of loader.
  *

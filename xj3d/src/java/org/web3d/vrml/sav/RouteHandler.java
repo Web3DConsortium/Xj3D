@@ -21,7 +21,6 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Receiver of notifications from the VRML document about node declaration
  * information.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

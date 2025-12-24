@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,7 +25,6 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Common base implementation of a two-sided material extension node.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

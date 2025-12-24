@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.common.nodes.GeometryUtils;
 
 /**
  * OpenGL implementation of an IndexedFaceSet.
- * <p>
+
  *
  * @author Alan Hudson, Justin Couch
  * @version $Revision: 1.37 $

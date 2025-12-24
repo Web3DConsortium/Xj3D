@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import javax.swing.ImageIcon;
 /**
  * A self-configured button implementation that can be used to show and hide
  * the console window.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

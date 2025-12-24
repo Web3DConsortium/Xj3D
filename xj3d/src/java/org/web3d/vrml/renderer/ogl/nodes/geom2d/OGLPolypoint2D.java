@@ -24,10 +24,10 @@ import org.web3d.vrml.renderer.common.nodes.geom2d.BasePolypoint2D;
 
 /**
  * OpenGL implementation of an Polypoint2D
- * <p>
+
  *
  * The point set directly maps to Aviatrix3D's PointArray class.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

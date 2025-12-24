@@ -33,7 +33,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLTextureNodeType;
 
 /**
  * OpenGL implementation of a PixelTexture node.
- * <p>
+
  *
  * Given a SFImage this will produce an NIOBufferImage
  *

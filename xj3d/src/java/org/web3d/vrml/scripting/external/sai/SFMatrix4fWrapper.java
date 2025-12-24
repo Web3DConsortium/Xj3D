@@ -25,7 +25,7 @@ import org.web3d.x3d.sai.SFVec3f;
 
 /**
  * Representation of a SFRotation field.
- * <P>
+
  * Rotation values are specified according to the VRML IS Specification Section
  * 5.8 SFRotation and MFRotation.
  *

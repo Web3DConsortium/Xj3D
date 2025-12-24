@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,9 +25,9 @@ import org.j3d.util.IntHashMap;
 // None
 
 /**
- * <p>
+
  * Abstract implementation of the {@link BasicScene} interface.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.16 $

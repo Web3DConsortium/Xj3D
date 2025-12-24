@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2003 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU GPL v2.0
@@ -25,7 +25,7 @@ import javax.swing.text.BadLocationException;
 
 /**
  * An output stream that redirects to a text area.
- * <p>
+
  *
  * Typically this class is used to redirect <code>System.out</code>
  * and <code>System.err</code>
@@ -63,7 +63,7 @@ public class SwingTextAreaOutputStream extends OutputStream {
      * to the output stream. The byte to be written is the eight
      * low-order bits of the argument <code>b</code>. The 24
      * high-order bits of <code>b</code> are ignored.
-     * <p>
+    
      * Subclasses of <code>OutputStream</code> must provide an
      * implementation for this method.
      *
@@ -88,15 +88,15 @@ public class SwingTextAreaOutputStream extends OutputStream {
      * output stream in order; element <code>b[off]</code> is the first
      * byte written and <code>b[off+len-1]</code> is the last byte written
      * by this operation.
-     * <p>
+    
      * The <code>write</code> method of <code>OutputStream</code> calls
      * the write method of one argument on each of the bytes to be
      * written out. Subclasses are encouraged to override this method and
      * provide a more efficient implementation.
-     * <p>
+    
      * If <code>b</code> is <code>null</code>, a
      * <code>NullPointerException</code> is thrown.
-     * <p>
+    
      * If <code>off</code> is negative, or <code>len</code> is negative, or
      * <code>off+len</code> is greater than the length of the array
      * <code>b</code>, then an <code>IndexOutOfBoundsException</code> is thrown.

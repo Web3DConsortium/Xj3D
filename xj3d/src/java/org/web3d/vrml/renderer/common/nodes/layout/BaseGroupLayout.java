@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,13 +25,12 @@ import org.web3d.vrml.nodes.VRMLSurfaceChildNodeType;
 
 /**
  * Common implementation of a GroupLayout node.
- * <p>
+
  *
  * A group layout is a container for allowing the use of more than one
  * child layout. Typically used to group a bunch of BorderLayouts together
  * under the Overlay node. It has no additional properties beyond the simple
  * layout capabilities.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

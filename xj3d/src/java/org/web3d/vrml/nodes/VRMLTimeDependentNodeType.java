@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -13,7 +13,7 @@ package org.web3d.vrml.nodes;
 
 /**
  * Nodes which have behaviour controlled by a clock.
- * <p>
+
  *
  * Time information is provided by the clock that can be set by the
  * implementing runtime system. With the clock, the node can then register

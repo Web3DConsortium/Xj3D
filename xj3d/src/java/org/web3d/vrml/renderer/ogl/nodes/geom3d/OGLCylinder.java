@@ -32,7 +32,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 
 /**
  * OGL implementation of a Cylinder.
- * <p>
+
  *
  * A box is a fixed size object in VRML. Once set at startup, the size cannot
  * be changed. All dynamic requests to modify the size of this implementation

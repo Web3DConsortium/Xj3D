@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2006
+ *                        Web3d.org Copyright (c) 2001 - 2026-2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseTriangleGeometryNode;
 
 /**
  * An abstract implementation of the TriangleStripSet node.
- * <p>
+
  *
  * A stripSet adds the stripCount field over the normal TriangleSet.
  *

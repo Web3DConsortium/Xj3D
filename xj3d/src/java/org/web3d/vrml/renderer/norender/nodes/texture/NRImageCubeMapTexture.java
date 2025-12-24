@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseImageCubeMapTexture;
 
 /**
  * Null-renderer implementation of a ImageCubeMapTexture node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -35,15 +35,15 @@ import org.web3d.vrml.nodes.proto.ProtoScene;
  * normal. As a node that does not form part of the scene graph, the fields
  * that are those of the root node's definition. If you ask for the normal
  * implementation node, you will also get this first node.
- * <p>
+
  *
  * <b>IS Implementation</b>
- * <p>
+
  * This implementation handles IS values as a sort of route with a few missing
  * bits. When a value is set in the interface declaration, we look up all the
  * IS related nodes and fields. For each of these we then call
  * <code>sendRoute()</code> on them to update their value.
- * <p>
+
  * For the reverse case, when a value changes inside the proto body, we just
  * mark the field as being changed in that node. Then, when someone checks the
  * proto interface field, it will go through the list of related IS nodes and
@@ -51,7 +51,7 @@ import org.web3d.vrml.nodes.proto.ProtoScene;
  * copied to the interface declaration field and, using <code>setValue()</code>
  * call on the interface field, makes sure it gets propagated to the other
  * users.
- * <p>
+
  * <b>Note:</b> The upshot of this implementation is that is does not correctly
  * deal with IS values where the end user has not connected a ROUTE to one of
  * the proto declaration fields. In order to send values to items where there
@@ -60,10 +60,10 @@ import org.web3d.vrml.nodes.proto.ProtoScene;
  * In the case where fields are not routed, this means that
  * <code>hasFieldChanged()</code> is never called and hence the other users of
  * IS are never informed.
- * <p>
+
  *
  * <b>DEF/USE Handling</b>
- * <p>
+
  *
  * Because you can DEF an instance of a Proto, we run into all sorts of
  * interesting problems. As we have to put in Java3D shared groups and stuff
@@ -73,7 +73,7 @@ import org.web3d.vrml.nodes.proto.ProtoScene;
  * implementation node the J3D node it returns and the node this instance
  * returns are going to be the same thing. DEF completely stuffs with that
  * idea.
- * <p>
+
  * The solution implemented here is to take the root node and apply any
  * wrapping that may be needed to get it to work in a shared environment. In
  * order to use a ProtoInstance within the J3D scene you first check for the
@@ -1084,7 +1084,7 @@ public class CRProtoInstance
      * consective reads after a changed value would result in a true and then
      * false being returned. If the field number is not recognized for this
      * node then this returns false.
-     * <p>
+    
      * For a proto instance, we have to check the IS values and so look at
      * every output node that has output mapped back to this field. We never
      * keep a local flag of the fields stored here.

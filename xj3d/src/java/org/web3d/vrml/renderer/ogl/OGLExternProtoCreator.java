@@ -23,13 +23,13 @@ import org.web3d.vrml.renderer.CRExternProtoCreator;
 /**
  * A class that is used to create stub instances of extern protos from their
  * definitions.
- * <p>
+
  *
  * The creator strips the definition apart and builds a runtime node based on
  * the details and the node factory provided. The creator can handle one
  * instance at a time, although it will correctly parse and build nested proto
  * declarations without extra effort.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

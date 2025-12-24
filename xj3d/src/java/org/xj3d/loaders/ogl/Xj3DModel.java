@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,13 +30,13 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLViewpointNodeType;
 
 /**
  * Representation of a loaded VRML97 or X3D model.
- * <p>
+
  *
  * If the user requested a raw model, the object returned from
  * {@link #getRawModel()} will be an instance of
  * {@link org.web3d.vrml.nodes.VRMLScene} representing the root of the
  * scene graph.
- * <p>
+
  *
  * There will be only a single AVRuntimeComponent returned from this model -
  * an instance of {@link Xj3DClockRuntime}.
@@ -203,7 +203,7 @@ class Xj3DModel implements AVModel {
      * layers, or the loader was requested not to load layers, this returns
      * an empty list. Unlike the other methods, this method will guarantee to
      * return the layer instances in the order of front to rear.
-     * <p>
+    
      * If this model contains loaded layers, it will not return a root object.
      *
      * @return A list of the layer instances declared in the file

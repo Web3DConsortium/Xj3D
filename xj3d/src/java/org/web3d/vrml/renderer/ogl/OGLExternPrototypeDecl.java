@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.CRExternPrototypeDecl;
 
 /**
  * OpenGL-specific External Prototype Declaration.
- * <p>
+
  *
  * This node will be placed on the content loader.  Instances of this EP will
  * go into the scene graph as stubs.  When this EP is loaded it will finish

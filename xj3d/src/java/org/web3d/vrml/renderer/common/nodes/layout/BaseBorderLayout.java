@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,12 +28,12 @@ import org.web3d.vrml.nodes.VRMLSurfaceChildNodeType;
 
 /**
  * Common implementation of a BorderLayout node.
- * <p>
+
  *
  * A border layout places the contained children relative to the border using
  * an alignment and fraction setup. It operates on the two axis, screen
  * coordinate setup.
- * <p>
+
  *
  * Because this layout only has a single set of conditions, yet has many
  * children, it does not make sense to have more than one child node actually

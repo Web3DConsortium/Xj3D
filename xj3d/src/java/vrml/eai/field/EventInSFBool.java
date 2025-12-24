@@ -33,7 +33,7 @@ public abstract class EventInSFBool extends EventIn
 
   /**
    * Set the value in the given eventIn.
-   *  <p>
+  
    * @param value The boolean value to set the eventIn to.
    */
   public abstract void setValue(boolean value);

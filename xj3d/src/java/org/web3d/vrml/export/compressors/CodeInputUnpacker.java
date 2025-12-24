@@ -7,7 +7,7 @@ import java.io.*;
  * Unpacks N bit codes from source bytes, provided as either an array or stream.
  * N may be more or less than (or equal) to 8 bits, and may be as much as 16
  * bits, and of course must be what was actually packed.
- * <p>
+
  * Since code width N may be greater than 8, unpacked codes are always returned
  * as ints. Packing order as shown for some widths:
  * <pre>
@@ -109,7 +109,7 @@ public class CodeInputUnpacker {
     /**
      * Get next N bit code, according to set or default code width, which of
      * course must be what was actually packed.
-     * <p>
+    
      * Since code width N may be greater than 8, unpacked codes are always
      * returned as ints.
      *
@@ -159,7 +159,7 @@ public class CodeInputUnpacker {
     /**
      * Get array of all N bit codes, according to set or default code width,
      * which of course must be what was actually packed.
-     * <p>
+    
      * Since code width N may be greater than 8, unpacked codes are always
      * returned as ints.
      *
@@ -188,7 +188,7 @@ public class CodeInputUnpacker {
     /**
      * Fill (or partly fill) a given array with N bit codes, according to set or
      * default code width, which of course must be what was actually packed.
-     * <p>
+    
      * Since code width N may be greater than 8, unpacked codes are always
      * returned as ints.
      *

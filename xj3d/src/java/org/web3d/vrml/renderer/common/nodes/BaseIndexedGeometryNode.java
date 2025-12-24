@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * An abstract implementation of any node that uses component nodes to provide
  * coordinate, normal and texture information.
- * <p>
+
  * This includes normal and texture indexes.  These may not be needed by some
  * implementations like IndexedLineSet.  Just don't define the fields in the
  * static setup.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -35,7 +35,7 @@ public class JFrameNotifyWrapper extends JFrame {
 
     /**
      * Constructs a new frame that is initially invisible.
-     * <p>
+    
      * This constructor sets the component's locale property to the value
      * returned by <code>JComponent.getDefaultLocale</code>.
      *
@@ -57,7 +57,7 @@ public class JFrameNotifyWrapper extends JFrame {
      * Creates a <code>Frame</code> in the specified
      * <code>GraphicsConfiguration</code> of
      * a screen device and a blank title.
-     * <p>
+    
      * This constructor sets the component's locale property to the value
      * returned by <code>JComponent.getDefaultLocale</code>.
      *
@@ -82,7 +82,7 @@ public class JFrameNotifyWrapper extends JFrame {
     /**
      * Creates a new, initially invisible <code>Frame</code> with the
      * specified title.
-     * <p>
+    
      * This constructor sets the component's locale property to the value
      * returned by <code>JComponent.getDefaultLocale</code>.
      *
@@ -104,7 +104,7 @@ public class JFrameNotifyWrapper extends JFrame {
     /**
      * Creates a <code>JFrameNotifyWrapper</code> with the specified title and the
      * specified <code>GraphicsConfiguration</code> of a screen device.
-     * <p>
+    
      * This constructor sets the component's locale property to the value
      * returned by <code>JComponent.getDefaultLocale</code>.
      *

@@ -20,7 +20,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Description of a single profile.
- * <p>
+
  *
  * A profile is a short-hand way of describing an aggregation of components.
  * A valid profile will always have one or more components, but a title

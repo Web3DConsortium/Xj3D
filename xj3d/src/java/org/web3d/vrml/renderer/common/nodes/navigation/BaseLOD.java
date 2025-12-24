@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseGroupingNode;
 
 /**
  * Common base implementation of a LOD node.
- * <p>
+
  *
  * Internally the LOD keeps both the basic range and the values squared. This
  * makes computation much faster, eliminating the need to take expensive

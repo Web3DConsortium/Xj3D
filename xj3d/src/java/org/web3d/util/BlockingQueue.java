@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.util;
 // None
 
 /**
- * <p>
+
  * Blocking 'First In First Out' (FIFO) queue.
  *
  * Based on the simple Queue but can be used concurrently by separate
@@ -30,7 +30,7 @@ package org.web3d.util;
  * <a href="http://www.vlc.com.au/common/">http://www.vlc.com.au/common/</a>
  * This software is released under the
  * <a href="http://www.gnu.org/copyleft/lgpl.html">GNU LGPL</a>
- * </p>
+
  *
  * @author Justin Couch.
  * @version $Revision: 1.7 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,21 +31,21 @@ import org.xj3d.core.eventmodel.RouteManager;
 
 /**
  * A manager of high-level route organisation based on execution spaces.
- * <p>
+
  *
  * Does not perform direct routing itself, but manages the execution space
  * and delegates the routing to individual router instances, one per
  * execution space. The idea of this is to allow multi-threaded route handlers
  * if required. Each execution space can provide a routing mechanism that
  * operates in its own thread or they all live in one thread.
- * <p>
+
  *
  * The implementation provides a one-shot route processing mechanism. It does
  * not continuously evaluate routes. That is left to the caller code. Once the
  * processRoutes() method is called, it will loop through all available routes
  * until none of them have any changed values to send. At this point it will
  * return and wait until the next time it is called.
- *  <p>
+
  *
  * Routes are added to a particular execution space. Each space represents an
  * encapsulated world, such as a proto or inline. The route manager is
@@ -53,7 +53,7 @@ import org.xj3d.core.eventmodel.RouteManager;
  * separate. Thus, when the execution space is no longer referenced, the
  * associated routes and scripts are to be removed and their outputs no longer
  * processed.
- * <p>
+
  *
  * Implementation is not particularly efficient in this version...
  *

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2004
+ *                        Web3d.org Copyright (c) 2001 - 2026-2004
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1

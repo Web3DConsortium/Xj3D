@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLTextureCoordinateTransformNodeType;
 
 /**
  * Defines a transformation that is applied to a texture - either 2D or 3D.
- * <p>
+
  * The transform is suitable for use with either planar or volume texturing.
  *
  * @author Alan Hudson

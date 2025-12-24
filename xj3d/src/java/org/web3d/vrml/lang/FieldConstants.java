@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -15,7 +15,7 @@ package org.web3d.vrml.lang;
 /**
  * Listing of various constants relating to fields that might be useful during
  * the parsing process.
- * <p>
+
  * The set of field types is a superset of the basic field types defined for
  * VRML97 and VRML 3.0. We've done this to provide the ultimate amount of
  * flexibility for new data types that may be needed in profiles.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,13 +19,13 @@ import java.awt.Rectangle;
 
 /**
  * A legal child for an OverlayNodeType parent.
- * <p>
+
  *
  * An overlay child node describes one item of an overlay. This item may be
  * 2D or 3D and can be organised with a position on the surface using a
  * series of relationships nodes that control how this node works with the
  * rest of the renderable surface.
- * <p>
+
  *
  * Each overlay child node has a visibility state that controls whether it
  * is rendered or not. When a child is not visible, it does not take part in

@@ -23,7 +23,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null-renderer implementation of a HAnimHumanoid node.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

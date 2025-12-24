@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,10 +21,10 @@ import org.web3d.vrml.lang.VRMLNode;
 /**
  * Data holder class to hold information that is returned from the
  * {@link VRMLNodeType} {@link VRMLNodeType#getFieldValue(int)} method.
- * <p>
+
  *
  * <b>WARNING</b>
- * <p>
+
  * Note that in the interests of speed this class will normally represent a
  * reference to the internal structure rather than a copy of it. The user of
  * this array should <b>never</b> directly manipulate these values because it

@@ -22,11 +22,11 @@ import org.xj3d.sai.X3DFieldTypeMapper;
 
 /**
  * Representation of a node's field definition.
- * <p>
+
  *
  * The field definition holds the static field information such as the field
  * access type, the data type and the name of the field.
- * <p>
+
  * The implementation of the toString() method of this class shall return the
  * full IDL declaration of the field as per the specification, not the UTF8 or
  * XML format. Implementation of <code>.equals()</code> shall return true if

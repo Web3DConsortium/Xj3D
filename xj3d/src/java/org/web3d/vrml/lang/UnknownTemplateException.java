@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.web3d.vrml.lang;
 /**
  * Exception indicating that a node template could not be matched to anything
  * requested internally.
- *  <p>
+
  * This is a fairly rare exception and only occurs when we can't map an
  * EXTERNPROTO to an underlying definition. Mostly this will occur at runtime
  * but may in fact be used when the user attempts to create or access nodes

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2007
+ *                        Web3d.org Copyright (c) 2001 - 2026-2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Common base implementation of a TextureBackground node.
- * <p>
+
  *
  * TODO: This is a very light copy of background right now to get transparency in
  *
@@ -364,7 +364,7 @@ public abstract class BaseTextureBackground extends BaseBindableNode
     /**
      * Construct a new instance of this node based on the details from the
      * given node.
-     *  <p>
+    
      *
      * @param node The node to copy
      * @throws IllegalArgumentException The node is not the right type.

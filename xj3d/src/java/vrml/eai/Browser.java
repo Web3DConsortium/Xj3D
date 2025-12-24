@@ -24,13 +24,13 @@ import vrml.eai.field.InvalidEventOutException;
  * from any application. Individual VRML browser implementors are to extend this
  * interface and provide this functionality. The individual users will not see
  * anything but this interface.
- *  <p>
+
  * A number of the methods in this application can take strings representing URLs.
  * Relative URL strings contained in URL fields of nodes or these method
  * arguments are interpreted as follows:
- *  <p>
+
  * Relative URLs are treated as per clause B.3.5 of the EAI Java Bindings
- *  <p>
+
  *
  * @version 1.1 25 April 1998
  */
@@ -115,7 +115,7 @@ public interface Browser
    * belonged to the previous world are still valid but no longer form part of
    * the scene graph (unless it is these nodes passed to this method). The
    * URL of the world still represents the just unloaded world.
-   *  <p>
+  
    * Calling this method causes a SHUTDOWN event followed by an INITIALIZED
    * event to be generated.
    *
@@ -133,7 +133,7 @@ public interface Browser
    * Load the URL as the new root of the scene. Replaces all the current
    * scene graph with the new world. A non-blocking call that will change the
    * contents at some time in the future.
-   *  <p>
+  
    * Generates an immediate SHUTDOWN event and then when the new contents are
    * ready to be loaded, sends an INITIALIZED event.
    *
@@ -170,10 +170,10 @@ public interface Browser
    * Parse the given string and turn this into a list of VRML nodes. Method
    * is a blocking call that won't return until all of the top level nodes
    * defined in the string have been returned.
-   *  <p>
+  
    * At the point that this method returns, external files such as textures,
    * sounds and inlines may not have been loaded.
-   *  <p>
+  
    * The string may contain all legal VRML syntax. The VRML header line is not
    * required to be present in the string.
    *
@@ -286,7 +286,7 @@ public interface Browser
    * is about to begin a series of updates. No events will be passed to the
    * VRML world. They will be buffered pending release due to a subsequent
    * call to endUpdate.
-   *  <p>
+  
    * This call is a nesting call which means subsequent calls to beginUpdate
    * are kept on a stack. No events will be released to the VRML browser
    * until as many endUpdates have been called as beginUpdate.
@@ -304,11 +304,11 @@ public interface Browser
    * VRML browser. All events posted to this point from the last time that
    * beginUpdate was called are released into the VRML browser for
    * processing at the next available opportunity.
-   *  <p>
+  
    * This call is a nesting call which means subsequent calls to beginUpdate
    * are kept on a stack. No events will be released to the VRML browser
    * until as many endUpdates have been called as beginUpdate.
-   *  <p>
+  
    * If no beginUpdate has been called before calling this method, it has
    * no effect.
    *

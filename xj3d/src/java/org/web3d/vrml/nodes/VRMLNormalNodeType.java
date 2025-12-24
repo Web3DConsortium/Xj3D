@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -12,9 +12,9 @@
 package org.web3d.vrml.nodes;
 
 /**
- * <p>
+
  * Defines a set of 3D surface normals.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.8 $
@@ -55,7 +55,7 @@ public interface VRMLNormalNodeType extends VRMLGeometricPropertyNodeType {
      * from double precision to single precision or needing to make geo-spatial
      * projections. This is a reference to the post-processed data that may be
      * directly used for rendering.
-     * <p>
+    
      * Note that the array may well be longer than the actual number of valid
      * normals. Use {@link #getNumNormals()} to determine the number of valid
      * entries.

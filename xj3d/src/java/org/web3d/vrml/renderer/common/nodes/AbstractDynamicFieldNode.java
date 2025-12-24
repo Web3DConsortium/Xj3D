@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,12 +28,12 @@ import org.j3d.util.ErrorReporter;
 /**
  * Common functionality that represents a node that has its fields dynamically
  * assigned.
- * <p>
+
  *
  * Dynamic node structures are used in two places - scripts and protos. This
  * class provides the common functionality for managing dynamically assigned
  * fields.
- * <p>
+
  *
  * The implementation does not handle deletion of fields particularly well
  * at this point in time. Works fine if the node is not realised yet, but

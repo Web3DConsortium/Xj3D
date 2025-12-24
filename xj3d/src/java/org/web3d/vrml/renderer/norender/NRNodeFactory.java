@@ -1,6 +1,6 @@
 
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.DefaultNodeFactory;
 /**
  * Implementation of the {@link org.web3d.vrml.lang.VRMLNodeFactory}
  * that produces null renderer implementations of the nodes.
- * <p>
+
  * Changed from a singleton to support multi-threading.  See details
  * in DefaultNodeFactory.
  *

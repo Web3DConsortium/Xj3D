@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2008
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,10 +26,10 @@ import org.web3d.vrml.parser.BaseReader;
 
 /**
  * Implementation of an X3D reader that will only handle binary file parsing.
- * <p>
+
  * When requested to parse, the reader will automatically assume the binary format.
  * If another format is given, it will generate a parse error.
- * <p>
+
  * This parser supports the following properties:
  * <ul>
  * <li>"conformance": ["weak", "strict"]. String values. Defaults to weak</li>

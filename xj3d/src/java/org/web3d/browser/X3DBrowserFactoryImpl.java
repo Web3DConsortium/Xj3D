@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,7 +31,7 @@ import org.web3d.x3d.sai.NoSuchBrowserException;
  * {@link org.web3d.x3d.sai.BrowserFactoryImpl} interface
  * that creates a browser that delegates to the OpenGL and Java3D
  * specific browser factories.
- * <p>
+
  * This browser factory delegates to the other known browser factories based on
  * a hard coded search sequence and an optional user supplied renderer hint.
  *
@@ -163,7 +163,7 @@ public class X3DBrowserFactoryImpl implements BrowserFactoryImpl {
      * at some embed location. Used when attempting to access a browser on
      * another HTML page within a multi-framed environment, or if there are a
      * number of VRML browser instances located on the same page.
-     *  <p>
+    
      * If the frame name is a zero length string or null then it is assumed to be
      * located on the same HTML page as the applet. The index is the number of
      * the embed VRML browser starting from the top of the page. If there are
@@ -195,7 +195,7 @@ public class X3DBrowserFactoryImpl implements BrowserFactoryImpl {
      * located on remote machines. If there are a number of browsers running on
      * a remote machine, they can be differentiated by the port number they are
      * listening on.
-     *  <p>
+    
      * There is no default port number for VRML browsers.
      *
      * @param address The address of the machine to connect to

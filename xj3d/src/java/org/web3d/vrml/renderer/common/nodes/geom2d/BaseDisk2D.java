@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * An abstract implementation of the BaseDisk2D.
- * <p>
+
  *
  *
  * Spec notes:

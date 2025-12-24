@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,14 +20,14 @@ import org.xj3d.core.loading.FileCache;
 
 /**
  * A simplistic manager for loading files that does no caching.
- * <p>
+
  *
  * The loader is given a scene and told to start loading the contents. During
  * this time items progress from pending to loading to loaded. The load manager
  * is cancelable so that a particular scene can be interrupted part way through
  * loading. The manager is designed to load multiple scenes in parallel or to
  * have parallel instances of this manager loading data.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

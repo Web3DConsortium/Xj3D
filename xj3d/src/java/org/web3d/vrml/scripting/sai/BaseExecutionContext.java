@@ -41,7 +41,7 @@ import org.xj3d.core.eventmodel.RouteManager;
 /**
  * X3DExecutionContext implementation that is used for Protos and the base
  * of a X3DScene.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.26 $

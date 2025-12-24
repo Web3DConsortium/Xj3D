@@ -37,7 +37,7 @@ import org.web3d.vrml.renderer.common.nodes.dis.BaseEspduTransform;
 
 /**
  * OpenGL implementation of a EspduTransform node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.8 $

@@ -35,13 +35,13 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 /**
  * Handler for all nodes that require visibility information to render
  * correctly.
- * <p>
+
  *
  * The manager works for all nodes that require visibility information. This
  * can be view-dependent nodes like LOD and Billboard or sensor nodes like
  * VisibilitySensor. All nodes that implement the OGLVisibilityListener
  * interface are directly managed by this class.
- * <p>
+
  *
  * The implementation uses a single pick to find all the nodes that are
  * currently visible from the user's position and orientation. To do this

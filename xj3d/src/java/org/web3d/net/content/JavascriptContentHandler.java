@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,21 +26,21 @@ import org.ietf.uri.ResourceConnection;
 /**
  * Content handler implementation for loading VRML UTF8 content from a URI
  * resource connection.
- *  <p>
+
  *
  * The returned object type for this loader is a
  * {@link org.web3d.vrml.nodes.VRMLScene}. It does not load
  * any further content apart from the contents of this file. If this file
  * contains further content then the receiver of this object must organise to
  * have all the routes processed, external nodes loaded etc.
- * <p>
+
  * This implementation also loads everything in the incoming file. There is no
  * filtering of the content.
- * <p>
+
  *
  * For details on URIs see the IETF working group:
  * <a href="http://www.ietf.org/html.charters/urn-charter.html">URN</a>
- *  <p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.5 $

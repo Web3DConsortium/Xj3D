@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -65,7 +65,7 @@ import org.xj3d.ui.awt.widgets.*;
  * Common Swing JPanel implementation of the browser component for use in
  * either SAI or EAI, that wraps the functionality of a VRML browser
  * into a convenient, easy to use form.
- * <p>
+
  *
  * This base class needs to be extended to provide the SAI or EAI-specific
  * implementation interfaces, as well as any startup required for both of

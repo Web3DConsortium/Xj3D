@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,10 +29,10 @@ import org.web3d.vrml.util.NodeArray;
 
 /**
  * Common base implementation of a load manager.
- * <p>
+
  *
  * <b>Properties</b>
- * <p>
+
  * The following properties are used by this class
  * <ul>
  * <li><code>org.web3d.vrml.nodes.loader.sort_order</code> A space separated list
@@ -444,7 +444,7 @@ public abstract class AbstractLoadManager
     /**
      * Notification that the Url content for this node has changed
      *
-     * @param node
+     * @param node of interest
      * @param index The index of the field that has changed
      */
     @Override

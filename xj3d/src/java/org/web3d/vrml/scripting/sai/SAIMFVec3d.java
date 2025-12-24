@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -228,7 +228,7 @@ class SAIMFVec3d extends BaseMField implements MFVec3d {
      * If value[i] does not contain at least three values it will generate an
      * ArrayIndexOutOfBoundsException. If value[i] contains more than three items
      * only the first three values will be used and the rest ignored.
-     *  <p>
+    
      * If one or more of the values for value[i] are null then the resulting
      * event that is sent to the VRML scene graph is implementation dependent but
      * no error indicator will be set here.
@@ -259,7 +259,7 @@ class SAIMFVec3d extends BaseMField implements MFVec3d {
      * If value[i] does not contain at least three values it will generate an
      * ArrayIndexOutOfBoundsException. If value[i] contains more than three items
      * only the first three values will be used and the rest ignored.
-     *  <p>
+    
      * If one or more of the values for value[i] are null then the resulting
      * event that is sent to the VRML scene graph is implementation dependent but
      * no error indicator will be set here.
@@ -295,11 +295,11 @@ class SAIMFVec3d extends BaseMField implements MFVec3d {
      * Set a particular vector value in the given eventIn array. To the VRML
      * world this will generate a full MFVec3f event with the nominated index
      * value changed.
-     *  <p>
+    
      * The value array must contain at least three elements. If the array
      * contains more than 3 values only the first 3 values will be used and
      * the rest ignored.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values or
      * the array of values does not contain at least 3 elements an
      * ArrayIndexOutOfBoundsException will be generated.

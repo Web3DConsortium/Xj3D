@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                     Web3d.org Copyright (c) 2001 - 2006
+ *                     Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Base representation of the ProportionalViewport node.
- * <p>
+
  *
  * The node is defined as:
  * <pre>

@@ -22,12 +22,12 @@ import org.j3d.util.HashSet;
 
 /**
  * ECMAScript VrmlMatrix builtin object.
- *  <p>
+
  *
  * The implementation of all the functionality in this class is according to
  * the Matrix and Quaternion FAQ, which is currently located at:
  * <a href="http://www.cs.ualberta.ca/~andreas/math/matrfaq_latest.html">http://www.cs.ualberta.ca/~andreas/math/matrfaq_latest.html</a>
- * <p>
+
  * The spec is sort of a bit wishy-washy about how the flat references of
  * array indices. Internally the matrix is stored with the translations values
  * down the right "column" where the VRML spec has them across the bottom. Not

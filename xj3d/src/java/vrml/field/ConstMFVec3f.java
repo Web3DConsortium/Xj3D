@@ -22,7 +22,7 @@ import org.web3d.util.ArrayUtils;
 
 /**
  * Constant VRML JSAI type class containing multiple 3 component vector fields.
- * <p>
+
  *
  * Internally the class keeps data as a flat array, so that is the most
  * efficient way of interacting with this class.

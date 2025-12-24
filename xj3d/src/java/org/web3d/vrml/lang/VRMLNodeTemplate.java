@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,12 +20,12 @@ import org.j3d.util.ErrorReporter;
 /**
  * Denotes a node which allows it's fields to be defined in code - namely
  * scripts and protos.
- * <p>
+
  * This interface allows a node to add and remove nodes from it's definition.
  * The interface compliments an ordinary node type. The normal nodes will allow
  * you to set the values of a field, this allows you to change their definition
  * rather than set or query the values.
- * <p>
+
  * Due to the assumptions of the event model implementation of using index to
  * name a given field. Deleting a field just removes it from the index. An
  * index value cannot be reused by placing another field at that position.

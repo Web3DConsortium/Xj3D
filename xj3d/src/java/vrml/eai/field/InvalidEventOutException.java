@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * The exception that is thrown when a reference to an eventOut is not valid.
- *  <p>
+
  * An eventOut may be invalid for a number of reasons:
  * <UL>
  * <LI>The user may have typed in the wrong name through a typo.

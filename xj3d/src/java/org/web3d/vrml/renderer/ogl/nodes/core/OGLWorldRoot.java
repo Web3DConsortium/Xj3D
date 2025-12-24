@@ -35,12 +35,12 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 
 /**
  * Implementation of the world root class.
- * <p>
+
  *
  * Extends the basic root node functionality with Java3D specific capabilities
  * - namely the ability to get the root node BranchGroup instance. This is the
  * object returned by the <code>getSceneGraphObject()</code> method.
- * <p>
+
  * The world root has 3 fields available to use:
  * <ul>
  * <li>children</li>

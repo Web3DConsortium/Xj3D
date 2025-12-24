@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Interface representing a MFBool field.
- *  <p>
+
  *
  * @version 1.0 30 April 1998
  */
@@ -74,7 +74,7 @@ class SAIMFBool extends BaseMField implements MFBool {
      * Inserts a value into an existing index of the field.  Current field values
      * from the index to the end of the field are shifted down and the field
      * length is increased by one to accomodate the new element.
-     * <p>
+    
      * If the index is out of the bounds of the current field an
      * ArrayIndexOutofBoundsException will be generated.
      *
@@ -161,7 +161,7 @@ class SAIMFBool extends BaseMField implements MFBool {
 
     /**
      * Get a particular boolean value in this field.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *

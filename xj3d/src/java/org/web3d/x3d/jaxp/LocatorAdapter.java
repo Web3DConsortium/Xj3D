@@ -20,7 +20,7 @@ import org.xml.sax.Locator;
 
 /**
  * Adapter between the SAX Locator and the SAV Locator.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

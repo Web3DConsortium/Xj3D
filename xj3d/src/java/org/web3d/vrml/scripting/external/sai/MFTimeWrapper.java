@@ -19,13 +19,13 @@ import org.web3d.vrml.scripting.external.buffer.*;
 
 /**
  * Representations of a MFTime field.
- *  <p>
+
  * Time values are represented as per the VRML IS specification Section
  * 4.11 Time. That is, time is set as VRML "Time" - the number of seconds since
  * Jan 1, 1970 GMT, rather than a Java time which is a long, the number
  * of milliseconds since Jan 1, 1970 GMT. To convert between the two simply
  * divide java time by 1000 and cast to a double.
- *  <p>
+
  * Note that in setting time values from an external application, the idea of
  * the time that java represents and the time that the VRML world currently
  * has set may well be different. It is best to source the current "time" from
@@ -143,7 +143,7 @@ class MFTimeWrapper extends BaseFieldWrapper
 
     /**
      * Get a particular time value in the given eventOut array.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *
@@ -325,7 +325,7 @@ class MFTimeWrapper extends BaseFieldWrapper
      * Set a particular time value in the given eventIn array. To the VRML
      * world this will generate a full MFTime event with the nominated index
      * value changed.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *

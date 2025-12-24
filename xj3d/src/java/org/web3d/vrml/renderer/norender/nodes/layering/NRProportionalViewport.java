@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null-renderer implementation of the ProportionalViewport node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $
@@ -39,7 +39,7 @@ public class NRProportionalViewport extends BaseProportionalViewport
     /**
      * Construct a new instance of this node based on the details from the
      * given node.
-     *  <p>
+    
      *
      * @param node The node to copy
      * @throws IllegalArgumentException The node is not the right type.

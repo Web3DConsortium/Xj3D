@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,13 +29,13 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Base implementation of the X3DCollidableNode abstract type.
- * <p>
+
  *
  * The base class provides most of the basic functionality, including
  * interacting with the ODE portions. However, for returning the scene graph
  * object appropriate for the renderer will require the derived class to take
  * care of it.
- * <p>
+
  *
  * The basic (X3D) definition of X3DNBodyCollidableNode is:
  * <pre>

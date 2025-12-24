@@ -35,7 +35,7 @@ import org.web3d.vrml.renderer.common.nodes.hanim.BaseHAnimSite;
 
 /**
  * OpenGL implementation of a HAnimSite node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 2.1 $

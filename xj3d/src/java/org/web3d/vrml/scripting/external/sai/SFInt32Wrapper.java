@@ -76,7 +76,7 @@ class SFInt32Wrapper extends BaseFieldWrapper implements SFInt32, ExternalEvent,
 
 	/**
 	 * Get the value in the given eventOut.
-	 *  <p>
+	
 	 * @return The int value of the eventOut
 	 */
         @Override
@@ -138,7 +138,7 @@ class SFInt32Wrapper extends BaseFieldWrapper implements SFInt32, ExternalEvent,
 
 	/**
 	 * Set the value in the given eventIn.
-	 *  <p>
+	
 	 * @param value The int value to set the eventIn to.
 	 */
         @Override

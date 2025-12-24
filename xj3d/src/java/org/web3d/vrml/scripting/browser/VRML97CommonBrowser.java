@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -36,13 +36,13 @@ import org.xj3d.core.loading.WorldLoaderManager;
 
 /**
  * The common parts of a browser implementation suitable for VRML97 scripting.
- *  <p>
+
  *
  * This class is a full implementation because the external and scripting
  * interfaces will use it differently. External use can just subclass and
  * add the EAI Browser interface. For scripting, the need to extend the
  * Browser base class means that this class will need to be delegated to.
- * <p>
+
  *
  * The current implementation ignores any parameter values provided by the
  * world.
@@ -90,7 +90,7 @@ public class VRML97CommonBrowser extends CommonBrowser {
      * belonged to the previous world are still valid but no longer form part of
      * the scene graph (unless it is these nodes passed to this method). The
      * URL of the world still represents the just unloaded world.
-     *  <p>
+    
      * Calling this method causes a SHUTDOWN event followed by an INITIALIZED
      * event to be generated.
      *
@@ -141,10 +141,10 @@ public class VRML97CommonBrowser extends CommonBrowser {
      * Parse the given string and turn this into a list of VRML nodes. Method
      * is a blocking call that won't return until all of the top level nodes
      * defined in the string have been returned.
-     *  <p>
+    
      * At the point that this method returns, external files such as textures,
      * sounds and inlines may not have been loaded.
-     *  <p>
+    
      * The string may contain all legal VRML syntax. The VRML header line is not
      * required to be present in the string.
      *

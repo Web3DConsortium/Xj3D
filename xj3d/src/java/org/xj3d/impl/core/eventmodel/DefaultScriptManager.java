@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,7 +31,7 @@ import org.xj3d.core.loading.ScriptLoadStatusListener;
 /**
  * Default implementation of the ScriptManager interface that implements VRML97
  * and X3D semantics.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

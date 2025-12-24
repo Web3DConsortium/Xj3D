@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.xj3d.core.eventmodel;
 
 /**
  * A factory interface for generating router instances.
- * <p>
+
  *
  * The factory is defined as an interface because we want to provide a flexible
  * system for defining who is to do the routing. While this package provides

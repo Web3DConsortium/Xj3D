@@ -23,7 +23,7 @@ import org.web3d.x3d.sai.X3DProtoInstance;
   * NonMappingSAINodeFactory is a simple implementation of the SAINodeFactory
   * interface which does not maintain a static 1-1 mapping between VRMLNodeType
   * and X3DNode instances.
-  *  <p>
+ 
   * This implementation just creates new instances of the SimpleWrappingNode
   * each time, and returns what may be the unique VRMLNodeType corresponding
   * to that SimpleWrappingNode as appropriate.

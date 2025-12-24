@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.web3d.vrml.nodes.VRMLKeyDeviceSensorNodeType;
 
 /**
  * Generalised manager for KeyDeviceSensor nodes.
- * <p>
+
  *
  * Key device sensors must operate on an exclusive basis. If the sensor changes
  * state then it must turn off the other key device sensors and send events to

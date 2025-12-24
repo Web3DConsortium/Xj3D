@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.parser;
 
 /**
  * An error thrown when a ParserFactory fails to instantiate.
- * <p>
+
  * A factory will normally fail to instantiate when it cannot find the
  * class that generates node instances or that the property was not defined.
  *

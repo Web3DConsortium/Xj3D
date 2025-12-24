@@ -34,7 +34,7 @@ import org.xj3d.core.eventmodel.CursorFilter;
 
 /**
  * Manages cursor icon changes based on state listeners.
- * <p>
+
  *
  * Cursor definitions are loaded from a Properties object.
  * The properties object is located in the following sequence:
@@ -48,7 +48,7 @@ import org.xj3d.core.eventmodel.CursorFilter;
  * Properties object are given predefined values.  The
  * predefined values not used in the event of error loading
  * user supplied values.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.10 $

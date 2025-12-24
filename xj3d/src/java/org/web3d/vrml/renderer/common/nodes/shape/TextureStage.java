@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,6 @@ import org.web3d.vrml.lang.TextureConstants;
 
 /**
  * Texture Stage information holder used by the Appearance node.
- * <p>
  *
  *
  * @author Alan Hudson
@@ -110,7 +109,7 @@ public class TextureStage {
 
     /**
      * Create a default instance of this class with the fields set to:
-     *  <p>
+    
      *  generateMipMaps: false <br>
      *  minFilter: TextureConstants.MINFILTER_NICEST <br>
      *  magFilter: TextureConstants.MAGFILTER_NICEST <br>

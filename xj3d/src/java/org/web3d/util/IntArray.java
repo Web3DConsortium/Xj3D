@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,9 +19,9 @@ package org.web3d.util;
 // None
 
 /**
- * <p>
+
  * Simple dynamic array structure that holds int primitives.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,7 +31,7 @@ import org.j3d.util.HashSet;
 /**
  * Representation of a JAR resource that performs caching of the JAR file
  * on the client machine to prevent refetch issues.
- *  <p>
+
  *
  * Presents a standardised interface to JAR files, regardless of their
  * location. The methods provided here model those in the
@@ -40,7 +40,7 @@ import org.j3d.util.HashSet;
  * access to the entire JAR file, then that should be by making the appropriate
  * URL with no entry name and accessing through the <code>getContent</code>
  * method. For this, the content type shall be <code>x-java/jar</code>
- *  <p>
+
  *
  * This is cached by writing the file to disk.
  *

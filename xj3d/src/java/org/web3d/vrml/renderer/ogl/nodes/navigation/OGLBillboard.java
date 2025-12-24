@@ -45,7 +45,7 @@ import org.web3d.vrml.renderer.common.nodes.navigation.BaseBillboard;
 
 /**
  * OpenGL-renderer implementation of a Billboard node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.18 $

@@ -24,12 +24,12 @@ import org.web3d.vrml.renderer.common.nodes.geom2d.BasePolyline2D;
 
 /**
  * OpenGL implementation of an Polyline2D
- * <p>
+
  *
  * The point set directly maps to Aviatrix3D's LineArray class. When the
  * coordinates change to a different length than the current set, it will
  * notify the geometry listener to fetch the new information.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.5 $

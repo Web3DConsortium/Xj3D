@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLFontStyleNodeType;
 
 /**
  * Singleton representation of the default font information.
- * <p>
+
  *
  * Used by the individual renderers for when there is no fond information
  * declared, so that it saves the text node implementation from carrying

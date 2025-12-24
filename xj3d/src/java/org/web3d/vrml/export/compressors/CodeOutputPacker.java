@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -124,7 +124,7 @@ public class CodeOutputPacker {
     /**
      * Make sure any pending bits are output.
      * No further codes will be added to this output.
-     *  <p>
+    
      * Note that for some code widths,
      * packing may result in the appearance of one or more final codes,
      * which actually are empty fill in the final byte.
@@ -154,7 +154,7 @@ public class CodeOutputPacker {
     /**
      * Put and pack an array of all N bit codes,
      * according to set or default code width.
-     *  <p>
+    
      * Note that this call may (but need not) be the only source of data.
      * Either or both putN and putNArray may be called one or more times,
      * followed by a call to flush when no more data will be added.

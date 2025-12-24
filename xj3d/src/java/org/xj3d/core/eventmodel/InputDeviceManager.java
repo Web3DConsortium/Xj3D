@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,10 +29,10 @@ import org.web3d.vrml.nodes.VRMLDeviceSensorNodeType;
  * Sits between input devices and the UserInputHandler.
  * Determines which one has control of navigation and picking.
  * Maintains picking state.
- * <p>
+
  *
  * KeySensor handling is performed separately by the KeyDeviceSensorManager
- * <p>
+
  * Each sensor will have a current active touch, drag and anchor sensor.
  * It cannot activate another till that's cleared.
  *

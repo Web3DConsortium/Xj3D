@@ -23,10 +23,10 @@ import org.web3d.vrml.parser.VRMLFieldReader;
 import org.web3d.vrml.sav.DocumentLocator;
 
 /**
- * <p>
+
  * The field parser implementation class for X3D field values to turn
  * them into Java primitive types.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.16 $

@@ -21,7 +21,7 @@ import vrml.ConstField;
 
 /**
  * A wrapper class for VRML events that are about to be sent into the script.
- * <p>
+
  *
  * This class is designed to be reused rather than creating a new instance
  * each time.

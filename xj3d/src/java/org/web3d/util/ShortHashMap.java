@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,9 +19,9 @@ import java.util.Arrays;
 // None
 
 /**
- * <p>
+
  * A hash map that uses primitive shorts for the key rather than objects.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.6 $

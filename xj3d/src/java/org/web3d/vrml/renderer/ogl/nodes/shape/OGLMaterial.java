@@ -27,7 +27,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLMaterialNodeType;
 
 /**
  * OpenGL implementation of a material node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.18 $

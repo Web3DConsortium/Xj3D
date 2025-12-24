@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.xj3d.core.eventmodel;
 /**
  * A listener for internal state information about the event model being
  * started up.
- * <p>
+
  *
  * The listener is for the VRML97 semantics of requiring the script to
  * call the initialize() method on scripts of the main world before it

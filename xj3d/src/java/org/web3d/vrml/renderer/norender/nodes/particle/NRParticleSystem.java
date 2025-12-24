@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of a particle system node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 2.0 $

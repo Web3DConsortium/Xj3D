@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL renderer implementation of a texture coordinate node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  * Abstract representation of a complete X3D scene graph.
- * <p>
+
  *
  * All queries to this interface return a snapshot of the current information.
  * If the scene graph changes while the end user has a handle to an map, the map

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2003-2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU GPL v2.0
@@ -21,7 +21,7 @@ import java.awt.*;
 /**
  * A layout manager that lays out a container's components in a rectangular
  * grid, with different sizes for each row/column.
- * <p>
+
  * As with GridLayout one component is placed in each rectangle, but the
  * width of columns and height of rows are not necessarily the same.  By
  * default each row and column will be sized in proportion to the minimum size
@@ -31,10 +31,10 @@ import java.awt.*;
  * assigned area or use their minimum size and align themselves within that
  * allocated space. If the grid itself doesn't completely fill the area
  * assigned by the container there are methods to set this alignment too.
- * </p>
- * <p>
+
+
  * Here's a simple example of using a DynamicGridLayout.
- * </p>
+
  * <blockquote><pre>
  *   //create the layout and set it
  *   setLayout(dgl=new DynamicGridLayout(2,2,5,5));
@@ -102,7 +102,7 @@ public class DynamicGridLayout
   /**
    * Creates a grid layout with the specified number of rows and
    * columns. All components in the layout are given equal size.
-   * <p>
+  
    * One, but not both, of <code>rows</code> and <code>cols</code> can
    * be zero, which means that any number of objects can be placed in a
    * row or in a column.
@@ -119,12 +119,12 @@ public class DynamicGridLayout
   /**
    * Creates a grid layout with the specified number of rows and
    * columns.
-   * <p>
+  
    * In addition, the horizontal and vertical gaps are set to the
    * specified values. Horizontal gaps are placed at the left and
    * right edges, and between each of the columns. Vertical gaps are
    * placed at the top and bottom edges, and between each of the rows.
-   * <p>
+  
    * One, but not both, of <code>rows</code> and <code>cols</code> can
    * be zero, which means that any number of objects can be placed in a
    * row or in a column.
@@ -671,12 +671,12 @@ public class DynamicGridLayout
   /**
    * Determines the preferred size of the container argument using
    * this grid layout.
-   * <p>
+  
    * The preferred width of a grid layout is the largest preferred
    * width of any of the widths in the container times the number of
    * columns, plus the horizontal padding times the number of columns
    * plus one, plus the left and right insets of the target container.
-   * <p>
+  
    * The preferred height of a grid layout is the largest preferred
    * height of any of the heights in the container times the number of
    * rows, plus the vertical padding times the number of rows plus one,
@@ -701,12 +701,12 @@ public class DynamicGridLayout
   /**
    * Determines the minimum size of the container argument using this
    * grid layout.
-   * <p>
+  
    * The minimum width of a grid layout is the largest minimum width
    * of any of the widths in the container times the number of columns,
    * plus the horizontal padding times the number of columns plus one,
    * plus the left and right insets of the target container.
-   * <p>
+  
    * The minimum height of a grid layout is the largest minimum height
    * of any of the heights in the container times the number of rows,
    * plus the vertical padding times the number of rows plus one, plus
@@ -730,11 +730,11 @@ public class DynamicGridLayout
 
   /**
    * Lays out the specified container using this layout.
-   * <p>
+  
    * This method reshapes the components in the specified target
    * container in order to satisfy the constraints of the
    * <code>GridLayout</code> object.
-   * <p>
+  
    * The grid layout manager determines the size of individual
    * components by dividing the free space in the container into
    * equal-sized portions according to the number of rows and columns

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.lang.VRMLFieldDeclaration;
 
 /**
  * A simple convenience holder for internal route information.
- * <p>
+
  * This holder just places all the route information in the right place so
  * that it is quick to send information. Holds all the references together
  * so that we don't need to go wandering about cache memory.

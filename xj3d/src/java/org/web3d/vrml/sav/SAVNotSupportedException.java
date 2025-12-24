@@ -21,7 +21,6 @@ package org.web3d.vrml.sav;
 /**
  * Exception indicating that a feature is not supported by the Simple API for
  * VRML.
- *  <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

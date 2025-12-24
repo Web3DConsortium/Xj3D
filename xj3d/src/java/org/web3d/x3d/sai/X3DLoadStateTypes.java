@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Listing of constants relating to load states and the SAILoadState type.
- * <p>
+
  *
  * These constants will be returned by X3DExternProtoDeclares's
  * {@link X3DExternProtoDeclaration#getLoadState()}, method.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -72,7 +72,7 @@ import vrml.eai.VrmlComponent;
 /**
  * A browser that uses the AWT panel and labels to draw render the
  * UI with.
- * <p>
+
  *
  * VRMLBrowserAWTPanel is the AWT based alternative to BrowserJPanel.
  * At the moment, it offers minimal functionality.

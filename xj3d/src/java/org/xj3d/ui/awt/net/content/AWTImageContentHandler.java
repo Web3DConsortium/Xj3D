@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -50,7 +50,7 @@ import org.web3d.util.MathUtils;
  * toolkit from a URI resource connection. The loaded images are
  * preprocessed to the appropriate size (power of 2) and mipmaps
  * are generated if specified.
- * <p>
+
  *
  * The following properties are used by this class:
  * <ul>

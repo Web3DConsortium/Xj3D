@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,7 +30,7 @@ import org.j3d.aviatrix3d.Texture3D;
 /**
  * A cache for Texture instance management where the objects stay according
  * to Java's WeakReference system.
- * <p>
+
  *
  * @author Rex Melton
  * @version $Revision: 1.1 $

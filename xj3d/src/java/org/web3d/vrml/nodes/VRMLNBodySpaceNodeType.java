@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,17 +23,17 @@ import org.odejava.Space;
  * Representation of single space that contains more spaces and/or explicity
  * local geometry for comparison.
  * component.
- * <p>
+
  *
  * See the specification definition at
  * http://www.xj3d.org/extensions/rigid_physics.html
- * <p>
+
  *
  * A space may contain other, nested spaces. Dividing geometry up by space can
  * make for more efficient algorithms for determining inter-object collisions.
  * It may also contain geometry from the X3DNBodyCollidable nodes that can be
  * directly tested against this space, or children of this space.
- * <p>
+
  *
  * The X3D definition of this abstract type is:
  * <pre>

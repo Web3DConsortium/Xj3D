@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseTextureProperties;
 
 /**
  * Null renderer implementation of a texture properties.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

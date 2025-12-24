@@ -30,12 +30,12 @@ import java.util.Properties;
 
 /**
  * The factory class for obtaining references to browser instances.
- *  <p>
+
  * An implementation independent representation of the class used to access
  * and create browsers. The model follows that used by java.net.Socket. A
  * setImpl method is provided for browser writers to provide the internal
  * implementations of the browser.
- *  <p>
+
  * An alternative way of doing this is through a properties file. The class,
  * when it loads looks for the file vrml.properties in the class path. (For
  * more information on how this works read
@@ -59,7 +59,7 @@ import java.util.Properties;
  * but nothing is done about it. The result would be NullPointerExceptions
  * later in the code. Also, this may cause some security errors in some
  * web browsers.
- *  <p>
+
  * To provide a custom implementation of the factory (which all
  * implementations must do) the user has the choice of the above two options
  * of either calling setImpl or by making sure that the vrml.properties
@@ -70,18 +70,18 @@ import java.util.Properties;
  * the implementation defined in the properties file. Attempting to call the
  * set implementation method after this point shall result in a VrmlException
  * being generated. Otherwise, it shall use the set implementation.
- *  <p>
+
  * If for some reason the properties file does not contain the property for
  * the name of the factory class or the properties file does not exist, then
  * the default class name is <code>vrml.eai.DefaultBrowserImpl</code>
  *
- * <p><b>Supported Parameters</b></p>
- * <p>
+<b>Supported Parameters</b>
  * The X3D specification allows applications to specify parameters to change
  * how a browser operates.  You can also specify browser specific options.
  * The following options are supported by Xj3D.
- * </p>
- * <table summary="the following options are supported by Xj3D">
+
+ * <table>
+ * <caption>the following options are supported by Xj3D</caption>
  * <tr><td> <b>Param Name </b></td><td> <b>Description </b></td><td> <b>Type </b></td><td> <b>Default </b></td><td> <b>Legal Values </b></td></tr>
  * <tr><td>Antialiased</td><td>Whether to turn on antialiasing</td><td>Boolean</td><td>false</td><td>true,false</td></tr>
  * <tr><td>TextureQuality</td><td>A quality metric for texturing.  High turns on all tricks like anisotropicFiltering</td><td>String</td><td>medium</td><td>low,medium,high</td></tr>
@@ -130,7 +130,7 @@ public class BrowserFactory
    * Static initialiser method. Used to load the system properties for
    * this class. If there are none then it sets up the default values
    * that are needed.
-   *  <p>
+  
    * At this stage it does not load the factory class, just in case the
    * user may set something at a later date.
    */
@@ -258,7 +258,7 @@ public class BrowserFactory
    * at some embed location. Used when attempting to access a browser on
    * another HTML page within a multi-framed environment, or if there are a
    * number of VRML browser instances located on the same page.
-   *  <p>
+  
    * If the frame name is a zero length string or null then it is assumed to be
    * located on the same HTML page as the applet. The index is the number of
    * the embed VRML browser starting from the top of the page. If there are
@@ -292,7 +292,7 @@ public class BrowserFactory
    * located on remote machines. If there are a number of browsers running on
    * a remote machine, they can be differentiated by the port number they are
    * listening on.
-   *  <p>
+  
    * There is no default port number for VRML browsers.
    *
    * @param address The address of the machine to connect to
@@ -322,7 +322,7 @@ public class BrowserFactory
   /**
    * Private method to load the resource file and use the appropriate class
    * defined in the properties file for dealing with the resource management
-   *  <p>
+  
    * Assumes that the factory reference is currently null as it automatically
    * writes over the top of it.
    */

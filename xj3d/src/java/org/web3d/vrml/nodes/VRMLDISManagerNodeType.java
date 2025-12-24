@@ -20,7 +20,7 @@ import edu.nps.moves.dis7.pdus.EntityStatePdu;
 
 /**
  * Common interface for all DIS Managers.
- * <p>
+
  *
  * Manages new and removed entities and any simulation PDU packets.
  *

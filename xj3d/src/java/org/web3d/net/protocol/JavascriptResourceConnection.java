@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,14 +23,14 @@ import org.ietf.uri.ResourceConnection;
 
 /**
  * Representation of a Javascript/ECMAScript resource.
- *  <p>
+
  *
  * Implements the connection as a standard byte input stream. The javascript
  * protocol defined by the VRML97 specification allows you to inline the script
  * information. Therefore, for this system we just strip the protocol prefix
  * from the incoming URL and return the rest of the information as the input
  * stream.
- *  <p>
+
  *
  * We have a number of limitations on the data supplied. From the base string
  * there is no way to determine the encoding type. This, in turn leads us to
@@ -39,19 +39,19 @@ import org.ietf.uri.ResourceConnection;
  * re-interpret the string contents using the default from the platform. This
  * will trash the original string's characters. Not good. Not sure of a good
  * way around this yet.
- *  <p>
+
  *
  * This connection only supports input streams. The last modified time is not
  * known and always returns the default value.
- *  <p>
+
  *
  * For details on URIs see the IETF working group:
  * <a href="http://www.ietf.org/html.charters/urn-charter.html">URN</a>
- *  <p>
+
  *
  * This software is released under the
  * <a href="http://www.gnu.org/copyleft/lgpl.html">GNU LGPL</a>
- *  <p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.2 $

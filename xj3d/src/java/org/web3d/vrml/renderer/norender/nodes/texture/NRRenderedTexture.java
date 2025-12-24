@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseRenderedTexture;
 
 /**
  * no-render implementation of a RenderedTexture node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

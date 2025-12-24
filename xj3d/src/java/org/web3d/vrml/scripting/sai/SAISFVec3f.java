@@ -64,11 +64,11 @@ class SAISFVec3f extends BaseField implements SFVec3f {
 
     /**
      * Set the vector value in the given eventIn.
-     *  <p>
+    
      * The value array must contain at least three elements. If the array
      * contains more than 3 values only the first 3 values will be used and
      * the rest ignored.
-     *  <p>
+    
      * If the array of values does not contain at least 3 elements an
      * ArrayIndexOutOfBoundsException will be generated.
      *

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,12 +20,12 @@ package org.web3d.vrml.nodes;
 
 /**
  * Representation of a node that represents navigatable links to other files.
- * <p>
+
  *
  * Link nodes do not require content to come from other places, but they do
  * want to provide information about where that object might allow the user to
  * navigate too.
- * <p>
+
  *
  * All URLs returned from the {@link #getUrl()} call are required to be fully
  * qualified. The one exception are links within the same world. These links

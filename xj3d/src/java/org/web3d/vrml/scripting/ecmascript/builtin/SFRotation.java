@@ -26,7 +26,7 @@ import org.j3d.util.HashSet;
 
 /**
  * SFRotation field object.
- *  <p>
+
  *
  * @author Justin Couch, Alan Hudson
  * @version $Revision: 1.22 $

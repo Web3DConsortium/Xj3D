@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,11 +25,11 @@ import org.xj3d.core.loading.WorldLoaderManager;
 /**
  * A Factory implementation for VRML content handlers that produces VRML
  * output.
- * <p>
+
  *
  * The factory implementation only handles UTF8 encoded files currently.
  * We have not yet built a handler for XML encoded files.
- * <p>
+
  *
  * This factory is not automatically registered with the system. If you want
  * or need to load inlines, then you must create and instance of this factory

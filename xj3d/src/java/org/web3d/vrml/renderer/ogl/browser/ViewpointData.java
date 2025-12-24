@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 
 /**
  * Internal data holder used by viewpoint resize manager.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

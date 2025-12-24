@@ -31,7 +31,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVisibilityListener;
 import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
- * OpenGL-renderer implementation of a GeoLOD node. <p>
+ * OpenGL-renderer implementation of a GeoLOD node.
  *
  * @author Justin Couch
  * @version $Revision: 1.15 $

@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseGroupLayout;
 
 /**
  * Null-renderer implementation of a GroupLayout node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

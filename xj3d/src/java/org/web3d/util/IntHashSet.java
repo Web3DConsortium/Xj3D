@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,13 +20,13 @@ package org.web3d.util;
 
 /**
  * A custom IntHashSet implementation specific to int primitive data.
- * <p>
+
  *
  * This implementation is designed for realtime work and in particular with
  * the goal of absolute minimum garbage generation. The standard implementation
  * in java.util generates excessive amounts of garbage and is unsuitable for
  * the task.
- * <p>
+
  *
  * The implementation does not have a backing class and the internals are based
  * on the hashing code in IntHashMap.  The method signature is almost the same as
@@ -233,7 +233,7 @@ public class IntHashSet<E> {
      * Adds all of the elements in the specified collection to this set.
      * The behavior of this operation is undefined if the specified collection
      * is modified while the operation is in progress.
-     * <p>
+    
      * This implementation iterates over the specified collection, and adds
      * each object returned by the iterator to this collection, in turn.
      *
@@ -259,7 +259,7 @@ public class IntHashSet<E> {
     /**
      * Removes from this set all of its elements that are contained in
      * the specified collection.
-     * <p>
+    
      * This implementation iterates over this collection, checking each
      * element returned by the iterator in turn to see if it's contained
      * in the specified collection.  If it's so contained, it's removed from

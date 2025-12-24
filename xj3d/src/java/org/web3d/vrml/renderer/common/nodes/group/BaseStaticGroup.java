@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,10 +29,10 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Common base implementation of a StaticGroup node.
- * <p>
+
  *
  * <b>Properties</b>
- * <p>
+
  * The following properties are used by this class
  * <ul>
  * <li><code>org.web3d.vrml.nodes.staticgroup.dispose</code> Boolean value

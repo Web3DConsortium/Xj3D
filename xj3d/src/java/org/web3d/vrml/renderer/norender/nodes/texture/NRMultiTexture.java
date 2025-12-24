@@ -25,7 +25,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseMultiTexture;
 
 /**
  * Null-renderer implementation of a MultiTexture node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

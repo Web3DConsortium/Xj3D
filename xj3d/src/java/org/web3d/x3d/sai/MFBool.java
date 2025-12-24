@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Interface representing a MFBool field.
- * <p>
+
  *
  * @version 1.0 30 April 1998
  */
@@ -42,7 +42,7 @@ public interface MFBool extends MField {
 
     /**
      * Get a particular boolean value in this field.
-     * <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *

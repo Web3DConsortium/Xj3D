@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2004
+ *                        Web3d.org Copyright (c) 2001 - 2026-2004
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,15 +26,15 @@ import org.opengis.referencing.operation.TransformException;
 /**
  * A generator that takes a set of height values as a grid and turns it into
  * geometry suitable for local graphics projections.
- * <p>
+
  *
  * Points are defined in the height arrays in width first order. Normals, are
  * always smooth blended.
- * <p>
+
  *
  * Alan: There are some cases where texture generation is not complete.
  * Especially in regards to 3D textures.
- * <p>
+
  *
  * This class originally came from the j3d.org ElevationGridGenerator, but has
  * been mostly gutted and special cased for the needs of this system.
@@ -723,7 +723,7 @@ System.out.println("out2: " + out[0] + " " + out[1] + " " + out[2]);
      * Generate a new set of normals for a normal set of unindexed points.
      * Smooth normals are used for the sides at the average between the faces.
      * Bottom normals always point down.
-     * <p>
+    
      * This must always be called after the coordinate generation.
      *
      * @param data The data to base the calculations on
@@ -983,7 +983,7 @@ System.out.println("out2: " + out[0] + " " + out[1] + " " + out[2]);
      * Generate a new set of normals for a normal set of indexed points.
      * Smooth normals are used for the sides at the average between the faces.
      * Bottom normals always point down.
-     * <p>
+    
      * This must always be called after the coordinate generation.
      *
      * @param data The data to base the calculations on
@@ -1009,7 +1009,7 @@ System.out.println("out2: " + out[0] + " " + out[1] + " " + out[2]);
 
     /**
      * Generate a new set of texCoords for a set of unindexed points.
-     * <p>
+    
      * This must always be called after the coordinate generation.
      *
      * @param data The data to base the calculations on
@@ -1037,7 +1037,7 @@ System.out.println("out2: " + out[0] + " " + out[1] + " " + out[2]);
 
     /**
      * Generate a new set of texCoords for a set of unindexed points.
-     * <p>
+    
      * This must always be called after the coordinate generation.
      *
      * @param data The data to base the calculations on

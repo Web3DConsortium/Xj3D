@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * VRML eventOut class for MFRotation.
- *  <p>
+
  * Rotation values are specified according to the VRML IS Specification
  *  Section 5.8 SFRotation and MFRotation.
  *
@@ -73,7 +73,7 @@ public abstract class EventOutMFRotation extends EventOutMField
 
   /**
    * Get a particular rotation in the given eventOut array.
-   *  <p>
+  
    * If the index is out of the bounds of the current array of data values an
    * ArrayIndexOutOfBoundsException will be generated.
    *

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
  * Interface for classes that wish to know about when nodes are added or
  * removed during the course of an event cycle, and work as a dynamic interface
  * with the event model.
- * <p>
+
  *
  * A single observer instance may be registered for more than one node type ID.
  *

@@ -26,7 +26,7 @@ import org.web3d.x3d.sai.X3DField;
 
 /**
  * Representation of a SFNode field.
- *  <p>
+
  * Get the value of a node. The java <code>null</code> reference is treated to
  * be equivalent to the VRML <code>NULL</code> field values. If the node field
  * contains a NULL reference then reading this eventOut will result in a
@@ -84,7 +84,7 @@ class SAISFNode extends BaseField
 
     /**
      * Set the node value in the given eventIn.
-     *  <p>
+    
      * If the node reference passed to this method has already had the dispose
      * method called then an InvalidNodeException will be generated.
      *

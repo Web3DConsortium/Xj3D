@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.vrml.nodes;
 
 /**
  * A listener for changes to the isActive, loop and pitch fields in a component node.
- * <p>
+
  *
  * The listener does simple notifications of the component node that has
  * changed. This listener is intended to be used by

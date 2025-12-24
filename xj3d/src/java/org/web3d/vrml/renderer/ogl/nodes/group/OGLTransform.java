@@ -34,7 +34,7 @@ import org.web3d.vrml.renderer.common.nodes.group.BaseTransform;
 
 /**
  * OpenGL implementation of a Transform node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.32 $

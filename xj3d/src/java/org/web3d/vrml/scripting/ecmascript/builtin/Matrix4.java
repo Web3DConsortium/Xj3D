@@ -22,12 +22,12 @@ import org.j3d.util.HashSet;
 
 /**
  * ECMAScript Matrix4 builtin object.
- *  <p>
+
  *
  * The implementation of all the functionality in this class is according to
  * the Matrix and Quaternion FAQ, which is currently located at:
  * <a href="http://www.j3d.org/matrix_faq/">http://www.j3d.org/matrix_faq/</a>
- * <p>
+
  * The spec is sort of a bit wishy-washy about how the flat references of
  * array indices. Internally the matrix is stored with the translations values
  * down the right "column" where the X3D spec has them across the bottom. Not

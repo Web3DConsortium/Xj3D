@@ -21,8 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.geospatial.BaseGeoObliqueMercatorPar
 import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
- * NoRender implementation of an GeoObliqueMercatorParameters
- * <p>
+ * NoRender implementation of an GeoObliqueMercatorParameters.
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

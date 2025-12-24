@@ -20,10 +20,10 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Base node for all NR implementations.
- * <p>
+
  * Each node will keep its own fieldDeclarations and fieldMaps.  These will be
  * created in a static constructor so only one copy per class will be created.
- * <p>
+
  *
  * Each node will maintain its own LAST_*_INDEX which tells others what the
  * last field declared by this node.

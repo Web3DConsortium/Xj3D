@@ -30,7 +30,7 @@ import org.web3d.vrml.util.Xj3DKeyEvent;
 
 /**
  * Base common implementation of a StringSensor node.
- * <p>
+
  *
  * UI toolkit specific key mappings are handled through
  * the Xj3DKeyEvent object. This object determines the

@@ -19,7 +19,7 @@ import vrml.eai.event.VrmlEventListener;
 
 /**
  * A VRML eventOut class. Represents the VRML read only access type.
- *  <p>
+
  * The user can encapsulate data and associate that with this field. The user
  * can register themselves as listeners for the output of this event changing
  * by adding themselves as a VRMLEvent listener.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2003 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.browser.Xj3DConstants;
 
 /**
  * An action that changes the navigation mode to LookAt.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

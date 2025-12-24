@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 /**
  * An abstract representation of a class that would be responsible for
  * performing Viewpoint management.
- * <p>
+
  *
  * This interface represents a further abstracted view of viewpoint management
  * handling beyond the {@link org.web3d.browser.BrowserCore}. This gives you

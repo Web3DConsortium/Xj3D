@@ -21,10 +21,10 @@ import org.web3d.vrml.parser.VRMLFieldReader;
 import org.web3d.vrml.sav.DocumentLocator;
 
 /**
- * <p>
+
  * The default field parser implementation class for raw field values to turn
  * them into Java primitive types.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.9 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2004
+ *                        Web3d.org Copyright (c) 2001 - 2026-2004
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,14 +26,14 @@ import org.web3d.vrml.renderer.common.nodes.BaseGeometricPropertyNode;
 
 /**
  * Common base implementation of a normal node.
- * <p>
+
  *
  * Vectors are held internally as a flat array of values. The point list
  * returned will always be flat. We do this because renderers like point values
  * into the geometry classes as a single flat array. The array returned will
  * always contain exactly the number of points specified even though
  * internally we may do other things.
- * <p>
+
  *
  * The effect of this is that point values may be routed out of this node as
  * a flat array of points rather than a 2D array. Receiving nodes should check
@@ -207,7 +207,7 @@ public abstract class BaseNormal extends BaseGeometricPropertyNode
      * from double precision to single precision or needing to make geo-spatial
      * projections. This is a reference to the post-processed data that may be
      * directly used for rendering.
-     * <p>
+    
      * Note that the array may well be longer than the actual number of valid
      * normals. Use {@link #getNumNormals()} to determine the number of valid
      * entries.

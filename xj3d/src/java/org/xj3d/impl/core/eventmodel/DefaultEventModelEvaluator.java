@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -38,7 +38,7 @@ import org.xj3d.core.loading.ContentLoadManager;
 /**
  * Default implementation of the event model evaluator that is
  * renderer-independent.
- * <p>
+
  *
  * Event model evaluation works for both VRML97 and X3D, with mixtures
  * of file types.

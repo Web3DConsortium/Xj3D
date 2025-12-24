@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -18,9 +18,9 @@ package org.web3d.vrml.nodes;
 // None
 
 /**
- * <p>
+
  * A sensor that is driven by pointing device dragging.
- * </p>
+
  *
  * @author Alan Hudson, Justin Couch
  * @version $Revision: 1.8 $

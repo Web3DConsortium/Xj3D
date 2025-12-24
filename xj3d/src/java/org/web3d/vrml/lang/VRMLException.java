@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,10 +19,10 @@ package org.web3d.vrml.lang;
 // none
 
 /**
- *  <p>
+
  * Superclass of all exceptions provided by this package and for all of the
  * VRML implementation.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2003 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * An implementation of the URI progress listener for putting messages to
  * a status label.
- *  <p>
+
  *
  * @author  Justin Couch
  * @version $Revision: 1.1 $

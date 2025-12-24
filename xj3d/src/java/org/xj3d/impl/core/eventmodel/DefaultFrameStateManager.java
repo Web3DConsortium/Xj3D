@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -34,7 +34,7 @@ import org.web3d.vrml.util.NodeTemplateArray;
 /**
  * A generalised implementation of the frame state manager interface that can
  * be used with any renderer.
- * <p>
+
  *
  * @author Justin Couch, Alan Hudson
  * @version $Revision: 1.5 $

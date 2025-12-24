@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2007
+ *                        Web3d.org Copyright (c) 2001 - 2026-2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -33,8 +33,6 @@ import org.web3d.vrml.renderer.common.input.movie.VideoStreamHandler;
 
 /**
  * MovieTexture node implementation.
- * <p>
- *
  *
  * @author Guy Carpenter
  * @version $Revision: 1.21 $

@@ -35,7 +35,7 @@ import org.web3d.vrml.renderer.common.nodes.hanim.BaseHAnimSegment;
 
 /**
  * OpenGL implementation of a HAnimSegment node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 2.1 $

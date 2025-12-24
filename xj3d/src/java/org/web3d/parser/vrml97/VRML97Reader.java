@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,11 +26,11 @@ import org.web3d.vrml.parser.VRMLParserUtils;
 /**
  * Implementation of a VRML97 reader that can be either strict or lenient in
  * the parsing.
- * <p>
+
  * When requested to parse, the reader will open the stream and check to see
  * that we have the right sort of parser. If the header does not contain
  * "#VRML V2.0 utf8" then it will generate an exception.
- * <p>
+
  * This parser supports the following properties:
  * <ul>
  * <li>"conformance": ["weak", "strict"]. String values. Defaults to weak</li>

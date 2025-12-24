@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the BSD license.
@@ -21,7 +21,7 @@ package org.xj3d.sai;
 /**
  * An abstract interface for navigation-specific user interface control of the
  * the browser.
- * <p>
+
  * This allows an external application to replace existing chunks of the user
  * interface controls with their own custom code, yet retain all the
  * functionality of the stock user interface. Making calls to methods on this

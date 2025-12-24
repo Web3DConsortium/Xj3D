@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Convenience data holder to keep a node and field value together.
- * <p>
+
  * Principally used for IS mapping and is held as package only access.
  *
  * @author Justin Couch

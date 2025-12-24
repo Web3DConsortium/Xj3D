@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2008
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * NoRender implementation of an GeoTransform
- * <p>
  *
  * @author Rex Melton
  * @version $Revision: 1.1 $

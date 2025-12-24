@@ -22,11 +22,11 @@ import org.web3d.x3d.sai.X3DProtoInstance;
   * dependency loops in the SAI implementation--between EventIn*NodeWrapper
   * and SimpleWrappingNode and between SimpleWrappingNode and 
   * EventOut*Node Wrapper.  
-  *  <p>
+ 
   * Given a VRMLNodeType or X3DNode, this class can produce or locate
   * the corresponding instance.  Whether the instance returned is unique or
   * simply equivalent between subsequent calls is implementation dependent.
-  *  <p>
+ 
   * @author Brad Vender
   */
 

@@ -36,7 +36,7 @@ import org.web3d.vrml.scripting.ecmascript.builtin.*;
 
 /**
  * ExternProtoDeclaration prototype object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

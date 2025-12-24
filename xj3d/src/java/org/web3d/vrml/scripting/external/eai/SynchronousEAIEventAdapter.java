@@ -28,13 +28,13 @@ import vrml.eai.event.VrmlEventListener;
 /**
  * SynchronousEAIEventAdapter implements the 'broadcast in thread'
  * implementation of the ExternalEventAdapter interface.
- *  <p>
+
  * ExternalEventAdapter is an adapter between the underlying event model and
  * the vrml.eai.EventOut callbacks.
  * The purpose of having this interface is to support having the event
  * changed callbacks occuring in the same thread as the event model, or
  * occuring outside the event model's thread.
- *  <p>
+
 */
 class SynchronousEAIEventAdapter extends BaseExternalEventAdapter implements ExternalEventAdapter,
 VRMLNodeListener {

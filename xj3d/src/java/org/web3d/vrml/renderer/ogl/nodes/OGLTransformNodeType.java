@@ -20,7 +20,7 @@ import javax.vecmath.Matrix4f;
 /**
  * This node contains an aviatrix TransformGroup.  All OGL nodes which
  * have their impls under a TransformGroup must implement this interface.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

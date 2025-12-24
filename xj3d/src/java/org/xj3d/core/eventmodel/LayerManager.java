@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.vrml.nodes.VRMLWorldRootNodeType;
 /**
  * An abstract representation of a class that would be responsible for
  * performing management of a single layer.
- * <p>
+
  *
  * The manager is responsible for all input and sensor handling for this
  * layer instance. Sensors and other interactions can be enabled on a per-layer

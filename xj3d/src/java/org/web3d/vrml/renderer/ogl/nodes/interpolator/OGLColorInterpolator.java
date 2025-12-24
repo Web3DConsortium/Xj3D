@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Implementation of a ColorInterpolator.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

@@ -20,7 +20,7 @@ import org.web3d.vrml.lang.VRMLNode;
 
 /**
  * Simple dynamic array structure that holds VRMLNode instances.
- * <p>
+
  *
  * Idea is to save implementation weight when we don't really want to use a
  * full java.util collections class, but don't want to have to re-implement

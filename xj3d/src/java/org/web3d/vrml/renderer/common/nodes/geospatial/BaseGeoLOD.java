@@ -42,7 +42,7 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * Common base implementation of a GeoLOD node.
- * <p>
+
  *
  * Internally the LOD keeps both the basic range and the values squared. This
  * makes computation much faster, eliminating the need to take expensive

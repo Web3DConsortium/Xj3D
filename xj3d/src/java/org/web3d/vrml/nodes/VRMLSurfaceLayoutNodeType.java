@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -18,11 +18,11 @@ package org.web3d.vrml.nodes;
 import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
- * <p>
+
  * A grouping node that collects together and provides layout information for
  * items on a surface.
- * </p>
- * <p>
+
+
  * When the instance is given nodes to manage, it should manage it until told
  * not to. Any time that the window size changes, the relationship should
  * recalculate the on-screen position and notify the overlay items of their
@@ -31,7 +31,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
  * It is legal for a layout node to also contain other layout nodes in a
  * nested fashion. An implementation should be aware of this and make sure
  * it handles nested layouts correctly.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

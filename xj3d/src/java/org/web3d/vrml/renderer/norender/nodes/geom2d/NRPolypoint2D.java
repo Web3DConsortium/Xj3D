@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of a Polypoint2D.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

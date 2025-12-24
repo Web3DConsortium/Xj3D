@@ -35,7 +35,6 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * Common implementation of a GeoLocation node functionality.
- * <p>
  *
  * @author Alan Hudson, Justin Couch
  * @version $Revision: 1.17 $

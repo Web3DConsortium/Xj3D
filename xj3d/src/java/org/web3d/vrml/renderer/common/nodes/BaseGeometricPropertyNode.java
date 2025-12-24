@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLGeometricPropertyNodeType;
 
 /**
  * An abstract implementation of any form geometric property node type.
- * <p>
+
  *
  * This implementation provides a number of the basic necessities when building
  * node information. This class does not define any extra fields over

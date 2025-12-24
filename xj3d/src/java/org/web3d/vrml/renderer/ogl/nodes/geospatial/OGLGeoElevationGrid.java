@@ -37,7 +37,7 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 
 /**
  * OpenGL implementation of an GeoElevationGrid
- * <p>
+
  *
  * In order to handle colorPerVertex=FALSE and normalPerVertex=FALSE we
  * have to two representations.  Under normal conditions(TRUE,TRUE) we can

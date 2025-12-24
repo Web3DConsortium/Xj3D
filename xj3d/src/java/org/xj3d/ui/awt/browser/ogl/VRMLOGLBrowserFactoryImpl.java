@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,18 +31,18 @@ import org.xj3d.sai.BrowserConfig;
 /**
  * An implementation of the EAI {@link vrml.eai.BrowserFactoryImpl} interface
  * that creates a browser that uses OpenGL for the renderer.
- * <p>
+
  *
  * <b>Supported Actions</b>
- * <p>
+
  *
  * Currently the factory implementation only supports creating a new component.
  * We do expect to add other support at a later date, such as fetching an
  * existing instance.
- * <p>
+
  *
  * <b>Component Creation</b>
- * <p>
+
  *
  * This implementation allows you to create a new component that is ready to
  * place content in. Parameters can be supplied and are declared in the form
@@ -50,11 +50,12 @@ import org.xj3d.sai.BrowserConfig;
  *   <i>param name</i>=<i>param value</i>
  * </pre>
  * There should be no whitespace either side of the equals sign.
- * <p>
+
  *
  * When creating a new browser component, the following parameters are
  * supported:
- * <table summary="the following parameters are supported">
+ * <table>
+ * <caption>the following parameters are supported</caption>
  * <tr>
  *  <td><b>Parameter Name String</b></td>
  *  <td><b>Parameter Value String - Description</b></td>

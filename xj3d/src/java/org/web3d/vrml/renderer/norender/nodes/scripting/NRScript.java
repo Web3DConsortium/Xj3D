@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Scene graph representation of a script node.
- * <p>
+
  *
  * The script is different to all the other nodes. While it represents
  * a script, it doesn't have the normal content of a Java3D node. It is

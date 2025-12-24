@@ -28,7 +28,6 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common implementation of a MIDI Event Source.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.11 $

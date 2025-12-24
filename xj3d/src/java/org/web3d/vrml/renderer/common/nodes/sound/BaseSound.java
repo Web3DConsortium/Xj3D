@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common Sound node implementation for handling all the fields.
- * <p>
+
  *
  * The sound node is defined by X3D to be the following:
  * <pre>
@@ -364,7 +364,7 @@ public class BaseSound extends AbstractNode
      * Changes the intensity (global gain) for this sound.
      * Stores the new intensity in vfIntensity and
      * fires a fieldChanged event.
-     * <p>
+    
      *
      * A false return value indicates the value was unchanged
      * either because it was already set to this value, or because

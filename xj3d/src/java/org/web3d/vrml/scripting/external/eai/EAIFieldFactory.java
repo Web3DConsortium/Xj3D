@@ -23,7 +23,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
  * EventIn instances as needed either for translation from the underlying
  * field and event implementation, and in response to Node.getEventOut and
  * Node.getEventIn calls.
- *  <p>
+
  * The same factory is used to produce both the synchronous and stored
  * versions of each field.
  *

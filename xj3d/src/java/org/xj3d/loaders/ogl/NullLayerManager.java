@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -51,11 +51,11 @@ import org.web3d.vrml.renderer.ogl.browser.OGLRenderingEffects;
 
 /**
  * Null implementation of a layer manager.
- * <p>
+
  *
  * The layer manager is responsible for keeping track of all the top level
  * renderable structure within a scene.
- * <p>
+
  *
  * This layer manager will assume that someone else will inject the
  * scene graph into Aviatrix3D.  This will use an X3D event model with the

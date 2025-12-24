@@ -39,7 +39,7 @@ import org.web3d.vrml.renderer.ogl.nodes.TextureCache;
 
 /**
  * OpenGL implementation of an Appearance node.
- * <p>
+
  *
  * MultiTexture Notes: function and source not mapped
  *

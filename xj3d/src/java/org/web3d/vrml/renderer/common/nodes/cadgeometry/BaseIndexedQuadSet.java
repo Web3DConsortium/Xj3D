@@ -24,7 +24,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseComponentGeometryNode;
 
 /**
  * Common IndexedQuadSet handling.
- * <p>
  *
  *
  * @author Vincent Marchetti

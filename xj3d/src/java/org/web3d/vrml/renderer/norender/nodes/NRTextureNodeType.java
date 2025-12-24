@@ -19,7 +19,6 @@ import org.web3d.vrml.nodes.VRMLTextureNodeType;
 
 /**
  * Abstract implementation of a texture object.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

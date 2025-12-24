@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.j3d.util.ErrorReporter;
 
 /**
  * Factory for generating renderer-specific instances of LayerManagers.
- * <p>
+
  *
  * Layer managers are inherently renderer-specific and this factory is used as
  * the glue between the generalised event model handling, and the

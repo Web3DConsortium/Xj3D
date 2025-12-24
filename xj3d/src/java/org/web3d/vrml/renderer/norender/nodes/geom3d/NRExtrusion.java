@@ -23,7 +23,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of an Extrusion.
- * <p>
  *
  * @author Andrzej Kapolka
  * @version $Revision: 1.2 $

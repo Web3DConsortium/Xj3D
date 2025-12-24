@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLBindableNodeType;
 
 /**
  * An abstract representation of any bindable node.
- * <p>
+
  *
  * Bindable nodes are activatable nodes as well. The difference is that there
  * is a stack of them and they change their output of the isBound event out.

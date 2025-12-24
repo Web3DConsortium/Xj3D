@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 /**
  * Implementation of a sound node for no renderer.
  * This node is used for the creation of PROTOs
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

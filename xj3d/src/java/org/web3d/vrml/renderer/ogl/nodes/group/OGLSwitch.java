@@ -36,7 +36,7 @@ import org.web3d.vrml.renderer.common.nodes.group.BaseSwitch;
 
 /**
  * OpenGL version of a Switch node.
- * <p>
+
  *
  * The implementation works by doing the shuffling itself of the
  * internal scene graph structures.

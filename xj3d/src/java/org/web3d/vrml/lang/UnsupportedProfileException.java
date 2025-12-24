@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.lang;
 
 /**
  * Exception indicating that a profile is not supported by the implementation.
- *  <p>
+
  *
  * This exception may be generated either by the parser implementation if it
  * has knowledge of profiles or by the implementation of the various handlers.

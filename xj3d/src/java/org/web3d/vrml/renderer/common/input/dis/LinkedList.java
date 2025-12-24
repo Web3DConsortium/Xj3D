@@ -19,7 +19,7 @@ package org.web3d.vrml.renderer.common.input.dis;
 /**
  * Custom single linked list.  We want to manage as many DIS nodes as possible,
  * so this linked list allows structured storage without method call overhead for traversal.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

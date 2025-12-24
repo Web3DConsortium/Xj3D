@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseText2D;
 
 /**
  * Common implementation of a Text2D node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

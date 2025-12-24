@@ -24,16 +24,16 @@ import java.util.ResourceBundle;
 
 /**
  * Manager of all internationalisation in the toolkit.
- * <p>
+
  *
  * This class acts as a singleton manager for internationalisation within
  * j3d.org Code and all applications built on it. It may be used for any string
  * resource that may require internationalisation - not just text on buttons
  * but also error messages, log messages etc.
  *
- * <p>
+
  * <b>External Application Usage</b>
- * <p>
+
  * An application should initialise this manager as soon as possible after
  * startup - ideally before anything else happens. The initialization ensures
  * that the right resources are loaded before people start making queries.
@@ -46,7 +46,7 @@ import java.util.ResourceBundle;
  * end applications making use of it. The application names allows us to
  * create separate sets of settings on a per-application basis rather than
  * relying on global settings for the user's computer.
- * <p>
+
  *
  * The second direct customisation point is to provide a base name for the
  * resource bundle to be loaded. If no name is provided, it will load the
@@ -57,25 +57,25 @@ import java.util.ResourceBundle;
  * that is specified in the base file that comes with this toolkit. Failure
  * to do so will result in blank areas on the user interface and most
  * probably an unusable application.
- * <p>
+
  *
  * If an application wishes to also internationalise other settings, such
  * as numerical representations, then you can query this class for the
  * Locale it actually loaded, rather than the one you requested (fairly
  * typical issue).
- * <p>
+
  *
  * <b>Note:</b>
- * <p>
+
  * Because this class just stores string values, it is entirely possible
  * to use it to store non-text information as well for a more generic
  * internationalisation system. For example, storing the names of icon
  * files could be a valid use of this class, allowing localisation for
  * more than just text, but also graphical resources.
  *
- * <p>
+
  * <b>Resource Bundle Property Naming Conventions</b>
- * </p>
+
  *
  * With a property file containing all the internationalisation of a
  * probably very large application, naming conventions are a necessity.
@@ -251,12 +251,12 @@ public class I18nManagerMultiResource {
      * an application name has been set. If no application name is set, this
      * will persist for the lifetime of this application instance, but be lost
      * on restart.
-     * <p>
+    
      * Setting the language value to null will reset the system back to the
      * default platform setting. The other arguments may be null or specified.
      * If null, the defaults for those are used from the local platform
      * settings.
-     * <p>
+    
      * Language and country strings are required to be the 2 letter identifiers
      * used in the ISO specifications. See the documentation of
      * {@link java.util.Locale} for more information about valid codes. The

@@ -26,10 +26,10 @@ import org.web3d.vrml.renderer.common.nodes.geom2d.BaseDisk2D;
 
 /**
  * OpenGL implementation of an Disc2D
- * <p>
+
  *
  * The point set directly maps to Aviatrix3D's PointArray class.
- * <p>
+
  *
  * @author Vincent Marchetti
  * @version $Revision: 1.3 $

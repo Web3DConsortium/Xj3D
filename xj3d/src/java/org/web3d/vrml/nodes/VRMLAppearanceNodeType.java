@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * Node which represents appearance attributes of an object.
- * <p>
+
  * The representation is a fraction more relaxed than the standard VRML
  * appearance node. Here we allow arbitrary material node types and
  * the textures are any type (which may include procedural textures,

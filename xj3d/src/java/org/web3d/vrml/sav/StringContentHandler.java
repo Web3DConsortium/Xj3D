@@ -21,7 +21,6 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Receiver of notifications from the VRML document about node declaration
  * information.  All field values are sent as strings.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $
@@ -33,11 +32,11 @@ public interface StringContentHandler extends ContentHandler {
      * value of the field. MFStrings will have to be parsed. This is a
      * terminating call for startField as well. The next call will either be
      * another <code>startField()</code> or <code>endNode()</code>.
-     * <p>
+    
      * If this field is an SFNode with a USE declaration you will have the
      * {@link #useDecl(String)} method called rather than this method. If the
      * SFNode is empty the value returned here will be "NULL".
-     * <p>
+    
      * There are times where we have an MFField that is declared in the file
      * to be empty. To signify this case, this method will be called with a
      * parameter value of null. A lot of the time this is because we can't

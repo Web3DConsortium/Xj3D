@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.j3d.util.IntHashMap;
 /**
  * A placeholder instance of a Prototype used when declaring and then using a
  * nested proto instance.
- * <p>
+
  *
  * The idea of this class is to fake being a real prototype instance when the
  * code stubs a nested proto instance. A nested proto instance is of the form

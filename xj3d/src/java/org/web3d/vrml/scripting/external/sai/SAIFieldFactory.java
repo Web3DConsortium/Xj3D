@@ -1,5 +1,5 @@
 /***************************************************************************** 
- *                        Web3d.org Copyright (c) 2007 
+ *                        Web3d.org Copyright (c) 2001 - 2026 
  *                               Java Source 
  * 
  * This source is licensed under the GNU LGPL v2.1 
@@ -23,7 +23,7 @@ import org.web3d.x3d.sai.InvalidNodeException;
  * instances as needed either for translation from the underlying
  * field and event implementation, and in response to X3DNode.getField
  * calls.
- *  <p>
+
  * The same factory is used to produce both the synchronous and stored
  * versions of each field.
  *

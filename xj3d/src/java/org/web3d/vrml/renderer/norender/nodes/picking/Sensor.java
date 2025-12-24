@@ -21,7 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.picking.BasePrimitivePickSensor;
 
 /**
  * Null-renderer implementation of a PrimitivePickSensor node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

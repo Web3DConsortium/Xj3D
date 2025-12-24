@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common base implementation of the NurbsCurve node.
- * <p>
+
  *
  * Because NURBS implementations involve complex retessellation,
  * the implementation will automatically register itself with the
@@ -764,7 +764,7 @@ public abstract class BaseNurbsCurve2D extends AbstractNode
     /**
      * Calculate the facetCount needed for the current state of the curve. The
      * spec states:
-     * <p>
+    
      * 1. if a tessellation value is greater than 0, the number of tessellation
      * points is tessellation+1;
      * <br>

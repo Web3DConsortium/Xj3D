@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Implementation of a SFRotation field.
- *  <p>
+
  * Rotation values are specified according to the VRML IS Specification
  * Section 5.8 SFRotation and MFRotation.
  *
@@ -70,11 +70,11 @@ class SAISFRotation extends BaseField implements SFRotation {
 
     /**
      * Set the rotation value in the given eventIn.
-     *  <p>
+    
      * The value array must contain at least four elements. If the array
      * contains more than 4 values only the first 4 values will be used and
      * the rest ignored.
-     *  <p>
+    
      * If the array of values does not contain at least 4 elements an
      * ArrayIndexOutOfBoundsException will be generated.
      *

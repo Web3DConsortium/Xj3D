@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -34,7 +34,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractDynamicFieldNode;
 
 /**
  * X3D Classic exporter using a retained Scenegraph.
- * <p>
+
  *
  * Known Issues:
  *    Proto node fields are copied into instances

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.vrml.nodes;
 
 /**
  * Denotes a node type that is part of the HAnim component.
- * <p>
+
  *
  * The HAnim component is internally implemented using the abstract HAnim
  * system from the <a href="http://code.j3d.org/">j3d.org Code Repository</a>.

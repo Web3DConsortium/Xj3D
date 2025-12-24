@@ -92,19 +92,19 @@ class SAISFImage extends BaseField implements SFImage {
 
     /**
      * Get the image pixel value in the given eventOut.
-     *  <p>
+    
      * The number of items in the pixels array will be
      * <code>width * height</code>. If there are less items than this an
      * ArrayIndexOutOfBoundsException will be generated. The integer values
      * are represented according to the number of components.
-     *  <p>
+    
      *  <b>1 Component Images </b> <br>
      * The integer has the intensity value stored in the lowest byte and can be
      * obtained:
      *  <pre>
      *    intensity = (pixel[i]     ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      *  <b>2 Component Images </b> <br>
      * The integer has the transparency value stored in the lowest byte and the
      * intensity in the next byte:
@@ -112,7 +112,7 @@ class SAISFImage extends BaseField implements SFImage {
      *    intensity = (pixel[i] &gt;&gt; 8) &amp;0xFF;
      *    alpha     = (pixel[i]     ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      *  <b>3 Component Images </b> <br>
      * The three color components are stored in the integer array as follows:
      *  <pre>
@@ -120,7 +120,7 @@ class SAISFImage extends BaseField implements SFImage {
      *    green = (pixel[i] >>  8) &amp;0xFF;
      *    blue  = (pixel[i]      ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      *  <b>4 Component Images </b> <br>
      * The integer has the value stored in the array as follows:
      *  <pre>
@@ -129,7 +129,7 @@ class SAISFImage extends BaseField implements SFImage {
      *    blue  = (pixel[i] >>  8) &amp;0xFF;
      *    alpha = (pixel[i]      ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      * The width and height values must be greater than or equal to zero. The
      * number of components is between 1 and 4. Any value outside of these
      * bounds will generate an IllegalArgumentException.
@@ -169,7 +169,7 @@ class SAISFImage extends BaseField implements SFImage {
     /**
      * Set the image value in the given writable field to the new image defined
      * by a set of pixels.
-     *  <p>
+    
      *
      * @param img The new image to use as the source
      */
@@ -190,13 +190,13 @@ class SAISFImage extends BaseField implements SFImage {
  	/**
 	 * Copy a region of the argument RenderedImage to replace a portion of the
 	 * current SFimage.
-	 *  <p>
+	
 	 * The sub image set shall not resize the base image representation and
 	 * therefore performs an intersection clip of the provided image. The user
 	 * provided image shall be of the same format (pixel depth, pixel
 	 * representation) as the original image obtained through the getImage()
 	 * method.
-	 * <p>
+	
 	 * RenderedImages are row order from top to bottom. A
 	 * 4x8 RenderImage is indexed as follows:
 	 *
@@ -229,7 +229,7 @@ class SAISFImage extends BaseField implements SFImage {
 	 *
 	 *  </pre>
 	 *
-	 * <p>
+	
 	 * Note: The parameter srcYOffset is referenced to the RenderedImage object
 	 * (indexed top to bottom).
 	 * <br>
@@ -273,7 +273,7 @@ class SAISFImage extends BaseField implements SFImage {
 
     /**
      * Set the image value in the given writable field.
-     *  <p>
+    
      * Image values are specified using a width, height and the number of
      * components. The number of items in the pixels array must be at least
      * <code>width * height</code>. If there are less items than this an
@@ -281,14 +281,14 @@ class SAISFImage extends BaseField implements SFImage {
      * are represented according to the number of components. If the integer
      * contains values in bytes that are not used by the number of components
      * for that image, the values are ignored.
-     *  <p>
+    
      *  <b>1 Component Images </b> <br>
      * The integer has the intensity value stored in the lowest byte and can be
      * obtained:
      *  <pre>
      *    intensity = (pixel[i]     ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      *  <b>2 Component Images </b> <br>
      * The integer has the transparency value stored in the lowest byte and the
      * intensity in the next byte:
@@ -296,7 +296,7 @@ class SAISFImage extends BaseField implements SFImage {
      *    intensity = (pixel[i] &gt;&gt; 8) &amp;0xFF;
      *    alpha     = (pixel[i]     ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      *  <b>3 Component Images </b> <br>
      * The three color components are stored in the integer array as follows:
      *  <pre>
@@ -304,7 +304,7 @@ class SAISFImage extends BaseField implements SFImage {
      *    green = (pixel[i] >>  8) &amp;0xFF;
      *    blue  = (pixel[i]      ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      *  <b>4 Component Images </b> <br>
      * The integer has the value stored in the array as follows:
      *  <pre>
@@ -313,7 +313,7 @@ class SAISFImage extends BaseField implements SFImage {
      *    blue  = (pixel[i] >>  8) &amp;0xFF;
      *    alpha = (pixel[i]      ) &amp;0xFF;
      *  </pre>
-     *  <p>
+    
      * The width and height values must be greater than or equal to zero. The
      * number of components is between 1 and 4. Any value outside of these
      * bounds will generate an IllegalArgumentException.

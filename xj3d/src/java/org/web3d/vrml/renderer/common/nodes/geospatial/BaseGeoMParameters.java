@@ -22,7 +22,6 @@ import org.web3d.vrml.lang.*;
 
 /**
  * Common implementation of an GeoMParameters node.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * A simple convenience holder for Node/eventOut combo information.
- * <p>
+
  * This holder just places the node and event out into a single structure to
  * make it easier for using it as a key for tables and trees.
  *

@@ -23,7 +23,6 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common base implementation of the abstract node type X3DSRFParametersInfoNode node.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

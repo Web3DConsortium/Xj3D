@@ -32,7 +32,7 @@ import org.web3d.vrml.renderer.common.nodes.hanim.BaseHAnimJoint;
 
 /**
  * OpenGL implementation of a HAnimJoint node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 2.1 $

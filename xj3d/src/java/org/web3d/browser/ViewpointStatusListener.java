@@ -20,7 +20,7 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 
 /**
  * A listener to track viewpoint list changes.
- * <p>
+
  *
  * A listener needs to be aware that there are multiple layers that can come
  * and go in the core of the application. This status listener keeps the user
@@ -59,11 +59,11 @@ public interface ViewpointStatusListener {
      * highlighting to indicate this. Viewpoints in other layers are still
      * allowed to be bound by the user interface. If there was a previously
      * active layer, ignore it.
-     * <p>
+    
      * The code will guarantee that if the active layer is removed, then this
      * method will be called first to set a different valid layer, before
      * removing that layer ID.
-     * <p>
+    
      *
      * If a value of -1 is provided, that means no layers are active and that
      * we currently have a completely clear browser with no world loaded. The

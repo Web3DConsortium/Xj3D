@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,15 +21,15 @@ import org.web3d.vrml.lang.InvalidFieldException;
 /**
  * Representation of a node that defines more than one piece of its content at
  * a list of URLs separate to this file that will also need loading.
- * <p>
+
  * This is the same system as used by the
  * {@link org.web3d.vrml.nodes.VRMLExternalNodeType} except expanded to provide
  * more than one field with external content.
- * <p>
+
  * The operation of this interface is to get the loader thread to set the
  * load state as it is going. Once it has loaded the content it then tells the
  * implementation about what it has found.
- * <p>
+
  * When fetching the URL list, it is expected that all URLs will be fully
  * qualified. It will be up to the implementor to process the set URLs to
  * contain only fully qualified URLs. For this, we will ensure that the world

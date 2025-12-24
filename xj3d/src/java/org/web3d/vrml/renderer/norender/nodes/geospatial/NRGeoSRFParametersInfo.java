@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * NoRender implementation of an GeoSRFParametersInfo
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

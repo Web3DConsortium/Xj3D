@@ -28,7 +28,7 @@ import org.web3d.vrml.renderer.ogl.input.OGLGlobalEffectsHandler;
 /**
  * Represents all of the global rendering effects in the world - viewpoint,
  * background and fog.
- * <p>
+
  *
  * TODO: <br>
  * - Figure out the correct density calculations for exponential fog based

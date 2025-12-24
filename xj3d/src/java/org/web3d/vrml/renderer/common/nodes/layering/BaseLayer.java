@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * This is the base for the Layer node.
- * <p>
+
  *
  * The basic definition of Layer is:
  * <pre>
@@ -306,13 +306,13 @@ public class BaseLayer extends AbstractNode
      * Get the type of viewport layout policy that the contained viewport node
      * represents. This is a shortcut to fetching the viewport instance
      * directly, walking the proto heirarchy and so forth.
-     * <p>
+    
      * This determines how the viewport is managed by the system during window
      * resizes etc. It is a fixed value that never changes for the node
      * implementation.
-     * <p>
+    
      * If no viewport node is defined, return VIEWPORT_FULLWINDOW.
-     * <p>
+    
      * If no viewport is yet referenced courtesy of an
      * externproto, this returns VIEWPORT_UNDEFINED until it is updated.
      *

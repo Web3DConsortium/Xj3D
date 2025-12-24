@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                    Web3d.org Copyright (c) 2001 - 2006
+ *                    Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.web3d.vrml.lang;
 /**
  * Exception for when the format provided by the field is invalid for what
  * the field requires.
- *  <p>
+
  *
  * The exception also has the option of including line and column number
  * information for when it is generated from a file that was read. If the

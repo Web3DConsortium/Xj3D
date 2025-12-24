@@ -31,7 +31,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 
 /**
  * OGL implementation of a Viewpoint node.
- * <p>
+
  *
  * Viewpoints cannot be shared using DEF/USE. They may be named as such for
  * Anchor purposes, but attempting to reuse them will cause an error. This

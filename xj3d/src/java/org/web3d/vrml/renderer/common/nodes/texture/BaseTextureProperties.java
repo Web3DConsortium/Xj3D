@@ -25,7 +25,6 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common base implementation of a TextureProperties node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.5 $

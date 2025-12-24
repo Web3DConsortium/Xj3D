@@ -9,7 +9,7 @@ import java.io.*;
  * but can each represent a group of bytes,
  * at least some of the time,
  * for what is usually an overall saving.
- *  <p>
+
  * LZW compression recognizes sequences that have already appeared in the data,
  * and replaces each later appearance by a unique code.
  * The degree of compression depends on how much repetition is found in the data.
@@ -17,7 +17,7 @@ import java.io.*;
  *  <b>repeat sequences, </b>
  * such as text,
  * and graphics with areas of solid color or patterns.
- *  <p>
+
  * The sequence history should allow for the expected amount of repetition,
  * without wasting too much space in each code on a history index.
  * This version is fixed at 12 bit codes,
@@ -25,12 +25,12 @@ import java.io.*;
  * less some internal overhead.
  * This size is considered good for short message blocks,
  * and is simple to implement.
- *  <p>
+
  *  <b>Note! </b>
  * Other versions of LZW may use other sizes of sequence history,
  * and other coding conventions.
  * They are not inter-operable with this algorithm.
- *  <p>
+
  *  <b>The original papers: </b>
  * <UL>
  * <LI>Terry Welch,
@@ -52,7 +52,7 @@ import java.io.*;
  * "LZW Data Compression" by Mark Nelson,
  * in <a href="http://www.ddj.com" >Dr. Dobb's Journal</a>
  * October, 1989.
- *  <p>
+
  * There is no need to construct an LZW object,
  * the LZW.Compress () and LZW.Expand () methods are static.
  *
@@ -62,16 +62,16 @@ import java.io.*;
 public class LZW {
 
     /** Note some Java types differ from C types:
-     *  <p>
+    
      * byte (8), short (16), int (32) are signed, there is no unsigned.
      * therefore positive (unsigned) values 0-255 need short not byte,
      * at least while we are actively using them.
      * OK to --store-- them in byte with casting and masking.
-     *  <p>
+    
      * char (16) not (8) to support Unicode,
      * so char is not the same as byte (8).
      * neither is it the same as short (16).
-     *  <p>
+    
      *  <b>int InputStream.read () </b>
      * Reads the next byte of data from this input stream.
      * The value byte is returned as an int in the range 0 to 255.

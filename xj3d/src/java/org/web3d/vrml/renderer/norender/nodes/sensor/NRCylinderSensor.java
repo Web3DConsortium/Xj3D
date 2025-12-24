@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.sensor.BaseCylinderSensor;
 
 /**
  * Null-renderer implementation of a CylinderSensor node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

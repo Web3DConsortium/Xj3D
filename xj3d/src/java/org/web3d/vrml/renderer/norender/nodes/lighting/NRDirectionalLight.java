@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * No-render implementation of a directional light.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

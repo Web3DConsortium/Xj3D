@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.j3d.aviatrix3d.Texture;
 
 /**
  * An abstract representation of texture nodes.
- * <p>
+
  *
  * This interface provides a single method to allow setting of the Aviatrix3D
  * object back into the texture. In the architecture of Xj3D, we don't create

@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of a WorldInfo node.
- * <p>
+
  *
  * This node is purely informational within the scene graph. It does not have
  * a renderable representation.

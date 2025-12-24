@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseIndexedTriangleGeometryNode;
 
 /**
  * An abstract implementation of an IndexedTriangleSet
- * <p>
+
  *
  * The node is defined by X3D as:
  * <pre>

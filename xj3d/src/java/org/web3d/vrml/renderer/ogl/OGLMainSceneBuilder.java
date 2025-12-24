@@ -27,7 +27,7 @@ import org.web3d.vrml.sav.SAVException;
 
 /**
  * An OpenGL scene builder implementation for working with SAV events
- * <p>
+
  *
  * If the user asks for no behaviors, then we will still load nodes that
  * use behaviors, but will disable their use. For example, a LOD will still

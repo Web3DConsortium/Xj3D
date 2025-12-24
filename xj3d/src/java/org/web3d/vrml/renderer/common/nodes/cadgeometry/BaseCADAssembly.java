@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2004
+ *                        Web3d.org Copyright (c) 2001 - 2026-2004
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseGroupingNode;
 
 /**
  * Common base implementation of a CADAssembly node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.5 $

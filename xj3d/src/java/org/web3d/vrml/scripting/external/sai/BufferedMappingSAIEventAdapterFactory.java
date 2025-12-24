@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,10 +22,10 @@ import org.web3d.vrml.scripting.external.buffer.ExternalEventAdapter;
 
 /**
  * Implementation of SAIEventAdapterFactory.
- *  <p>
+
  * This implementation of SAIEventAdapterFactory maintains a mapping
  * from VRMLNodeType to SAIEventAdapter so that a one-to-one mapping occurs.
- *  <p>
+
  * This class uses the BufferedSAIEventAdapter class for its SAIEventAdapter
  * instances.
  */

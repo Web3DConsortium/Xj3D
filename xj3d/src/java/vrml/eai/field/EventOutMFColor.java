@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * VRML eventOut class for MFColor.
- *  <p>
+
  * Colour values are represented as floating point numbers between [0 - 1]
  * as per the VRML IS specification Section 4.4.5 Standard units and
  * coordinate system
@@ -73,7 +73,7 @@ public abstract class EventOutMFColor extends EventOutMField
   /**
    * Get a particular colour value in the given eventIn array. Colour values
    * are in the range [0-1].
-   *  <p>
+  
    * If the index is out of the bounds of the current array of data values an
    * ArrayIndexOutOfBoundsException will be generated.
    *

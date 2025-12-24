@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.xj3d.core.loading.SceneBuilderFactory;
 /**
  * OpenGL factory used to create new instances of the scene builder
  * on demand.
- * <p>
+
  *
  *
  * @author Justin Couch

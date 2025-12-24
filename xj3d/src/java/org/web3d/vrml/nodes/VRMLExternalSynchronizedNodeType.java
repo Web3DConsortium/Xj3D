@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ package org.web3d.vrml.nodes;
  * A listener used to provide node implementations that get pinged
  * once a frame so that they can do other offline processing that is required
  * pre or post event model evaluation.
- * <p>
+
  *
  * Note that there is a very similar interface to this one in
  * {@link org.web3d.browser.EventModelStatusListener}. Even though the methods

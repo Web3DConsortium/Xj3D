@@ -25,7 +25,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * VRML JSAI type class containing multiple vector3f fields
- * <p>
+
  *
  * Internally, the class stores the values as a single, flat array so that is
  * the most efficient method to use to avoid reallocation. All methods make

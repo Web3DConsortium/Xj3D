@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * NoRender implementation of a LoadSensor node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseMultiTextureTransform;
 
 /**
  * Null renderer implementation of a texture transform for multi-texture use.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

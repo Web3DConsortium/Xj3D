@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,16 +22,16 @@ import org.j3d.util.ErrorReporter;
 /**
  * The handler that the content loading thread pool will call to load
  * a specific request.
- * <p>
+
  *
  * Request handlers provide the implementation of the content type that will
  * perform content-specific loading. For example, script loading will be
  * different to texture loading, thus require different implementations of this
  * interface.
- * <p>
+
  *
  * <b>Implementation Requirements</b>
- * <p>
+
  *
  * As this class is being dumped into the middle of an explicitly multithreaded
  * environment, then the implementation must be able to handle that. Either a

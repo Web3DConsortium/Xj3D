@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseBorderLayout;
 
 /**
  * Null-renderer implementation of a BorderLayout node.
- * <p>
+
  *
  *
  * @author Justin Couch

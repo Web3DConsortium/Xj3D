@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,14 +22,14 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * A runtime evaluator of routes for a single execution space.
- * <p>
+
  *
  * The implementation provides a one-shot route processing mechanism. It does
  * not continuously evaluate routes. That is left to the caller code. Once the
  * processRoutes() method is called, it will loop through all available routes
  * exactly once and return to the caller. This is to conform with the
  * requirements of the event cascade processing defined in the VRML spec.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

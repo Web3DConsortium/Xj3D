@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of a material node.
- * <p>
+
  *
  * @author Russell Dodds
  * @version $Revision: 1.1 $

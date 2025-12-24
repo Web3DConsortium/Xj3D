@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,6 @@ package org.web3d.vrml.renderer.common.nodes;
 
 /**
  * A marker interface for a node that wants to know whether its visible
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

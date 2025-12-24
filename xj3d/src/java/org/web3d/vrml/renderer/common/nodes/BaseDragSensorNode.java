@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,7 +25,6 @@ import org.web3d.vrml.nodes.VRMLDragSensorNodeType;
 /**
  * An abstract representation of any form of sensor for
  * subclassing by specific implementations.
- * <p>
  *
  * @author Justin Couch, Alan Hudson
  * @version $Revision: 1.11 $

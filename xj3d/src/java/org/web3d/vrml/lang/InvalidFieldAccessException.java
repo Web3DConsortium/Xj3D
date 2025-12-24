@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.lang;
 
 /**
  * Exception indicating that a field accessType violation has occurred.
- *  <p>
+
  *
  * This is generated when a field is modified/read outside its field access
  * parameters.  Typically an initializeOnly field is written to.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -36,7 +36,7 @@ import org.web3d.vrml.nodes.VRMLScene;
 /**
  * A swing panel that implements a simple status bar capability with a
  * text readout and frames per second counter.
- * <p>
+
  *
  * A status bar automatically registers a global
  * {@link SwingProgressListener}, so there is no need to create your own in

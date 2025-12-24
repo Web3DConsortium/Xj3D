@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -123,7 +123,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * creaseAngle, viewer will clearly see where the two
      * faces meet - the edge linking the two faces is sharp.
      * Otherwise the edge linking the two faces will be smooth.
-     * <p>SFFloat creaseAngle
+    SFFloat creaseAngle
      */
     protected float vfCreaseAngle;
 
@@ -133,7 +133,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * section is replicated once for each 'spine'
      * point, and manipulated with the 'scale' and
      * 'orientation' fields.
-     * <p> This float array represents a 2D cross-section
+     This float array represents a 2D cross-section
      * in the y=0 plane.  Thus, every two float values
      * constitute a point (index [0] is the "x" value of the
      * first point, index [1] is the "z" value of the first
@@ -147,7 +147,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * equal to the initial point.  A simple case of a
      * capped open surface is a shape analogous to a soda
      * can sliced in half vertically.
-     *  <p>
+    
      * MFVec2f crossSection
      */
     protected float[] vfCrossSection;
@@ -202,7 +202,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * of spine points, the excess values are ignored.
      * If there is only one orientation value, it is
      * applied at all spine points.
-     * <p> MFRotation orientation
+     MFRotation orientation
      */
     protected float[] vfOrientation;
 
@@ -231,7 +231,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * of scale values is greater than the number of spine
      * points, the excess values are ignored.  If there is
      * only one scale value, it is applied at all spine points.
-     * <p> MFVec2f scale
+     MFVec2f scale
      */
     protected float[] vfScale;
 
@@ -257,7 +257,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * face the viewer.  If FALSE, the extruded shape
      * is treated as hollow, and user will see all
      * faces of the shape if the ends are not capped.
-     * <p>
+    
      * SFBool solid
      */
     protected boolean vfSolid;
@@ -275,7 +275,7 @@ public abstract class BaseExtrusion extends AbstractNode
      * first spine point, and second and subsequent spine points
      * should orient the cross-section so that it is
      * perpendicular to the tangent of the spine.
-     * <p> Every three values constitute a point
+     Every three values constitute a point
      * (indices [0],[1], and [2] represent the first point,
      * indices [3],[4], and [5] represent the second point, etc.).
      * The simplest spine consists of only two points. <p>

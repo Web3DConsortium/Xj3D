@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.web3d.vrml.lang;
 /**
  * Exception indicating that a node is not supported by the profiles and
  * components selected for the file/stream.
- * <p>
+
  *
  * A message is automatically generated for this node, so the caller only
  * needs to provide a string representing the name of the node. You'll need

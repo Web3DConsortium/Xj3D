@@ -31,13 +31,13 @@ import org.w3c.dom.Node;
 /**
  * An implementation of the MutableTreeNode that represents a single DOM node
  * within a JTree.
- * <p>
+
  *
  * The model is specifically tailored to display DOM objects. The model is
  * configured so that it should always ask if it allows children as some
  * DOM nodes cannot have children. This class does not add event listeners
  * as it assumes that the TreeModel it is a part of will do that for us.
- * <p>
+
  * Our basic assumption is that this tree node is dumb. It only looks after
  * its tree node children. If the DOM node it represents changes underneath it
  * then someone needs to tell it that.

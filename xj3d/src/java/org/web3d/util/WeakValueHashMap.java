@@ -29,7 +29,7 @@ import java.util.Vector;
 /**
  * An extension of HashMap which stored weak references to the values
  * in the hash map.
- * <p>
+
  *
  * Like it says in the documentation for WeakHashMap, this class
  * breaks several immutability assumptions that are assumed for

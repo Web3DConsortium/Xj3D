@@ -21,8 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.geospatial.BaseGeoMParameters;
 import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
- * NoRender implementation of an GeoMParameters
- * <p>
+ * NoRender implementation of an GeoMParameters.
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

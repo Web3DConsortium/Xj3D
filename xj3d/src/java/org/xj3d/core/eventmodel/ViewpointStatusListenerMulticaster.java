@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,13 +24,13 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 /**
  * A class which implements efficient and thread-safe multi-cast event
  * dispatching for the events defined in this package.
- * <p>
+
  *
  * This class will manage an immutable structure consisting of a chain of
  * event listeners and will dispatch events to those listeners.  Because
  * the structure is immutable, it is safe to use this API to add/remove
  * listeners during the process of an event dispatch operation.
- * <p>
+
  *
  * An example of how this class could be used to implement a new
  * component which fires "action" events:
@@ -177,11 +177,11 @@ public class ViewpointStatusListenerMulticaster
      * list can be given due to either a new world being loaded, or the active
      * navigation layer has been changed. This method is not called if a single
      * viewpoint is added or removed from the scene.
-     * <p>
+    
      *
      * If the scene contains no viewpoints at all (except the default bindable),
      * then this will be called with a null parameter.
-     * <p>
+    
      *
      * On scene or navigation layer change, it is guaranteed that this method
      * will be called before the notification of the actual bound viewpoint.
@@ -220,12 +220,12 @@ public class ViewpointStatusListenerMulticaster
      * new instance. There are many different reasons this could happen -
      * new node bound, world changed or even active navigation layer has
      * changed and this is the default in that new layer.
-     * <p>
+    
      *
      * If the file contains no viewpoints or the default viewpoint is
      * bound (due to unbinding all real viewpoints on the stack) then this
      * will be called with a null parameter.
-     * <p>
+    
      *
      * It is guaranteed that this will always contain something from the
      * currently active viewpoint list. If all change, that callback will be

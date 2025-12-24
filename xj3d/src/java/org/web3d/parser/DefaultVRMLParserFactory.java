@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2008
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.x3d.jaxp.XMLReader;
 
 /**
  * Default implementation of a factory for parsers for VRML and X3D content.
- * <p>
+
  *
  * The parser factory will handle all 3 basic forms of request - VRML 2.0, X3D
  * and a specific request for a binary parser.

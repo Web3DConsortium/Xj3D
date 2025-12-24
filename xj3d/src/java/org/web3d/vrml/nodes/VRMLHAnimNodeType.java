@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import org.j3d.geom.hanim.HAnimObject;
 
 /**
  * Denotes a node type that is part of the HAnim component.
- * <p>
+
  *
  * The HAnim component is internally implemented using the abstract HAnim
  * system from the <a href="http://code.j3d.org/">j3d.org Code Repository</a>.
@@ -35,7 +35,7 @@ public interface VRMLHAnimNodeType extends VRMLNodeType {
      * current implementation node with a new one from this new instance. This
      * may be needed at times when the user makes a change that forces the old
      * way to be incompatible and thus needing a different implementation.
-     * <p>
+    
      *
      * Nodes that have HAnim children, should recursively call this method on
      * the children.

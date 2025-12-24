@@ -20,7 +20,7 @@ package org.xj3d.io;
 
 /**
  * Listens for updates to read status on a stream.
- * <p>
+
  * @author Alan Hudson
  * @version $Revision: 1.2 $
  */

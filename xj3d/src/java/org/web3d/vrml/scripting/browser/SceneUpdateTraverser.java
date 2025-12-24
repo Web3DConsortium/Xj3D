@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.*;
 /**
  * The traverser is responsible walking through an existing scene and checking
  * to make sure all the nodes are included in the scene details.
- *  <p>
+
  * This class is used when an X3D replaceWorld() call is made with a scene.
  * That scene may not have all the details listed due to the user modification
  * (or they just created the entire scene from scratch).

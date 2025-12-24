@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.vrml.nodes;
 // none
 
 /**
- * <p>
+
  * A listener for changes in color values from the material node that are used
  * in a more global manner in the internal rendering structure.
  *
@@ -27,7 +27,7 @@ package org.web3d.vrml.nodes;
  * values back to the geometry for use there when there is no lighting. This
  * listener instance is typically implemented by the shape node, but passed
  * down to the material through the appearance.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.sav.VRMLParseException;
 /**
  * An implementation of the ErrorReporter interface that just writes everything
  * to System.out System.err.
- * <p>
+
  *
  * The default implementation to be used as convenience code for when the end
  * user has not supplied their own instance.

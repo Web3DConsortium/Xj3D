@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Listing of type constants for X3D nodes.
- * <p>
+
  *
  * The type constants only represent the node classification types (abstract
  * types), not the individual node type.

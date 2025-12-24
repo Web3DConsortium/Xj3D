@@ -37,7 +37,7 @@ import org.web3d.vrml.renderer.common.nodes.group.BaseGroup;
 
 /**
  * OpenGL implementation of a Group node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.22 $

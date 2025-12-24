@@ -19,10 +19,10 @@ import vrml.eai.Node;
 
 /**
  * VRML eventIn class for MFNode.
- *  <p>
+
  * Get the values of a node array. The java <code>null</code> reference is
  * treated to be equivalent to the VRML <code>NULL</code> field values.
- *  <p>
+
  * It is not illegal to construct an array where some members of the array are
  * null pointers. Due to no specification on the intended result in the VRML
  * specification, the response given by the browser is implementation
@@ -44,7 +44,7 @@ public abstract class EventOutMFNode extends EventOutMField
 
   /**
    * Get the value of the array of nodes.
-   *  <p>
+  
    *
    * @return The array of node references
    */
@@ -62,12 +62,12 @@ public abstract class EventOutMFNode extends EventOutMField
 
   /**
    * Get a particular node value in the given eventOut array.
-   *  <p>
+  
    * If the index is out of the bounds of the current array of data values an
    * ArrayIndexOutOfBoundsException will be generated. If the Node value is
    * NULL because the browser implementation keeps null references then this
    * method will return a null pointer without throwing any exception.
-   *  <p>
+  
    * @param index The position to read the values from
    * @return The node reference
    *

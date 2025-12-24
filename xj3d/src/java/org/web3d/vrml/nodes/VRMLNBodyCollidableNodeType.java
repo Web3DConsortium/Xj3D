@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,16 +23,16 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 /**
  * Representation of X3DCollidableNode in terms of the rigid body physics
  * component.
- * <p>
+
  *
  * See the specification definition at
  * http://www.xj3d.org/extensions/rigid_physics.html
- * <p>
+
  *
  * This class is named NBodyCollidable because there is already the generic
  * VRMLCollidableNodeType defined in Xj3D for representing user-collidable
  * geometry with the avatar.
- * <p>
+
  *
  * The X3D node definition is:
  * <pre>

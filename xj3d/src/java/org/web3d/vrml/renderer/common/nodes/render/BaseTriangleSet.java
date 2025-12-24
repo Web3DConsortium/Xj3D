@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,8 +25,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseTriangleGeometryNode;
 /**
  * An abstract implementation of any node that uses component nodes to provide
  * coordinate, normal and texture information.
- * <p>
- *
  *
  * @author Justin Couch, Alan Hudson
  * @version $Revision: 1.9 $

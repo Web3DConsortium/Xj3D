@@ -24,7 +24,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
  * It serves simply as a wrapper around the VRMLNodeType implementation,
  * although that task does include producing wrappers around the various
  * EventIn and EventOut classes.
- *  <p>
+
  * @author Brad Vender
  * @version 1.0
  */

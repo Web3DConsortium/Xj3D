@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,11 +24,11 @@ import java.util.List;
 
 /**
  * Represents the logical concatenation of other readers.
- * <p>
+
  * The standard java.io package does not provide this capability so this
  * class does the same as {@link java.io.SequenceInputStream} except for
  * {@link java.io.Reader} derived classes.
- * <p>
+
  * It starts out with an ordered collection of input streams and reads from
  * the first one until end of file is reached,whereupon it reads from the
  * second one, and so on, until end of file is reached
@@ -98,7 +98,7 @@ public class SequenceReader extends Reader {
      * available because the end of the stream has been reached, the value
      * <code>-1</code> is returned. This method blocks until input data is
      * available, the end of the stream is detected, or an exception is thrown.
-     * <p>
+    
      * This method tries to read one character from the current substream. If
      * it reaches the end of the stream, it calls the <code>close</code>
      * method of the current substream and begins reading from the next
@@ -129,7 +129,7 @@ public class SequenceReader extends Reader {
      * into an array of bytes. This method blocks until at least 1 byte
      * of input is available. If the first argument is <code>null</code>,
      * up to <code>len</code> bytes are read and discarded.
-     * <p>
+    
      * The <code>read</code> method of <code>SequenceReader</code>
      * tries to read the data from the current substream. If it fails to
      * read any characters because the substream has reached the end of
@@ -167,7 +167,7 @@ public class SequenceReader extends Reader {
      * Closes this input stream and releases any system resources
      * associated with the stream. A closed <code>SequenceReader</code>
      * cannot  perform input operations and cannot be reopened.
-     * <p>
+    
      * If this stream was created from an list, all remaining elements
      * are requested from the list and closed before the <code>close</code>
      * method returns. of <code>Reader</code> .

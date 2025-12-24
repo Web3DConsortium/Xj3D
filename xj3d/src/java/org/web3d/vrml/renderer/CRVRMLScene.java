@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.web3d.vrml.nodes.VRMLScene;
 
 /**
  * A representation of a complete scene in VRML and X3D.
- * <p>
+
  *
  * The scene returns lists of nodes of the given type. This list contains
  * all of the nodes of that type in the order that they are declared in the

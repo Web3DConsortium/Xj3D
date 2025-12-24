@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of a TriangleStripSet node.
- * <p>
+
  *
  *
  * @author Justin Couch

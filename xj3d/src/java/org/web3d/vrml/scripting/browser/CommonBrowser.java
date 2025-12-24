@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -37,7 +37,7 @@ import org.xj3d.core.loading.WorldLoaderManager;
 /**
  * The common parts of a browser implementation that all the scripting
  * interfaces require.
- *  <p>
+
  *
  * This class is a partial implementation that is then extended for
  * version-specific functionality. There are major functional differences
@@ -45,7 +45,7 @@ import org.xj3d.core.loading.WorldLoaderManager;
  * differently. For example createVrmlFromURL is asynchronous in VRML97
  * by synchronous in X3D and therefore not implemented in this base
  * class. Look to the derived classes for a complete implementation.
- * <p>
+
  *
  * The current implementation ignores any parameter values provided by the
  * world.
@@ -280,7 +280,7 @@ public abstract class CommonBrowser {
      * Load the URL as the new root of the scene. Replaces all the current
      * scene graph with the new world. A non-blocking call that will change the
      * contents at some time in the future.
-     *  <p>
+    
      * Generates an immediate SHUTDOWN event and then when the new contents are
      * ready to be loaded, sends an INITIALIZED event.
      *

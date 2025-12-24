@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * NoRender implementation of an ElevationGrid
- * <p>
+
  *
  * TODO:
  *    Needed Listeners: solid

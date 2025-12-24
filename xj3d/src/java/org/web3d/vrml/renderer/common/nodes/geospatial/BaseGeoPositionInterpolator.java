@@ -36,18 +36,18 @@ import org.xj3d.impl.core.eventmodel.OriginManagerFactory;
 /**
  * Abstract implementation of a position interpolator so that specific
  * renderer instances can derive from it.
- * <p>
+
  *
  * Interpolator nodes are designed for linear keyframed animation.
  * Interpolators are driven by an input key ranging [0..1] and produce
  * corresponding piecewise-linear output functions.
- * <p>
+
  *
  * As interpolators all have the same number and named fields, we perform all
  * of the setup here in this class. The handling of the basic fields are
  * performed where you see the overridden methods, however routing and sets
  * are not looked after.
- * <p>
+
  *
  * If the key and keyValue fields are not the same length then we take
  * the lesser of the two and only assign that many vertices to the
@@ -734,7 +734,7 @@ public abstract class BaseGeoPositionInterpolator extends BaseInterpolatorNode
      * and value information. This is an expensive method as you must clear
      * the entire interpolator and start from scratch. Obviously we don't
      * expect people to be changing their key values every other frame.
-     * <p>
+    
      * If the key and keyValue fields are not the same length then we take
      * the lesser of the two and only assign that many vertices to the
      * interpolator to handle.

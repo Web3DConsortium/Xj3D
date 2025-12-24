@@ -38,7 +38,7 @@ import org.xj3d.core.eventmodel.LayerRenderingManager;
 /**
  * Minimalist representation of a core of a browser implemented using the OpenGL
  * rendering APIs.
- * <p>
+
  *
  * Does not support rendering to screen captures or profiling.
  *

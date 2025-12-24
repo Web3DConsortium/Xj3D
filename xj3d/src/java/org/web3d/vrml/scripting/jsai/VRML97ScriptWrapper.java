@@ -39,7 +39,7 @@ import org.web3d.vrml.scripting.ScriptWrapper;
 /**
  * A wrapper class used to convert between the Xj3D implementation specific
  * details and the VRML97 spec requirements for a script.
- * <p>
+
  *
  * Note that as this class does not wrap VRML200x scripts, the class does not
  * need to take an instance of VRMLScriptNodeType as we cannot change the field

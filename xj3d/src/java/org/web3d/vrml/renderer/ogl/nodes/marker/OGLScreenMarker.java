@@ -42,7 +42,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL-renderer implementation of a ScreenMarker node.
- * <p>
+
  *
  * @author Rex Melton
  * @version $Revision: 1.8 $

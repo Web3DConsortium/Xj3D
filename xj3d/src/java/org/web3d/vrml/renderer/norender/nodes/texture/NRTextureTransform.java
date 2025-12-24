@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseTextureTransform;
 
 /**
  * Null renderer implementation of a texture transform.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

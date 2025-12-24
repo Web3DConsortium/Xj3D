@@ -35,13 +35,13 @@ import org.web3d.x3d.sai.X3DFieldEventListener;
  * implementation of the ExternalEventAdapter interface.  In other words,
  * the end user cannot slow down the pace of the simulation by delays in
  * the callback processing.
- *  <p>
+
  * SAIEventAdapter is an adapter between the underlying event model and
  * the listener callbacks.
  * The purpose of having this interface is to support having the event
  * changed callbacks occurring in the same thread as the event model, or
  * occurring outside the event model's thread.
- *  <p>
+
 */
 class BufferedSAIEventAdapter extends BaseExternalEventAdapter implements ExternalEventAdapter,
     VRMLNodeListener, ExternalOutputBufferReclaimer {

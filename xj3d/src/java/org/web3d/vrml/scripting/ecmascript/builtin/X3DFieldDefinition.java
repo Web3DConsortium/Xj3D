@@ -20,7 +20,7 @@ import org.j3d.util.HashSet;
 
 /**
  * ProfileInfo miscellaneous object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

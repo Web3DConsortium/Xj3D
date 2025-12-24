@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -33,14 +33,14 @@ import org.xj3d.core.eventmodel.NavigationStatusListenerMulticaster;
 /**
  * An abstract representation of a class that would be responsible for
  * performing Viewpoint management.
- * <p>
+
  *
  * This interface represents a further abstracted view of viewpoint management
  * handling beyond the {@link org.web3d.browser.BrowserCore}. This gives you
  * all the handling that is normally seen at a user interface level. You should
  * use one or the other, but not both as implementations of this class will
  * also interact with BrowserCore.
- * <p>
+
  *
  * <b>Note:</b> This code does not current handle the navigation info nodes. It
  * only deals with the string type list as that is all we currently have

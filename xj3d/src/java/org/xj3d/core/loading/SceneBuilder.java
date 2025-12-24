@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.sav.ScriptHandler;
 
 /**
  * Definition of a class that is used to build scenes from parsed content.
- * <p>
+
  *
  * The interface is used to define a complete system that can be passed to
  * a VRMLReader instance and create a complete scene graph so that it can

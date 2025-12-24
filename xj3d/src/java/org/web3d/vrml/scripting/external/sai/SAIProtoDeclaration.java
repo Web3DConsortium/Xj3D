@@ -28,7 +28,7 @@ import org.web3d.x3d.sai.X3DProtoInstance;
 
 /**
  * Implementation wrapper of the X3DProtoDeclaration interface
- * <p>
+
  * Based to a significant amount on the ProtoDeclaration
  * implementation for the EcmaScript scripting.
  *

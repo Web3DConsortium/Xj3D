@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,30 +30,30 @@ import org.web3d.vrml.nodes.*;
 import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
- * <p>
+
  * Common base implementation of a Text node.
- * </p>
+
  *
- * <p>
+
  * This base class provides a number of convenience methods for generating the
  * visible text. It is not required that the derived implementation make use of
  * them, but it assumes that you know when you create the class whether you will
  * need them or not.
- * </p>
+
  *
- * <p>
+
  * Text generation is provided by a texture that is an alpha mask over the stock
  * texture and geometry. VRML requires that a text object be fully textured
  * using the normal appearance node information, so this is just used as an alpha
  * mask to control what geometry is actually visible.
- * </p>
+
  *
- * <p>
+
  * The texture generation does not do the full rendering of the text. It
  * assumes that the derived class will also contribute to the process by
  * playing with texture coordinates. The following fields from the FontStyle
  * require the derived class to do something.
- * </p>
+
  *
  * <ul>
  * <li><i>leftToRight</i>: If set to FALSE, then reverse the texture
@@ -66,9 +66,9 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
  * coordinates look sane and you can take the right part of the image as
  * needed without any extra calculation.
  *
- * <p>
+
  * <b>Properties</b>
- * <p>
+
  * The following properties are used by this class
  * <ul>
  * <li><code>org.web3d.vrml.nodes.fontstyle.font.antialiased</code> Boolean

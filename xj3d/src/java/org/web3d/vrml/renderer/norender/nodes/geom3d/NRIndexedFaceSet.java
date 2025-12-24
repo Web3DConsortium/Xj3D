@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of an IndexedFaceSet.
- * <p>
+
  *
  * TODO:
  *    Needed Listeners: solid

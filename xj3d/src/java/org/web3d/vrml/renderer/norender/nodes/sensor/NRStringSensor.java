@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.sensor.BaseStringSensor;
 
 /**
  * norender implementation of a StringSensor node.
- * <p>
+
  *
  * The definitions of action keys between VRML and Java are a little
  * different. VRML defines the arrow keys as action keys where Java does

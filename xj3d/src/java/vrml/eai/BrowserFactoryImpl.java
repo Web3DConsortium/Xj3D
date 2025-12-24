@@ -21,12 +21,12 @@ import java.net.InetAddress;
 /**
  * The factory implementation interface for obtaining references to browser
  * instances.
- *  <p>
+
  * Any implementation of a VRML browser that wishes to provide their own
  * customized version of the browser factory should must subclass this class.
  * In particular this is useful if the implementation needs to stay within the
  * package defined by the application for other reasons.
- *  <p>
+
  * A default implementation of this class is the DefaultBrowserFactoryImpl which
  * is package access only.
  *
@@ -71,7 +71,7 @@ public interface BrowserFactoryImpl
    * at some embed location. Used when attempting to access a browser on
    * another HTML page within a multi-framed environment, or if there are a
    * number of VRML browser instances located on the same page.
-   *  <p>
+  
    * If the frame name is a zero length string or null then it is assumed to be
    * located on the same HTML page as the applet. The index is the number of
    * the embed VRML browser starting from the top of the page. If there are
@@ -99,7 +99,7 @@ public interface BrowserFactoryImpl
    * located on remote machines. If there are a number of browsers running on
    * a remote machine, they can be differentiated by the port number they are
    * listening on.
-   *  <p>
+  
    * There is no default port number for VRML browsers.
    *
    * @param address The address of the machine to connect to

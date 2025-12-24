@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -33,7 +33,7 @@ import org.web3d.vrml.nodes.VRMLViewpointNodeType;
 /**
  * Representation of the browser core interfaces set up for a static scene
  * load.
- * <p>
+
  *
  * There is no runtime infrastructure here - all it does is present a basic,
  * functional core representation to allow scripts to behave somewhat

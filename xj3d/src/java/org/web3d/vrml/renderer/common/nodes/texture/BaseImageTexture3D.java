@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2006
+ *                        Web3d.org Copyright (c) 2001 - 2026-2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.util.URLChecker;
 
 /**
  * Common implementation of a 3D ImageTexture node.
- * <p>
+
  *
  * No specific image types are directly handled by this node.
  *

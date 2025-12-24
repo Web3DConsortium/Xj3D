@@ -27,19 +27,19 @@ import org.web3d.vrml.renderer.common.nodes.render.BaseNormal;
 
 /**
  * norender implementation of a normal node.
- * <p>
+
  *
  * The normal node does not occupy a space in the Java 3D
  * scene graph as it is part of the GeometryArray class. This is used as
  * a VRML construct only. When VRML changes the values here, we pass them
  * back courtesy of the listeners to the children nodes.
- * <p>
+
  * Vectors are held internally as a flat array of values. The point list
  * returned will always be flat. We do this because Java3D takes point values
  * into the geometry classes as a single flat array. The array returned will
  * always contain exactly the number of points specified even though
  * internally we may do other things.
- * <p>
+
  * The effect of this is that point values may be routed out of this node as
  * a flat array of points rather than a 2D array. Receiving nodes should check
  * for this version as well. This implementation will handle being routed

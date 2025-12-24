@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,7 +31,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseInterpolatorNode;
 /**
  * Abstract implementation of a position interpolator using NURBS path
  * definition so that specific renderer instances can derive from it.
- * <p>
+
  *
  * If the key and keyValue fields are not the same length then we take
  * the lesser of the two and only assign that many vertices to the

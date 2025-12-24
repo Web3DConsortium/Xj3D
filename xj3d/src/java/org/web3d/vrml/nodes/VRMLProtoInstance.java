@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,10 +20,10 @@ import org.web3d.vrml.lang.VRMLFieldDeclaration;
 
 /**
  * A instance of a Prototype.
- * <p>
+
  * Can be placed anywhere a regular VRML node can. This representation allows
  * access at the root node that is the first of the proto.
- * <p>
+
  * This proto may represent a prototype that comes from an external source. It
  * is possible that when the implementation asks for a node it may still be
  * loading it's contents. In this case, the value returned is null. It is an

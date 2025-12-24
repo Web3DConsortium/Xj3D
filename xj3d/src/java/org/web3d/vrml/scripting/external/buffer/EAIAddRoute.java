@@ -20,7 +20,7 @@ import org.web3d.vrml.scripting.browser.VRML97CommonBrowser;
 /** EAIAddRoute is the ExternalEvent form of the Browser.addRoute call.
   * Like the other queued Browser calls, this event suffers from a timing
   * problem about when the parameter checking occurs in queued form.
-  *  <p>
+ 
   * Both the CommonBrowser and BrowserCore instances are stored because it
   * it expected that the global execution space won't always be the same
   * when the event is actually processed.

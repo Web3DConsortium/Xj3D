@@ -37,7 +37,7 @@ import org.web3d.vrml.renderer.common.nodes.hanim.BaseHAnimHumanoid;
 
 /**
  * OpenGL implementation of a HAnimHumanoid node.
- * <p>
+
  *
  * This implementation looks like the standard group node but
  *

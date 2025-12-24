@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import java.util.EmptyStackException;
 
 /**
  * A stack that is based on int values.
- *  <p>
+
  *
  * This stack is designed to be used in a high-speed, single threaded
  * environment. It is directly backed by an array for fast access. Similar to

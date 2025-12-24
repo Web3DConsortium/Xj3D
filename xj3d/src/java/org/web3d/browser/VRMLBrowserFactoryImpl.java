@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -32,7 +32,7 @@ import vrml.eai.NoSuchBrowserException;
 /**
  * An implementation of the EAI {@link vrml.eai.BrowserFactoryImpl} interface
  * that creates a browser that uses Java3D for the renderer.
- * <p>
+
  * This browser factory delegates to the other known browser factories based on
  * a hard coded search sequence and an optional user supplied renderer hint.
  *
@@ -153,7 +153,7 @@ public class VRMLBrowserFactoryImpl implements BrowserFactoryImpl {
      * located on remote machines. If there are a number of browsers running on
      * a remote machine, they can be differentiated by the port number they are
      * listening on.
-     *  <p>
+    
      * There is no default port number for VRML browsers.
      *
      * @param address The address of the machine to connect to

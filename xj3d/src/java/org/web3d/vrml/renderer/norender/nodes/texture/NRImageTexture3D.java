@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseImageTexture3D;
 
 /**
  * Null-renderer implementation of a ImageTexture3D node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

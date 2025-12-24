@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                      Web3d.org Copyright (c) 2005 - 2006
+ *                      Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,7 +23,7 @@ import org.xj3d.core.eventmodel.LayerManager;
 
 /**
  * Empty implementation of the layer render manager for the Loader process.
- * <p>
+
  *
  * NOTE:
  *   This is probably a temporary class until we decide what to do with the

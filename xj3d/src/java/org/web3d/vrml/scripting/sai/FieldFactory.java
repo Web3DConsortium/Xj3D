@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.x3d.sai.X3DField;
 
 /**
  * Factory abstract interface for generating field objects from a given node.
- * <p>
+
  *
  * The idea of this factory is to break a circular compile dependency
  * between SF/MFNode and all the field classes.

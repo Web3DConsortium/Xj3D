@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Base representation of an X3D field type.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $
@@ -61,7 +61,7 @@ public interface X3DField {
      * changes in a readable field. A future extension to the specification,
      * or a browser-specific extension, may allow for listeners to be added
      * to writable nodes as well.
-     * <p>
+    
      * A listener instance cannot have multiple simultaneous registrations.
      * If the listener instance is currently registered, this request shall
      * be silently ignored.

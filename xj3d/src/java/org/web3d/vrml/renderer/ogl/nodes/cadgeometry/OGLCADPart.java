@@ -37,7 +37,7 @@ import org.web3d.vrml.renderer.common.nodes.cadgeometry.BaseCADPart;
 
 /**
  * OpenGL implementation of a CADPart node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.6 $

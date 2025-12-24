@@ -24,21 +24,21 @@ import org.web3d.vrml.nodes.VRMLExternProtoDeclare;
 
 /**
  * The representation of an EXTERNPROTO declaration.
- * <p>
+
  *
  * This is the representation of the declaration, not of a runtime node. For
  * this reason you cannot access the internals, nor can you work with the
  * individual field values. You can, however, perform basic introspection
  * tasks such as looking at the available field definitions and seeing the
  * basic node type.
- * <p>
+
  *
  * The implementation extends the basic proto declaration class to represent
  * externally represented information. While all the basic method calls are
  * supported, they do need to have their behaivour modified somewhat to deal
  * with the external nature of this structure. The following modifications to
  * the behaviours are made:
- * <p>
+
  *
  * <i>createInstance()</i><br>
  * <i>getNodeType()</i><br>
@@ -47,17 +47,17 @@ import org.web3d.vrml.nodes.VRMLExternProtoDeclare;
  * check the load state first before trying to create an instance if they
  * wish to avoid this error.
  *
- * <p>
+
  * <i>getFieldDeclarations()</i><br>
  * When queried, this will return the definitions of the fields as declared
  * in the externproto, not the underlying proto definition.
- * <p>
+
  *
  * No access is provided to the underlying proto declaration that fulfills
  * this external representation. If the user wishes to access that, then
  * they may make use of the createVrmlFromURL feature of the browser to load
  * the individual file as needed.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $

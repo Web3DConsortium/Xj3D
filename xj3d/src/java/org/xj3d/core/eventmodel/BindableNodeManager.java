@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,7 @@ import org.web3d.vrml.nodes.VRMLTimeDependentNodeType;
 
 /**
  * The manager of bindable/activatable nodes at runtime.
- * <p>
+
  *
  * This common manager is responsible for handling the details of a single
  * type of bindable or activatable node. The primary difference between the

@@ -19,9 +19,9 @@ package org.web3d.vrml.nodes;
 // none
 
 /**
- * <p>
+
  * A listener for changes in Texture Coordinate Mode changes.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

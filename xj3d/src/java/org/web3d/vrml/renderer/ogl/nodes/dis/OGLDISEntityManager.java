@@ -32,7 +32,7 @@ import org.web3d.vrml.renderer.DefaultNodeFactory;;
 
 /**
  * OGL renderer implementation of a DISEntityManager node.
- * <p>
+
  *
  * This node is purely informational within the scene graph. It does not have
  * a renderable representation.

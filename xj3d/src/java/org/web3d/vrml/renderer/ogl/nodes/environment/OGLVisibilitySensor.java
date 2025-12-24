@@ -35,7 +35,7 @@ import org.web3d.vrml.renderer.common.nodes.environment.BaseVisibilitySensor;
 
 /**
  * OpenGL implementation of a VisibilitySensor node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.6 $

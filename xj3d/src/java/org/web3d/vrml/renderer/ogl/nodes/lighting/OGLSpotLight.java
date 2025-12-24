@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLLightNodeType;
 
 /**
  * OpenGL implementation of a spotlight.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.11 $

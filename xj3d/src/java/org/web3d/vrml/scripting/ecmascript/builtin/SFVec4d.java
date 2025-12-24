@@ -22,7 +22,7 @@ import org.j3d.util.HashSet;
 
 /**
  * SFVec4d field object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

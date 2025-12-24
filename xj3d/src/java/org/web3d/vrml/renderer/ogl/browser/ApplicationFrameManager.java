@@ -23,7 +23,7 @@ import org.xj3d.core.eventmodel.EventModelEvaluator;
 /**
  * Per-frame manager that uses the Aviatrix3D ApplicationUpdateObserver
  * to clock the scene graph time with.
- * <p>
+
  *
  * Even as this is a thread, it is not automatically started. The user is
  * required to start it separately.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,9 +20,9 @@ package org.xj3d.core.loading;
 
 /**
  * Collection of internal constants for load manager implementors
- * <p>
+
  * The default sort order is defined to be:
- * </p>
+
  *
  * <ol>
  * <li><code>loadURL</code> (any loadURL() call from the SAI/EAI)</li>
@@ -40,12 +40,12 @@ package org.xj3d.core.loading;
  * <li><code>others</code> Anything else not covered by one of the fixed types</li>
  * </ol>
  *
- * <p>
+
  * In keeping with the extensible nature of Xj3D, other types may be defined as
  * part of the sort order definition. The loadURL type is always the highest
  * priority and cannot be changed. Specifying this in the sort order list will be
  * ignored.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

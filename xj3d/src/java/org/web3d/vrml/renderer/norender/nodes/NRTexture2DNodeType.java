@@ -19,7 +19,6 @@ import org.web3d.vrml.nodes.VRMLTexture2DNodeType;
 
 /**
  * Defines a 2D texture.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

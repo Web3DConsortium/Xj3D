@@ -24,7 +24,7 @@ import vrml.eai.field.*;
  *  EventOutSFImageWrapper provides the functional implementation of
  *  EventOutSFImage for the SimpleBrowser class.  The functionality of this 
  *  class is specified in the EAI 2.0 specification.
- *  <p>
+
  * See VRML97 Specification, section 5.5 for details of the data encoding
  * used for this data type.  The abreviated explaination is that it is
  * width height num-components pixel-values.

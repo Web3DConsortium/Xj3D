@@ -22,7 +22,7 @@ import org.web3d.vrml.scripting.ecmascript.builtin.AbstractScriptableObject;
 
 /**
  * ProfileInfo miscellaneous object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

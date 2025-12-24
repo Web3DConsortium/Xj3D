@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseGridLayout;
 
 /**
  * Null-renderer implementation of a GridLayout node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

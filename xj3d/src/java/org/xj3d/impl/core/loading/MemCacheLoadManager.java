@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,14 +21,14 @@ import org.xj3d.core.loading.FileCache;
 /**
  * A manager for loading files that are external to the currently loading file
  * eg Textures, inlines and protos.
- * <p>
+
  *
  * The loader is given a scene and told to start loading the contents. During
  * this time items progress from pending to loading to loaded. The load manager
  * is cancelable so that a particular scene can be interrupted part way through
  * loading. The manager is designed to load multiple scenes in parallel or to
  * have parallel instances of this manager loading data.
- * <p>
+
  *
  * This implementation has two memory constraints - the maximum allocated by
  * the user and total constraints by the JVM. If the user specifies more memory
@@ -37,7 +37,7 @@ import org.xj3d.core.loading.FileCache;
  * used can be discarded by the VM.
  *
  * <b>Properties</b>
- * <p>
+
  * The following properties are used by this class
  * <ul>
  * <li><code>org.web3d.vrml.nodes.loader.cache.mem.size</code> The amount of

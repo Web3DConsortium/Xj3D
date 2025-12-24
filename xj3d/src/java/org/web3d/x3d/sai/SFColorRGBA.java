@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Representation of a SFColorRGBA field.
- * <p>
+
  * Colour values are represented as floating point numbers between [0 - 1]
  * as per the VRML IS specification Section 4.4.5 Standard units and
  * coordinate system.
@@ -38,11 +38,11 @@ public interface SFColorRGBA extends X3DField {
     /**
      * Set the colour value in the given eventIn.  Colour values are required
      * to be in the range [0-1].
-     * <p>
+    
      * The value array must contain at least three elements. If the array
      * contains more than 4 values only the first three values will be used and
      * the rest ignored.
-     * <p>
+    
      * If the array of values does not contain at least 3 elements an
      * ArrayIndexOutOfBoundsException will be generated. If the colour values are
      * out of range an IllegalArgumentException will be generated.

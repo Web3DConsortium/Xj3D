@@ -70,7 +70,7 @@ class SFBoolWrapper extends BaseFieldWrapper implements SFBool, ExternalEvent, E
 
     /**
      * Get the value in the given eventOut.
-     *  <p>
+    
      * @return The boolean value of the eventOut
      */
         @Override
@@ -132,7 +132,7 @@ class SFBoolWrapper extends BaseFieldWrapper implements SFBool, ExternalEvent, E
 
     /**
      * Set the value in the given eventIn.
-     *  <p>
+    
      * @param value The boolean value to set the eventIn to.
      */
         @Override

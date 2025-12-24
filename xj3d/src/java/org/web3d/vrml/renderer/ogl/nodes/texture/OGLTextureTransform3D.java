@@ -32,7 +32,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLTextureTransformListener;
 
 /**
  * Java3D implementation of a texture transform.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

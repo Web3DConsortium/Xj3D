@@ -132,7 +132,7 @@ class MFBoolWrapper extends BaseFieldWrapper
 
     /**
      * Get a particular boolean value in this field.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *

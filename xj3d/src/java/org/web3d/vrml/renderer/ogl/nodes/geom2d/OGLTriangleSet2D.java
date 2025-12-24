@@ -28,10 +28,10 @@ import org.web3d.vrml.renderer.common.nodes.GeometryUtils;
 
 /**
  * OpenGL implementation of an TriangleSet2D
- * <p>
+
  *
  * The point set directly maps to Aviatrix3D's PointArray class.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

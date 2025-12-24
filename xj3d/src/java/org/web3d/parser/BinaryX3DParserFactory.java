@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2008
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.web3d.vrml.parser.VRMLParserFactory;
 /**
  * Implementation of a factory that will only generate parsers of X3D binary
  * content.
- * <p>
+
  *
  * The parser factory will handle all 3 basic forms of request - VRML 2.0, X3D
  * and a specific request for a binary parser.

@@ -15,13 +15,13 @@ package org.web3d.x3d.sai;
 /**
  * Browser interface that represents the additional abilities an external
  * application is granted to the VRML browser.
- * <p>
+
  * A number of the methods in this application can take strings representing URLs.
  * Relative URL strings contained in URL fields of nodes or these method
  * arguments are interpreted as follows:
- * <p>
+
  * Relative URLs are treated as per clause B.3.5 of the EAI Java Bindings
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.4 $
@@ -33,7 +33,7 @@ public interface ExternalBrowser extends Browser {
      * is about to begin a series of updates. No events will be passed to the
      * VRML world. They will be buffered pending release due to a subsequent
      * call to endUpdate.
-     * <p>
+    
      * This call is a nesting call which means subsequent calls to beginUpdate
      * are kept on a stack. No events will be released to the VRML browser
      * until as many endUpdates have been called as beginUpdate.
@@ -51,11 +51,11 @@ public interface ExternalBrowser extends Browser {
      * VRML browser. All events posted to this point from the last time that
      * beginUpdate was called are released into the VRML browser for
      * processing at the next available opportunity.
-     * <p>
+    
      * This call is a nesting call which means subsequent calls to beginUpdate
      * are kept on a stack. No events will be released to the VRML browser
      * until as many endUpdates have been called as beginUpdate.
-     * <p>
+    
      * If no beginUpdate has been called before calling this method, it has
      * no effect.
      *

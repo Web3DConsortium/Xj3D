@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseSensorNode;
 
 /**
  * Base implementation of a LoadSensor node.
- * <p>
+
  * TODO: Likely need switch over to use a Set to track completion
  * so that set_url during tracking doesn't cause extra counts.
  * TODO: Changes of watchList might happen after an asset has loaded when

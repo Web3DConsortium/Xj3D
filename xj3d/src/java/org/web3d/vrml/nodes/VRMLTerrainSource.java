@@ -19,9 +19,9 @@ package org.web3d.vrml.nodes;
 // none
 
 /**
- * <p>
+
  * Representation of a node that supplies terrain data.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

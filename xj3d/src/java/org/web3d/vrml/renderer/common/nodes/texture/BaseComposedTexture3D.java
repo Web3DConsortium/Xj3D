@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2007
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2007
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseTexture3DNode;
 
 /**
  * Base implementation of a ComposedTexture3D node.
- * <p>
+
  *
  * The number of textures in the depth must be an even number. If the
  * value is not an even number, an error message is issued, but the set is

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.util;
  * A sequence, much like the collections List interface, specifically
  * designed for queuing up sequences of Xj3DKeyEvents between
  * rendering frames.
- * <p>
+
  * The methods involved with loading a sequence or manipulating it's
  * underlying array of events are synchronized.
  *

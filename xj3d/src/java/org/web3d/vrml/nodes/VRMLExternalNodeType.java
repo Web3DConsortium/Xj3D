@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,17 +21,17 @@ import org.web3d.vrml.lang.VRMLNode;
 /**
  * Representation of a node that defines it's content at a URL separate to
  * this file that will also need loading.
- * <p>
+
  * The idea behind this node interface is that we are going to allow a
  * separate thread from the one that created the initial node to simultaneously
  * load the contents of this node. As we really don't know all the possible
  * types to load, particularly with profiles, a common base class will make
  * life much easier for us to deal with in a generic fashion.
- * <p>
+
  * The operation of this interface is to get the loader thread to set the
  * load state as it is going. Once it has loaded the content it then tells the
  * implementation about what it has found.
- * <p>
+
  * When fetching the URL list, it is expected that all URLs will be fully
  * qualified. It will be up to the implementor to process the set URLs to
  * contain only fully qualified URLs. For this, we will ensure that the world

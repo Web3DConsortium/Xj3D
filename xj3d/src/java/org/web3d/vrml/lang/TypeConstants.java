@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.lang;
 
 /**
  * Listing of type constants for nodes.
- * <p>
+
  * Each interface in the vrml.nodes area will have an entry.  These will be
  * used to make parsing faster by allowing the use of switch statements instead
  * of large if/else

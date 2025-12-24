@@ -26,7 +26,7 @@ import java.util.TreeSet;
  * Customized queue implementation specifically designed to handle the needs
  * of X3D/VRML external content loading by compressing multi requests for the
  * same URL into a single structure.
- * <p>
+
  *
  * The queue sorts the incoming requests based on priority. The priority can
  * be defined based on the value of the system property

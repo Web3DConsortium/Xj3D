@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Listing of constants relating to fields types.
- * <p>
+
  *
  * These constants will be returned by the various methods of
  * {@link X3DFieldDefinition}.

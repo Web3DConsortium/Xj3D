@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,7 +30,7 @@ import org.xj3d.core.eventmodel.RouteManager;
 
 /**
  * Representation of a complete X3D scene graph.
- * <p>
+
  *
  * All queries to this interface return a snapshot of the current information.
  * If the scene graph changes while the end user has a handle to an map, the map

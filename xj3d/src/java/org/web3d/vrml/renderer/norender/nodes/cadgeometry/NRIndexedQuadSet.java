@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null-renderer implementation of the IndexedQuadSet node.
- * <p>
  *
  * @author Vincent Marchetti
  * @version $Revision: 1.1 $

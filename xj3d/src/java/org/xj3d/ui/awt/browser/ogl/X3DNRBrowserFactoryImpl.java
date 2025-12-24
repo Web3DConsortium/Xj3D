@@ -64,13 +64,13 @@ import org.xj3d.sai.BrowserConfig;
  * the Null renderer.
  *
  * <b>Component Creation</b>
- * <p>
+
  *
  * This implementation allows you to create a new component that is ready to
  * place content in. Parameters can be supplied in the Map as defined by
  * the SAI. The first column is the parameter name string, the second is
  * the type of data, and the third is an explanation.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.7 $

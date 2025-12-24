@@ -38,7 +38,7 @@ import org.web3d.vrml.renderer.common.nodes.cadgeometry.BaseCADAssembly;
 
 /**
  * OpenGL implementation of a group node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.4 $

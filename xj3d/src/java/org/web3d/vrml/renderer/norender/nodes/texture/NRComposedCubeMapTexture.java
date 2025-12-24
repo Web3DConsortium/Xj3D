@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseComposedCubeMapTexture;
 
 /**
  * Null-renderer implementation of a ComposedCubeMapTexture node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

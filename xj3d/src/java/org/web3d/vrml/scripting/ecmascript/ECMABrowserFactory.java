@@ -33,7 +33,7 @@ import org.xj3d.core.loading.WorldLoaderManager;
 /**
  * A factory implementation for creating and caching specific instances of
  * the script {@link vrml.Browser} interface.
- * <p>
+
  *
  *
  * @author Justin Couch

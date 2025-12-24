@@ -28,13 +28,13 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Xj3D Specific implementation of the SFNode field when extracted from part
  * of a parentNode.
- * <p>
+
  *
  * The parentNode assumes that the index and parentNode have been checked before use by
  * this class. It also assumes internally that the only way a parentNode can be
  * passed to this class is through using an instance of the JSAINode where
  * possible.
- * <p>
+
  *
  * This class interprets setting a field value to <code>null</code> as
  * clearing the child reference

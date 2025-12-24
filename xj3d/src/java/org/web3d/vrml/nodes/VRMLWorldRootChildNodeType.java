@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.nodes;
 /**
  * An abstract representation of a node that can be used directly at the root of
  * the scene graph.
- * <p>
+
  *
  * Only X3DChildNode and LayerSet nodes can appear at the root level of a
  * scene graph. This is used as a marker for that capability.

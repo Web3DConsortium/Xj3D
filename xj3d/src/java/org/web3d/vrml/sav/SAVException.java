@@ -20,7 +20,6 @@ import org.web3d.vrml.lang.VRMLException;
 
 /**
  * Superclass of all exceptions used by the Simple API for VRML parsing.
- *  <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

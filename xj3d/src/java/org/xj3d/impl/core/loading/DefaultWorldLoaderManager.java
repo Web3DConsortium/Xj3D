@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -43,7 +43,7 @@ import org.xj3d.core.eventmodel.RouteManager;
 /**
  * Independent thread used to load a world from a list of URLs and then
  * place it in the given node.
- * <p>
+
 
  This implementation is designed to work as both a loadURL() and
  createVrmlFromUrl() call handler. The difference is defined by what data

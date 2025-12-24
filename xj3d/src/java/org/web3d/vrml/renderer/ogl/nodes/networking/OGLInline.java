@@ -23,17 +23,17 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * A node that can handle inlined content from other VRML worlds.
- * <p>
+
  *
  * This implementation does not care whether the source world came from a
  * UTF8 or XML encoded file.
- * <p>
+
  *
  * While the node is awaiting content to be downloaded, it will put a wireframe
  * box around the suggested bounds of the content. If no bounds are set then
  * a 1x1x1 box is placed at the local origin. If the URL given is null, then
  * the outline box will not be shown.
- * <p>
+
  * TODO:<br>
  * - Implement a scheme to allow the updating of the contents at runtime when
  *   the URL changes. It currently removes the old content, but does not

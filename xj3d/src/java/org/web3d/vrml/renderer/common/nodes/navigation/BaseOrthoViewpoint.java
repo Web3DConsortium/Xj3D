@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,12 +29,12 @@ import org.web3d.vrml.renderer.common.nodes.BaseBindableNode;
 
 /**
  * Common implementation of an OrthoViewpoint node.
- * <p>
+
  *
  * VRML requires the use of a headlight from the NavigationInfo node.
  * For convenience, we provide a headlight here that binds with the same
  * transform as the view platform.
- * <p>
+
  *
  * Viewpoints cannot be shared using DEF/USE. They may be named as such for
  * Anchor purposes, but attempting to reuse them will cause an error. This

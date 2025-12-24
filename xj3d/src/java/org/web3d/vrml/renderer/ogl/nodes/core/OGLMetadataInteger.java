@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Implementation of the VRML MetadataInteger node.
- * <p>
+
  *
  *
  * @author Justin Couch

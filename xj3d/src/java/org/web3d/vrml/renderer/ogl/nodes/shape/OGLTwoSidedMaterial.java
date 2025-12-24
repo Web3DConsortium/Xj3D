@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLMaterialNodeType;
 
 /**
  * OpenGL implementation of a material node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

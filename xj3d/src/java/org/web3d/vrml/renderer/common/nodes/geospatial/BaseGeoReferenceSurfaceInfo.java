@@ -26,7 +26,6 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Common implementation of an GeoSRFParametersInfo node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

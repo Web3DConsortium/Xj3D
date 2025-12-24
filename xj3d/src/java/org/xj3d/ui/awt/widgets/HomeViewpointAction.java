@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2003 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,7 +25,7 @@ import org.xj3d.core.eventmodel.ViewpointManager;
 
 /**
  * An action that moves to the Home viewpoint on the main layer.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

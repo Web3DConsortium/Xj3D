@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,13 +26,13 @@ import org.web3d.vrml.nodes.proto.ProtoScene;
 /**
  * A class that is used to create real instances of protos from their
  * definitions.
- * <p>
+
  *
  * The creator strips the definition apart and builds a runtime node based on
  * the details and the node factory provided. The creator can handle one
  * instance at a time, although it will correctly parse and build nested proto
  * declarations without extra effort.
- * <p>
+
  *
  * We have a small conundrum to deal with - if the proto definition contains
  * SF/MFNode fields, we don't know whether the values should be also generated
@@ -43,12 +43,12 @@ import org.web3d.vrml.nodes.proto.ProtoScene;
  * and turn those into runtime instances. Although this may create extra
  * garbage, there seems to be no nice way of dealing with this issue without a
  * completely different architecture for the library.
- * <p>
+
  *
  * If, during the traversal processing we discover that the traversed node is
  * an instance of a J3D implementation node, we do not process it any further.
  * The basic assumption here is that the node is a USE of a j3D structure.
- * <p>
+
  *
  * Note:
  * Under the current implementation, EXTERNPROTOs are not yet catered for.

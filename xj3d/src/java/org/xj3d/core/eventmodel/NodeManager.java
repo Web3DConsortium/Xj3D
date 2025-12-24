@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Abstract representation of a class that needs to manage a specific class of
  * nodes in the system.
- * <p>
+
  *
  * VRML and X3D have a collection of nodes that require some sort of per-frame
  * management that is part of the event loop. This may be as simple as
@@ -33,7 +33,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
  * abstracted way of registering new capabilities with the
  * {@link org.xj3d.core.eventmodel.EventModelEvaluator} without needing
  * edit and recompile the entire Xj3D codebase.
- * <p>
+
  *
  * An implementation of this interface may handle pre event model updates (eg
  * sensor-style nodes), post event model updates (eg particle systems) or a
@@ -64,7 +64,7 @@ public interface NodeManager {
      * component is assumed to be the lowest level supported (ie if the given
      * level fails, then levels above this cannot be supported, but those below
      * can still be).
-     * <p>
+    
      * Mostly this is used for when initialization fails and we wish to disable
      * support for loading of nodes in that component.
      *

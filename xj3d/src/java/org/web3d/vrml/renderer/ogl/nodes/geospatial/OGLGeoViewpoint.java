@@ -34,7 +34,7 @@ import org.xj3d.core.eventmodel.OriginListener;
 
 /**
  * OpenGL implementation of an GeoViewpoint
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.12 $

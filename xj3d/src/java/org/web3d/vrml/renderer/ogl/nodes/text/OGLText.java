@@ -33,7 +33,7 @@ import org.web3d.vrml.renderer.common.nodes.text.DefaultFontStyle;
 
 /**
  * NoRender implementation of a Text
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.8 $

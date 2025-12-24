@@ -267,7 +267,7 @@ public class X3DBinaryParser implements X3DRelaxedParserConstants {
      * Set the base URL of the document that is about to be parsed. Users
      * should always call this to make sure we have correct behaviour for the
      * ContentHandler's <code>startDocument()</code> call.
-     * <p>
+    
      * The URL is cleared at the end of each document run. Therefore it is
      * imperative that it get's called each time you use the parser.
      *

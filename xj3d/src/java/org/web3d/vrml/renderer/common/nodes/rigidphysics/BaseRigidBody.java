@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -33,7 +33,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * Implementation of the RigidBody node.
- * <p>
+
  *
  * In this implementation, the sets of nodes for the bodies and geometry are
  * not expected to change much, if at all. As such, arrays are used to
@@ -872,7 +872,7 @@ public abstract class BaseRigidBody extends AbstractNode
      * Set the collection of geometry nodes that this odeBody should use to render
      * the main scene transformation. If passed a zero for numValid this method
      * will remove all current values.
-     * <p>
+    
      *
      * Geometry is allowed to be one of the grouping nodes or a shape node
      * type. However, if you provide something like a LOD or Switch, don't
@@ -959,7 +959,7 @@ public abstract class BaseRigidBody extends AbstractNode
      * Set the node that should be used to represent the mass density model.
      * Setting a value of null will clear the current model in use and return
      * the system to a spherical model.
-     * <p>
+    
      *
      * The valid odeBody nodes are Sphere, Box and Cone.
      *

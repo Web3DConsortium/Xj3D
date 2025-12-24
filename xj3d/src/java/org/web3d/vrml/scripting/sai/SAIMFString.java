@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Representation of a MFString field.
- *  <p>
+
  * Strings are represented using standard java.lang.String representations.
  * The implementation of this class will provide any necessary conversions
  * to the UTF8 format required for VRML support.
@@ -167,7 +167,7 @@ class SAIMFString extends BaseMField implements MFString {
 
     /**
      * Get a particular string value in the given eventOut array.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated. If the array reference
      * was null when set, an empty string will be returned to the caller.
@@ -217,7 +217,7 @@ class SAIMFString extends BaseMField implements MFString {
      * Set a particular string value in the given eventIn array. To the VRML
      * world this will generate a full MFString event with the nominated index
      * value changed.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated. If the value reference
      * is null then the result is implementation specific in terms of the array

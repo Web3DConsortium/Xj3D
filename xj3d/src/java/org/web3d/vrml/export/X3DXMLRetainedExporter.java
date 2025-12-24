@@ -1,5 +1,5 @@
 /****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -86,7 +86,7 @@ public class X3DXMLRetainedExporter extends X3DRetainedSAXExporter {
      * <code>#</code> start. The type string contains the representation of
      * the first few characters of the file after the #. This allows us to
      * work out if it is VRML97 or the later X3D spec.
-     * <p>
+    
      * Version numbers change from VRML97 to X3D and aren't logical. In the
      * first, it is <code>#VRML V2.0</code> and the second is
      * <code>#X3D V1.0</code> even though this second header represents a

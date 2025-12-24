@@ -32,7 +32,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLTextureTransformListener;
 
 /**
  * OpenGL renderer implementation of a texture transform.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.9 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -220,7 +220,7 @@ class SAIMFVec2d extends BaseMField implements MFVec2d {
      * If value[i] does not contain at least two values it will generate an
      * ArrayIndexOutOfBoundsException. If value[i] contains more than two items
      * only the first two values will be used and the rest ignored.
-     *  <p>
+    
      * If one or more of the values for value[i] are null then the resulting
      * event that is sent to the VRML scene graph is implementation dependent but
      * no error indicator will be set here.
@@ -250,7 +250,7 @@ class SAIMFVec2d extends BaseMField implements MFVec2d {
      * If value[i] does not contain at least two values it will generate an
      * ArrayIndexOutOfBoundsException. If value[i] contains more than two items
      * only the first two values will be used and the rest ignored.
-     *  <p>
+    
      * If one or more of the values for value[i] are null then the resulting
      * event that is sent to the VRML scene graph is implementation dependent but
      * no error indicator will be set here.
@@ -284,11 +284,11 @@ class SAIMFVec2d extends BaseMField implements MFVec2d {
      * Set a particular vector value in the given eventIn array. To the VRML
      * world this will generate a full MFVec2f event with the nominated index
      * value changed.
-     *  <p>
+    
      * The value array must contain at least two elements. If the array
      * contains more than 2 values only the first 2 values will be used and
      * the rest ignored.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values or
      * the array of values does not contain at least 2 elements an
      * ArrayIndexOutOfBoundsException will be generated.

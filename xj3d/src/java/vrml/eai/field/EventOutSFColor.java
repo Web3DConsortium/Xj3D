@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * VRML eventOut class for SFColor.
- *  <p>
+
  * Colour values are represented as floating point numbers between [0 - 1]
  * as per the VRML IS specification Section 4.4.5 Standard units and
  * coordinate system.

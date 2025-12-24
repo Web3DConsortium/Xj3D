@@ -31,25 +31,25 @@ import org.xj3d.core.eventmodel.ExternalView;
   * EAI browser and the external SAI browser.
   *  This class handles the buffering of event setValue calls and the
   *  various browser requests.
-  *  <p>
+ 
   * This queue handles all of the event types, including the replaceWorld
   * methods.  Because I do not fully understand the intention of the
   * beginUpdate/endUpdate queue system for handling browser requests,
   * it is possible to change between queued and unqueued behavior
   * by modifying the appropriate static constants.
-  *  <p>
+ 
   * Amalgamation of distinct set1Value events into single setValue events
   * is the responsibility of the event buffers/field wrapper classes.
   * The only functionality that this class exposes is the ability to locate
   * the appropriate previous buffers, and exposing the synchronization lock
   * for thread safety.
-  *  <p>
+ 
   * This class was previously named the EAIEventQueue, which became a misnomer
   * when it was repurposed for both EAI and external SAI support.  It has not
   * been seen as sufficiently useful to split this queue into an EAI and an
   * SAI version, thus the compilation dependencies from the VRML and X3D
   * systems.
-  *  <p>
+ 
   * The responsibility for registering the event queue with the appropriate
   * triggering mechanisms (current the EventModelEvaluator) is external
   * to this class.

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.nodes.VRMLScene;
 
 /**
  * A representation of a complete scene in VRML used to implement replaceWorld.
- * <p>
+
  *
  * The scene returns lists of nodes of the given type. This list contains
  * all of the nodes of that type in the order that they are declared in the
@@ -35,9 +35,9 @@ import org.web3d.vrml.nodes.VRMLScene;
  * interactions, it will add new instances of these nodes to the end of the
  * list. If there is none of the given node types, the methods shall return
  * empty lists.
- * <p>
+
  * The code for this class was copied directly from CRVRMLScene
- * <p>
+
  * Original author Justin Couch
  * @version $Revision: 1.8 $
  */

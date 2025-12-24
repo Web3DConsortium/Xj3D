@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.web3d.vrml.util.FieldValidator;
 
 /**
  * Common implementation of a Text2D node.
- * <p>
+
  *
  * The transparency field of the text node follows the standard alpha channel
  * values for 3D colour. A value of 0 means opaque, and a value of 1 means

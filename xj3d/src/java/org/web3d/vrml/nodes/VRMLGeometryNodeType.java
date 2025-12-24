@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -14,7 +14,7 @@ package org.web3d.vrml.nodes;
 /**
  * Geometry nodes produce renderable geometry and are contained by a Shape
  * node.
- * <p>
+
  *
  * All geometry has two common properties that indicate whether to render
  * both sides of the geometry (solid), and the winding of the vertices of

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -31,11 +31,11 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 /**
  * Handler for all nodes that require user location information to perform
  * correctly.
- * <p>
+
  *
  * The manager works for all nodes that require the user location information.
  * Typically these are sensors like ProximitySensor.
- * <p>
+
  *
  * The implementation uses a single pick to find all the nodes that are
  * intersect with the user's position and orientation. It assumes the user

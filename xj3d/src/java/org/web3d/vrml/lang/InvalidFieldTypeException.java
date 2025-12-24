@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,10 +19,10 @@ package org.web3d.vrml.lang;
 // none
 
 /**
- * <p>
+
  * Error when the type of the field does not match, such as for routes,
  * scripting or internal manipulation.
- * </p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

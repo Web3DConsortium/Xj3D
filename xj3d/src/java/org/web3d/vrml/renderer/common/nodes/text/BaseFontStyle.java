@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -36,24 +36,26 @@ import org.web3d.vrml.nodes.VRMLFontStyleNodeType;
 import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
+
  * Scene graph representation of a font style information.
- * <p>
+
  *
+
  * The fontstyle is a fixed, read-only node. Once created, you cannot change
  * the fields. Thus, all field setting code will throw an exception. Because
  * this class is fixed, once the Text node has fetched the font setup
  * information, this class could be thrown away.
- * </p>
+
  *
- * <b>Properties</b>
- * <p>
+
+ * <b>Properties.</b>
  * The following properties are used by this class
+
  * <ul>
  * <li><code>org.web3d.vrml.nodes.fontstyle.font.size</code> The font size in
  *     points. The default value is 36 point font.
  * </li>
  * </ul>
- * </p>
  *
  * @author Justin Couch
  * @version $Revision: 1.21 $

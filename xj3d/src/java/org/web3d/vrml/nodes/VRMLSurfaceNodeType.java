@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.nodes;
 /**
  * Representation of any node that allows the definition of a surface node
  * type.
- * <p>
+
  *
  * A surface allows the composition of one piece of content on another piece.
  * For example it allows an application such as a text editor to be embedded

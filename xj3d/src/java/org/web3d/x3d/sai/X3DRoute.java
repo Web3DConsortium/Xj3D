@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Representation of a ROUTE structure in X3D.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

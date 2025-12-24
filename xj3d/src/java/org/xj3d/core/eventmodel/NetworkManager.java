@@ -20,7 +20,7 @@ package org.xj3d.core.eventmodel;
 
 /**
  * The manager of network interactions.
- * <p>
+
  *
  * The implementation encapsulates all network protocols.  A handler can
  * be registered for each protocol desired.

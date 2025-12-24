@@ -20,7 +20,7 @@ import org.j3d.aviatrix3d.Geometry;
 
 /**
  * An abstract representation of any form of geometry.
- * <p>
+
  *
  * As geometry can be DEF/USEd, the listener handling must be capable of
  * dealing with more than one listener instance. When the geometry is shared

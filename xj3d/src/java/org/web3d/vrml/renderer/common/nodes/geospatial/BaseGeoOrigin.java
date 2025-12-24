@@ -29,7 +29,7 @@ import org.web3d.vrml.renderer.common.geospatial.GTTransformUtils;
 
 /**
  * Common implementation of an GeoOrigin node.
- * <p>
+
  * This may not be needed since we have doubles now.  But it could
  * help in z-buffer setting.  This node will be ignored for now.
  *

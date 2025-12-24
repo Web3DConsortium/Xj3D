@@ -22,13 +22,13 @@ import org.web3d.x3d.sai.X3DFieldEventListener;
 /**
  * A class which implements efficient and thread-safe multi-cast event
  * dispatching for the events defined in this package.
- *  <p>
+
  *
  * This class will manage an immutable structure consisting of a chain of
  * event listeners and will dispatch events to those listeners.  Because
  * the structure is immutable, it is safe to use this API to add/remove
  * listeners during the process of an event dispatch operation.
- *  <p>
+
  *
  * An example of how this class could be used to implement a new
  * component which fires "action" events:

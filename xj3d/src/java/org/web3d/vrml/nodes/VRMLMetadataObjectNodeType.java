@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ package org.web3d.vrml.nodes;
 /**
  * Marker interface that represents the X3DMetadataObject abstract data type
  * as basic datatype.
- * <p>
+
  *
  * All base nodes have a metadata ability added to them. However, only some
  * nodes can be the metadata itself. Therefore this type does not extend the

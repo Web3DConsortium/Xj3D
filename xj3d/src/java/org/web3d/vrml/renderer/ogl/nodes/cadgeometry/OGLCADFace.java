@@ -33,7 +33,7 @@ import org.web3d.vrml.renderer.common.nodes.cadgeometry.BaseCADFace;
 
 /**
  * OpenGL implementation of a group node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

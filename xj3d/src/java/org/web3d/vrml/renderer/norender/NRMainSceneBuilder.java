@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.sav.SAVException;
 
 /**
  * An null renderer scene builder implementation for working with SAV events
- * <p>
+
  *
  * If the user asks for no behaviors, then we will still load nodes that
  * use behaviors, but will disable their use. For example, a LOD will still

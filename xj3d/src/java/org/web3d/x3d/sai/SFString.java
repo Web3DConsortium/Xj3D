@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * Representation of a SFString field.
- * <p>
+
  * Strings are represented using standard java.lang.String representations.
  * The implementation of this class will provide any necessary conversions
  * to the UTF8 format required for VRML support.
@@ -32,7 +32,7 @@ public interface SFString extends X3DField {
 
     /**
      * Set the string value in the given eventIn.
-     * <p>
+    
      * A string is not required to be valid. A null string reference will
      * be considered equivalent to a zero length string resulting in the
      * string being cleared.

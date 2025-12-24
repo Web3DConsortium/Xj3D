@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Implementation of the PositionIterpolator.
- * <p>
+
  *
  *
  * @author Justin Couch

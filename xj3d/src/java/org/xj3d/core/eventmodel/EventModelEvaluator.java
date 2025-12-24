@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.xj3d.core.loading.ContentLoadManager;
  * An abstract representation of a class that would be responsible for
  * performing all the event model computations and organisation on a per-frame
  * basis.
- * <p>
+
  *
  * This class allows extensibility of the event model implementation by both
  * providing an abstract view of the event model, but also allowing individual

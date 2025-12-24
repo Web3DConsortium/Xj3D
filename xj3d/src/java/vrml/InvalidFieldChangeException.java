@@ -14,7 +14,7 @@ package vrml;
 
 /**
  * An exception for fields being changed when they should be.
- * <p>
+
  * InvalidFieldChangeException may be thrown as a result of all sorts of illegal
  * field changes, for example:
  *      1.Adding a node from one World as the child of a node in another World.

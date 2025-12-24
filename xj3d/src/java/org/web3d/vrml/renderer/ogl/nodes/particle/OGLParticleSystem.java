@@ -27,7 +27,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLAppearanceNodeType;
 
 /**
  * OpenGL implementation of a ParticleSystem.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.6 $

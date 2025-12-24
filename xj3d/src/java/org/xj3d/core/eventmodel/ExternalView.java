@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * Abstract representation of code that presents an external view of the
  * browser to client code.
- * <p>
+
  *
  * This interface is used to present hooks from the internals of a VRML browser
  * to code that implements the EAI or SAI external interface. It allows

@@ -16,11 +16,10 @@ package org.web3d.vrml.scripting.external.buffer;
  * ExternalEventAdapter is an adapter between the underlying event model and
  * the EAI or SAI callbacks.  The particular details are handled by the
  * appropriate implementing classes.
- *  <p>
+
  * The purpose of having this interface is to support having the event
  * changed callbacks occurring in the same thread as the event model, or
  * occurring outside the event model's thread.
- *  </p>
 */
 public interface ExternalEventAdapter {
 

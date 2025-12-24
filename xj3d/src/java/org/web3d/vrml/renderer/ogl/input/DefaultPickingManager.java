@@ -50,7 +50,7 @@ import org.xj3d.core.eventmodel.PickingManager;
 
 /**
  * Manager for processing the functionality of the Picking Utilities component.
- * <p>
+
  *
  * Picking and, ultimately, n-body object collision detection is handled by
  * this manager.

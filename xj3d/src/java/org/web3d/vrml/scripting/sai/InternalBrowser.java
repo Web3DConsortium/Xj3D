@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -44,17 +44,17 @@ import org.xj3d.core.loading.WorldLoaderManager;
 /**
  * Basic browser interface that represents the interface to the VRML browser
  * from any application.
- * <p>
+
  * Individual VRML browser implementors are to extend this
  * interface and provide this functionality. The individual users will not see
  * anything but this interface.
- *  <p>
+
  * A number of the methods in this application can take strings representing URLs.
  * Relative URL strings contained in URL fields of nodes or these method
  * arguments are interpreted as follows:
- *  <p>
+
  * Relative URLs are treated as per clause B.3.5 of the EAI Java Bindings
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.33 $
@@ -547,7 +547,7 @@ class InternalBrowser implements Browser {
      * belonged to the previous world are still valid but no longer form part of
      * the scene graph (unless it is these nodes passed to this method). The
      * URL of the world still represents the just unloaded world.
-     *  <p>
+    
      * Calling this method causes a SHUTDOWN event followed by an INITIALIZED
      * event to be generated.
      *
@@ -572,7 +572,7 @@ class InternalBrowser implements Browser {
      * Load the URL as the new root of the scene. Replaces all the current
      * scene graph with the new world. A non-blocking call that will change the
      * contents at some time in the future.
-     *  <p>
+    
      * Generates an immediate SHUTDOWN event and then when the new contents are
      * ready to be loaded, sends an INITIALIZED event.
      *

@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.VRMLLightNodeType;
 /**
  * An abstract representation of any form of light node in the OpenGL
  * scene graph.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

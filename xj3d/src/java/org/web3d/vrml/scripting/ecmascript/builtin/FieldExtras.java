@@ -21,7 +21,7 @@ import org.web3d.vrml.sav.VRMLParseException;
 
 /**
  * Factory abstract interface for generating field objects from a given node.
- * <p>
+
  *
  * The idea of this factory is to break a circular compile dependency
  * between SF/MFNode and all the field classes.

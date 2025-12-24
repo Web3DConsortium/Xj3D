@@ -39,15 +39,15 @@ import org.xj3d.core.eventmodel.ViewpointManager;
 /**
  * A toolbar for all viewpoint manipulation commands that offers convenient and
  * common code.
- * <p>
+
  *
  * Creating an instance of this class will automatically register it as
  * viewpoint and navigation state listeners with the browser core. The end user
  * is not required to do this.
- * <p>
+
  *
  * <b>External Resources</b>
- * <p>
+
  * This toolbar uses images for the button icons rather than text. These are
  * the images used. The path is found relative to the classpath.
  *
@@ -519,11 +519,11 @@ public class SwingViewpointToolbar extends JPanel
      * highlighting to indicate this. Viewpoints in other layers are still
      * allowed to be bound by the user interface. If there was a previously
      * active layer, ignore it.
-     * <p>
+    
      * The code will guarantee that if the active layer is removed, then this
      * method will be called first to set a different valid layer, before
      * removing that layer ID.
-     * <p>
+    
      *
      * If a value of -1 is provided, that means no layers are active and that we
      * currently have a completely clear browser with no world loaded. The UI

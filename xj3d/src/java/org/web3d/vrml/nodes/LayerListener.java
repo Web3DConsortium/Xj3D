@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,9 +19,9 @@ package org.web3d.vrml.nodes;
 // None
 
 /**
- * <p>
+
  * A listener for changes in layer state.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ package org.web3d.vrml.nodes;
 /**
  * An observer interface to look at the structure of the VRML runtime scene
  * graph presented by the {@link org.web3d.vrml.nodes.SceneGraphTraverser}.
- * <p>
+
  *
  * As this interface is an observer of the traversal process, it may perform
  * many tasks, such as building an equivalent API. However, it should not
@@ -30,14 +30,14 @@ package org.web3d.vrml.nodes;
  * that the class will be used (usually to generate alternate scene graphs)
  * and the overheads of dealing with loops for multiple observers is not
  * worth it.
- * <p>
+
  *
  * The observer will report the top of a use hierarchy. If the traverser, in
  * it's internal references, detects a reference re-use that is indicative of
  * a DEF/USE situation then the flag passed with each method call will be set
  * true. After reporting the USE, the traverser will not descend that part of
  * the scene graph any further.
- * <p>
+
  *
  * When reporting the parent node, if the root is the root node of the VRML
  * file or the body of a Proto, the parent reference will be null - regardless

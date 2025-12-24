@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -20,7 +20,7 @@ import java.util.Map;
 
 /**
  * Description of a single component.
- * <p>
+
  *
  * A component description contains many useful pieces of information about
  * the requirements. At the basic level, it is just a name and a level. In

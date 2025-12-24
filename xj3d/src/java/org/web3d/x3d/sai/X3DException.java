@@ -15,7 +15,7 @@ package org.web3d.x3d.sai;
 /**
  * The basic exception that is thrown by any VRML method call that wishes to
  * throw exceptions.
- * <p>
+
  *
  * Based on RuntimeException so that the user has the choice of deciding
  * whether to catch the exception or not.

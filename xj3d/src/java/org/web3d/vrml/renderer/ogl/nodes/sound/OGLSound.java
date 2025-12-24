@@ -24,7 +24,7 @@ import org.web3d.vrml.nodes.VRMLSingleExternalNodeType;
 
 /**
  * Sound node implementation.
- * <p>
+
  *
  *
  * @author Alan Hudson

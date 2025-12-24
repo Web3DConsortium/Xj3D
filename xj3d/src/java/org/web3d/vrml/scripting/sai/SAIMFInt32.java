@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -158,7 +158,7 @@ class SAIMFInt32 extends BaseMField implements MFInt32 {
 
     /**
      * Get a particular value from the eventOut array.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *
@@ -205,7 +205,7 @@ class SAIMFInt32 extends BaseMField implements MFInt32 {
      * Set a particular value in the given eventIn array. To the VRML
      * world this will generate a full MFInt32 event with the nominated index
      * value changed.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *

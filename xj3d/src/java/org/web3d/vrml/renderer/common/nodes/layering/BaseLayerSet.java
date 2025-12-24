@@ -25,7 +25,7 @@ import org.web3d.vrml.renderer.common.nodes.AbstractNode;
 
 /**
  * This is the base for the LayerSet node.
- * <p>
+
  * The basic definition of LayerSet is:
  * <pre>
  * LayerSet : X3DNode {

@@ -15,7 +15,7 @@ package org.web3d.x3d.sai;
 
 /**
  * The representation of a PROTO declaration.
- * <p>
+
  *
  * This is the representation of the declaration, not of a runtime node. For
  * this reason you cannot access the internals, nor can you work with the
@@ -42,7 +42,7 @@ public interface X3DProtoDeclaration  {
     /**
      * Fetch the type of this proto. The proto's type is defined by the first
      * child node in the body, in accordance with the X3D specification.
-     * <p>
+    
      * The types values are provided in the array of values. There is no
      * specific order of the returned types. It is expected that most node
      * types, which only descend from a single parent type would return an
@@ -82,11 +82,11 @@ public interface X3DProtoDeclaration  {
      * browser that the java side of the application does not require the
      * resources represented by this node. The browser is now free to do
      * what it likes with the node.
-     * <p>
+    
      * This in no way implies that the browser is to remove this node from
      * the scene graph, only that the java code is no longer interested
      * in this particular node through this reference.
-     * <p>
+    
      * Once this method has been called, any further calls to methods of
      * this instance of the class is shall generate an InvalidNodeException.
      *

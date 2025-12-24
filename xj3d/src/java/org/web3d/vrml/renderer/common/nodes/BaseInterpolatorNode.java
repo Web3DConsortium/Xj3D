@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,12 +25,12 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Abstract implementation of an interpolator so that specific instances can
  * derive from it.
- * <p>
+
  *
  * Interpolator nodes are designed for linear keyframed animation.
  * Interpolators are driven by an input key and produce
  * corresponding piecewise-linear output functions.
- * <p>
+
  *
  * As interpolators all have the same number and named fields, we perform all
  * of the setup here in this class. The handling of the basic fields are

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                     Web3d.org Copyright (c) 2001 - 2006
+ *                     Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -80,13 +80,13 @@ public interface VRMLLayerNodeType extends VRMLNodeType {
      * Get the type of viewport layout policy that the contained viewport node
      * represents. This is a shortcut to fetching the viewport instance
      * directly, walking the proto hierarchy and so forth.
-     * <p>
+    
      * This determines how the viewport is managed by the system during window
      * resizes etc. It is a fixed value that never changes for the node
      * implementation.
-     * <p>
+    
      * If no viewport node is defined, return VIEWPORT_FULLWINDOW.
-     * <p>
+    
      * If no viewport is yet referenced courtesy of an
      * externproto, this returns VIEWPORT_UNDEFINED until it is updated.
      *

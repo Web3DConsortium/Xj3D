@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * An interface for accessing the geometry data of an IndexedGeometry class.
- * <p>
+
  * These objects might be coord, color, normal, texCoord.  All will descend
  * from VRMLGeometricPropertyType or VRMLProtoInstance. There is no direct
  * provision through this interface to clear an individual component node.
@@ -32,11 +32,11 @@ public interface VRMLComponentGeometryNodeType extends VRMLGeometryNodeType {
 
     /**
      * Get the components that compose a geometry object.
-     * <p>
+    
      * This method will return either VRMLGeometricPropertyNodeType or
      * VRMLProtoInstance.  With a proto you can use getImplementationNode
      * to get a node conforming to the VRMLGeometricPropertyNodeType interface.
-     * <p>
+    
      * If there are no components then a zero length array will be returned.
      *
      * @return VRMLNodeType[] The components

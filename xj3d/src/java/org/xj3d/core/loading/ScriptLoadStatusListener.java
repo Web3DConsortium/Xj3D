@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,14 +21,14 @@ import org.web3d.vrml.nodes.VRMLScriptNodeType;
 /**
  * An internal listener to allow the ScriptLoader and ScriptManager to
  * communicate load state for the scripts.
- * <p>
+
  *
  * The listener interface is used rather than a common array because the
  * loader is typically operating on a separate thread and having a queue
  * between the two will have multi-threaded issues. Using this listener
  * reduces the multi-threaded issues to just one class and thus making it
  * easy to manage.
- * <p>
+
  *
  *
  * @author Justin Couch

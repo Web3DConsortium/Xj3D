@@ -23,7 +23,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Implementation of a OrientationInterpolator.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL-renderer implementation of a TouchSensor node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

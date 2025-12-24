@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,11 +24,11 @@ import org.xj3d.core.loading.FileCache;
 /**
  * The file cache implementation uses the standard
  * {@link java.util.WeakHashMap} as the storage mechanism.
- * <p>
+
  *
  * Items are stored in the WeakHashMap so that when an item no longer
  * needs data, that item can be discarded.
- * <p>
+
  *
  * The internal implementation is thread safe, choosing to synchronize on the
  * internal mapping structures. This prevents one thread from loading something

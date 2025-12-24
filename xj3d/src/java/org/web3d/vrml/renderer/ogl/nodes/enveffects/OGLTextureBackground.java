@@ -170,7 +170,7 @@ public class OGLTextureBackground extends BaseTextureBackground
     /**
      * Construct a new instance of this node based on the details from the
      * given node.
-     *  <p>
+    
      *
      * @param node The node to copy
      * @throws IllegalArgumentException The node is not the right type.

@@ -21,7 +21,7 @@ import org.web3d.vrml.nodes.VRMLNavigationInfoNodeType;
 /**
  * Listener for navigation user interface state change feedback from the
  * internals of the browser.
- * <p>
+
  *
  * These callback methods provide information for changes within an existing
  * scene. For bulk changes, such as the change of scene, please use the base

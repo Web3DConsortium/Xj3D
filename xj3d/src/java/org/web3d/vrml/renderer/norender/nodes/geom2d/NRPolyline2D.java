@@ -21,8 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.geom2d.BasePolyline2D;
 import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
- * Null renderer implementation of a Polyline2D.
- * <p>
+ * Null renderer implementation of a Polyline2D
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

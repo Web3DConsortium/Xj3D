@@ -21,14 +21,14 @@ package org.web3d.vrml.renderer.ogl.nodes;
 /**
  * Abstraction allowing for the management and coordination of the string-based
  * flags used by X3D to the integer masks used by Aviatrix3D.
- * <p>
+
  *
  * The implementation of this interface needs to keep track of who is using the
  * individual flags and to keep an appropriate mask set. Since both picking
  * groups and the picking sensors use the strings to filter the picking, we
  * need to make sure that the strings on both sides equate to the same bit
  * mask. That's the job of this class.
- * <p>
+
  *
  * X3D allows for unlimited numbers of potential object type flags, but AV3D
  * is limited to 31 flags due to using an int for the collection. Though it is
@@ -37,7 +37,7 @@ package org.web3d.vrml.renderer.ogl.nodes;
  * number used for a given name and when the count is back to zero, will return
  * that bit mask back to the available pool.
  *
- * <p>
+
  * <b>Special Cases</b>
  *
  * <ul>

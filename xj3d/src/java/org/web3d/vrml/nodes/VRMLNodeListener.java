@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.vrml.nodes;
 
 /**
  * An listener for changes in the node.
- * <p>
+
  *
  * The listener does simple notifications. The idea is to minimise the amount
  * of data that gets shuffled around in method calls.

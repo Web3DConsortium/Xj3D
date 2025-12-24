@@ -24,8 +24,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseComponentGeometryNode;
 
 /**
  * Common QuadSet handling.
- * <p>
- *
  *
  * @author Alan Hudson
  * @version $Revision: 1.6 $

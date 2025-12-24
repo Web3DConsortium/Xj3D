@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,11 +19,11 @@ package org.web3d.vrml.nodes;
 import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
- * <p>
+
  * Node specifies color properties for associated geometry.
  * 
  * Defines methods needed for standard VRML lighting model equations
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.10 $

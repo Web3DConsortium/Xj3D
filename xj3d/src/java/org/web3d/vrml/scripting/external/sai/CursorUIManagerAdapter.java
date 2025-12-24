@@ -32,7 +32,7 @@ import org.xj3d.core.eventmodel.CursorFilter;
 /**
  * An abstract interface for cursor-specific user interface control of the
  * the browser.
- * <p>
+
  * This allows an external application to replace the cursor logic
  * with their own.
  *

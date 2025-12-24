@@ -24,7 +24,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Implementation of a CollidableOffset.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.3 $

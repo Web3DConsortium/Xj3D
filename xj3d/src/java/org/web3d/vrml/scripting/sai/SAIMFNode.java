@@ -23,10 +23,10 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Representation of a MFNode field.
- *  <p>
+
  * Get the values of a node array. The java <code>null</code> reference is
  * treated to be equivalent to the VRML <code>NULL</code> field values.
- *  <p>
+
  * It is not illegal to construct an array where some members of the array are
  * null pointers. Due to no specification on the intended result in the VRML
  * specification, the response given by the browser is implementation
@@ -243,12 +243,12 @@ class SAIMFNode extends BaseMField
 
     /**
      * Get a particular node value in the given eventOut array.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated. If the Node value is
      * NULL because the browser implementation keeps null references then this
      * method will return a null pointer without throwing any exception.
-     *  <p>
+    
      * @param index The position to read the values from
      * @return The node reference
      *
@@ -268,7 +268,7 @@ class SAIMFNode extends BaseMField
      * the actions to take are according to the class introduction above. If the
      * array contains a null reference then th resulting event passed to the
      * eventIn is implementation dependent
-     *  <p>
+    
      * If any of the node references have had their dispose methods called, an
      * InvalidNodeException will be generated and no event sent to the
      * scene graph.
@@ -307,14 +307,14 @@ class SAIMFNode extends BaseMField
      * Set a particular node value in the given eventIn array. To the VRML
      * world this will generate a full MFNode event with the nominated index
      * value changed.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated. If the Node value is
      * null the behaviour will be undefined as far as generating an event to the
      * scene graph is concerned in order to be consistent with the behaviour
      * described in the class introduction. This method call will not generate
      * an exception if the node reference is null.
-     *  <p>
+    
      * If the node reference passed to this method has already had the dispose
      * method called then an InvalidNodeException will be generated.
      *

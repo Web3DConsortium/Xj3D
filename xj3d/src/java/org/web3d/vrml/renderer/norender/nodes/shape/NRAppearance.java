@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.shape.BaseAppearance;
 
 /**
  * Null renderer implementation of an Appearance node.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

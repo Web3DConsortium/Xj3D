@@ -21,8 +21,7 @@ import org.web3d.vrml.renderer.common.nodes.geospatial.BaseGeoMetadata;
 import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
- * NoRender implementation of an GeoMetadata
- * <p>
+ * NoRender implementation of an GeoMetadata.
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

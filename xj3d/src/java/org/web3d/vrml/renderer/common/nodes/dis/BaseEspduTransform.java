@@ -51,7 +51,7 @@ import org.web3d.vrml.renderer.common.nodes.BaseGroupingNode;
 
 /**
  * Common implementation of a EspuTransform node functionality.
- * <p>
+
  *
  * This base class does not automatically update the underlying transform
  * with each set() call. These calls only update the local field values,

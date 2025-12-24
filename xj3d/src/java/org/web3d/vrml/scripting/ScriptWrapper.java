@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLScriptNodeType;
 /**
  * A wrapper abstract interface used to convert between the Xj3D
  * implementation specific details and the spec requirements for a script.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.5 $

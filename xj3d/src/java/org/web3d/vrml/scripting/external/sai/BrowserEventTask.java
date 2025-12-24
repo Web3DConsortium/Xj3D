@@ -22,7 +22,7 @@ import org.web3d.x3d.sai.BrowserListener;
 /**
  * A Runnable task that gets registered with an executor service that will send
  * out event notifications.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

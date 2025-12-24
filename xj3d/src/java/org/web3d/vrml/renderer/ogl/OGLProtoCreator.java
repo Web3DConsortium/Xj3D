@@ -28,13 +28,13 @@ import org.web3d.vrml.renderer.CRProtoCreator;
 /**
  * A class that is used to create real instances of protos from their
  * definitions.
- * <p>
+
  *
  * The creator strips the definition apart and builds a runtime node based on
  * the details and the node factory provided. The creator can handle one
  * instance at a time, although it will correctly parse and build nested proto
  * declarations without extra effort.
- * <p>
+
  *
  * We have a small conundrum to deal with - if the proto definition contains
  * SF/MFNode fields, we don't know whether the values should be also generated
@@ -45,7 +45,7 @@ import org.web3d.vrml.renderer.CRProtoCreator;
  * and turn those into runtime instances. Although this may create extra
  * garbage, there seems to be no nice way of dealing with this issue without a
  * completely different architecture for the library.
- * <p>
+
  *
  * Note:
  * Under the current implementation, EXTERNPROTOs are not yet catered for.

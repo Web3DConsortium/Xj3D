@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -24,7 +24,7 @@ import org.xj3d.core.loading.ScriptLoadStatusListener;
 
 /**
  * A simple data holder class for information about a Script URL to load.
- * <p>
+
  *
  * The data holder contains a reference to the cache to use. This is because
  * we might have different caching regimes set up by using different load

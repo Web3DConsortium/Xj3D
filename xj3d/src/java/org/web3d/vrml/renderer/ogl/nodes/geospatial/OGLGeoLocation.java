@@ -41,7 +41,7 @@ import org.web3d.vrml.renderer.common.geospatial.GTTransformUtils;
 
 /**
  * OpenGL implementation of an GeoLocation
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.11 $

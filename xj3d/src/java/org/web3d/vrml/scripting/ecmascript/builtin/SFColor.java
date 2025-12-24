@@ -23,7 +23,7 @@ import org.j3d.util.HashSet;
 
 /**
  * SFColor field object.
- *  <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.15 $

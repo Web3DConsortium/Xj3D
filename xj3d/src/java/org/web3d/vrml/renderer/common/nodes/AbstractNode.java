@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -42,14 +42,14 @@ import org.web3d.vrml.nodes.VRMLProtoInstance;
 
 /**
  * Base node for all implementations that define their own field handling.
- * <p>
+
  * Each node will keep its own fieldDeclarations and fieldMaps.  These will be
  * created in a static constructor so only one copy per class will be created.
- * <p>
+
  *
  * Each node will maintain its own LAST_*_INDEX which tells others what the
  * last field declared by this node.
- * <p>
+
  * <b>Internationalisation Resource Names</b>
  * <ul>
  * <li>vrmlMetaMsg: Error when someone attempts to set meta data objects in

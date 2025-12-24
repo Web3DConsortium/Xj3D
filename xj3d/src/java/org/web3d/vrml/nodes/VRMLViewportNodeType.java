@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                      Web3d.org Copyright (c) 2001 - 2006
+ *                      Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,7 @@ package org.web3d.vrml.nodes;
 
 /**
  * Base representation of a viewpoint node in the scene.
- * <p>
+
  *
  * A viewpoint provides a place to examine the contents of the virtual world.
  * Depending on the world type, the way of specifying a viewpoint's location

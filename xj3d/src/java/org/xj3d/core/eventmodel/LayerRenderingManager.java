@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2005 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026 - 2006
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.j3d.util.ErrorReporter;
 /**
  * A representation of a class that would be responsible for
  * performing management of all layers with a running the system.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

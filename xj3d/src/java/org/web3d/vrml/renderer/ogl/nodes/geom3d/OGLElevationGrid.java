@@ -29,7 +29,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLUserData;
 
 /**
  * OpenGL implementation of an ElevationGrid
- * <p>
+
  *
  * In order to handle colorPerVertex=FALSE and normalPerVertex=FALSE we
  * have to two representations.  Under normal conditions(TRUE,TRUE) we can

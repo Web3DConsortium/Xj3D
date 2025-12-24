@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,11 +23,11 @@ import org.ietf.uri.FileNameMap;
 
 /**
  * An implementation of a file name mapping for handling VRML file types.
- * <p>
+
  *
  * When asked for a .wrl file it will return <code>model/vrml</code>. For the
  * reverse mapping it will handle both the old and new types
- * <p>
+
  *
  * This filename mapping must be registered with the URI class by the user in
  * order to work. You can use the following code to do this:

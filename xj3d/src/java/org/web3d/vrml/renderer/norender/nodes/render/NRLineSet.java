@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of an LineSet.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

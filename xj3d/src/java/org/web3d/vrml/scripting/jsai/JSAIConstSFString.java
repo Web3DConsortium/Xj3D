@@ -27,7 +27,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 /**
  * Xj3D Specific implementation of the SFString field when extracted from part
  * of a node.
- * <p>
+
  *
  * The node assumes that the index and node have been checked before use by
  * this class.

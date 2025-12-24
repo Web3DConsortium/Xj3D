@@ -24,7 +24,7 @@ import java.io.ByteArrayInputStream;
 /**
  * This is a utility class used by content handlers to return an input stream
  * to nodes that require streamed input.
- * <p>
+
  *
  * Content handlers return objects that are reused by nodes in the scene. This
  * object type can be used to pass an InputStream to the nodes.  Each client
@@ -49,7 +49,7 @@ public class StreamContentContainer {
      * The content container is a copy of the entire byte stream.
      * Calls to getInputStream will return new InputStreams which
      * are byte-copies of the original input stream.
-     *  <p>
+    
      * If length bytes cannot be read from the input stream, an IOException
      * will be thrown.
      *

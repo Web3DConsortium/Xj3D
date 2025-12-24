@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * Implementation of a BallJoint.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

@@ -24,7 +24,7 @@ import org.xj3d.sai.Xj3DErrorReporter;
  * An implementation of the ErrorReporter interface that interfaces between
  * our internal error handlers and the external one that we have exposed
  * through the {@link org.xj3d.sai.Xj3DErrorReporter} interface.
- * <p>
+
  *
  * This implementation is mostly a pass-through, but it will also, eventually,
  * do conversion of the exceptions from our internal representation to

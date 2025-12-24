@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.common.nodes.surface.BaseImage2D;
 
 /**
  * Common implementation of a Image2D node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

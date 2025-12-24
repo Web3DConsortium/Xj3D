@@ -21,15 +21,15 @@ import org.web3d.vrml.renderer.common.nodes.navigation.BaseViewpoint;
 import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
- * <p>
+
  * Null renderer implementation of a Viewpoint node.
- * </p>
+
  *
- * <p>
+
  * VRML requires the use of a headlight from the NavigationInfo node.
  * For convenience, we provide a headlight here that binds with the same
  * transform as the view platform.
- * </p>
+
  *
  * Viewpoints cannot be shared using DEF/USE. They may be named as such for
  * Anchor purposes, but attempting to reuse them will cause an error. This

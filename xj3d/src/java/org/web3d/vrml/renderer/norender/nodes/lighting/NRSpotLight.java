@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * no-render implementation of a spotlight.
- * <p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.4 $

@@ -17,7 +17,7 @@ package vrml.eai.field;
 
 /**
  * VRML eventOut class for SFRotation.
- *  <p>
+
  * Rotation values are specified according to the VRML IS Specification
  * Section 5.8 SFRotation and MFRotation.
  *

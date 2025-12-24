@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,12 +23,10 @@ import org.web3d.vrml.nodes.VRMLPickingSensorNodeType;
 /**
  * An abstract representation of a class that would be responsible for
  * performing all the picking component by the class.
- * <p>
  *
  * It is expected that the manager will be implemented by each renderer as
  * working out when sensors intersect and interact will require in-depth
  * knowledge of the rendering API.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

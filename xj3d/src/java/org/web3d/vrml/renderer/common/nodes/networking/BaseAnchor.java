@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,11 +27,11 @@ import org.web3d.vrml.util.URLChecker;
 
 /**
  * Base common implementation of an Anchor node.
- * <p>
+
  *
  * The anchor node represents a standard grouping node that also contains
  * URL information.
- * <p>
+
  *
  * For dealing with user input,
  *
@@ -242,7 +242,7 @@ public class BaseAnchor extends BaseGroupingNode implements VRMLLinkNodeType {
      * Construct a new instance of this node based on the details from the
      * given node. If the node is not a group node, an exception will be
      * thrown. It does not copy the children nodes, just this node.
-     *  <p>
+    
      * Note that the world URL has not been set by this call and will need to
      * be called separately.
      *

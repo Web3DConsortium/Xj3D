@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -44,7 +44,7 @@ public class VRMLParserUtils {
      * ret_val[1] = version string ("V2.0", "V3.0" etc)<br>
      * ret_val[2] = encoding type ("utf8" usually)<br>
      * ret_val[3] = The rest of the line - a comment
-     * <p>
+    
      * If the first two characters are not "#V" then this will terminate and
      * not read the characters any further. The first two characters will be
      * returned as a string in the first item and only in the array. The items

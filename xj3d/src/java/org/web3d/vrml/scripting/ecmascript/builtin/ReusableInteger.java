@@ -21,7 +21,7 @@ package org.web3d.vrml.scripting.ecmascript.builtin;
 /**
  * An integer (non-floating point) extension of the {@link java.lang.Number}
  * abstract base class that allows the user to reset the internal value.
- * <p>
+
  *
  * A typical issue with the Javascript runtime is that everywhere it uses
  * object values rather than primitives. With a lot of method calling, that

@@ -33,7 +33,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLTextureNodeType;
 
 /**
  * OpenGL implementation of a PixelTexture3D node.
- * <p>
+
  *
  * Given a MFInt32 this will produce a Texture3D object
  *

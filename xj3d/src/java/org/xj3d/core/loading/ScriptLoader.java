@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -23,7 +23,7 @@ import org.web3d.vrml.scripting.ScriptEngine;
 /**
  * Abstract representation of a class that can be used to provide script
  * loading and initlisation facilities to the browser core.
- * <p>
+
  *
  * The loader also takes part in the event model evaluation as well. For this,
  * it must hook into the URL change handling through the
@@ -35,7 +35,7 @@ import org.web3d.vrml.scripting.ScriptEngine;
  * not extend the URLListener interface directly as it assumes that an
  * implementation may take other internal arrangements. It assumes that
  * listeners will be registered with the script nodes.
- * <p>
+
  *
  * For VRML97/X3D conformant behaviour, the implied architecture of an
  * implementation of this interface is 5 separate buckets of data:

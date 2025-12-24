@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -28,7 +28,6 @@ import org.web3d.vrml.nodes.VRMLSurfaceLayoutNodeType;
 
 /**
  * Common implementation of a GridLayout node.
- * <p>
  *
  * A grid layout places the contained children in a 2 dimensional grid of
  * rows and columns. The number of grid items can be changed on the fly.
@@ -36,7 +35,6 @@ import org.web3d.vrml.nodes.VRMLSurfaceLayoutNodeType;
  * the extra children are not rendered. If less children than the number
  * of cells defined are provided then it fills in across the row first and
  * then down the columns.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.13 $

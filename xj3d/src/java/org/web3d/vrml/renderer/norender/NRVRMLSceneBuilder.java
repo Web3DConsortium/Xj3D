@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -36,7 +36,7 @@ import org.xj3d.core.loading.SceneBuilder;
 /**
  * A Java3D file loader implementation for reading VRML utf8 files and
  * building a null renderer scene graph with them.
- * <p>
+
  *
  * If the user asks for no behaviors, then we will still load nodes that
  * use behaviors, but will disable their use. For example, a LOD will still
@@ -206,7 +206,7 @@ public class NRVRMLSceneBuilder implements SceneBuilder {
      * abnormally and left us in an odd state. Sometimes this can prevent us
      * from parsing again. This method should be called just before the
      * <code>VRMLReader.parse()</code> method is called.
-     * <p>
+    
      * The flags set about what to load are <i>not</i> reset by this method.
      */
     @Override
@@ -269,7 +269,7 @@ public class NRVRMLSceneBuilder implements SceneBuilder {
      * <code>#</code> start. The type string contains the representation of
      * the first few characters of the file after the #. This allows us to
      * work out if it is VRML97 or the later X3D spec.
-     * <p>
+    
      * Version numbers change from VRML97 to X3D and aren't logical. In the
      * first, it is <code>#VRML V2.0</code> and the second is
      * <code>#X3D V1.0</code> even though this second header represents a
@@ -488,7 +488,7 @@ public class NRVRMLSceneBuilder implements SceneBuilder {
      * value of the field. MFStrings will have to be parsed. This is a
      * terminating call for startField as well. The next call will either be
      * another <code>startField()</code> or <code>endNode()</code>.
-     * <p>
+    
      * If this field is an SFNode with a USE declaration you will have the
      * {@link #useDecl(String)} method called rather than this method.
      *

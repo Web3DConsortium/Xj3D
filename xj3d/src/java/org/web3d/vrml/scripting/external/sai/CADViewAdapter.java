@@ -38,7 +38,7 @@ import org.xj3d.sai.Xj3DCADViewListener;
  * Wrapper interface for the internal viewpoint representation, to allow
  * abstraction of the user interface description of viewpoints from the
  * underlying node representation.
- * <p>
+
  *
  * This class deliberately does not give access to the SAI X3DNode that
  * represents the viewpoint.

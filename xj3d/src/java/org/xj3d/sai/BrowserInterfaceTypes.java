@@ -20,7 +20,7 @@ package org.xj3d.sai;
 
 /**
  * Enumeration of the types of browser implementations that we can create.
- * <p>
+
  *
  * This is used in conjunction with {@link BrowserConfig} when talking to
  * specific panel interfaces to work out what should be created.

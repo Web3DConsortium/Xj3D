@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,9 +19,9 @@ import java.io.IOException;
 import org.j3d.util.ErrorReporter;
 
 /**
- * <p>
+
  * Interface representing code that can open a file or URL in the browser.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

@@ -26,7 +26,7 @@ import org.web3d.vrml.nodes.VRMLFieldData;
 
 /**
  * Common base implementation of a WheelSensor
- * <p>
+
  *
  * This node is an custom extension to Xj3D node.
  *

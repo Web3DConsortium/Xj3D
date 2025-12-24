@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,7 +25,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseGroupingNode;
 
 /**
  * Common implementation of an ordered group node functionality.
- * <p>
  *
  * An ordered group controls the order of rendering of the children. These
  * are rendered in the order given by the childOrder field. The children
@@ -35,8 +34,6 @@ import org.web3d.vrml.renderer.common.nodes.BaseGroupingNode;
  * the order list contains more items than the current children list, it will
  * silently ignore any items that are greater in index than the number of
  * items.
- * <p>
- *
  *
  * @author Justin Couch
  * @version $Revision: 1.7 $

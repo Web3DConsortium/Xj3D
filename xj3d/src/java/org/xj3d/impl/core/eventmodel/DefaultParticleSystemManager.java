@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -30,11 +30,11 @@ import org.xj3d.core.eventmodel.NodeManager;
 
 /**
  * Manager for ParticleSystem nodes and their contained sets of children.
- * <p>
+
  *
  * Keeps track of all particle systems and makes sure that they update every
  * frame as well as tracking state for those that should not update any longer.
- * <p>
+
  *
  * This manager likes to run at the end of the frame.
  *
@@ -114,7 +114,7 @@ public class DefaultParticleSystemManager implements NodeManager {
      * component is assumed to be the lowest level supported (ie if the given
      * level fails, then levels above this cannot be supported, but those below
      * can still be).
-     * <p>
+    
      * Mostly this is used for when initialization fails and we wish to disable
      * support for loading of nodes in that component.
      *

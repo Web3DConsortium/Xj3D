@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -40,7 +40,7 @@ import org.xj3d.io.ReportableReader;
 
 /**
  * Representation of an input stream of bytes to the reader.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.19 $

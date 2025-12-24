@@ -22,8 +22,7 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null renderer implementation of a Box node.
- * <p>
- *
+ * 
  * @author Alan Hudson
  * @version $Revision: 1.2 $
  */

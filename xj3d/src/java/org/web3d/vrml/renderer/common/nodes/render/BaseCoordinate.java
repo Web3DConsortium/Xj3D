@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001-2004
+ *                        Web3d.org Copyright (c) 2001 - 2026-2004
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,12 +26,12 @@ import org.web3d.vrml.renderer.common.nodes.BaseGeometricPropertyNode;
 
 /**
  * Common base implementation of a Coordinate node.
- * <p>
+
  * Points are held internally as a flat array of values. The point list
  * returned will always be flat. We do this because renderers like point values
  * as a single flat array. The array returned will always contain exactly the
  * number of points specified.
- * <p>
+
  * The effect of this is that point values may be routed out of this node as
  * a flat array of points rather than a 2D array. Receiving nodes should check
  * for this version as well. This implementation will handle being routed
@@ -196,7 +196,7 @@ public abstract class BaseCoordinate extends BaseGeometricPropertyNode
      * projections. This is a reference to the post-processed data that may be
      * directly used for rendering. In the case of CoordinateDouble, then the
      * array may be a set of down-cast values to floats.
-     * <p>
+    
      * Note that the array may well be longer than the actual number of valid
      * coordinates. Use {@link #getNumPoints()} to determine the number of
      * valid entries.

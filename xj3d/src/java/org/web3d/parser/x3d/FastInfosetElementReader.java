@@ -668,10 +668,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of boolean.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "boolean" encoding
      * algorithm, see subclause 10.7<p>.
      *
@@ -688,14 +688,14 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of byte.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "base64" encoding
      * algorithm, see subclause 10.3.
      *
-     * <p>Such a notification may occur for binary data that would
+    Such a notification may occur for binary data that would
      * normally require base 64 encoding and reported as character data
      * using the {@link org.xml.sax.ContentHandler#characters characters}
      * method <p>.
@@ -713,10 +713,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of short.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "short" encoding
      * algorithm, see subclause 10.4<p>.
      *
@@ -733,10 +733,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of int.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "int" encoding
      * algorithm, see subclause 10.5<p>.
      *
@@ -753,10 +753,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of long.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "long" encoding
      * algorithm, see subclause 10.6<p>.
      *
@@ -773,10 +773,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of float.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "float" encoding
      * algorithm, see subclause 10.8<p>.
      *
@@ -793,10 +793,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an array of double.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "double" encoding
      * algorithm, see subclause 10.9<p>.
      *
@@ -813,10 +813,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an two array of UUID.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "uuid" encoding
      * algorithm, see subclause 10.10<p>.
      *
@@ -835,10 +835,10 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of character data as an two array of UUID.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing data encoded using the "uuid" encoding
      * algorithm, see subclause 10.10<p>.
      *
@@ -861,17 +861,17 @@ class FastInfosetElementReader extends X3DSAVAdapter
      * Receive notification of encoding algorithm data as an array
      * of byte.
      *
-     * <p>The application must not attempt to read from the array
+    The application must not attempt to read from the array
      * outside of the specified range.</p>
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing encoding algorithm data.<p>
      *
-     * <p>The Parser will call the method of this interface to report each
+    The Parser will call the method of this interface to report each
      * encoding algorithm data. Parsers MUST return all contiguous
      * characters in a single chunk</p>
      *
-     * <p>Parsers may return all contiguous bytes in a single chunk, or
+    Parsers may return all contiguous bytes in a single chunk, or
      * they may split it into several chunks providing that the length of
      * each chunk is of the required length to successfully apply the
      * encoding algorithm to the chunk.</p>
@@ -892,7 +892,7 @@ class FastInfosetElementReader extends X3DSAVAdapter
     /**
      * Receive notification of encoding algorithm data as an object.
      *
-     * <p>Such notifications will occur for a Fast Infoset SAX parser
+    Such notifications will occur for a Fast Infoset SAX parser
      * when processing encoding algorithm data that is converted from an
      * array of byte to an object more suitable for processing.<p>
      *

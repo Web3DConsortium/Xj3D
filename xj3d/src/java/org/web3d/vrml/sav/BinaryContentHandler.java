@@ -21,7 +21,6 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Receiver of notifications from the VRML document about node declaration
  * information.  All field values are sent as binary bits.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

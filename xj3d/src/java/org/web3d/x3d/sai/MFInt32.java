@@ -43,7 +43,7 @@ public interface MFInt32 extends MField {
 
     /**
      * Get a particular value from the eventOut array.
-     * <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *
@@ -98,7 +98,7 @@ public interface MFInt32 extends MField {
      * Set a particular value in the given eventIn array. To the VRML world this
      * will generate a full MFInt32 event with the nominated index value
      * changed.
-     * <p>
+    
      * If the index is out of the bounds of the current array of data values an
      * ArrayIndexOutOfBoundsException will be generated.
      *

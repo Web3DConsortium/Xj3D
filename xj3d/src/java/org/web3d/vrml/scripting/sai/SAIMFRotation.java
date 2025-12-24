@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,7 +22,7 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * Representation of a MFRotation field.
- *  <p>
+
  * Rotation values are specified according to the VRML IS Specification
  *  Section 5.8 SFRotation and MFRotation.
  *
@@ -303,11 +303,11 @@ class SAIMFRotation extends BaseMField implements MFRotation {
      * Set a particular rotation in the given eventIn array. To the VRML
      * world this will generate a full MFRotation event with the nominated index
      * value changed.
-     *  <p>
+    
      * The value array must contain at least four elements. If the array
      * contains more than 4 values only the first four values will be used and
      * the rest ignored.
-     *  <p>
+    
      * If the index is out of the bounds of the current array of data values or
      * the array of values does not contain at least 4 elements an
      * ArrayIndexOutOfBoundsException will be generated.

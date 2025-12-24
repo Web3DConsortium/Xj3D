@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -37,7 +37,7 @@ import org.xj3d.core.loading.WorldLoaderManager;
 
 /**
  * A scripting engine that provides capabilities for X3D ECMAScript.
- *  <p>
+
  *
  * The setup process uses delayed loading of the Javascript interpreter. It
  * won't actually initialise Rhino until the first script wrapper needs to

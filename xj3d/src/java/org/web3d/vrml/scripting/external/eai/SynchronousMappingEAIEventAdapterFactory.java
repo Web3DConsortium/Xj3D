@@ -21,7 +21,7 @@ import java.util.Map;
 
 /**
   * Implementation of EAIEventAdapterFactory.
-  *  <p>
+ 
   * This implementation of EAIEventAdapterFactory maintains a mapping
   * from VRMLNodeType to ExternalEventAdapter to
  */

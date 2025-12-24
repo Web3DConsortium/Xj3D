@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -29,7 +29,7 @@ import org.xj3d.core.eventmodel.RouteManager;
 
 /**
  * Representation of the ECMAscript Scene host object from 19777-2 7.4.
- *  <p>
+
  *
  * Due to the limitation of the locateFunction method, methods that are defined
  * in the base execution context typically cannot be found here because it

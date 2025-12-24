@@ -19,7 +19,7 @@ import org.web3d.vrml.nodes.VRMLTextNodeType;
 
 /**
  * An abstract representation geometry that renders text.
- * <p>
+
  *
  * Text based geometry may also use a texture to render it. It is possible
  * to use 3D text objects, but it is not required. If the implementation uses

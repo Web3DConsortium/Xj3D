@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -22,11 +22,11 @@ import org.web3d.vrml.nodes.VRMLNodeType;
 
 /**
  * X3D base interface for MF field values.
- *  <p>
+
  * Class provides a size method that determines the number of items available
  * in this array of values. Normally used in conjunction with the get1Value()
  * method of the MF field classes so that exceptions are not generated.
- *  <p>
+
  * It is possible, although not recommended, that the size of the arrays
  * returned by the get methods may be larger than the actual amount of data
  * that is to be represented. Calling size() beforehand ensures that the

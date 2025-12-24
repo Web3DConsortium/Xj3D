@@ -22,11 +22,11 @@ import org.web3d.vrml.lang.VRMLException;
 /**
  * Representation of a class capable of reading a VRML source and providing
  * event notification of the items in that file.
- * <p>
+
  * The class acts as a serial stream of events as the VRML file is parsed.
  * If a given handler is not registered, events of these types will be
  * ignored.
- * <p>
+
  * All SAV interfaces are assumed to be Synchronous. The parse methods shall
  * not return until parsing is complete and readers shall wait for an event
  * handler callback to return before reporting the next event.

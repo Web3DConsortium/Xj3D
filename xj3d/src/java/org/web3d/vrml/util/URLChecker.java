@@ -23,7 +23,7 @@ import org.j3d.util.ObjectArray;
 
 /**
  * A checker of URLs to update them and include a root URL if needed.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.12 $

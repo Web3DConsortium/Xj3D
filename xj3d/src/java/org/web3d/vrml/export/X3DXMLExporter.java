@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -51,15 +51,15 @@ import org.web3d.x3d.jaxp.X3DConstants;
  * <li>a field is found on the same level</li>
  * <li>the script/protoInterface ends</li>
  * </ul>
- * <p>
+
  *     Maintain a level variable
  *         inc on each new node
  *         dec on each end of node
- * <p>
+
  *     Maintain a stack of level variables tracking fieldDecl
  *         push on a fieldDecl
  *         pop on a endFieldDecl(above rules)
- * <p>
+
  *     To handle the fact that IS elements must be declared first we have
  *     a stack of StringBuilders where IS information is kept per node.
  *         push on startNode
@@ -304,7 +304,7 @@ public class X3DXMLExporter extends Exporter {
      * <code>#</code> start. The type string contains the representation of
      * the first few characters of the file after the #. This allows us to
      * work out if it is VRML97 or the later X3D spec.
-     * <p>
+    
      * Version numbers change from VRML97 to X3D and aren't logical. In the
      * first, it is <code>#VRML V2.0</code> and the second is
      * <code>#X3D V1.0</code> even though this second header represents a
@@ -829,11 +829,11 @@ public class X3DXMLExporter extends Exporter {
      * value of the field. MFStrings will have to be parsed. This is a
      * terminating call for startField as well. The next call will either be
      * another <code>startField()</code> or <code>endNode()</code>.
-     * <p>
+    
      * If this field is an SFNode with a USE declaration you will have the
      * {@link #useDecl(String)} method called rather than this method. If the
      * SFNode is empty the value returned here will be "NULL".
-     * <p>
+    
      * There are times where we have an MFField that is declared in the file
      * to be empty. To signify this case, this method will be called with a
      * parameter value of null. A lot of the time this is because we can't
@@ -1194,7 +1194,7 @@ public class X3DXMLExporter extends Exporter {
      * fields except <code>url</code>, <code>mustEvaluate</code> and
      * <code>directOutput</code> fields. These fields use the normal field
      * callbacks of {@link ContentHandler}.
-     * <p>
+    
      * If the current parsing is in a proto and the field "value" is defined
      * with an IS statement then the value returned here is null. There will
      * be a subsequent call to the ProtoHandlers <code>protoIsDecl()</code>

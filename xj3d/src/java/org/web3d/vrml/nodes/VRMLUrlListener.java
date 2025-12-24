@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -19,7 +19,6 @@ package org.web3d.vrml.nodes;
 
 /**
  * An listener for changes in a nodes URL content.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $
@@ -29,7 +28,7 @@ public interface VRMLUrlListener {
     /**
      * Notification that the Url content for this node has changed
      *
-     * @param node
+     * @param node of interest
      * @param index The index of the field that has changed
      */
     void urlChanged(VRMLNodeType node, int index);

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2005
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -17,7 +17,7 @@ package org.web3d.vrml.lang;
 
 /**
  * Description of a single profile.
- * <p>
+
  *
  * A profile is a short-hand way of describing an aggregation of components.
  * A valid profile will always have one or more components, but a title

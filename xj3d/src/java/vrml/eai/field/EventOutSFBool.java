@@ -33,7 +33,7 @@ public abstract class EventOutSFBool extends EventOut
 
   /**
    * Get the value in the given eventOut.
-   *  <p>
+  
    * @return The boolean value of the eventOut
    */
   public abstract boolean getValue();

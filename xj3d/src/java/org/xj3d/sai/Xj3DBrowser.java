@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the BSD license.
@@ -21,7 +21,7 @@ import org.web3d.x3d.sai.ExternalBrowser;
 
 /**
  * Extension Xj3D-specific browser methods.
- * <p>
+
  * Only external browsers are able to make use of this interface.
  *
  * @author Justin Couch
@@ -168,7 +168,7 @@ public interface Xj3DBrowser extends ExternalBrowser {
      * process the clicks on Anchor nodes and replace or supplement the
      * existing behaviour. See documentation of the listener for more specific
      * details on usage patterns.
-     * <p>
+    
      * Only one interceptor instance can be registered. Setting a new item will
      * replace an existing registered instance. Setting a null value will clear
      * the current set instance.
@@ -196,7 +196,7 @@ public interface Xj3DBrowser extends ExternalBrowser {
     /**
      * Set the handler for processing screen captures. This can be used to
      * process images for saving to disc, processing or other task.
-     * <p>
+    
      * Only one listener instance can be registered. Setting a new item will
      * replace an existing registered instance. Setting a null value will clear
      * the current set instance.

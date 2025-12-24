@@ -13,9 +13,9 @@
 package org.web3d.vrml.lang;
 
 /**
- * <p>
+
  * Listing of type constants for textures.
- * </p>
+
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

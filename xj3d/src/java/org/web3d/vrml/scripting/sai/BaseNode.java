@@ -31,7 +31,7 @@ import org.xj3d.sai.X3DNodeTypeMapper;
 /**
  * The base representation of any VRML node in the system whether built in or
  * a proto.
- * <p>
+
  *
  * May be used as a standalone node, or extended with the abstract data types
  * defined by higher levels of the SAI conformance.
@@ -298,7 +298,7 @@ public class BaseNode implements X3DNode {
 
     /**
      * Get a field for this node.
-     *  <p>
+    
      * If the basic field required is an exposedField you can use either the
      * standard name (such as <i>translation</i>) or you can use the <i>set_</i>
      * / <i>_changed</i> modifier (such as <i>set_translation</i>). If the field
@@ -369,11 +369,11 @@ public class BaseNode implements X3DNode {
      * browser that the java side of the application does not require the
      * resources represented by this node. The browser is now free to do
      * what it likes with the node.
-     *  <p>
+    
      * This in no way implies that the browser is to remove this node from
      * the scene graph, only that the java code is no longer interested
      * in this particular node through this reference.
-     *  <p>
+    
      * Once this method has been called, any further calls to methods of
      * this instance of the class is shall generate an InvalidNodeException.
      *

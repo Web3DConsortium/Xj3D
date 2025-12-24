@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -36,7 +36,7 @@ import org.xj3d.core.eventmodel.NodeManager;
 
 /**
  * Manager for the rigid body physics model nodes.
- * <p>
+
  *
  * Keeps track of both the collections of bodies and the individual joints.
  * The collection nodes are evaluated at the end of the frame so as to modify
@@ -45,7 +45,7 @@ import org.xj3d.core.eventmodel.NodeManager;
  * next frame. This requires the manager to register as both pre and post
  * event model node manager, as it manages both sets of nodes, though
  * independently.
- * <p>
+
  *
  * The physics model is run at a somewhat fixed frame rate. Physics models
  * don't like to have variable frame rate as input, so we smooth these out

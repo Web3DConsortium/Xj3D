@@ -23,7 +23,7 @@ import org.web3d.vrml.renderer.common.nodes.texture.BaseComposedTexture3D;
 
 /**
  * Null-renderer implementation of a ComposedTexture3D node.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

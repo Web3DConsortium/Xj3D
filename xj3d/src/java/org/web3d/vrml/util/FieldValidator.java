@@ -19,7 +19,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
   * Validates the value of a VRML field against the specification.
-  * <p>
+ 
   * Will throw a InvalidFieldValueException if the value is out of range
   *
   * @author Alan Hudson

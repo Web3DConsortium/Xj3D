@@ -15,7 +15,7 @@ package org.web3d.x3d.sai;
 /**
  * Provides for implementation of a X3D browser than runs as a
  * component and able to extract a Browser reference from it.
- * <p>
+
  * Generally this is used to provide a definition of an AWT component with a
  * VRML display capability. There is no reason why this could not be used for
  * other browser representations such as off screen renderers or file savers.

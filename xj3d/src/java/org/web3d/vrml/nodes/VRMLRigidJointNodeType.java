@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -21,7 +21,7 @@ import org.web3d.vrml.lang.InvalidFieldValueException;
 
 /**
  * Representation of a X3DRigidJointNode extension node in Xj3D.
- * <p>
+
  *
  * A joint represents the connection between two bodies.
  *

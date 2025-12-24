@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -18,11 +18,11 @@ import org.web3d.vrml.util.Xj3DKeyListener;
 
 /**
  * A sensor that takes it's input from a keyboard device.
- * <p>
+
  *
  * These sensors handle an active status that determines when they should
  * receive key information from the user interface.
- * <p>
+
  * The key mappings passed through to the sensor are implemented in a ui
  * toolkit independent way through the Xj3DKeyListener/Xj3DKeyEvent objects.
  *

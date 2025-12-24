@@ -21,7 +21,7 @@ import org.j3d.aviatrix3d.SceneGraphPath;
 /**
  * A listener interface used to notify of a collision between the user position
  * and geometry in the scene.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

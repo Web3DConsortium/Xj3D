@@ -21,14 +21,14 @@ public interface SFBool extends X3DField {
 
     /**
      * Get the value in the given eventOut.
-     * <p>
+    
      * @return The boolean value of the eventOut
      */
     boolean getValue();
 
     /**
      * Set the value in the given eventIn.
-     * <p>
+    
      * @param value The boolean value to set the eventIn to.
      */
     void setValue(boolean value);

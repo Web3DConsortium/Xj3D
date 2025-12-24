@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,7 +27,7 @@ import org.web3d.vrml.nodes.VRMLViewportNodeType;
 /**
  * Convenience class for managing the resizing of the fullscreenViewports based on
  * listener feedback from the surface.
- * <p>
+
  *
  * This class deals deals with each of the different viewport node types and
  * manages them appropriately. Note that the coordinate system defined by Xj3D

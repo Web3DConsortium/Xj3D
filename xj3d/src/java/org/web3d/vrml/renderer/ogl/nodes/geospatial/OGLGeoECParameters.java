@@ -22,7 +22,7 @@ import org.web3d.vrml.renderer.ogl.nodes.OGLVRMLNode;
 
 /**
  * OpenGL implementation of an GeoECParameters
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

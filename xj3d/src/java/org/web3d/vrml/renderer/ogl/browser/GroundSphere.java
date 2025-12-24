@@ -24,7 +24,7 @@ import org.j3d.aviatrix3d.*;
 /**
  * Convenience class that represents the ground sphere part of the background
  * as a simple container class.
- * <p>
+
  *
  * @author Justin Couch
  * @version $Revision: 1.9 $
@@ -181,7 +181,7 @@ class GroundSphere extends Shape3D
      * Update the background transparency to this new value. If the value is
      * 1.0, then disable all the background rendering. A value of 0 is
      * completely opaque and a value of 1 is clear.
-     * <p>
+    
      * Make sure to call this before updateSkyColors so that the array can
      * pick up this information too when regenerating the sphere.
      *

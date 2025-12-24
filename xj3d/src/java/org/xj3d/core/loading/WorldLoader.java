@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -26,7 +26,7 @@ import org.web3d.vrml.sav.VRMLParseException;
 /**
  * Independent thread used to load a world from a list of URLs and then
  * place it in the given node.
- * <p>
+
  *
  * This implementation is designed to work as both a loadURL() and
  * createVrmlFromUrl() call handler. The difference is defined by what data
@@ -78,7 +78,7 @@ public interface WorldLoader {
      * using a specific specification version. The method is blocking and will
      * not return until the base file has been loaded. It will not load any
      * chained content such as externprotos, scripts, textures etc.
-     * <p>
+    
      *
      * A major version of 0 means to ignore the required version and just
      * load whatever can be found.

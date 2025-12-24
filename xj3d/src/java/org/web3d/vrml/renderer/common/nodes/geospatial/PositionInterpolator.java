@@ -23,7 +23,7 @@ import org.j3d.util.interpolator.Interpolator;
 /**
  * Custom implementation of the interpolator that works with double precision
  * positional coordinates.
- *  <p>
+
  *
  * The interpolation routine is just a simple linear interpolation between
  * each of the points. The interpolator may take arbitrarily spaced keyframes

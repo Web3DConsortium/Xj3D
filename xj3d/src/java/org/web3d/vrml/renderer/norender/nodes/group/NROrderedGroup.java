@@ -22,7 +22,6 @@ import org.web3d.vrml.renderer.norender.nodes.NRVRMLNode;
 
 /**
  * Null-renderer implementation of an ordered group node.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.1 $

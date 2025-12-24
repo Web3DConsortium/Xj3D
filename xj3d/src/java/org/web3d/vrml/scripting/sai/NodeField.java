@@ -22,7 +22,7 @@ import org.web3d.x3d.sai.X3DField;
 /**
  * Marker interface for fields that handle X3DNode information -
  * principally SFNode/MFNode.
- *  <p>
+
  *
  * A collection of internal convenience methods are provided that
  * will be used to pass commands down the hierarchy.

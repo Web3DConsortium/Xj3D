@@ -14,7 +14,7 @@ package org.web3d.x3d.sai;
 
 /**
  * The exception that is thrown when a reference to an readable field is not valid.
- * <p>
+
  * An readable field may be invalid for a number of reasons:
  * <UL>
  * <LI>The user may have typed in the wrong name through a typo.

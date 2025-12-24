@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001 - 2006
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -27,12 +27,10 @@ import org.web3d.vrml.nodes.VRMLSurfaceChildNodeType;
 
 /**
  * Common implementation of a XYLayout node.
- * <p>
+
  *
  * An XY layout places its children in relative positions to its layout location.
  * So a position of 0,64 would place the child 64 units down from the layout 0,0.
- *
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -25,11 +25,11 @@ import org.odejava.collision.BulkContact;
  *
  * See the specification definition at
  * http://www.xj3d.org/extensions/rigid_physics.html
- * <p>
+
  *
  * A collection is the root node of a set of objects that can be interacted.
  * This node does not have an equivalent X3D abstract node type.
- * <p>
+
  *
  * In the interest of optimisations, the group can be told whether or not one
  * or more sensors are interested in knowing the output of this node or not. If

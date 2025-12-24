@@ -24,7 +24,7 @@ import java.util.List;
 /**
  * A stack that has a minimal implementation and no sychronisation.
  * Looks all activity to help in debugging.
- *  <p>
+
  *
  * This stack is designed to be used in a high-speed, single threaded
  * environment. It is directly backed by an array for fast access.

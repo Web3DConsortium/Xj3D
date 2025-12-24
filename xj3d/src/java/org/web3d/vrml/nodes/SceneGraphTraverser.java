@@ -1,5 +1,5 @@
 /*****************************************************************************
- *                        Web3d.org Copyright (c) 2001
+ *                        Web3d.org Copyright (c) 2001 - 2026
  *                               Java Source
  *
  * This source is licensed under the GNU LGPL v2.1
@@ -122,7 +122,7 @@ public class SceneGraphTraverser {
      * then this will issue an exception. Any node can be used as the root
      * node. If no detailObs is set or the source is null, this method returns
      * immediately.
-     * <p>
+    
      * A explicit root may be provided for various reasons. The most common
      * would be for loading externprotos where the root of the traversed graph
      * is actually going to be in a separate file and scene graph structure

@@ -51,14 +51,14 @@ import org.xj3d.core.eventmodel.OriginManager;
 
 /**
  * A complete handler for all user input information within a scene.
- * <p>
+
  *
  * The handler takes care of all the handling needed for sensors, anchors,
  * navigation and keyboard. However, it does not define a way of sourcing
  * those events as it assumes that a user will either delegate or extend this
  * class with more specific information such as an AWT listener or Java3D
  * behavior.
- * <p>
+
  *
  * The current key handling does not allow keyboard navigation of the world.
  * It passes all key events directly through to the current key sensor if one
@@ -557,7 +557,7 @@ public class DefaultUserInputHandler
      * get there from the root of the scene. The transform group must allow
      * for reading the local to Vworld coordinates so that we can accurately
      * implement terrain following. A null value for the path is permitted.
-     * <p>
+    
      * This will also automatically set the center of rotation.
      *
      * @param vp The current viewpoint
