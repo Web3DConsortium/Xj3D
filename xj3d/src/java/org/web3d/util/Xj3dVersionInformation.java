@@ -50,9 +50,9 @@ public class Xj3dVersionInformation {
     /** These strings are set by the timestamp task in the build file
      * so need not be modified here
      */
-    public static final String BUILD_DSTAMP = "20251223";
-    public static final String BUILD_TSTAMP = "2300";
-    public static final String BUILD_TODAY  = "23 December 2025";
+    public static final String BUILD_DSTAMP = "20251225";
+    public static final String BUILD_TSTAMP = "1428";
+    public static final String BUILD_TODAY  = "25 December 2025";
 
     public static final String SP = " ";
     public static final String PERIOD = ".";
