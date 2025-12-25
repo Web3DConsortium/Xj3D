@@ -301,14 +301,15 @@ public class Appearance extends BaseEncodable implements IAppearance {
      * Compares this appearance to another and checks if
      * all fields are the same and that all children fields
      * are the same.
-     * @return 
+     * @param encodable comparison value
+     * @return whether equal
      */
     @Override
-    public boolean deepEquals(Encodable enc) {
-        if (!(enc instanceof Appearance))
+    public boolean deepEquals(Encodable encodable) {
+        if (!(encodable instanceof Appearance))
             return false;
 
-        Appearance app = (Appearance) enc;
+        Appearance app = (Appearance) encodable;
 
         Encodable node2 = app.getFillProperties();
         if (fillProperties != null) {

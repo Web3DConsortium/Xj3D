@@ -120,7 +120,8 @@ public interface Encodable {
      * Compares this appearance to another and checks if
      * all fields are the same and that all children fields
      * are the same.
-     * @return 
+     * @param encodableComparison comparison vaslue
+     * @return whether equal
      */
-    boolean deepEquals(Encodable enc);
+    boolean deepEquals(Encodable encodableComparison );
 }

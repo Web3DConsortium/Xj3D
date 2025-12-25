@@ -64,7 +64,7 @@ public abstract class BaseEncodable implements Encodable {
 
     /**
      * Constructor
-     * @param nodeName
+     * @param nodeName node to construct
      */
     protected BaseEncodable(String nodeName) {
         this.nodeName = nodeName;
@@ -73,7 +73,8 @@ public abstract class BaseEncodable implements Encodable {
 
     /**
      * Constructor
-     * @param defName
+     * @param nodeName node to construct
+     * @param defName initial DEF name
      */
     protected BaseEncodable(String nodeName, String defName) {
         this.nodeName = nodeName;
@@ -277,10 +278,11 @@ public abstract class BaseEncodable implements Encodable {
      * Compares this appearance to another and checks if
      * all fields are the same and that all children fields
      * are the same.
-     * @return 
+     * @param encodable comparison value
+     * @return whether equal
      */
     @Override
-    public boolean deepEquals(Encodable enc) {
+    public boolean deepEquals(Encodable encodable) {
         return false;
     }
 }
