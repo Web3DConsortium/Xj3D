@@ -107,9 +107,9 @@ Copying C:\x3d-github\Xj3D\xj3d\apps\replica\src\java\xj3d\replica\images\Xj3dRe
 Building jar: C:\x3d-github\Xj3D\xj3d\jars\xj3d-2.3-nps.jar
 timestamp:
 Copying 1 file to C:\x3d-github\Xj3D\xj3d
-DSTAMP = "20251223"
-TSTAMP = "2305"
-TODAY = "December 23 2025"
+DSTAMP = "20251225"
+TSTAMP = "1451"
+TODAY = "December 25 2025"
 Compiling 1 source file to C:\x3d-github\Xj3D\xj3d\classes
 Deleting: C:\x3d-github\Xj3D\xj3d\Xj3dVersionInformation.java
 compile.browser:
@@ -3028,31 +3028,11 @@ C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\parser\x3d\X3DRelaxedParser.java:2660
   public ParseException generateParseException() {
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\util\spatial\AllRegion.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\networking\Anchor.html...
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\x3d\sai\networking\Anchor.java:83: warning: no description for @return
-     * @return 
-C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\x3d\sai\networking\Anchor.java:89: warning: no description for @param
-     * @param newValue
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\browser\AntialiasingAction.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\shape\Appearance.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\node\Appearance.html...
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\Encodable.java:123: warning: no description for @return
-     * @return 
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\Encodable.java:125: warning: no @param for enc
-    boolean deepEquals(Encodable enc);
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:67: warning: no description for @param
-     * @param nodeName
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:76: warning: no description for @param
-     * @param defName
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:78: warning: no @param for nodeName
-    protected BaseEncodable(String nodeName, String defName) {
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\BaseEncodable.java:280: warning: no description for @return
-     * @return 
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\Appearance.java:304: warning: no description for @return
-     * @return 
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\AppearanceFilter.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\xj3d\filter\filters\AppearanceReplacerFilter.html...
-C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\NewAbstractFilter.java:1250: warning: no description for @return
-     * @return
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\ogl\browser\ApplicationFrameManager.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\image\AreaAveragingScaleFilter.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\AreaListener.html...
@@ -3075,7 +3055,11 @@ C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:
     public static final int INT = 1;
 C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:34: warning: no comment
     public static final int LONG = 2;
+C:\x3d-github\Xj3D\xj3d\apps\cadfilter\src\java\xj3d\filter\node\ArrayData.java:37: warning: no comment
+    public static final int STRING = 5;
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\util\ArrayUtils.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\util\ArrayUtils.java:33: warning: use of default constructor, which does not provide a comment
+public class ArrayUtils {
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\sound\AudioClip.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\xj3d\ui\construct\ogl\AutoConfigureViewpoint.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\ogl\nodes\nurbs\mesh\AviatrixConnector.html...
@@ -3088,11 +3072,27 @@ Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\xj3d\ui\awt\widgets\AWTProgr
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\environmentaleffects\Background.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\x3d\sai\rigidbodyphysics\BallJoint.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\networking\BaseAnchor.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\networking\BaseAnchor.java:766: warning: no description for @param
+     * @param numValid
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\annotation\BaseAnnotation.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\annotation\BaseAnnotationTarget.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\shape\BaseAppearance.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\shape\BaseAppearance.java:266: warning: no comment
+    protected int numStages;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\shape\BaseAppearance.java:267: warning: no comment
+    protected TextureStage[] stages;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\shape\BaseAppearance.java:268: warning: no comment
+    protected String[] urls;
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\geom2d\BaseArc2D.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom2d\BaseArc2D.java:80: warning: no comment
+    protected float vfStartAngle, vfEndAngle, vfRadius;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom2d\BaseArc2D.java:80: warning: no comment
+    protected float vfStartAngle, vfEndAngle, vfRadius;
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\renderer\common\nodes\geom2d\BaseArc2D.java:80: warning: no comment
+    protected float vfStartAngle, vfEndAngle, vfRadius;
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\sound\BaseAudioClip.html...
+C:\x3d-github\Xj3D\xj3d\src\java\org\web3d\vrml\nodes\VRMLAudioClipNodeType.java:91: warning: no description for @param
+     * @param newIsActive
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\enveffects\BaseBackground.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\rigidphysics\BaseBallJoint.html...
 Generating C:\x3d-github\Xj3D\xj3d\docs\javadoc\org\web3d\vrml\renderer\common\nodes\navigation\BaseBillboard.html...
@@ -8624,8 +8624,8 @@ Xj3D Graphics Browser v2.3-nps [1995-2025]
 Apache Ant(TM) version 1.10.15 compiled on August 25 2024 installed at C:\apache-ant-1.10.15
 Java? Virtual Machine version 25.0.1 installed at C:\Program Files\Java\OpenJDK\jdk-25.0.1
 Operating System: Windows 11 version 10.0 running on amd64 
-Today is: December 23 2025
-Local Time: 2305
+Today is: December 25 2025
+Local Time: 1451
 -------------------------------------------------------------------------------------------------
 
 check.run:
@@ -8635,8 +8635,8 @@ Xj3D launching 'C:\x3d-github\Xj3D\xj3d/apps/browser/moving_box.x3dv'
      browser.dir=apps/browser
 app.browser.args=-anisotropicDegree 16 -antialias 8 -enableOriginManager -numLoaderThreads 4 -swing
 org.xj3d.core.loading.threads set to: 4
-Dec 23, 2025 11:07:05 PM org.odejava.Odejava <clinit>
+Dec 25, 2025 2:52:50 PM org.odejava.Odejava <clinit>
 INFO: ODE natives version 0.3.4 loaded.
 *** Xj3D checkForSpecConfig(version=3.2) opened config/3.2/profiles.xml
 org.web3d.vrml.renderer.common.nodes.shape.useTextureCache set to: true
-BUILD SUCCESSFUL (total time: 1 minute 39 seconds)
+BUILD SUCCESSFUL (total time: 1 minute 31 seconds)
