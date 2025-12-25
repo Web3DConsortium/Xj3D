@@ -950,12 +950,18 @@ public class DefaultNodeFactory
             DocumentBuilderFactory fac = DocumentBuilderFactory.newInstance();
             fac.setValidating(false);
             fac.setNamespaceAware(false);
-            // https://bugs.openjdk.org/browse/JDK-8343022
-            // https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#NetBeans
-            fac.setAttribute("jdk.xml.entityExpansionLimit", 120000);
-            fac.setAttribute("jdk.xml.totalEntitySizeLimit", 50000000);
-            fac.setAttribute("jdk.xml.maxGeneralEntitySizeLimit", 50000000);
-    
+            try {
+                // https://bugs.openjdk.org/browse/JDK-8343022
+                // https://www.web3d.org/x3d/content/examples/X3dDevelopersGuide.html#NetBeans
+                fac.setAttribute("jdk.xml.entityExpansionLimit", 120000);
+                fac.setAttribute("jdk.xml.totalEntitySizeLimit", 50000000);
+                fac.setAttribute("jdk.xml.maxGeneralEntitySizeLimit", 50000000);
+            }
+            catch (Exception e)
+            {
+                System.err.println("*** Older version of DOM apparently does not support entity expansion relaxation? continuing...");
+                System.err.println("   " + e.getMessage());
+            }
             DocumentBuilder builder = fac.newDocumentBuilder();
             doc_root = builder.parse(is);
         } catch(FactoryConfigurationError fce) {
