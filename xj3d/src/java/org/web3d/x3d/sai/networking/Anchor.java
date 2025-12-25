@@ -80,13 +80,13 @@ public interface Anchor extends X3DGroupingNode {
     
     /**
      * Get the autoRefresh value for this link.
-     * @return 
+     * @return autoRefresh value
      */
     public double getAutoRefresh();
 
     /**
      * Set the autoRefresh value for this link
-     * @param newValue
+     * @param newValue new autoRefresh value
      */
     public void setAutoRefresh (double newValue);
 
