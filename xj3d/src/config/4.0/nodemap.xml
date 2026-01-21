@@ -446,6 +446,9 @@ inheritance of X3D nodes and abstract types
 <node name="ParticleSystem">
 <parent name="X3DShapeNode"/>
 </node>
+<node name="PhysicalMaterial">
+<parent name="X3DMaterialNode"/>
+</node>
 <node name="PickableGroup">
 <parent name="X3DGroupingNode"/>
 <parent name="X3DPickableObject"/>
@@ -677,6 +680,9 @@ inheritance of X3D nodes and abstract types
 </node>
 <node name="UniversalJoint">
 <parent name="X3DRigidJointNode"/>
+</node>
+<node name="UnlitMaterial">
+<parent name="X3DMaterialNode"/>
 </node>
 <node name="Viewpoint">
 <parent name="X3DViewpointNode"/>
