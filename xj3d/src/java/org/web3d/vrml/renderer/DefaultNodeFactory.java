@@ -665,7 +665,8 @@ public class DefaultNodeFactory
             }
             else
             {
-                throw new UnsupportedNodeException("\n  Cannot find node implementation: " + nodeName);
+                System.err.println(CREATE_MSG + "\n  Cannot find node implementation: " + nodeName);
+             // throw new UnsupportedNodeException("\n  Cannot find node implementation: " + nodeName);
             }
 
         } catch(InstantiationException | NoSuchMethodException | InvocationTargetException ie) {
