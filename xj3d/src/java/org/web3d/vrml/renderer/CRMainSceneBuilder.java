@@ -740,7 +740,10 @@ public abstract class CRMainSceneBuilder
                 reportBaseIssue = false; // initial report is sufficent for this baseline issue url
             }
             if (criticalError)
-                throw new InvalidFieldException(errorMessage);
+            {
+                System.err.println(errorMessage);
+                // throw new InvalidFieldException(errorMessage);
+            }
         }
         else // TODO trying to avoid continuing failures
         {
