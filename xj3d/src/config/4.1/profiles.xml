@@ -241,8 +241,9 @@
             <componentLevel level="2">
             </componentLevel>
             <componentLevel level="3">
-		<!-- TODO not implemented -->
+                <!-- TODO not implemented -->
                 <node name="HAnimMotion"/>
+                <node name="HAnimPose"/>
             </componentLevel>
         </component>
         <component name="Interpolation" title="Interpolation component" levels="5" url="http://www.yumetech.com/">
@@ -453,6 +454,7 @@
             </componentLevel>
             <componentLevel level="5">
                 <node name="ClipPlane"/>
+                <node name="Tangent"/>
             </componentLevel>
         </component>
         <component name="RigidBodyPhysics" title="Rigid body physics component" levels="2" url="http://www.yumetech.com/">
@@ -566,6 +568,9 @@
             <componentLevel level="1">
                 <node name="FontStyle"/>
                 <node name="Text"/>
+            </componentLevel>
+            <componentLevel level="2">
+                <node name="FontLibrary"/>
             </componentLevel>
         </component>
         <component name="Texturing" title="Texturing component" levels="4" url="http://www.yumetech.com/">

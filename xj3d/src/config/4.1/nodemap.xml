@@ -169,6 +169,9 @@ inheritance of X3D nodes and abstract types
 <node name="ElevationGrid">
 <parent name="X3DGeometryNode"/>
 </node>
+<node name="EnvironmentLight">
+<parent name="X3DLightNode"/>
+</node>
 <node name="EspduTransform">
 <parent name="X3DGroupingNode"/>
 <parent name="X3DSensorNode"/>
@@ -194,6 +197,9 @@ inheritance of X3D nodes and abstract types
 </node>
 <node name="FogCoordinate">
 <parent name="X3DGeometricPropertyNode"/>
+</node>
+<node name="FontLibrary">
+<parent name="X3DFontStyleNode"/>
 </node>
 <node name="FontStyle">
 <parent name="X3DFontStyleNode"/>
@@ -250,6 +256,10 @@ inheritance of X3D nodes and abstract types
 </node>
 <node name="HAnimJoint">
 <parent name="X3DGroupingNode"/>
+</node>
+<node name="HAnimPose">
+<parent name="X3DChildNode"/>
+<parent name="HAnimHumanoid"/>
 </node>
 <node name="HAnimSegment">
 <parent name="X3DGroupingNode"/>
@@ -446,6 +456,9 @@ inheritance of X3D nodes and abstract types
 <node name="ParticleSystem">
 <parent name="X3DShapeNode"/>
 </node>
+<node name="PhysicalMaterial">
+<parent name="X3DMaterialNode"/>
+</node>
 <node name="PickableGroup">
 <parent name="X3DGroupingNode"/>
 <parent name="X3DPickableObject"/>
@@ -607,6 +620,9 @@ inheritance of X3D nodes and abstract types
 <node name="Switch">
 <parent name="X3DGroupingNode"/>
 </node>
+<node name="Tangent">
+<parent name="X3DTangentNode"/>
+</node>
 <node name="TexCoordDamper">
 <parent name="X3DDamperNode"/>
 </node>
@@ -677,6 +693,9 @@ inheritance of X3D nodes and abstract types
 </node>
 <node name="UniversalJoint">
 <parent name="X3DRigidJointNode"/>
+</node>
+<node name="UnlitMaterial">
+<parent name="X3DMaterialNode"/>
 </node>
 <node name="Viewpoint">
 <parent name="X3DViewpointNode"/>
