@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Copyright (c) 1995-2025 held by the author(s).  All rights reserved.
+Copyright (c) 1995-2026 held by the author(s).  All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions
@@ -1193,6 +1193,13 @@ lists details and further links as part of the
         <!-- TODO insert timestamp in output filename difflog.txt, maybe add a clean.diffs target too -->
         <!-- TODO diff the diff files to see what changed ?! -->
 
+    </target>
+
+    <target name="get.latest.opendis7.class.jars.local" description="Download latest opendis7 .class jar files from opendis distribution">
+        <copy file="C:\x3d-github\opendis7-java\dist\opendis7-enumerations-classes.jar"
+             todir="lib/"  verbose="true"/>
+        <copy file="C:\x3d-github\opendis7-java\dist\opendis7-pdus-classes.jar"
+             todir="lib/"  verbose="true"/>
     </target>
 
     <!-- Invoke this from time to time to get the latest DTDs which Xj3D uses to validate X3D scenes -->
