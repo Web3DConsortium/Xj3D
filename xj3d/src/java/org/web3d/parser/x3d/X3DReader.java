@@ -231,8 +231,9 @@ public class X3DReader extends BaseReader {
             xis.setEncoding(input.getEncoding());
 
             try {
-                reader.parse(xis);
-            } catch(SAXException se) {
+                reader.parse(xis); // reports exception if illegal or unknown name
+            } 
+            catch(SAXException se) {
                 Exception e = se.getException();
 
                 if(e != null)
