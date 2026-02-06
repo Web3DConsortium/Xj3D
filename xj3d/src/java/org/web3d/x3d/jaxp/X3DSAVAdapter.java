@@ -869,7 +869,7 @@ System.out.println();
                 value = attribs.getValue(DEF_ATTR);
 
                 if(contentHandler != null)
-                    contentHandler.startNode(qName, value);
+                   contentHandler.startNode(qName, value); // reports exception if illegal node name
             }
 
             // now process all the attributes from the DEF node
