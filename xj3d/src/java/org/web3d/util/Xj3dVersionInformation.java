@@ -42,7 +42,7 @@ import java.util.ResourceBundle;
 @SuppressWarnings("StaticNonFinalUsedInInitialization")
 public class Xj3dVersionInformation {
 
-    /** These must be manually changed by the developer in build.properties */
+    /** These must be manually changed by the developer in xj3d build.properties */
     public static final String BUILD_MAJOR_VERSION = getProjectProperties().getString("product.version.major");          // TODO update
     public static final String BUILD_MINOR_VERSION = getProjectProperties().getString("product.version.level") + "-nps"; // TODO -web3d
     public static final String JAVA_VERSION        = System.getProperty("java.version");
@@ -57,9 +57,9 @@ public class Xj3dVersionInformation {
     public static final String SP = " ";
     public static final String PERIOD = ".";
 
-    /** Property in xj3d.properties */
+    /** Property in xj3d bundle.properties */
     private static final String DIS_VERSION = getProjectProperties().getString("dis.version");
-    public  static final String OPEN_DIS_VERSION = "opendis" + DIS_VERSION + "-java library for IEEE DIS version " + DIS_VERSION;
+    public  static final String OPEN_DIS_VERSION = "opendis" + DIS_VERSION.substring(0,1) + "-java library for IEEE DIS version " + DIS_VERSION;
 
     /** Customizable message to be displayed, must first be initialized by class constructor */
     public static String DEVELOPER_CUSTOM_MESSAGE;
@@ -128,9 +128,9 @@ public class Xj3dVersionInformation {
     
     /**
      * <p>Project specific Project properties resourced from
-     * config/xj3d.properties. These are not expected to dynamically
+     * xj3d bundle.properties. These are not expected to dynamically
      * change during runtime.</p>
-     * @return specific Project properties resourced from config/xj3d.properties
+     * @return specific Project properties resourced from xj3d bundle.properties
      */
     public static ResourceBundle getProjectProperties() {
         return PropertyResourceBundle.getBundle("config.xj3d");
