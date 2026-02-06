@@ -25,4 +25,4 @@ Git archive: [https://gitlab.nps.edu/Savage/xj3d/-/tree/master/jars](https://git
 
 Documentation: [https://savage.nps.edu/Savage/developers.html#Xj3D](https://savage.nps.edu/Savage/developers.html#Xj3D}
 
-Released: 31 December 2026
+Released: 6 February 2026
