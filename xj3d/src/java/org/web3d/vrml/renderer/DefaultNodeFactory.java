@@ -918,8 +918,9 @@ public class DefaultNodeFactory
     private InputStream checkForSpecConfig(Float version)
         throws UnsupportedSpecVersionException {
         String file_loc = "config/" + version + "/profiles.xml";
-        InputStream is = locateConfigFile(file_loc);
+        System.out.println("*** Xj3D checkForSpecConfig(version=" + version + ") opened " + file_loc); // debug
 
+        InputStream is = locateConfigFile(file_loc);
         if(is == null) {
             switch(version.intValue()) {
                 case 2:
@@ -935,7 +936,6 @@ public class DefaultNodeFactory
                     throw new UnsupportedSpecVersionException(UNKNOWN_SPEC_VERSION);
             }
         }
-        System.out.println("*** Xj3D checkForSpecConfig(version=" + version + ") opened " + file_loc); // debug
         return is;
     }
 
