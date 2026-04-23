@@ -118,7 +118,7 @@ public class DefaultNodeFactory
     private static final String INVALID_X3D_SPEC_VERSION =
         "An invalid minor version number has been provided for X3D: ";
 
-    /** Message if the spec version number is not 2.0 or 3.x */
+    /** Message if the spec version number is not 2.0 or 3.x or 4.x */
     private static final String UNKNOWN_SPEC_VERSION =
         "An unknown specification major version number is provided, for " +
         "which we have no known configuration information: ";
@@ -926,6 +926,9 @@ public class DefaultNodeFactory
                     throw new UnsupportedSpecVersionException(INVALID_VRML_SPEC_VERSION + version);
 
                 case 3:
+                    throw new UnsupportedSpecVersionException(INVALID_X3D_SPEC_VERSION + version);
+
+                case 4:
                     throw new UnsupportedSpecVersionException(INVALID_X3D_SPEC_VERSION + version);
 
                 default:
