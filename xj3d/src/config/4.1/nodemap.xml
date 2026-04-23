@@ -259,7 +259,6 @@ inheritance of X3D nodes and abstract types
 </node>
 <node name="HAnimPose">
 <parent name="X3DChildNode"/>
-<parent name="HAnimHumanoid"/>
 </node>
 <node name="HAnimSegment">
 <parent name="X3DGroupingNode"/>
@@ -299,6 +298,10 @@ inheritance of X3D nodes and abstract types
 <node name="Inline">
 <parent name="X3DChildNode"/>
 <parent name="X3DBoundedObject"/>
+<parent name="X3DUrlObject"/>
+</node>
+<node name="InlineGeometry">
+<parent name="X3DGeometryNode"/>
 <parent name="X3DUrlObject"/>
 </node>
 <node name="IntegerSequencer">
@@ -465,6 +468,11 @@ inheritance of X3D nodes and abstract types
 </node>
 <node name="PixelTexture">
 <parent name="X3DTexture2DNode"/>
+</node>
+<node name="RenderedTexture">
+<parent name="X3DTexture2DNode"/>
+<!-- TODO not implemented
+<parent name="X3DUrlOutputObject"/> -->
 </node>
 <node name="PixelTexture3D">
 <parent name="X3DTexture3DNode"/>

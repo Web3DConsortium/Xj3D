@@ -352,7 +352,10 @@
             <componentLevel level="3">
                 <node name="LoadSensor"/>
             </componentLevel>
-            <componentLevel level="4"/>
+            <!-- TODO not implemented -->
+            <componentLevel level="4">
+                <node name="InlineGeometry"/>
+            </componentLevel>
         </component>
         <component name="NURBS" title="NURBS component" levels="4" url="http://www.yumetech.com/">
             <nodeLocation type="null" package="org.web3d.vrml.renderer.norender.nodes.nurbs"/>
@@ -454,6 +457,7 @@
             </componentLevel>
             <componentLevel level="5">
                 <node name="ClipPlane"/>
+                <!-- TODO not implemented -->
                 <node name="Tangent"/>
             </componentLevel>
         </component>
@@ -570,6 +574,7 @@
                 <node name="Text"/>
             </componentLevel>
             <componentLevel level="2">
+                <!-- TODO not implemented -->
                 <node name="FontLibrary"/>
             </componentLevel>
         </component>
@@ -593,6 +598,8 @@
             </componentLevel>
             <componentLevel level="4">
                 <node name="MovieTexture"/>
+                <!-- TODO not implemented -->
+                <node name="RenderedTexture"/>
             </componentLevel>
         </component>
             <!-- TODO partial implementation -->
