@@ -54,14 +54,15 @@
 <!ENTITY % FollowersComponent "INCLUDE">
 <!ENTITY % ParticleSystemsComponent "INCLUDE">
 <!ENTITY % VolumeRenderComponent "INCLUDE">
+<!ENTITY % GaussianSplatsComponent "INCLUDE">
 <!ENTITY % Web3dExtensionComponent "INCLUDE">
 <!ENTITY % X3dInputOutputFields "INCLUDE">
 <!ENTITY % X3dExtensions "IGNORE">
 <!ENTITY % profileNames "(Core|Interchange|CADInterchange|Interactive|Immersive|MedicalInterchange|MPEG4Interactive|Full)">
 <!-- H-Anim is an allowed value for backwards validation of X3D version 3 HAnim version 1 models, but is not legal for X3D version 4 HAnim version 2 -->
-<!ENTITY % componentNames "(Core|CADGeometry|CubeMapTexturing|DIS|EnvironmentalEffects|EnvironmentalSensor|EventUtilities|Followers|Geometry2D|Geometry3D|Geospatial|Grouping|HAnim|H-Anim|Interpolation|KeyDeviceSensor|Layering|Layout|Lighting|Navigation|Networking|NURBS|ParticleSystems|Picking|PointingDeviceSensor|Rendering|RigidBodyPhysics|Scripting|Shaders|Shape|Sound|Text|TextureProjection|Texturing|Texturing3D|Time|VolumeRendering)">
+<!ENTITY % componentNames "(Core|CADGeometry|CubeMapTexturing|DIS|EnvironmentalEffects|EnvironmentalSensor|EventUtilities|Followers|GaussianSplats|Geometry2D|Geometry3D|Geospatial|Grouping|HAnim|H-Anim|Interpolation|KeyDeviceSensor|Layering|Layout|Lighting|Navigation|Networking|NURBS|ParticleSystems|Picking|PointingDeviceSensor|Rendering|RigidBodyPhysics|Scripting|Shaders|Shape|Sound|Text|TextureProjection|Texturing|Texturing3D|Time|VolumeRendering)">
 <!ENTITY % componentLevels "(1|2|3|4|5)">
-<!ENTITY % X3dFieldTypes "SFBool|MFBool|SFColor|MFColor|SFColorRGBA|MFColorRGBA|SFDouble|MFDouble|SFFloat|MFFloat|SFImage|MFImage|SFInt32|MFInt32|SFNode|MFNode|SFRotation|MFRotation|SFString|MFString|SFTime|MFTime|SFVec2f|MFVec2f|SFVec2d|MFVec2d|SFVec3f|MFVec3f|SFVec3d|MFVec3d|SFMatrix3d|MFMatrix3d|SFMatrix3f|MFMatrix3f|SFMatrix4d|MFMatrix4d|SFMatrix4f|MFMatrix4f|SFVec4d|MFVec4d|SFVec4f|MFVec4f">
+<!ENTITY % X3dFieldTypes "SFBool|MFBool|SFColor|MFColor|SFColorRGBA|MFColorRGBA|SFDouble|MFDouble|SFFloat|MFFloat|SFImage|MFImage|SFInt32|MFInt32|SFNode|MFNode|SFRotation|MFRotation|SFString|MFString|SFTime|MFTime|SFVec2f|MFVec2f|SFVec2d|MFVec2d|SFVec3f|MFVec3f|SFVec3d|MFVec3d|SFMatrix3d|MFMatrix3d|SFMatrix3f|MFMatrix3f|SFMatrix4d|MFMatrix4d|SFMatrix4f|MFMatrix4f|SFVec4d|MFVec4d|SFVec4f|MFVec4f|SFQuaternion|MFQuaternion">
 <!-- X3D type definitions as DTD types -->
 <!ENTITY % SFBool "(true|false)">
 <!ENTITY % MFBool "CDATA">
@@ -103,6 +104,8 @@
 <!ENTITY % MFMatrix4f "CDATA">
 <!ENTITY % SFMatrix4d "CDATA">
 <!ENTITY % MFMatrix4d "CDATA">
+<!ENTITY % SFQuaternion "CDATA">
+<!ENTITY % MFQuaternion "CDATA">
 
 <!-- https://www.web3d.org/x3d/content/examples/X3dSceneAuthoringHints.html#containerField -->
 <!-- also see corresponding definitions in X3D XML Schema -->
@@ -129,7 +132,7 @@
 <!ENTITY % TextureMagnificationModeValues   "(AVG_PIXEL|DEFAULT|FASTEST|NEAREST_PIXEL|NICEST)">
 <!ENTITY % TextureMinificationModeValues    "(AVG_PIXEL|AVG_PIXEL_AVG_MIPMAP|AVG_PIXEL_NEAREST_MIPMAP|DEFAULT|FASTEST|NEAREST_PIXEL|NEAREST_PIXEL_AVG_MIPMAP|NEAREST_PIXEL_NEAREST_MIPMAP|NICEST)">
 <!ENTITY % TextureCompressionModeValues     "(DEFAULT|FASTEST|HIGH|LOW|MEDIUM|NICEST)">
-<!ENTITY % TextureCoordinateGeneratorModes  "(SPHERE|CAMERASPACENORMAL|CAMERASPACEPOSITION|CAMERASPACEREFLECTIONVECTOR|SPHERE-LOCAL|COORD|COORD-EYE|NOISE|NOISE-EYE|SPHERE-REFLECT|SPHERE-REFLECT-LOCAL)">
+<!ENTITY % TextureCoordinateGeneratorModes  "(SPHERE|CAMERA_SPACE_NORMAL|CAMERA_SPACE_POSITION|CAMERA_SPACE_REFLECTION_VECTOR|SPHERE_LOCAL|COORD|COORD_EYE|NOISE|NOISE_EYE|SPHERE_REFLECT|SPHERE_REFLECT_LOCAL)">
 
 <!--	DTD authors making modifications need to append | after listing each new node in any of these extensions.
 	For an example, see examples/development/ProtoTagDtdDeclarationExamples.x3d   -->
@@ -216,6 +219,10 @@
 <!ENTITY % X3DVolumeDataNodeExtensions "" >
 <!ENTITY % X3DVolumeDataNodes " %X3DVolumeDataNodeExtensions; IsoSurfaceVolumeData|SegmentedVolumeData|VolumeData| " >
 ]]>
+<![%GaussianSplatsComponent;[
+<!ENTITY % X3DGaussianSplatsNodeExtensions "" >
+<!ENTITY % X3DaussianSplatsNodes " %X3DGaussianSplatsNodeExtensions; GaussianSplats| " >
+]]>
 
 <![%Web3dExtensionComponent;[
 <!--
@@ -260,7 +267,7 @@
 <!ENTITY % TextureTransformNodes "" >
 ]]>
 <!-- NetworkSensorNodes used by LoadSensor -->
-<!ENTITY % NetworkSensorNodes " %NetworkSensorNodeExtensions; Anchor|AudioClip|DISEntityTypeMapping|GeoMetadata|FontLibrary|ImageCubeMapTexture|ImageTexture|ImageTexture3D|Inline|MovieTexture|PackagedShader|Script|ShaderPart|ShaderProgram ">
+<!ENTITY % NetworkSensorNodes " %NetworkSensorNodeExtensions; Anchor|AudioClip|DISEntityTypeMapping|GeoMetadata|FontLibrary|ImageCubeMapTexture|ImageTexture|ImageTexture3D|Inline|InlineGeometry|MovieTexture|PackagedShader|Script|ShaderPart|ShaderProgram ">
 
 <![%ImmersiveProfile;[
 
@@ -324,7 +331,7 @@
 
 <!ENTITY % Geometry2DNodes      " Arc2D|ArcClose2D|Circle2D|Disk2D|Polyline2D|Polypoint2D|Rectangle2D|TriangleSet2D| " >
 
-<!ENTITY % GeometryNodes    	" %GeometryNodeExtensions; %GeoElevationGridNode; %NurbsGeometryNodes; %CadGeometryNodes; %Web3dExtensionGeometryNodes; %Geometry2DNodes; Box|Cone|Cylinder|ElevationGrid|Extrusion|IndexedFaceSet|IndexedLineSet|LineSet|PointSet|Sphere|Text|IndexedTriangleFanSet|IndexedTriangleSet|IndexedTriangleStripSet|TriangleFanSet|TriangleSet|TriangleStripSet " >
+<!ENTITY % GeometryNodes    	" %GeometryNodeExtensions; %GeoElevationGridNode; %NurbsGeometryNodes; %CadGeometryNodes; %Web3dExtensionGeometryNodes; %Geometry2DNodes; Box|Cone|Cylinder|ElevationGrid|Extrusion|IndexedFaceSet|IndexedLineSet|InlineGeometry|LineSet|PointSet|Sphere|Text|IndexedTriangleFanSet|IndexedTriangleSet|IndexedTriangleStripSet|TriangleFanSet|TriangleSet|TriangleStripSet " >
 
 <!ENTITY % GroupingNodes    	" %GroupingNodeExtensions; %DISGroupingNodes; %GeoGroupingNodes; %HAnimGroupingNodes; %CadGroupingNodes; %RigidBodyPhysicsGroupingNodes; %Web3dExtensionGroupingNodes; Anchor|Billboard|Collision|Group|Inline|LOD|ScreenGroup|StaticGroup|Switch|Transform " >
 ]]>
@@ -335,9 +342,9 @@
 
 <!ENTITY % ShapeNodes       	" %ShapeNodeExtensions; %X3DVolumeDataNodes; Shape " >
 
-<!ENTITY % Texture2DNodes   	" %TextureNodeExtensions; ImageTexture|MovieTexture|PixelTexture " >
+<!ENTITY % Texture2DNodes   	" %TextureNodeExtensions; ImageTexture|MovieTexture|PixelTexture|RenderedTexture " >
 
-<!ENTITY % MultiTextureChildTextures " %TextureNodeExtensions; ImageTexture|MovieTexture|PixelTexture|ComposedCubeMapTexture|GeneratedCubeMapTexture|ImageCubeMapTexture|ComposedTexture3D|ImageTexture3D|PixelTexture3D " >
+<!ENTITY % MultiTextureChildTextures " %TextureNodeExtensions; ImageTexture|MovieTexture|PixelTexture|RenderedTexture|ComposedCubeMapTexture|GeneratedCubeMapTexture|ImageCubeMapTexture|ComposedTexture3D|ImageTexture3D|PixelTexture3D " >
 
 <!ENTITY % WorldInfoNodes   	" %WorldInfoNodeExtensions; %GeoMetadataNode; WorldInfo " >
 ]]>
@@ -375,8 +382,8 @@
 
 <!ENTITY % BehaviorLeafNodes	 " %InterpolatorNodeExtensions; %SensorNodeExtensions; %ScriptNodeExtensions; %GeoBehaviorNodes; %DisplacerNode; %NurbsInterpolators; %EventUtilityNodes;|ColorInterpolator|CoordinateInterpolator|CoordinateInterpolator2D|CylinderSensor|KeySensor|LoadSensor|LocalFog|NormalInterpolator|OrientationInterpolator|PlaneSensor|PositionInterpolator|PositionInterpolator2D|ProximitySensor|ScalarInterpolator|Script|SphereSensor|StringSensor|TimeSensor|TouchSensor|VisibilitySensor " >
 
-<!ENTITY % ChildrenNodes         " %BehaviorLeafNodes;|%BindableNodes;|%GroupingNodes;|%SceneLeafNodes;|%FollowerNodes;|ClipPlane|TransformSensor|ViewpointGroup|%PickingNodes; %AdvancedInterpolators; ProtoDeclare|ExternProtoDeclare|ROUTE|EXPORT|IMPORT|TextureProjectorParallel|TextureProjector|EnvironmentLight|FontLibrary|HAnimPose|Tangent ">
-<!ENTITY % ProtoNodes       	 " %OtherLeafNodes;|%AppearanceNodes;|%AppearanceChildNodes;|%BehaviorLeafNodes;|%BindableNodes;|%CubeMapTextureNodes;|%FontStyleNodes;|%ComposedGeometryNodes;|EnvironmentLight|FontLibrary|HAnimPose|Tangent|%GeometryNodes;|%GroupingNodes;|ShaderPart|ShaderProgram|%MetadataNodes;|%SceneLeafNodes;|%Texture3DTextureNodes;|%Texture3DTextureTransformNodes;|%GeoOriginNode;Contour2D|ContourPolyline2D|%FollowerNodes;|BallJoint|CollidableOffset|CollisionCollection|CollisionSpace|Contact|DoubleAxisHingeJoint|MotorJoint|RigidBody|SingleAxisHingeJoint|SliderJoint|UniversalJoint|ProtoDeclare|ExternProtoDeclare|ProtoInstance " >
+<!ENTITY % ChildrenNodes         " %BehaviorLeafNodes;|%BindableNodes;|%GroupingNodes;|%SceneLeafNodes;|%FollowerNodes;|ClipPlane|TransformSensor|ViewpointGroup|%PickingNodes; %AdvancedInterpolators; ProtoDeclare|ExternProtoDeclare|ROUTE|EXPORT|IMPORT|TextureProjectorParallel|TextureProjector|EnvironmentLight|FontLibrary|GaussianSplats|HAnimPose|Tangent ">
+<!ENTITY % ProtoNodes       	 " %OtherLeafNodes;|%AppearanceNodes;|%AppearanceChildNodes;|%BehaviorLeafNodes;|%BindableNodes;|%CubeMapTextureNodes;|%FontStyleNodes;|%ComposedGeometryNodes;|EnvironmentLight|FontLibrary|GaussianSplats|HAnimPose|Tangent|%GeometryNodes;|%GroupingNodes;|ShaderPart|ShaderProgram|%MetadataNodes;|%SceneLeafNodes;|%Texture3DTextureNodes;|%Texture3DTextureTransformNodes;|%GeoOriginNode;Contour2D|ContourPolyline2D|%FollowerNodes;|BallJoint|CollidableOffset|CollisionCollection|CollisionSpace|Contact|DoubleAxisHingeJoint|MotorJoint|RigidBody|SingleAxisHingeJoint|SliderJoint|UniversalJoint|ProtoDeclare|ExternProtoDeclare|ProtoInstance " >
 
 <![%FullProfile;[
 <!ENTITY % SceneNodes       	 " %ChildrenNodes;|%WildcardNodes;|LayerSet " >
@@ -805,8 +812,8 @@
 	intensity        %SFFloat; "1"
 	on               %SFBool;  "true"
 	global           %SFBool;  "false"
-    shadows          %SFBool;  "false"
-    shadowIntensity  %SFFloat; "1"
+        shadows          %SFBool;  "false"
+        shadowIntensity  %SFFloat; "1"
 	containerField NMTOKEN "children"
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
@@ -840,9 +847,9 @@
 	global           %SFBool;  "true"
 	origin           %SFVec3f;	"0 0 0"
 	rotation         %SFRotation; "0 0 1 0"
-    shadows          %SFBool;  "false"
-    shadowIntensity  %SFFloat; "1"
-    diffuseCoefficients %MFFloat; #IMPLIED
+        shadows          %SFBool;  "false"
+        shadowIntensity  %SFFloat; "1"
+        diffuseCoefficients %MFFloat; #IMPLIED
 	containerField NMTOKEN "children"
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
@@ -1003,10 +1010,47 @@
     id    NMTOKEN    #IMPLIED
 	DEF         ID          #IMPLIED
 	USE         IDREF       #IMPLIED>
+
+<![%GaussianSplatsComponent;[
+<!ELEMENT GaussianSplats ( (IS?), (%MetadataNodes;)? ) >
+<!ATTLIST GaussianSplats
+	colorSpace    (SRGB_REC709_DISPLAY|LIN_REC709_DISPLAY) "SRGB_REC709_DISPLAY"
+        pointerEvents %SFBool;   "true"
+	opacities     %MFVec3f; ""
+	orientations  %MFRotation; ""
+	positions     %MFVec3f; ""
+	scales        %MFVec3f; ""
+        sphericalHarmonicsDegree0Coef0 %MFVec3f; ""
+        sphericalHarmonicsDegree1Coef0 %MFVec3f; ""
+        sphericalHarmonicsDegree1Coef1 %MFVec3f; ""
+        sphericalHarmonicsDegree1Coef2 %MFVec3f; ""
+        sphericalHarmonicsDegree2Coef0 %MFVec3f; ""
+        sphericalHarmonicsDegree2Coef1 %MFVec3f; ""
+        sphericalHarmonicsDegree2Coef2 %MFVec3f; ""
+        sphericalHarmonicsDegree2Coef3 %MFVec3f; ""
+        sphericalHarmonicsDegree2Coef4 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef0 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef1 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef2 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef3 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef4 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef5 %MFVec3f; ""
+        sphericalHarmonicsDegree3Coef6 %MFVec3f; ""
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
+	bboxDisplay %SFBool;  "false"
+        castShadow  %SFBool;  "true"
+	visible     %SFBool;  "true"
+	containerField NMTOKEN "children"
+	class NMTOKENS   #IMPLIED
+    id    NMTOKEN    #IMPLIED
+	DEF         ID          #IMPLIED
+	USE         IDREF       #IMPLIED>
+]]>
 <!ELEMENT Group (IS?, (%MetadataNodes;)?, (%ChildrenNodes; | %WildcardNodes;)*)>
 <!ATTLIST Group
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField %containerFieldChoicesGroupLODShapeTransformSwitch; "children"
@@ -1187,11 +1231,27 @@
 	global      %SFBool;   "false"
     load        %SFBool;   "true"
 	url %MFString; #IMPLIED
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField %containerFieldChoicesX3DUrlObject; "children"
+	class NMTOKENS   #IMPLIED
+    id    NMTOKEN    #IMPLIED
+	style %SFString; #IMPLIED
+	DEF ID #IMPLIED
+	USE IDREF #IMPLIED
+>
+<!ELEMENT InlineGeometry ((IS?), (%MetadataNodes;)?)>
+<!ATTLIST InlineGeometry
+    autoRefresh          %SFTime; "0"
+    autoRefreshTimeLimit %SFTime; "3600"
+	description %SFString; #IMPLIED
+    load        %SFBool;   "true"
+	solid       %SFBool;   "false"
+	smooth      %SFBool;   "true"
+	url %MFString; #IMPLIED
+	containerField NMTOKEN "geometry"
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
 	style %SFString; #IMPLIED
@@ -1202,6 +1262,7 @@
 <!ATTLIST EXPORT
 	localDEF IDREF #REQUIRED
 	AS NMTOKEN #IMPLIED
+	description %SFString;    #IMPLIED
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
 	style %SFString; #IMPLIED
@@ -1211,6 +1272,7 @@
 	inlineDEF IDREF #REQUIRED
 	importedDEF NMTOKEN #REQUIRED
 	AS ID #IMPLIED
+	description %SFString;    #IMPLIED
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
 	style %SFString; #IMPLIED
@@ -1617,8 +1679,8 @@
 	on               %SFBool;	"true"
 	global           %SFBool;   "true"
 	radius	 	     %SFFloat;	"100"
-    shadows          %SFBool;   "false"
-    shadowIntensity  %SFFloat;  "1"
+        shadows          %SFBool;   "false"
+        shadowIntensity  %SFFloat;  "1"
 	containerField NMTOKEN "children"
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
@@ -1633,6 +1695,30 @@
 	( %WildcardNodes;, ((%ColorNodes;)|(%CoordinateNodes;)|%WildcardNodes;)?)
 )? ) >
 ]]>
+
+<!ELEMENT RenderedTexture ( (IS?), (%MetadataNodes;)?, (TextureProperties?|%WildcardNodes;)? ) >
+<!ATTLIST RenderedTexture
+	colorDepth %SFInt32; "4"
+	depthMap %SFBool;  "true"
+	description %SFString; #IMPLIED
+	enabled     %SFBool;   "true"
+	height %SFInt32; "128"
+	maxNumberFrames %SFInt32; "1000"
+	repeatS %SFBool;  "true"
+	repeatT %SFBool;  "true"
+	singleFrame %SFBool;  "true"
+	update (NONE|NEXT_FRAME_ONLY|ALWAYS) "NONE"
+	updateInterval %SFTime; "0.1"
+	url          %MFString; #IMPLIED
+	width %SFInt32; "128"
+	containerField %containerFieldChoicesX3DTexture2DNode; "texture"
+	class NMTOKENS   #IMPLIED
+    id    NMTOKEN    #IMPLIED
+	style %SFString; #IMPLIED
+	DEF     ID        #IMPLIED
+	USE     IDREF     #IMPLIED
+>
+
 <![%InterchangeProfile;[
 <!ELEMENT PointSet ( (%MetadataNodes;)?, ( ( Color, Coordinate? )|( Coordinate, Color? ) )? ) >
 ]]>
@@ -1786,10 +1872,10 @@
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
 	style %SFString; #IMPLIED
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
-    castShadow  %SFBool;  "true"
+        castShadow  %SFBool;  "true"
 	visible     %SFBool;  "true"
 	DEF ID #IMPLIED
 	USE IDREF #IMPLIED
@@ -1853,8 +1939,8 @@
 	on               %SFBool;  "true"
 	global           %SFBool;  "true"
 	radius           %SFFloat; "100"
-    shadows          %SFBool;  "false"
-    shadowIntensity  %SFFloat; "1"
+        shadows          %SFBool;  "false"
+        shadowIntensity  %SFFloat; "1"
 	containerField NMTOKEN "children"
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
@@ -1864,7 +1950,7 @@
 
 <!ELEMENT StaticGroup (IS?, (%MetadataNodes;)?, ( %ChildrenNodes;|%WildcardNodes; )* ) >
 <!ATTLIST StaticGroup
-	bboxCenter %SFVec3f; "0 0 0"
+	bboxCenter  %SFVec3f; "0 0 0"
 	bboxSize   %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
@@ -1891,8 +1977,8 @@
 <!ATTLIST Switch
 	whichChoice %SFInt32; "-1"
 	containerField %containerFieldChoicesGroupLODShapeTransformSwitch; "children"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	class NMTOKENS   #IMPLIED
@@ -2087,8 +2173,8 @@
 	scale %SFVec3f; "1 1 1"
 	scaleOrientation %SFRotation; "0 0 1 0"
 	translation %SFVec3f; "0 0 0"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField %containerFieldChoicesGroupLODShapeTransformSwitch; "children"
@@ -2181,7 +2267,7 @@
 	DEF ID #IMPLIED
 	USE IDREF #IMPLIED
 >
-<!ELEMENT Viewpoint ((IS?), (NavigationInfo)?, (%MetadataNodes;)?)>
+<!ELEMENT Viewpoint ((IS?), (%MetadataNodes;)?, (NavigationInfo)?)>
 <!ATTLIST Viewpoint
 	fieldOfView %SFFloat; "0.7854"
 	jump %SFBool; "true"
@@ -2202,7 +2288,7 @@
 >
 <!-- centerOfRotation point relates to NavigationInfo EXAMINE mode. -->
 <![%ImmersiveProfile;[
-<!ELEMENT OrthoViewpoint ((IS?), (%MetadataNodes;)?)>
+<!ELEMENT OrthoViewpoint ((IS?), (%MetadataNodes;)?, (NavigationInfo)?)>
 <!ATTLIST OrthoViewpoint
 	fieldOfView %MFFloat; "-1 -1 1 1"
 	jump %SFBool; "true"
@@ -2774,8 +2860,8 @@
 	scale %SFVec3f; "1 1 1"
 	scaleOrientation %SFRotation; "0 0 1 0"
 	translation %SFVec3f; "0 0 0"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -2786,7 +2872,7 @@
 	USE IDREF #IMPLIED
 >
 <!-- X3D version 3.3 GeoViewpoint changes: added centerOfRotation and retainUserOffsets, removed navType and headlight -->
-<!ELEMENT GeoViewpoint ( IS?, (%MetadataNodes;)?, GeoOrigin? ) >
+<!ELEMENT GeoViewpoint ( IS?, (%MetadataNodes;)?, (NavigationInfo)?, GeoOrigin? ) >
 <!ATTLIST GeoViewpoint
 	geoSystem	  %MFString; '&quot;GD&quot; &quot;WE&quot;'
 	centerOfRotation  %SFVec3d;	"0 0 0"
@@ -2887,7 +2973,7 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	USE		IDREF		#IMPLIED>
 
 <!ELEMENT HAnimHumanoid (IS?, (%MetadataNodes;)?,
-	(HAnimJoint*,	HAnimSegment*, HAnimSite*, HAnimMotion*, (%HAnimSkinNodes;)?, HAnimPose*, (Coordinate | CoordinateDouble)*, (%NormalNodes;)*, ( %WildcardNodes; )* )* ) >
+	(HAnimDisplacer*, HAnimJoint*, HAnimSegment*, HAnimSite*, HAnimMotion*, (%HAnimSkinNodes;)?, HAnimPose*, (Coordinate | CoordinateDouble)*, (%NormalNodes;)*, ( %WildcardNodes; )* )* ) >
 <!-- skeleton/joints, segments, sites/viewpoints,  motion,        skin,                  skinCoord,                  skinNormal -->
 <!-- Note that version 2.0 is approved for X3D4 HAnim component, and version 1.0 is approved for X3D3 H-Anim component -->
 <!-- Note that joints, segments and sites should be USE nodes.  skin Shapes will USE preceding skinCoord, skinNormal definitions. -->
@@ -2911,7 +2997,7 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	scaleOrientation	  %SFRotation;	"0 0 1 0"
 	skeletalConfiguration %SFString;	"BASIC"
 	translation		%SFVec3f;	"0 0 0"
-	version         (2.0 | 2.1) "2.0"
+	version         (2.0 | 2.1) #IMPLIED
 	containerField NMTOKEN "children"
 	class NMTOKENS   #IMPLIED
     id    NMTOKEN    #IMPLIED
@@ -2935,7 +3021,7 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	weight			%SFString;	#IMPLIED
 -->
 <![%HAnimComponent;[
-<!ELEMENT HAnimJoint (IS?, (%MetadataNodes;)?, ( HAnimDisplacer|HAnimJoint|HAnimSegment|%WildcardNodes; )* ) >
+<!ELEMENT HAnimJoint (IS?, (%MetadataNodes;)?, ( HAnimDisplacer|HAnimJoint|HAnimSegment|HAnimSite|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|%ShapeNodes;|Inline|%WildcardNodes;)* ) >
 <!ATTLIST HAnimJoint
 	name			NMTOKEN		#IMPLIED
 	description     %SFString; #IMPLIED
@@ -3004,9 +3090,9 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 <!-- Multiple HAnimDisplacer nodes must appear consecutively inside HAnimSegment -->
 
 <!ELEMENT HAnimSegment (IS?, (%MetadataNodes;)?, (
-	((%ChildrenNodes;|%WildcardNodes;)*, ((Coordinate, HAnimDisplacer*)|(HAnimDisplacer+, Coordinate?))? ) |
-	(Coordinate, (((%ChildrenNodes;)*, HAnimDisplacer*)|(HAnimDisplacer+, (%ChildrenNodes;|%WildcardNodes;)*))? ) |
-	(HAnimDisplacer+, ((Coordinate, (%ChildrenNodes;|%WildcardNodes;)*)|((%ChildrenNodes;|%WildcardNodes;)*, Coordinate?))? )?
+	((HAnimSite|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|%WildcardNodes;)*, (((Coordinate|CoordinateDouble), HAnimDisplacer*)|(HAnimDisplacer+, (Coordinate|CoordinateDouble)?))? ) |
+	((Coordinate|CoordinateDouble), (((HAnimSite|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform)*, HAnimDisplacer*)|(HAnimDisplacer+, (HAnimSite|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|%WildcardNodes;)*))? ) |
+	(HAnimDisplacer+, (((Coordinate|CoordinateDouble), (HAnimSite|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|%WildcardNodes;)*)|((HAnimSite|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|%WildcardNodes;)*, (Coordinate|CoordinateDouble)?))? )?
 ) ) >
 <!ATTLIST HAnimSegment
 	name			NMTOKEN	#IMPLIED
@@ -3025,7 +3111,11 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	DEF			ID		#IMPLIED
 	USE			IDREF		#IMPLIED>
 
-<!ELEMENT HAnimSite (IS?, (%MetadataNodes;)?, ( %ChildrenNodes;|%WildcardNodes; )* ) >
+<!ELEMENT HAnimSite (IS?, (%MetadataNodes;)?, (
+	((HAnimDisplacer|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|Viewpoint|OrthoViewpoint|ViewpointGroup|%WildcardNodes;)*, (((Coordinate|CoordinateDouble), HAnimDisplacer*)|(HAnimDisplacer+, (Coordinate|CoordinateDouble)?))? ) |
+	((Coordinate|CoordinateDouble), (((HAnimDisplacer|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform)*, HAnimDisplacer*)|(HAnimDisplacer+, (HAnimDisplacer|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|Viewpoint|OrthoViewpoint|ViewpointGroup|%WildcardNodes;)*))? ) |
+	(HAnimDisplacer+, (((Coordinate|CoordinateDouble), (HAnimDisplacer|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|Viewpoint|OrthoViewpoint|ViewpointGroup|%WildcardNodes;)*)|((HAnimDisplacer|%ShapeNodes;|Inline|Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform|Viewpoint|ViewpointGroup|%WildcardNodes;)*, (Coordinate|CoordinateDouble)?))? )?
+) ) >
 <!ATTLIST HAnimSite
 	name			NMTOKEN 	#IMPLIED
 	description     %SFString; #IMPLIED
@@ -3234,8 +3324,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 <![%CadComponent;[
 <!ELEMENT CADAssembly (IS?, (%MetadataNodes;)?, (%ChildrenNodes;|%WildcardNodes;)*)>
 <!ATTLIST CADAssembly
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	name	 %SFString;  #IMPLIED
@@ -3247,8 +3337,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	USE IDREF #IMPLIED>
 <!ELEMENT CADFace (IS?, (%MetadataNodes;)?, (Shape|LOD|Transform|%WildcardNodes;)?)>
 <!ATTLIST CADFace
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
         visible     %SFBool;  "true"
 	name	 %SFString;  #IMPLIED
@@ -3260,8 +3350,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	USE IDREF #IMPLIED>
 <!ELEMENT CADLayer (IS?, (%MetadataNodes;)?, (%ChildrenNodes;|%WildcardNodes;)*)>
 <!ATTLIST CADLayer
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	name	 %SFString;  #IMPLIED
@@ -3273,8 +3363,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	USE IDREF #IMPLIED>
 <!ELEMENT CADPart (IS?, (%MetadataNodes;)?, (CADFace|%WildcardNodes;)*)>
 <!ATTLIST CADPart
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	center %SFVec3f; "0 0 0"
@@ -3327,7 +3417,7 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	USE          IDREF      #IMPLIED >
 <!ELEMENT GeneratedCubeMapTexture (IS?, (%MetadataNodes;)?, (TextureProperties|%WildcardNodes;)? )>
 <!ATTLIST GeneratedCubeMapTexture
-	update (NONE|NEXT_FRAME_ONLY|ALWAYS)            "NONE"
+	update (NONE|NEXT_FRAME_ONLY|ALWAYS) "NONE"
 	size	%SFInt32;	"128"
 	containerField NMTOKEN "texture"
 	class NMTOKENS   #IMPLIED
@@ -3691,8 +3781,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 <!ELEMENT Viewport (IS?, (%MetadataNodes;)?, (%ChildrenNodes; | %WildcardNodes;)*)>
 <!ATTLIST Viewport
 	clipBoundary %MFFloat; "0 1 0 1"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "viewport"
@@ -3728,8 +3818,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 <!-- TODO: Schematron rule regarding order for SFNode children Layout and Viewport -->
 <!ELEMENT LayoutGroup (IS?, (%MetadataNodes;)?, Layout, Viewport?, (%ChildrenNodes; | %WildcardNodes;)*)>
 <!ATTLIST LayoutGroup
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -3775,8 +3865,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 
 <!ELEMENT ScreenGroup (IS?, (%MetadataNodes;)?, (%ChildrenNodes; | %WildcardNodes;)*)>
 <!ATTLIST ScreenGroup
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -3805,8 +3895,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	enabled %SFBool; "true"
 	rotation %SFRotation; "0 0 1 0"
 	translation %SFVec3f; "0 0 0"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -3821,8 +3911,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	enabled %SFBool; "true"
 	rotation %SFRotation; "0 0 1 0"
 	translation %SFVec3f; "0 0 0"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -3845,8 +3935,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	softnessErrorCorrection %SFFloat; "0.8"
 	surfaceSpeed %SFVec2f; "0 0"
 	containerField NMTOKEN "collider"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	class NMTOKENS   #IMPLIED
@@ -3973,8 +4063,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	torques %MFVec3f; #IMPLIED
 	useFiniteRotation %SFBool; "false"
 	useGlobalGravity %SFBool; "true"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField (body1 | body2 | bodies) "bodies"
@@ -3998,8 +4088,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	iterations %SFInt32; "10"
 	maxCorrectionSpeed %SFFloat; "-1"
 	preferAccuracy %SFBool; "false"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -4082,8 +4172,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	description %SFString;    #IMPLIED
 	objectType %MFString; "&quot;ALL&quot;"
 	pickable %SFBool; "true"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
 	visible     %SFBool;  "true"
 	containerField NMTOKEN "children"
@@ -4325,7 +4415,6 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 >
 ]]>
 <![%ParticleSystemsComponent;[
-
 <!ELEMENT BoundedPhysicsModel (IS?, (%MetadataNodes;)?, (%GeometryNodes; | %WildcardNodes;)? )>
 <!ATTLIST BoundedPhysicsModel
 	enabled %SFBool; "true"
@@ -4473,8 +4562,8 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 	colorKey %MFFloat; #IMPLIED
 	texCoordKey %MFFloat; #IMPLIED
 	geometryType %SFString; "QUAD"
-	bboxCenter %SFVec3f; "0 0 0"
-	bboxSize %SFVec3f; "-1 -1 -1"
+	bboxCenter  %SFVec3f; "0 0 0"
+	bboxSize    %SFVec3f; "-1 -1 -1"
 	bboxDisplay %SFBool;  "false"
         castShadow  %SFBool;  "true"
 	visible     %SFBool;  "true"
@@ -5113,9 +5202,7 @@ rib10_midspine|sellion|skull_tip|substernale|supramenton|suprasternale|waist_pre
 
 <!-- TODO
 
-HAnim: hands and feet enumerations confirmed), face, motion
-Projective Texture Mapping (PTM)
-Light shadowIntensity, Shape castsShadows
+HAnim: hands and feet enumerations confirmed), face, motion, LOA-5 additions
 -->
 
 <!-- v4.1 -->
