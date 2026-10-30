@@ -3,8 +3,7 @@
 #
 #	https://www.web3d.org/specifications/x3d-3.3.dtd
 #
-#	   this version:  3.3
-#	current version:  3.3
+#	this version:     3.3
 #
 #	created:          30 April 2005
 #	revised:          see version control history
@@ -324,7 +323,7 @@
 
 <!ENTITY % GeometryNodes    	" %GeometryNodeExtensions; %GeoElevationGridNode; %NurbsGeometryNodes; %CadGeometryNodes; %Web3dExtensionGeometryNodes; %Geometry2DNodes; Box|Cone|Cylinder|ElevationGrid|Extrusion|IndexedFaceSet|IndexedLineSet|LineSet|PointSet|Sphere|Text|IndexedTriangleFanSet|IndexedTriangleSet|IndexedTriangleStripSet|TriangleFanSet|TriangleSet|TriangleStripSet " >
 
-<!ENTITY % GroupingNodes    	" %GroupingNodeExtensions; %DISGroupingNodes; %GeoGroupingNodes; %HAnimGroupingNodes; %CadGroupingNodes; %RigidBodyPhysicsGroupingNodes; %Web3dExtensionGroupingNodes; Anchor|Billboard|Collision|Group|Inline|LOD|StaticGroup|Switch|Transform " >
+<!ENTITY % GroupingNodes    	" %GroupingNodeExtensions; %DISGroupingNodes; %GeoGroupingNodes; %HAnimGroupingNodes; %CadGroupingNodes; %RigidBodyPhysicsGroupingNodes; %Web3dExtensionGroupingNodes; Anchor|Billboard|Collision|Group|Inline|LOD|ScreenGroup|StaticGroup|Switch|Transform " >
 ]]>
 <![%ImmersiveProfile;[
 <!ENTITY % LightNodes       	" %LightNodeExtensions; DirectionalLight|SpotLight|PointLight " >
@@ -1786,8 +1785,9 @@
 	DEF ID #IMPLIED
 	USE IDREF #IMPLIED
 >
-<!-- note namespace prefixes fixed -->
-<!ELEMENT X3D (head?, Scene, ds:Signature?)>
+<!-- note DOCTYPE entries not defined for ds:Signature family of elements, attributes -->
+<!-- note namespace prefixes for xmlns: and xsd: attributes are fixed -->
+<!ELEMENT X3D (head?, Scene)>
 <!ATTLIST X3D
 	xmlns:xsd CDATA "https://www.web3d.org/2001/XMLSchema-instance"
 	xsd:noNamespaceSchemaLocation CDATA "https://www.web3d.org/specifications/x3d-3.3.xsd"
