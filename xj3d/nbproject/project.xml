@@ -709,11 +709,13 @@
             <word>initialise</word>
             <word>initialises</word>
             <word>initializer</word>
+            <word>instanceof</word>
             <word>lgpl</word>
             <word>multisamples</word>
             <word>namespace</word>
             <word>OpenGL</word>
             <word>org</word>
+            <word>Precalculated</word>
             <word>prepend</word>
             <word>prepended</word>
             <word>README</word>
@@ -723,6 +725,7 @@
             <word>Shader</word>
             <word>shaders</word>
             <word>sourceforge</word>
+            <word>subclassing</word>
             <word>tooltip</word>
             <word>txt</word>
             <word>uninitialised</word>

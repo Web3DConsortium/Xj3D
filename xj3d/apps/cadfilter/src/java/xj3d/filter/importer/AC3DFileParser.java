@@ -32,7 +32,6 @@ import xj3d.filter.NonWeb3DFileParser;
 /**
  * File parser implementation that reads AC3D files and generates an X3D stream
  * of events.
- * <p>
  *
  * @author Ben Yarger
  * @version 1.0
@@ -544,7 +543,7 @@ public class AC3DFileParser implements NonWeb3DFileParser, Ac3dParseObserver
      * Create opening tags for the basic object types.
      *
      * @param obj The Object definition.
-     * @return
+     * @return opening tags
      */
     public boolean createObjectTag(Ac3dObject obj)
     {

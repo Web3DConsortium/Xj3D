@@ -60,8 +60,14 @@ public abstract class BaseLightNode extends AbstractNode
     /** global light field index */
     protected static final int FIELD_GLOBAL = LAST_NODE_INDEX + 5;
 
+    /** global light field index */
+    protected static final int FIELD_SHADOWS = LAST_NODE_INDEX + 6;
+
+    /** global light field index */
+    protected static final int FIELD_SHADOW_INTENSITY = LAST_NODE_INDEX + 7;
+
     /** Value of the last index in use */
-    protected static final int LAST_LIGHT_INDEX = FIELD_GLOBAL;
+    protected static final int LAST_LIGHT_INDEX = FIELD_SHADOW_INTENSITY;
 
     /**
      * Error message if the global field is being set on an older spec version
@@ -89,6 +95,12 @@ public abstract class BaseLightNode extends AbstractNode
     /** exposedField SFBool global FALSE */
     protected boolean vfGlobal;
 
+    /** exposedField SFBool shadows FALSE */
+    protected boolean vfShadows;
+
+    /** exposedField SFInt32 ShadowIntensity 1 */
+    protected float vfShadowIntensity;
+
     /**
      * Construct a new default instance of this class.
      *
@@ -106,6 +118,8 @@ public abstract class BaseLightNode extends AbstractNode
 
         // This should be modified by the derived node type
         vfGlobal = false;
+        vfShadows = false;
+        vfShadowIntensity = 1.0f;
     }
 
     /**
@@ -125,6 +139,8 @@ public abstract class BaseLightNode extends AbstractNode
         vfIntensity = node.getIntensity();
         vfOn = node.getOn();
         vfGlobal = node.getGlobal();
+        vfShadows = node.getShadows();
+        vfShadowIntensity = node.getShadowIntensity();
     }
 
     //-------------------------------------------------------------
@@ -188,6 +204,24 @@ public abstract class BaseLightNode extends AbstractNode
     @Override
     public boolean getGlobal() {
         return vfGlobal;
+    }
+
+    /**
+     * Accessor method to get current value of field shadows.
+     * @return the current value of the shadows field
+     */
+    @Override
+    public boolean getShadows() {
+        return vfShadows;
+    }
+
+    /**
+     * Accessor method to get current value of field shadowIntensity.
+     * @return the current value of the shadows field
+     */
+    @Override
+    public float getShadowIntensity() {
+        return vfShadowIntensity;
     }
 
     /**
@@ -291,6 +325,38 @@ public abstract class BaseLightNode extends AbstractNode
     }
 
     /**
+     * Set the current value of the shadows field.
+     *
+     * @param shadows true if this light casts shadows
+     */
+    @Override
+    public void setShadows(boolean shadows) 
+    {
+        vfShadows = shadows;
+
+        if(!inSetup) {
+            hasChanged[FIELD_SHADOWS] = true;
+            fireFieldChanged(FIELD_SHADOWS);
+        }
+    }
+
+    /**
+     * Set the current value of the shadowIntensity field.
+     *
+     * @param shadowintensity range [0,1]
+     */
+    @Override
+    public void setShadowIntensity(float shadowintensity) 
+    {
+        vfShadowIntensity = shadowintensity;
+
+        if(!inSetup) {
+            hasChanged[FIELD_SHADOW_INTENSITY] = true;
+            fireFieldChanged(FIELD_SHADOW_INTENSITY);
+        }
+    }
+
+    /**
      * Get the primary type of this node.  Replaces the instanceof mechanism
      * for use in switch statements.
      *
@@ -350,6 +416,18 @@ public abstract class BaseLightNode extends AbstractNode
                 fieldData.dataType = VRMLFieldData.FLOAT_DATA;
                 break;
 
+            case FIELD_SHADOWS:
+                fieldData.clear();
+                fieldData.booleanValue = vfShadows;
+                fieldData.dataType = VRMLFieldData.BOOLEAN_DATA;
+                break;
+
+            case FIELD_SHADOW_INTENSITY:
+                fieldData.clear();
+                fieldData.floatValue = vfShadowIntensity;
+                fieldData.dataType = VRMLFieldData.FLOAT_DATA;
+                break;
+
             default:
                 super.getFieldValue(index);
         }
@@ -400,6 +478,14 @@ public abstract class BaseLightNode extends AbstractNode
 
                 case FIELD_GLOBAL:
                     destNode.setValue(destIndex, vfGlobal);
+                    break;
+
+                case FIELD_SHADOWS:
+                    destNode.setValue(destIndex, vfShadows);
+                    break;
+                    
+                case FIELD_SHADOW_INTENSITY:
+                    destNode.setValue(destIndex, vfShadowIntensity);
                     break;
 
                 default:

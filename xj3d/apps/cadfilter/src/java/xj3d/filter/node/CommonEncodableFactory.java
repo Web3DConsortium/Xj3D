@@ -531,6 +531,8 @@ public class CommonEncodableFactory {
             new FieldInfo("on", FieldConstants.SFBOOL),
             new FieldInfo("global", FieldConstants.SFBOOL),
             new FieldInfo("direction", FieldConstants.SFVEC3F),
+            new FieldInfo("shadows", FieldConstants.SFBOOL),
+            new FieldInfo("shadowIntensity", FieldConstants.SFFLOAT),
         };
         nodeName = "DirectionalLight";
         nodeType = xim.getTypes(nodeName);
@@ -546,6 +548,8 @@ public class CommonEncodableFactory {
             new FieldInfo("attenuation", FieldConstants.SFVEC3F),
             new FieldInfo("location", FieldConstants.SFVEC3F),
             new FieldInfo("radius", FieldConstants.SFFLOAT),
+            new FieldInfo("shadows", FieldConstants.SFBOOL),
+            new FieldInfo("shadowIntensity", FieldConstants.SFFLOAT),
         };
         nodeName = "PointLight";
         nodeType = xim.getTypes(nodeName);
@@ -564,6 +568,8 @@ public class CommonEncodableFactory {
             new FieldInfo("direction", FieldConstants.SFVEC3F),
             new FieldInfo("location", FieldConstants.SFVEC3F),
             new FieldInfo("radius", FieldConstants.SFFLOAT),
+            new FieldInfo("shadows", FieldConstants.SFBOOL),
+            new FieldInfo("shadowIntensity", FieldConstants.SFFLOAT),
         };
         nodeName = "SpotLight";
         nodeType = xim.getTypes(nodeName);

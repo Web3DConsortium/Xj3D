@@ -37,7 +37,6 @@ import xj3d.filter.FilterExitCodes;
 /**
  * File parser implementation that reads STL files and generates an X3D stream
  * of events.
- * <p>
  *
  * @author Justin Couch
  * @version Grammar $Revision: 1.12 $

@@ -24,7 +24,6 @@ import org.xj3d.ui.awt.widgets.SwingStatusBar;
 
 /**
  * An action that can be used to change antialiasing modes.
- * <p>
  *
  * @author Justin Couch, Alan Hudson
  * @version $Revision: 1.2 $

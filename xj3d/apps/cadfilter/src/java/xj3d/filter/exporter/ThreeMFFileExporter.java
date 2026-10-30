@@ -51,7 +51,6 @@ import java.util.Map;
 /**
  * File exporter implementation that writes a 3mf file from an X3D stream
  * of events.  Supports an IndexedTriangleSet node.  Use Triangulation and Index filters as needed.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.8 $

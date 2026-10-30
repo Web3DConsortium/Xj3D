@@ -34,7 +34,6 @@ import org.web3d.vrml.parser.VRMLFieldReader;
 /**
  * File exporter implementation that writes OBJ files from an X3D stream
  * of events.  Supports an IndexedTriangleSet node.  Use Triangulation and Index filters as needed.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.8 $

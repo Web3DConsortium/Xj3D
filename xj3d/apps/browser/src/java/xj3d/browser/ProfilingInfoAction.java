@@ -30,7 +30,6 @@ import org.web3d.vrml.renderer.ogl.browser.OGLProfilingInfo;
  * An action that prints profiling about the scene.
  *
  * Currently prints to console.  Might be better as a Dialog.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.3 $

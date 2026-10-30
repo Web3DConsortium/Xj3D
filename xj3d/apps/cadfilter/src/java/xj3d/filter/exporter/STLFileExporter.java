@@ -34,7 +34,6 @@ import org.web3d.vrml.parser.VRMLFieldReader;
 /**
  * File exporter implementation that writes STL files from an X3D stream
  * of events.
- * <p>
  *
  * @author Russell Dodds
  * @version $Revision: 1.8 $

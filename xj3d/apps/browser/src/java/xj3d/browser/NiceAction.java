@@ -25,7 +25,6 @@ import org.xj3d.ui.awt.widgets.SwingStatusBar;
 
 /**
  * An action that can be used to select nice rendering.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

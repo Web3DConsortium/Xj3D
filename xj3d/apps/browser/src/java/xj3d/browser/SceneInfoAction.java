@@ -33,8 +33,7 @@ import org.j3d.util.ErrorReporter;
  * An action that prints information about the scene.
  *
  * Currently prints to the console.  Might be better as a Dialog.
- * <p>
- *
+ * 
  * @author Alan Hudson
  * @version $Revision: 1.7 $
  */

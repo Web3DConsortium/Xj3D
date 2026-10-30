@@ -711,7 +711,7 @@ public abstract class CRMainSceneBuilder
             if  (name.equalsIgnoreCase("retainUserOffsets") ||
                  name.equalsIgnoreCase("id")      || // same as DEF
                  name.equalsIgnoreCase("class")   || name.equalsIgnoreCase("style") ||
-                 name.equalsIgnoreCase("shadows") || name.equalsIgnoreCase("visible") ||
+                 name.equalsIgnoreCase("visible") ||
                  name.equalsIgnoreCase("ambientIntensity") )
             {
                 // for valid content, likely additional field in X3D4; report encoding and version to aid diagnosis
@@ -722,7 +722,7 @@ public abstract class CRMainSceneBuilder
                 else if (isVrmlVersion4)
                          xj3dIssue = "(ClassicVrml 4)";
                 else     xj3dIssue = "(X3D " + majorVersion + "." + minorVersion + ")";
-                xj3dIssue += " see Xj3D issue https://gitlab.nps.edu/Savage/xj3d/issues/2";
+                xj3dIssue += " see Xj3D issue https://gitlab.nps.edu/Savage/xj3d/issues/2"; // https://github.com/Web3DConsortium/Xj3D/issues
                 criticalError = false;
             }
             else xj3dIssue += "unknown field name, new Xj3D issue needed to improve the open source, see\n  https://github.com/Web3DConsortium/X3D-Edit/issues";

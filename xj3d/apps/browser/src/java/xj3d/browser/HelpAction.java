@@ -26,7 +26,6 @@ import org.j3d.util.ErrorReporter;
 
 /**
  * An action that can be used to view an HTML help set
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

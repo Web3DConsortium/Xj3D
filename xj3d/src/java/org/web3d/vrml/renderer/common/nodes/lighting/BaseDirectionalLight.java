@@ -28,11 +28,11 @@ import org.web3d.vrml.renderer.common.nodes.BaseLightNode;
  * @author Alan Hudson
  * @version $Revision: 1.11 $
  */
-public abstract class BaseDirectionalLight extends BaseLightNode {
-
+public abstract class BaseDirectionalLight extends BaseLightNode 
+{
     /** direction field index */
     protected static final int FIELD_DIRECTION = LAST_LIGHT_INDEX + 1;
-
+    
     /** Index of last field declared */
     protected static final int LAST_DIRECTIONALLIGHT_INDEX = FIELD_DIRECTION;
 
@@ -88,7 +88,14 @@ public abstract class BaseDirectionalLight extends BaseLightNode {
             new VRMLFieldDeclaration(FieldConstants.EXPOSEDFIELD,
                                      "SFVec3f",
                                      "direction");
-
+        fieldDecl[FIELD_SHADOWS] =
+            new VRMLFieldDeclaration(FieldConstants.EXPOSEDFIELD,
+                                     "SFBool",
+                                     "shadows");
+        fieldDecl[FIELD_SHADOW_INTENSITY] =
+            new VRMLFieldDeclaration(FieldConstants.EXPOSEDFIELD,
+                                     "SFFloat",
+                                     "shadowIntensity");
 
         Integer idx = FIELD_METADATA;
         fieldMap.put("metadata", idx);
@@ -124,6 +131,16 @@ public abstract class BaseDirectionalLight extends BaseLightNode {
         fieldMap.put("direction", idx);
         fieldMap.put("set_direction", idx);
         fieldMap.put("direction_changed", idx);
+
+        idx = FIELD_SHADOWS;
+        fieldMap.put("shadows", idx);
+        fieldMap.put("set_shadows", idx);
+        fieldMap.put("shadows_changed", idx);
+
+        idx = FIELD_SHADOW_INTENSITY;
+        fieldMap.put("shadowIntensity", idx);
+        fieldMap.put("set_shadowIntensity", idx);
+        fieldMap.put("shadowIntensity_changed", idx);
     }
 
     /**

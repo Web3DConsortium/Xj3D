@@ -21,7 +21,6 @@ import javax.swing.KeyStroke;
 
 /**
  * An action that can be used to exit the system.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.1 $

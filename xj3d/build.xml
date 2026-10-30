@@ -1103,7 +1103,7 @@ POSSIBILITY OF SUCH DAMAGE.
 
     </target>
 
-    <target name="all" depends="versions,clean,dist,javadoc"
+    <target name="all" depends="versions,clean,get.latest,dist,javadoc"
             description="complete clean/build ready for distribution and deployment">
         <echo message="build.dist to create a distributable Xj3D complete with documentation"/>
         <!-- build.dist does not include javadoc in installers, but javadoc has ability to detect additional errors..test, -->
@@ -1195,6 +1195,8 @@ lists details and further links as part of the
         <!-- TODO diff the diff files to see what changed ?! -->
 
     </target>
+
+    <target name="get.latest" depends="get.latest.opendis7.class.jars.local,get.latest.DTDs"/>
 
     <target name="get.latest.opendis7.class.jars.local" description="Download latest opendis7 .class jar files from opendis distribution">
         <copy file="C:\x3d-github\opendis7-java\dist\opendis7-enumerations-classes.jar"

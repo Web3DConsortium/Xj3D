@@ -622,11 +622,14 @@ public class X3DFieldReader implements VRMLFieldReader {
                 else
                     ret_val = fieldParser.SFBool();
             }
-        } catch(ParseException pe) {
-            throw new InvalidFieldFormatException(pe.getMessage(), locator.getLineNumber(),
+        } 
+        catch(ParseException pe) {
+            throw new InvalidFieldFormatException("X3DFieldReader " + pe.getMessage(), 
+                                                  locator.getLineNumber(),
                                                   locator.getColumnNumber());
-        } catch(TokenMgrError tme) {
-            throw new InvalidFieldFormatException("Invalid field value (" + value + ")\n   encountered when parsing SFBool field value",
+        } 
+        catch(TokenMgrError tme) {
+            throw new InvalidFieldFormatException("X3DFieldReader invalid field value (" + value + ")\n   encountered when parsing SFBool field value",
                                                   locator.getLineNumber(),
                                                   locator.getColumnNumber());
         }

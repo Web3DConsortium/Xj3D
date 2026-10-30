@@ -34,7 +34,6 @@ import org.web3d.vrml.renderer.ogl.browser.OGLStandardBrowserCore;
  * An action that takes a screen shot of the current content.
  *
  * Currently saves to user.dir/foo.png should add a file dialog box.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.5 $

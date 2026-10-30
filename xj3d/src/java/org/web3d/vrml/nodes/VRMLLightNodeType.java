@@ -65,6 +65,20 @@ public interface VRMLLightNodeType extends VRMLChildNodeType {
     boolean getGlobal();
 
     /**
+     * Accessor method to get current value of field shadows. 
+     *
+     * @return the current value of the shadows field
+     */
+    boolean getShadows();
+
+    /**
+     * Accessor method to get current value of field shadowIntensity. 
+     *
+     * @return the current value of the shadowIntensity field
+     */
+    float getShadowIntensity();
+
+    /**
      * Set the new value of the ambientIntensity field.
      *
      * @param newAmbientIntensity A value between 0 and 1
@@ -107,4 +121,18 @@ public interface VRMLLightNodeType extends VRMLChildNodeType {
      */
     void setGlobal(boolean global)
         throws InvalidFieldException;
+
+    /**
+     * Set the current value of the shadows field.
+     *
+     * @param shadows true if shadows thrown
+     */
+    void setShadows(boolean shadows);
+
+    /**
+     * Set the current value of the shadowIntensity field.
+     *
+     * @param shadowIntensity range [0,1]
+     */
+    void setShadowIntensity(float shadowIntensity);
 }

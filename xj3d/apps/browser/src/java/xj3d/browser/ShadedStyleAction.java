@@ -24,7 +24,6 @@ import org.web3d.browser.Xj3DConstants;
 
 /**
  * An action that can be used to change rendering style to Shaded
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.2 $

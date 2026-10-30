@@ -879,21 +879,24 @@ public class DefaultNodeFactory
         Class<?> ret_val = nodeClassMap.get(name);
 
         if(ret_val == null) {
-            try {
+            StringBuilder newClassName = new StringBuilder();
+            try { 
                 ComponentInfo ci = nodeNameComponentMap.get(name);
 
                 if(ci != null) {
-                    StringBuilder buf = new StringBuilder(ci.getPackage(renderer));
-                    buf.append('.');
-                    buf.append(namePrefix);
-                    buf.append(name);
+                    // found X3D component info for this node
+                    newClassName = new StringBuilder(ci.getPackage(renderer));
+                    newClassName.append('.');
+                    newClassName.append(namePrefix);
+                    newClassName.append(name);
 
-                    String cls_name = buf.toString();
-                    ret_val = Class.forName(cls_name);
+                    String cls_name = newClassName.toString();
+                    ret_val = Class.forName(cls_name); // reflection
                     nodeClassMap.put(name, ret_val);
                 }
             } catch (ClassNotFoundException cnfe) {
                 // ignore
+                System.err.println ("DefaultNodeFactory unable to find: " + newClassName);
                 System.err.println ("findNode exception: " + cnfe.toString());
             }
         }

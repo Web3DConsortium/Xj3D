@@ -22,7 +22,6 @@ import org.ietf.uri.URL;
 
 /**
  * Interface representing code that can open a file or URL in the browser.
- * <p>
  *
  * @author Justin Couch
  * @version $Revision: 1.2 $

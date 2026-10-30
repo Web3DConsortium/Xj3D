@@ -23,7 +23,7 @@ import org.web3d.vrml.nodes.VRMLFieldData;
 import org.web3d.vrml.nodes.VRMLTimeControlledNodeType;
 
 /**
- * An abstract representation of any form of time dependent node for
+ * An abstract representation of any form of time-dependent node for
  * subclassing by specific implementations.
 
  * The implementation performs the basic handling of the time fields but does
@@ -53,8 +53,11 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
     /** The field index for elapsedTime */
     protected static final int FIELD_ELAPSED_TIME = LAST_NODE_INDEX + 6;
 
+    /** The field index for elapsedTime */
+    protected static final int FIELD_DESCRIPTION= LAST_NODE_INDEX + 7;
+
     /** The last field index used by this class */
-    protected static final int LAST_TIME_INDEX = FIELD_ELAPSED_TIME;
+    protected static final int LAST_TIME_INDEX = FIELD_DESCRIPTION;
 
     /** The value of the loop field */
     protected boolean vfLoop;
@@ -73,6 +76,9 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
 
     /** The value of the pauseTime field */
     protected double vfElapsedTime;
+
+    /** The value of the description field */
+    protected String vfDescription;
 
     /**
      * Initialise the time dependent node and it's fields that are held
@@ -116,7 +122,12 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
             index = node.getFieldIndex("resumeTime");
             field = node.getFieldValue(index);
             vfPauseTime = field.doubleValue;
-        } catch(VRMLException ve) {
+
+            index = node.getFieldIndex("description");
+            field = node.getFieldValue(index);
+            vfDescription = field.stringValue;
+        } 
+        catch(VRMLException ve) {
             throw new IllegalArgumentException(ve.getMessage());
         }
     }
@@ -147,6 +158,32 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
     @Override
     public boolean getLoop() {
         return vfLoop;
+    }
+
+    /**
+     * Accessor method to set a new value for field attribute <b>description</b>
+     *
+     * @param newDescription updated description
+     */
+    public void setDescription(String newDescription) {
+        if(!newDescription.equals(vfDescription)) {
+            vfDescription = newDescription;
+
+            if(!inSetup) {
+                hasChanged[FIELD_DESCRIPTION] = true;
+                fireFieldChanged(FIELD_DESCRIPTION);
+            }
+        }
+    }
+
+    /**
+     * Accessor method to get current value of field <b>description</b>,
+     * default value is empty string
+     *
+     * @return The value of the description field
+     */
+    public String getDescription() {
+        return vfDescription;
     }
 
     /**
@@ -243,7 +280,8 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
      * @throws InvalidFieldException The field index is not known
      */
     @Override
-    public VRMLFieldData getFieldValue(int index) throws InvalidFieldException {
+    public VRMLFieldData getFieldValue(int index) throws InvalidFieldException 
+    {
         VRMLFieldData fieldData = fieldLocalData.get();
         switch(index) {
             case FIELD_LOOP:
@@ -281,6 +319,13 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
                 fieldData.doubleValue = vfElapsedTime;
                 fieldData.dataType = VRMLFieldData.DOUBLE_DATA;
                 break;
+
+            case FIELD_DESCRIPTION:
+                fieldData.clear();
+                fieldData.stringValue = vfDescription;
+                fieldData.dataType = VRMLFieldData.STRING_DATA;
+                break;
+                
             default:
                 super.getFieldValue(index);
         }
@@ -343,6 +388,29 @@ public abstract class BaseTimeControlledNode extends BaseTimeDependentNode
         switch(index) {
             case FIELD_LOOP:
                 setLoop(value);
+                break;
+
+            default:
+                super.setValue(index, value);
+        }
+    }
+
+    /**
+     * Set the value of the field at the given index as a string.
+     *
+     * @param index The index of destination field to set
+     * @param value The new value to use for the node
+     * @throws InvalidFieldException The field index is not known
+     * @throws InvalidFieldValueException The value provided is not in range
+     *    or not appropriate for this field
+     */
+    @Override
+    public void setValue(int index, String value)
+        throws InvalidFieldException, InvalidFieldValueException {
+
+        switch(index) {
+            case FIELD_DESCRIPTION:
+                setDescription(value);
                 break;
 
             default:

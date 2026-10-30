@@ -597,20 +597,28 @@ class SAIScene implements X3DScene {
      *    given list of profile and components for this scene
      */
     @Override
-    public X3DNode createNode(String name) {
+    public X3DNode createNode(String name) 
+    {
+        try
+        {
+            VRMLNodeType node =
+                (VRMLNodeType)(theScene.getNodeFactory().createVRMLNode(name,
+                                                                        false));
+            node.setErrorReporter(errorReporter);
 
-        VRMLNodeType node =
-            (VRMLNodeType)(theScene.getNodeFactory().createVRMLNode(name,
-                                                                    false));
+            if (node instanceof VRMLExternalNodeType)
+                ((VRMLExternalNodeType)node).setWorldUrl(theScene.getWorldRootURL());
 
-        node.setErrorReporter(errorReporter);
+            node.setFrameStateManager(stateManager);
 
-        if (node instanceof VRMLExternalNodeType)
-            ((VRMLExternalNodeType)node).setWorldUrl(theScene.getWorldRootURL());
-
-        node.setFrameStateManager(stateManager);
-
-        return nodeFactory.getSAINode(node);
+            return nodeFactory.getSAINode(node);
+        }
+        catch (Exception e)
+        {
+            System.err.println("Error in SAIScene createNode(" + name + "): unable to createVRMLNode(" + name + ",false)");
+            e.printStackTrace(System.err);
+            return null;
+        }
     }
 
     /**

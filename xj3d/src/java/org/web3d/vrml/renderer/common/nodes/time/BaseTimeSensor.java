@@ -72,9 +72,18 @@ public class BaseTimeSensor extends BaseTimeControlledNode
 
     /** The field index for enabled */
     protected static final int FIELD_ENABLED = LAST_TIME_INDEX + 7;
-
+    
+    /** The field index for cycleComplete */
+    protected static final int FIELD_CYCLE_COMPLETE = LAST_TIME_INDEX + 8;
+    
+    /** The field index for cycleCompleteTime */
+    protected static final int FIELD_CYCLE_COMPLETE_TIME = LAST_TIME_INDEX + 9;
+    
+    /** The field index for cycleCount */
+    protected static final int FIELD_CYCLE_COUNT = LAST_TIME_INDEX + 10;
+    
     /** The last field index used by this class */
-    protected static final int LAST_TIME_SENSOR_INDEX = FIELD_ENABLED;
+    protected static final int LAST_TIME_SENSOR_INDEX = FIELD_CYCLE_COUNT;
 
     /** Number of fields constant */
     protected static final int NUM_FIELDS = LAST_TIME_SENSOR_INDEX + 1;
@@ -215,6 +224,24 @@ public class BaseTimeSensor extends BaseTimeControlledNode
             new VRMLFieldDeclaration(FieldConstants.EVENTOUT,
                                      "SFFloat",
                                      "fraction_changed");
+        
+        // TODO not yet implemented, fields from X3D 4.1 and 4.0
+        fieldDecl[FIELD_CYCLE_COMPLETE] =
+            new VRMLFieldDeclaration(FieldConstants.EVENTOUT,
+                                     "SFBool",
+                                     "cycleComplete");
+        fieldDecl[FIELD_CYCLE_COMPLETE_TIME] =
+            new VRMLFieldDeclaration(FieldConstants.EVENTOUT,
+                                     "SFTime",
+                                     "cycleCompleteTime");
+        fieldDecl[FIELD_CYCLE_COUNT] =
+            new VRMLFieldDeclaration(FieldConstants.EVENTOUT,
+                                     "SFInt32",
+                                     "cycleCount");
+        fieldDecl[FIELD_DESCRIPTION] =
+            new VRMLFieldDeclaration(FieldConstants.EVENTOUT,
+                                     "SFString",
+                                     "description");
 
         Integer idx = FIELD_METADATA;
         fieldMap.put("metadata", idx);
@@ -262,6 +289,11 @@ public class BaseTimeSensor extends BaseTimeControlledNode
         fieldMap.put("isPaused", FIELD_IS_PAUSED);
         fieldMap.put("fraction_changed", FIELD_FRACTION);
         fieldMap.put("elapsedTime", FIELD_ELAPSED_TIME);
+        
+        fieldMap.put("cycleComplete",     FIELD_CYCLE_COMPLETE);
+        fieldMap.put("cycleCompleteTime", FIELD_CYCLE_COMPLETE_TIME);
+        fieldMap.put("cycleCount",        FIELD_CYCLE_COUNT);
+        fieldMap.put("description",       FIELD_DESCRIPTION);
     }
 
     /**
@@ -282,6 +314,7 @@ public class BaseTimeSensor extends BaseTimeControlledNode
         vfIsPaused = false;
         vfEnabled = true;
         vfLoop = false;
+        vfDescription = "";
 
         internalCycleInterval = 1_000;
 
@@ -301,7 +334,8 @@ public class BaseTimeSensor extends BaseTimeControlledNode
      * @param node The node to copy
      * @throws IllegalArgumentException The node is not the same type
      */
-    public BaseTimeSensor(VRMLNodeType node) {
+    public BaseTimeSensor(VRMLNodeType node)
+    {
         this(); // invoke default constructor
 
         checkNodeType(node);
@@ -324,7 +358,12 @@ public class BaseTimeSensor extends BaseTimeControlledNode
             index = node.getFieldIndex("resumeTime");
             field = node.getFieldValue(index);
             vfResumeTime = field.doubleValue;
-        } catch(VRMLException ve) {
+
+            index = node.getFieldIndex("description");
+            field = node.getFieldValue(index);
+            vfDescription = field.stringValue;
+        } 
+        catch(VRMLException ve) {
             throw new IllegalArgumentException(ve.getMessage());
         }
     }
@@ -755,7 +794,8 @@ System.out.println("Forcing internalStartTime to t, why: " + t);
      * @throws InvalidFieldException The field index is not known
      */
     @Override
-   public VRMLFieldData getFieldValue(int index) throws InvalidFieldException {
+   public VRMLFieldData getFieldValue(int index) throws InvalidFieldException 
+   {
         VRMLFieldData fieldData = fieldLocalData.get();
 
         switch(index) {
@@ -831,6 +871,12 @@ System.out.println("Forcing internalStartTime to t, why: " + t);
                 fieldData.dataType = VRMLFieldData.DOUBLE_DATA;
                 break;
 
+            case FIELD_DESCRIPTION:
+                fieldData.clear();
+                fieldData.stringValue = vfDescription;
+                fieldData.dataType = VRMLFieldData.STRING_DATA;
+                break;
+
             default:
                 super.getFieldValue(index);
         }
@@ -901,6 +947,9 @@ System.out.println("Forcing internalStartTime to t, why: " + t);
                     break;
                 case FIELD_IS_PAUSED:
                     destNode.setValue(destIndex, vfIsPaused);
+                    break;
+                case FIELD_DESCRIPTION:
+                    destNode.setValue(destIndex, vfDescription);
                     break;
                 default:
                     super.sendRoute(time, srcIndex, destNode, destIndex);
@@ -978,6 +1027,29 @@ System.out.println("Forcing internalStartTime to t, why: " + t);
         }
     }
 
+    /**
+     * Set the value of the field at the given index as a boolean. This is
+     * be used to set SFBool field types isActive, enabled and loop.
+     *
+     * @param index The index of destination field to set
+     * @param value The new value to use for the node
+     * @throws InvalidFieldException The field index is not known
+     * @throws InvalidFieldValueException The value provided is not in range
+     *    or not appropriate for this field
+     */
+    @Override
+    public void setValue(int index, String value)
+        throws InvalidFieldException, InvalidFieldValueException {
+
+        switch(index) {
+            case FIELD_DESCRIPTION:
+                setDescription(value);
+                break;
+
+            default :
+                super.setValue(index, value);
+        }
+    }
 
     //-------------------------------------------------------------
     // Methods defined by VRMLTimeListener

@@ -141,6 +141,14 @@ public abstract class BaseSpotLight extends BaseLightNode {
             new VRMLFieldDeclaration(FieldConstants.EXPOSEDFIELD,
                                      "SFFloat",
                                      "radius");
+        fieldDecl[FIELD_SHADOWS] =
+            new VRMLFieldDeclaration(FieldConstants.EXPOSEDFIELD,
+                                     "SFBool",
+                                     "shadows");
+        fieldDecl[FIELD_SHADOW_INTENSITY] =
+            new VRMLFieldDeclaration(FieldConstants.EXPOSEDFIELD,
+                                     "SFFloat",
+                                     "shadowIntensity");
 
         Integer idx = FIELD_METADATA;
         fieldMap.put("metadata", idx);
@@ -201,6 +209,16 @@ public abstract class BaseSpotLight extends BaseLightNode {
         fieldMap.put("beamWidth", idx);
         fieldMap.put("set_beamWidth", idx);
         fieldMap.put("beamWidth_changed", idx);
+
+        idx = FIELD_SHADOWS;
+        fieldMap.put("shadows", idx);
+        fieldMap.put("set_shadows", idx);
+        fieldMap.put("shadows_changed", idx);
+
+        idx = FIELD_SHADOW_INTENSITY;
+        fieldMap.put("shadowIntensity", idx);
+        fieldMap.put("set_shadowIntensity", idx);
+        fieldMap.put("shadowIntensity_changed", idx);
     }
 
     /**

@@ -29,7 +29,6 @@ import java.util.*;
  * Filter for removing children not part of a selectable node such as Switch or LOD. The
  * end result is a file containing geometry (Shape nodes) without the
  * grouping node.
- * <p>
  *
  * @author Alan Hudson
  * @version $Revision: 1.18 $
