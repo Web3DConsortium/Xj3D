@@ -104,17 +104,17 @@ public abstract class Light extends Leaf
     protected static final int AMBIENT_TYPE = 4;
 
     /**
-     * The colour of the light
+     * The ambient colour of the light
      */
     protected float[] ambientColor;
 
     /**
-     * The colour of the light
+     * The diffuse colour of the light
      */
     protected float[] diffuseColor;
 
     /**
-     * The colour of the light
+     * The specular colour of the light
      */
     protected float[] specularColor;
 
@@ -128,7 +128,16 @@ public abstract class Light extends Leaf
      * light (false). By default it is local only.
      */
     protected boolean globalOnly;
-
+    
+    /** Whether light is on or off */
+    private boolean on;
+    
+    /** Whether light casts shadows */
+    private boolean shadows;
+    
+    /** Intensity of light shadows */
+    private float shadowIntensity;
+    
     /**
      * A bounding volume used to restrict the scope of what the light effects.
      * If this is set, any object that intersects with this bounds will be
@@ -162,6 +171,10 @@ public abstract class Light extends Leaf
 
         enabled = false;
         globalOnly = false;
+        
+        on              = true;
+        shadows         = false;
+        shadowIntensity = 1.0f;
     }
 
     /**
@@ -481,6 +494,65 @@ public abstract class Light extends Leaf
         col[2] = specularColor[2];
     }
 
+    /**
+     * Get the current on state of the light.
+     *
+     * @return The current state
+     */
+    public boolean isOn() {
+        return on;
+    }
+
+    /**
+     * Get the current on state of the shadows.
+     *
+     * @return The current state
+     */
+    public boolean isShadows() {
+        return shadows;
+    }
+
+    /**
+     * Get the current on state of the shadowIntensity.
+     *
+     * @return The current state
+     */
+    public float getShadowIntensity() {
+        return shadowIntensity;
+    }
+
+    /**
+     * Set the on state of the light. Can use this to turn it on and off.
+     * @param state The new state of the light
+     * @throws InvalidWriteTimingException An attempt was made to write outside
+     * of the NodeUpdateListener data changed callback method
+     */
+    public void setOn(boolean state)
+            throws InvalidWriteTimingException {
+        if (isLive() && updateHandler != null
+                && !updateHandler.isDataWritePermitted(this)) {
+            throw new InvalidWriteTimingException(getDataWriteTimingMessage());
+        }
+
+        on = state;
+    }
+
+    /**
+     * Set the on state of the shadows. 
+     * @param state The new state of the shadows
+     * @throws InvalidWriteTimingException An attempt was made to write outside
+     * of the NodeUpdateListener data changed callback method
+     */
+    public void setShadows(boolean state)
+            throws InvalidWriteTimingException {
+        if (isLive() && updateHandler != null
+                && !updateHandler.isDataWritePermitted(this)) {
+            throw new InvalidWriteTimingException(getDataWriteTimingMessage());
+        }
+
+        shadows = state;
+    }
+    
     /**
      * Compares this object with the specified object for order. Returns a
      * negative integer, zero, or a positive integer as this object is less

@@ -31,7 +31,7 @@ import com.jogamp.opengl.GL2;
  */
 public class DirectionalLight extends Light
 {
-    /** The colour of the light */
+    /** The direction of the light */
     private float[] direction;
 
     /**
