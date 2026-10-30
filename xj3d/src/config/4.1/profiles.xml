@@ -566,7 +566,7 @@
                 <node name="SpatialSound"/>
             </componentLevel>
         </component>
-        <component name="Text" title="Text component" levels="1" url="http://www.yumetech.com/">
+        <component name="Text" title="Text component" levels="2" url="http://www.yumetech.com/">
             <nodeLocation type="null" package="org.web3d.vrml.renderer.norender.nodes.text"/>
             <nodeLocation type="ogl" package="org.web3d.vrml.renderer.ogl.nodes.text"/>
             <componentLevel level="1">
