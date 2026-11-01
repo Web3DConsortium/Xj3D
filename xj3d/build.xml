@@ -796,7 +796,7 @@ POSSIBILITY OF SUCH DAMAGE.
     -->
 
     <target name="build"
-            depends="timestamp,compile,compile.apps,build.mac,build.unix,build.win"
+            depends="compile,compile.apps,timestamp,build.mac,build.unix,build.win"
             description="Build the full standalone OpenGL render version of Xj3D for your platform">
 
         <echo message="Build date: ${DSTAMP}:${TSTAMP} " file="buildStamp.txt"/>
