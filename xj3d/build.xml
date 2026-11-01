@@ -356,7 +356,7 @@ POSSIBILITY OF SUCH DAMAGE.
     </target>
 
     <target name="jar"
-            depends="compile"
+            depends="build"
             description="Build the Xj3D application jar file">
         <mkdir dir="${dist.dir}"/>
 
