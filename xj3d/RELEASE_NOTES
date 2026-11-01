@@ -40,6 +40,8 @@ Major changes since 2.2 (Feb 09, 2020):
 
   Update JogAmp (JOGL, JOAL, GlueGen to v2.7.0-rc-20261020
 
+  Added support for X3D spec. v4.0, 4.1
+
   Update JogAmp (JOGL, JOAL, GlueGen) to v2.6.0 20250831
     - Fixes JVM v25 crash
 
